@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * saasto_scripts description
  * @return [type] [description]
@@ -11,24 +13,25 @@ function saasto_scripts() {
     */
 
     wp_enqueue_style( 'saasto-fonts', saasto_fonts_url(), array(), '1.0.0' );
+    wp_enqueue_style( 'bootstrap-icons', SAASTO_THEME_CSS_DIR . 'bootstrap-icons.css', [] );
+    wp_enqueue_style( 'animate', SAASTO_THEME_CSS_DIR . 'animate.css', [] );
+    wp_enqueue_style( 'swiper-bundle', SAASTO_THEME_CSS_DIR . 'swiper-bundle.css', [] );
+
     if( is_rtl() ){
         wp_enqueue_style( 'bootstrap-rtl', SAASTO_THEME_CSS_DIR.'bootstrap.rtl.min.css', array() );
     }else{
         wp_enqueue_style( 'bootstrap', SAASTO_THEME_CSS_DIR.'bootstrap.css', array() );
     }
-    wp_enqueue_style( 'swiper-bundle', SAASTO_THEME_CSS_DIR . 'swiper-bundle.css', [] );
-    wp_enqueue_style( 'backtotop', SAASTO_THEME_CSS_DIR . 'backtotop.css', [] );
-    wp_enqueue_style( 'font-awesome-pro', SAASTO_THEME_CSS_DIR . 'font-awesome-pro.css', [] );
-    wp_enqueue_style( 'jquery-fancybox', SAASTO_THEME_CSS_DIR . 'spacing.css', [] );
     wp_enqueue_style( 'saasto-core', SAASTO_THEME_CSS_DIR . 'saasto-core.css', [] );
     wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [] );
+    wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [] );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     wp_enqueue_style( 'saasto-style', get_stylesheet_uri() );
 
     // all js
     wp_enqueue_script( 'bootstrap-bundle', SAASTO_THEME_JS_DIR . 'bootstrap-bundle.js', [ 'jquery' ], '', true );
     wp_enqueue_script( 'swiper-bundle', SAASTO_THEME_JS_DIR . 'swiper-bundle.js', [ 'jquery' ], false, true );
-    wp_enqueue_script( 'backtotop', SAASTO_THEME_JS_DIR . 'backtotop.js', [ 'jquery' ], '', true );
+    wp_enqueue_script( 'wow', SAASTO_THEME_JS_DIR . 'wow.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'saasto-main', SAASTO_THEME_JS_DIR . 'main.js', [ 'jquery' ], false, true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -36,6 +39,7 @@ function saasto_scripts() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'saasto_scripts' );
+
 
 /*
 Register Fonts

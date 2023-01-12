@@ -91,24 +91,27 @@ function saasto_breadcrumb_func() {
 
          <!-- page title area start -->
 
-         <section class="breadcrumb__area include-bg pt-150 pb-150 breadcrumb__overlay <?php print esc_attr( $breadcrumb_class );?>" data-background="<?php print esc_attr($bg_img);?>">
+        <?php
+        // Breadcrumb controller
+        if (!empty($breadcrumb_info_switch)) : ?>
+        <div class="breadcrumb-area position-relative overflow-hidden <?php print esc_attr( $breadcrumb_class );?>" data-background="<?php print esc_attr($bg_img);?>">
             <div class="container">
-               <div class="row">
-               	<?php if (!empty($breadcrumb_info_switch)) : ?>
-                  <div class="col-xxl-12">
-                     <div class="breadcrumb__content text-center p-relative z-index-1">
-                        <h3 class="breadcrumb__title"><?php echo wp_kses_post( $title ); ?></h3>
-                        <div class="breadcrumb__list">
-                           <?php if(function_exists('bcn_display')) {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-info text-center">
+                            <h3 class="breadcrumb__title"><?php echo wp_kses_post( $title ); ?></h3>
+                            <?php if(function_exists('bcn_display')) {
 	                           bcn_display();
 	                        } ?>
                         </div>
-                     </div>
-                  </div>
-                  <?php endif; ?>
-               </div>
+                    </div>
+                </div>
             </div>
-         </section>
+            <img class="top-0 start-0 position-absolute d-none d-lg-block" src="<?php echo get_template_directory_uri( ) ?>/assets/img/shapes/breadcrumb-sp-1.png" alt="">
+            <img class="position-absolute end-0 d-none d-lg-block" style=" bottom: -20px;" src="<?php echo get_template_directory_uri( ) ?>/assets/img/shapes/breadcrumb-sp-2.png" alt="">
+        </div>
+        <?php endif; ?>
+
          <!-- page title area end -->
         <?php
       }
@@ -132,3 +135,7 @@ function saasto_search_form() {
 }
 
 add_action( 'saasto_before_main_content', 'saasto_search_form' );
+
+
+?>
+

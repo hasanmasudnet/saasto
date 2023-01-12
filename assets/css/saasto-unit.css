@@ -904,6 +904,10 @@ blockquote cite::before {
 	/* Above WP toolbar. */
 }
 
+.img-responsive{
+	width: 100%;
+}
+
 .admin-bar .header__sticky{
 	margin-top: 32px;
 }

@@ -49,7 +49,7 @@ if ( !class_exists( 'Saasto_Navwalker_Class' ) ) {
             }
             $indent = str_repeat( $t, $depth );
             // Default class to add to the file.
-            $classes = [ 'submenu' ];
+            $classes = [ 'sub-menu' ];
             /**
              * Filters the CSS class(es) applied to a menu list element.
              *
@@ -76,7 +76,7 @@ if ( !class_exists( 'Saasto_Navwalker_Class' ) ) {
                 // build a string to use as aria-labelledby.
                 $labelledby = 'aria-labelledby="' . end( $matches[2] ) . '"';
             }
-            $output .= "{$n}{$indent}<ul$class_names $labelledby role=\"menu\">{$n}";
+            $output .= "<i class='fl flaticon-plus'>+</i>{$n}{$indent}<ul$class_names $labelledby role=\"menu\">{$n}";
         }
 
         /**
@@ -134,7 +134,7 @@ if ( !class_exists( 'Saasto_Navwalker_Class' ) ) {
 
             // Add .dropdown or .active classes where they are needed.
             if ( isset( $args->has_children ) && $args->has_children ) {
-                $classes[] = 'dropdown has-dropdown';
+                $classes[] = 'has-child-menu dropdown';
             }
             if ( in_array( 'current-menu-item', $classes, true ) || in_array( 'current-menu-parent', $classes, true ) ) {
                 $classes[] = 'active';
@@ -165,7 +165,7 @@ if ( !class_exists( 'Saasto_Navwalker_Class' ) ) {
             $id = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args, $depth );
             $id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-            $output .= $indent . '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"' . $id . $class_names . '>';
+            $output .= $indent . '<li' . $id . $class_names . '>';
 
             // initialize array for holding the $atts for the link item.
             $atts = [];
@@ -363,7 +363,7 @@ if ( !class_exists( 'Saasto_Navwalker_Class' ) ) {
                 if ( $menu_class ) {
                     $fallback_output .= ' class="' . esc_attr( $menu_class ) . '"';}
                 $fallback_output .= '>';
-                $fallback_output .= '<li><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr__( 'Home', 'saasto' ) . '">' . esc_html__( 'Home', 'saasto' ) . '</a></li>';
+                $fallback_output .= '<li><a data-test="test" href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr__( 'Home', 'saasto' ) . '">' . esc_html__( 'Home', 'saasto' ) . '</a></li>';
                 $fallback_output .= '</ul>';
                 if ( $container ) {
                     $fallback_output .= '</' . esc_attr( $container ) . '>';

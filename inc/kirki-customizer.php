@@ -229,10 +229,10 @@ function _header_top_fields( $fields ) {
     // button
     $fields[] = [
         'type'     => 'text',
-        'settings' => 'saasto_button_text',
+        'settings' => 'saasto_head_r_button_text',
         'label'    => esc_html__( 'Button Text', 'saasto' ),
         'section'  => 'header_top_setting',
-        'default'  => esc_html__( 'Get A Quote', 'saasto' ),
+        'default'  => esc_html__( 'Free Trials', 'saasto' ),
         'priority' => 10,
         'active_callback' => [
             [
@@ -245,7 +245,7 @@ function _header_top_fields( $fields ) {
 
     $fields[] = [
         'type'     => 'link',
-        'settings' => 'saasto_button_link',
+        'settings' => 'saasto_head_r_button_link',
         'label'    => esc_html__( 'Button URL', 'saasto' ),
         'section'  => 'header_top_setting',
         'default'  => esc_html__( '#', 'saasto' ),
@@ -647,7 +647,6 @@ function _header_footer_fields( $fields ) {
             'footer-style-1'   => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
             'footer-style-2' => get_template_directory_uri() . '/inc/img/footer/footer-2.png',
             'footer-style-3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png',
-            'footer-style-4' => get_template_directory_uri() . '/inc/img/footer/footer-4.png',
         ],
         'default'     => 'footer-style-1',
     ];
@@ -665,6 +664,58 @@ function _header_footer_fields( $fields ) {
             '4' => esc_html__( 'Widget Number 4', 'saasto' ),
             '3' => esc_html__( 'Widget Number 3', 'saasto' ),
             '2' => esc_html__( 'Widget Number 2', 'saasto' ),
+        ],
+    ];
+
+    $fields[] = [
+        'type'        => 'image',
+        'settings'    => 'footer_logo_style_one',
+        'label'       => esc_html__( 'Footer Logo', 'saasto' ),
+        'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
+        'section'     => 'footer_setting',
+        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-1',
+            ],
+        ],
+        
+    ];
+
+    $fields[] = [
+        'type'        => 'image',
+        'settings'    => 'footer_logo_style_two',
+        'label'       => esc_html__( 'Footer Logo 2', 'saasto' ),
+        'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
+        'section'     => 'footer_setting',
+        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
+        'choices'     => [
+			'save_as' => 'id',
+		],
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-2',
+            ],
+        ],
+    ];
+
+    $fields[] = [
+        'type'        => 'image',
+        'settings'    => 'footer_logo_style_three',
+        'label'       => esc_html__( 'Footer Logo 3', 'saasto' ),
+        'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
+        'section'     => 'footer_setting',
+        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-3',
+            ],
         ],
     ];
 

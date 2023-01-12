@@ -37,7 +37,7 @@ if ( is_single() ) : ?>
     </article>
 <?php else: ?>
 
-    <article id="post-<?php the_ID();?>" <?php post_class( 'postbox__item format-image mb-50' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'postbox__item format-image mb-50 d-none' );?>>
         <?php if ( has_post_thumbnail() ): ?>    
         <div class="postbox__thumb">
             <a href="<?php the_permalink();?>">
@@ -60,4 +60,32 @@ if ( is_single() ) : ?>
             <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
         </div>
     </article>
+
+    <article id="post-<?php the_ID();?>" <?php post_class( 'blog-list-box' );?>>
+            <div class="blog-list-img overflow-hidden">
+            <?php if ( has_post_thumbnail() ): ?>    
+            <div class="postbox__thumb">
+                <a href="<?php the_permalink();?>">
+                    <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
+                </a>
+            </div>
+            <?php endif; ?>
+
+        </div>
+        <div class="blog-info">
+            <!-- blog meta -->
+            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+
+            <h3 class="postbox__title">
+                <a href="<?php the_permalink();?>"><?php the_title();?></a>
+            </h3>
+            <div class="postbox__text">
+                <?php the_excerpt();?>
+            </div>
+            
+            <!-- blog btn -->
+            <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
+        </div>
+    </article>
+
 <?php endif;?>

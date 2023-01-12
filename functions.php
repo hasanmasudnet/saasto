@@ -297,3 +297,4 @@ function saasto_admin_custom_scripts() {
     wp_register_script( 'saasto-admin-custom', get_template_directory_uri() . '/inc/js/admin_custom.js', [ 'jquery' ], '', true );
     wp_enqueue_script( 'saasto-admin-custom' );
 }
+

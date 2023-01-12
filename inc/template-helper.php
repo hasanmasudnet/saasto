@@ -191,11 +191,11 @@ function saasto_footer_social_profiles() {
     $saasto_footer_youtube_url = get_theme_mod( 'saasto_footer_youtube_url', __( '#', 'saasto' ) );
     ?>
 
-        <ul>
+        <ul class="footer-social-links d-flex justify-content-md-end">
         <?php if ( !empty( $saasto_footer_fb_url ) ): ?>
             <li>
                 <a href="<?php print esc_url( $saasto_footer_fb_url );?>">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="bi bi-facebook"></i>
                 </a>
             </li>
         <?php endif;?>
@@ -203,7 +203,7 @@ function saasto_footer_social_profiles() {
         <?php if ( !empty( $saasto_footer_twitter_url ) ): ?>
             <li>
                 <a href="<?php print esc_url( $saasto_footer_twitter_url );?>">
-                    <i class="fab fa-twitter"></i>
+                    <i class="bi bi-twitter"></i>
                 </a>
             </li>
         <?php endif;?>
@@ -211,7 +211,7 @@ function saasto_footer_social_profiles() {
         <?php if ( !empty( $saasto_footer_instagram_url ) ): ?>
             <li>
                 <a href="<?php print esc_url( $saasto_footer_instagram_url );?>">
-                    <i class="fab fa-instagram"></i>
+                    <i class="bi bi-instagram"></i>
                 </a>
             </li>
         <?php endif;?>
@@ -219,7 +219,7 @@ function saasto_footer_social_profiles() {
         <?php if ( !empty( $saasto_footer_linkedin_url ) ): ?>
             <li>
                 <a href="<?php print esc_url( $saasto_footer_linkedin_url );?>">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="bi bi-linkedin"></i>
                 </a>
             </li>
         <?php endif;?>
@@ -227,7 +227,7 @@ function saasto_footer_social_profiles() {
         <?php if ( !empty( $saasto_footer_youtube_url ) ): ?>
             <li>
                 <a href="<?php print esc_url( $saasto_footer_youtube_url );?>">
-                    <i class="fab fa-youtube"></i>
+                    <i class="bi bi-youtube"></i>
                 </a>
             </li>
         <?php endif;?>
@@ -299,7 +299,7 @@ function saasto_header_search_menu() {
 function saasto_footer_menu() {
     wp_nav_menu( [
         'theme_location' => 'footer-menu',
-        'menu_class'     => 'm-0',
+        'menu_class'     => 'footer-quick-links d-flex justify-content-lg-end flex-wrap',
         'container'      => '',
         'fallback_cb'    => 'Saasto_Navwalker_Class::fallback',
         'walker'         => new Saasto_Navwalker_Class,
@@ -735,4 +735,15 @@ function saasto_kses($raw){
    }
 
    return $allowed;
+}
+
+
+//  To remove autogenarated height and width from wp_get_attachment_image() or get_post_thumbnail() etc
+add_filter( 'wp_get_attachment_image', 'remove_width_attribute', 10 );
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
 }

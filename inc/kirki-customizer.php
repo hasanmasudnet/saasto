@@ -710,6 +710,9 @@ function _header_footer_fields( $fields ) {
         'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
         'section'     => 'footer_setting',
         'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
+        'choices'     => [
+			'save_as' => 'id',
+		],
         'active_callback' => [
             [
                 'setting'  => 'choose_default_footer',
@@ -781,7 +784,7 @@ function _header_footer_fields( $fields ) {
         'settings' => 'saasto_copyright',
         'label'    => esc_html__( 'Copy Right', 'saasto' ),
         'section'  => 'footer_setting',
-        'default'  => esc_html__( 'Copyright &copy; 2022 Theme_Pure. All Rights Reserved', 'saasto' ),
+        'default'  => esc_html__( 'Copyright &copy; 2022 wprealizer. All Rights Reserved', 'saasto' ),
         'priority' => 10,
     ];
     return $fields;

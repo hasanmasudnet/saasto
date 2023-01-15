@@ -3,8 +3,8 @@
  * Breadcrumbs for Saasto theme.
  *
  * @package     Saasto
- * @author      Theme_Pure
- * @copyright   Copyright (c) 2022, Theme_Pure
+ * @author      wprealizer
+ * @copyright   Copyright (c) 2022, wprealizer
  * @link        https://www.wprealizer.com
  * @since       Saasto 1.0.0
  */

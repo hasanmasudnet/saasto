@@ -188,10 +188,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require_once SAASTO_THEME_INC . 'class-navwalker.php';
 require_once SAASTO_THEME_INC . 'class-tgm-plugin-activation.php';
+// require_once SAASTO_THEME_INC . 'saasto-helper-class.php';
 require_once SAASTO_THEME_INC . 'add_plugin.php';
 require_once SAASTO_THEME_INC . '/common/saasto-breadcrumb.php';
 require_once SAASTO_THEME_INC . '/common/saasto-scripts.php';
 require_once SAASTO_THEME_INC . '/common/saasto-widgets.php';
+
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.

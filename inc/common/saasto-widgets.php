@@ -24,16 +24,6 @@ function saasto_widgets_init() {
     ] );
 
 
-    register_sidebar(array(
-        'name' => esc_html__('Product Sidebar', 'saasto'),
-        'id' => 'product-sidebar',
-        'before_widget' => '<div id="%1$s" class="product-widgets side-cat %2$s mb-45">',
-        'after_widget' => '</div>',
-        'before_title' => '<h6 class="product-widget-title">',
-        'after_title' => '</h6>',
-    ));
-
-
     $footer_widgets = get_theme_mod( 'footer_widget_number', 4 );
 
     // footer default
@@ -42,9 +32,9 @@ function saasto_widgets_init() {
             'name'          => sprintf( esc_html__( 'Footer %1$s', 'saasto' ), $num ),
             'id'            => 'footer-' . $num,
             'description'   => sprintf( esc_html__( 'Footer %1$s', 'saasto' ), $num ),
-            'before_widget' => '<div id="%1$s" class="footer__widget footer-col-'.$num.' mb-50 %2$s">',
+            'before_widget' => '<div id="%1$s" class="footer-widget footer-col-'.$num.' %2$s">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="footer__widget-title">',
+            'before_title'  => '<h3 class="footer-widget-title">',
             'after_title'   => '</h3>',
         ] );
     }

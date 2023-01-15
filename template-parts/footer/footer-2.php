@@ -149,76 +149,63 @@ default:
         <div class="container">
             <div class="row pb-60">
 
-                <div class="col-lg-4 pt-4">
-                   <div class="footer-about">
+            <?php
+                if ( $footer_columns < 4 ) {
 
-                       <p class="footer-disc body-disply-1 text-purple-haze">Lorem Ipsum is simply dummy text of
-                           the printing and typesetting industry.
-                           Lorem Ipsum has been the
-                           industry's standard and clean.</p>
-                           
+                if ( is_active_sidebar('footer-2-1') ){
+                    print '<div class="col-lg-4">';
+                    dynamic_sidebar( 'footer-2-1' );
+                    print '</div>';
+                }
 
-                       <ul class="footer-social-links d-flex">
-                           <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                           <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                           <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                           <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                       </ul>
-                   </div>
-                </div>
+                if ( is_active_sidebar('footer-2-2') OR is_active_sidebar('footer-2-3') OR is_active_sidebar('footer-2-4') ):
+
+                    print '<div class="col-lg-8">';
+                    print '<div class="row">';
+                            
+                        if ( is_active_sidebar('footer-2-2') ){
+                            print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                            dynamic_sidebar( 'footer-2-2' );
+                            print '</div>';
+                        }
+                        if ( is_active_sidebar('footer-2-3') ){
+                            print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                            dynamic_sidebar( 'footer-2-3' );
+                            print '</div>';
+                        }
+                        if ( is_active_sidebar('footer-2-4') ){
+                            print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                            dynamic_sidebar( 'footer-2-4' );
+                            print '</div>';
+                        }
+                        
+                    print '</div>';
+                    print '</div>';
                 
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 d-lg-flex justify-content-center pt-4">
-                            <div class="footer-widget">
-                                <h5 class="footer-widget-title text-bright-gray">Our links</h5>
-                                <ul class="footer-links">
-                                   <li><a href="index.html">Home</a></li>
-                                   <li><a href="about.html">About us</a></li>
-                                   <li><a href="service.html">Services</a></li>
-                                   <li><a href="#">Team</a></li>
-                                   <li><a href="blog.html">Blog</a></li>
-                               </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 pt-4">
-                           <div class="footer-widget">
-                               <h5 class="footer-widget-title text-bright-gray">Our Services</h5>
-                               <ul class="footer-links">
-                                  <li><a href="service-details.html">Strategy & Research</a></li>
-                                  <li><a href="service-details.html">Web Development</a></li>
-                                  <li><a href="service-details.html">Web Solution</a></li>
-                                  <li><a href="service-details.html">Digital Marketing</a></li>
-                                  <li><a href="service-details.html">App Design</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 pt-4">
-                           <div class="footer-widget">
-                               <h5 class="footer-widget-title text-bright-gray">Others links</h5>
-                               <ul class="footer-links">
-                                  <li><a href="#">FAQ</a></li>
-                                  <li><a href="#">Portfolio</a></li>
-                                  <li><a href="#">Privacy Ploicy</a></li>
-                                  <li><a href="#">Trems & Condition</a></li>
-                                  <li><a href="#">Support</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                    </div>
-                </div>
+                endif;
+
+                } else {
+                    for ( $num = 1; $num <= $footer_columns; $num++ ) {
+                        if ( !is_active_sidebar( 'footer-3-' . $num ) ) {
+                            continue;
+                        }
+                        print '<div class="' . esc_attr( $footer_class[$num] ) . '">';
+                        dynamic_sidebar( 'footer-3-' . $num );
+                        print '</div>';
+                    }
+                }
+            ?>
             </div>
 
             <div class="row">
-                <div class="col-md-6 pt-3">
-                    <a href="#" class="footer-terms-text">Terms & condition</a>
-                </div>
-                <div class="col-md-6 pt-3">
-                    <p class="footer-right-text text-md-end">All Right Reserved @<a href="#">wprealizer</a> </p>
+
+                <div class="col-md-12 pt-3 footer-right-text">
+                    <p><?php echo esc_html( saasto_copyright_text() ); ?></p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 <!-- ===============  footer style one end ============= -->
-    
+
+

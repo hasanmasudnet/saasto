@@ -183,7 +183,22 @@ function saasto_header_social_profiles() {
 <?php
 }
 
-function saasto_footer_social_profiles() {
+function saasto_footer_social_profiles( $footer_style = '' ) {
+
+    $social_class = '';
+    if( 'footer-one' == $footer_style ){
+        $social_class = 'footer-social-links d-flex justify-content-md-end';
+    }
+    elseif( 'footer-two' == $footer_style ){
+        $social_class = 'footer-social-links d-flex';
+    }
+    elseif( 'footer-three' == $footer_style ){
+        $social_class = 'footer-social-links d-flex justify-content-md-end gap-lg-5 gap-4';
+    }
+    else{
+        $social_class = 'footer-social-links d-flex';
+    }
+
     $saasto_footer_fb_url = get_theme_mod( 'saasto_footer_fb_url', __( '#', 'saasto' ) );
     $saasto_footer_twitter_url = get_theme_mod( 'saasto_footer_twitter_url', __( '#', 'saasto' ) );
     $saasto_footer_instagram_url = get_theme_mod( 'saasto_footer_instagram_url', __( '#', 'saasto' ) );
@@ -191,7 +206,7 @@ function saasto_footer_social_profiles() {
     $saasto_footer_youtube_url = get_theme_mod( 'saasto_footer_youtube_url', __( '#', 'saasto' ) );
     ?>
 
-        <ul class="footer-social-links d-flex justify-content-md-end">
+        <ul class="<?php echo esc_attr( $social_class ); ?>">
         <?php if ( !empty( $saasto_footer_fb_url ) ): ?>
             <li>
                 <a href="<?php print esc_url( $saasto_footer_fb_url );?>">
@@ -269,7 +284,8 @@ function saasto_mobile_menu() {
         ] );
 
     $saasto_menu = str_replace( "menu-item-has-children", "menu-item-has-children has-children", $saasto_menu );
-        echo wp_kses_post( $saasto_menu );
+        echo 
+        _post( $saasto_menu );
     ?>
     <?php
 }
@@ -363,7 +379,7 @@ function saasto_check_footer() {
 
 // saasto_copyright_text
 function saasto_copyright_text() {
-   print get_theme_mod( 'saasto_copyright', esc_html__( '© 2022 Saasto, All Rights Reserved. Design By wprealizer', 'saasto' ) );
+   return get_theme_mod( 'saasto_copyright', esc_html__( '© 2022 Saasto, All Rights Reserved. Design By wprealizer', 'saasto' ) );
 }
 
 
@@ -738,7 +754,7 @@ function saasto_kses($raw){
 }
 
 
-//  To remove autogenarated height and width from wp_get_attachment_image() or get_post_thumbnail() etc
+// Remove autogenareted height and width
 add_filter( 'wp_get_attachment_image', 'remove_width_attribute', 10 );
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );

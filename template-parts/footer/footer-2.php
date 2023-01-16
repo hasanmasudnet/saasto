@@ -147,8 +147,7 @@ default:
     <!-- ===============  footer style one start ============= -->
     <div class="footer-style-one position-relative">
         <div class="container">
-            <div class="row pb-60">
-
+            <div class="row">
             <?php
                 if ( $footer_columns < 4 ) {
 
@@ -198,8 +197,7 @@ default:
             </div>
 
             <div class="row">
-
-                <div class="col-md-12 pt-3 footer-right-text">
+                <div class="col-md-12 pt-3 footer-right-text pb-4 pt-4">
                     <p><?php echo esc_html( saasto_copyright_text() ); ?></p>
                 </div>
             </div>
@@ -207,5 +205,4 @@ default:
     </div>
 </footer>
 <!-- ===============  footer style one end ============= -->
-
 

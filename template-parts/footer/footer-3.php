@@ -123,7 +123,7 @@ default:
 
 <footer>
         <!-- ===============  footer area start =============== -->
-        <div class="footer-style-three pb-60 section-gap-top-y-1 position-relative">
+        <div class="footer-style-three section-gap-top-y-1 position-relative">
             <div class="container">
                 <div class="footer-top gap-4 d-flex justify-content-between align-items-center flex-wrap">
                     <div class="footer-logo">
@@ -141,48 +141,57 @@ default:
 
                 <div class="foooter-main-wrap row">
                     <?php
-                        if ( $footer_columns < 4 ) {
+                    if ( $footer_columns < 4 ) {
+
+                    if ( is_active_sidebar('footer-3-1') ){
                         print '<div class="col-lg-4">';
-                        dynamic_sidebar( 'footer-1' );
+                        dynamic_sidebar( 'footer-3-1' );
                         print '</div>';
+                    }
+
+                    if ( is_active_sidebar('footer-3-2') OR is_active_sidebar('footer-3-3') OR is_active_sidebar('footer-3-4') ):
+
                         print '<div class="col-lg-8">';
                         print '<div class="row">';
-                        print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
-                        dynamic_sidebar( 'footer-2' );
-                        print '</div>';
-
-                        print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
-                        dynamic_sidebar( 'footer-3' );
-                        print '</div>';
-
-                        print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
-                        dynamic_sidebar( 'footer-4' );
-                        print '</div>';
-                        print '</div>';
-                        print '</div>';
-
-                        } else {
-                            for ( $num = 1; $num <= $footer_columns; $num++ ) {
-                                if ( !is_active_sidebar( 'footer-3-' . $num ) ) {
-                                    continue;
-                                }
-                                print '<div class="' . esc_attr( $footer_class[$num] ) . '">';
-                                dynamic_sidebar( 'footer-3-' . $num );
+                                
+                            if ( is_active_sidebar('footer-3-2') ){
+                                print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                                dynamic_sidebar( 'footer-3-2' );
                                 print '</div>';
                             }
+                            if ( is_active_sidebar('footer-3-3') ){
+                                print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                                dynamic_sidebar( 'footer-3-3' );
+                                print '</div>';
+                            }
+                            if ( is_active_sidebar('footer-3-4') ){
+                                print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                                dynamic_sidebar( 'footer-3-4' );
+                                print '</div>';
+                            }
+                            
+                        print '</div>';
+                        print '</div>';
+                    
+                    endif;
+
+                    } else {
+                        for ( $num = 1; $num <= $footer_columns; $num++ ) {
+                            if ( !is_active_sidebar( 'footer-3-' . $num ) ) {
+                                continue;
+                            }
+                            print '<div class="' . esc_attr( $footer_class[$num] ) . '">';
+                            dynamic_sidebar( 'footer-3-' . $num );
+                            print '</div>';
                         }
+                    }
                     ?>
                 </div>
 
                 <div class="footer-bottom">
                     <div class="row gy-3">
-                        <div class="col-lg-7 col-md-6 d-flex gap-5 flex-wrap">
-                            <a href="#" class="footer-defult-links">Terms &amp; condition</a>
-                            <a href="#" class="footer-defult-links">Privacy policy</a>
-                        </div>
-                        <div class="col-lg-5 col-md-6">
-                            <p class="footer-defult-links text-md-end">All Right Reserved @<a
-                                    href="#">wprealizer</a>.com</p>
+                        <div class="col-md-12 pt-4 footer-right-text pb-4">
+                            <p><?php echo esc_html( saasto_copyright_text() ); ?></p>
                         </div>
                     </div>
                 </div>

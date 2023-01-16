@@ -277,10 +277,9 @@ if ( !function_exists( 'saasto_search_filter_form' ) ) {
     function saasto_search_filter_form( $form ) {
 
         $form = sprintf(
-            '<div class="sidebar__widget-px"><div class="search-px"><form class="sidebar__search p-relative" action="%s" method="get">
-      	<input type="text" value="%s" required name="s" placeholder="%s">
-      	<button type="submit"> <i class="far fa-search"></i>  </button>
-		</form></div></div>',
+            '<form class="sidebar-search position-relative overflow-hidden" action="%s">
+            <input type="text value="%s" required name="s" placeholder="%s">
+            <button type="submit" class="position-absolute h-100 top-0 end-0 d-flex align-items-center justify-content-center text-white search-btn"><i class="bi bi-search"></i></button></form>',
             esc_url( home_url( '/' ) ),
             esc_attr( get_search_query() ),
             esc_html__( 'Search', 'saasto' )

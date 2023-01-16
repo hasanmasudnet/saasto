@@ -33,7 +33,7 @@ if ( is_single() ): ?>
             <h3 class="postbox__title">
                 <?php the_title();?>
             </h3>
-            <div class="postbox__text">
+            <div class="blog__details_content">
                <?php the_content();?>
                 <?php
                     wp_link_pages( [
@@ -73,7 +73,7 @@ if ( is_single() ): ?>
             <h3 class="postbox__title">
                 <a href="<?php the_permalink();?>"><?php the_title();?></a>
             </h3>
-            <div class="postbox__text">
+            <div class="blog__details_content">
                 <?php the_excerpt();?>
             </div>
 

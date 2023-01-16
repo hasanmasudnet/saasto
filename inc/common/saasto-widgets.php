@@ -17,11 +17,12 @@ function saasto_widgets_init() {
     register_sidebar( [
         'name'          => esc_html__( 'Blog Sidebar', 'saasto' ),
         'id'            => 'blog-sidebar',
-        'before_widget' => '<div id="%1$s" class="sidebar__widget mb-60 %2$s">',
+        'before_widget' => '<div id="%1$s" class="sidebar-widget saasto-widget mb-60 %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<div class="sidebar__widget-head mb-35"><h3 class="sidebar__widget-title">',
+        'before_title'  => '<div class="sidebar-title"><h3 class="sidebar__widget-title">',
         'after_title'   => '</h3></div>',
     ] );
+
 
 
     $footer_widgets = get_theme_mod( 'footer_widget_number', 4 );
@@ -32,7 +33,7 @@ function saasto_widgets_init() {
             'name'          => sprintf( esc_html__( 'Footer %1$s', 'saasto' ), $num ),
             'id'            => 'footer-' . $num,
             'description'   => sprintf( esc_html__( 'Footer %1$s', 'saasto' ), $num ),
-            'before_widget' => '<div id="%1$s" class="footer-widget footer-col-'.$num.' %2$s">',
+            'before_widget' => '<div id="%1$s" class="footer-widget saasto-widget footer-col-'.$num.' %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="footer-widget-title">',
             'after_title'   => '</h3>',
@@ -47,9 +48,9 @@ function saasto_widgets_init() {
                 'name'          => sprintf( esc_html__( 'Footer Style 2 : %1$s', 'saasto' ), $num ),
                 'id'            => 'footer-2-' . $num,
                 'description'   => sprintf( esc_html__( 'Footer Style 2 : %1$s', 'saasto' ), $num ),
-                'before_widget' => '<div id="%1$s" class="footer__widget footer__widget-2 footer-col-2-'.$num.' mb-50 %2$s">',
+                'before_widget' => '<div id="%1$s" class="footer-widget saasto-widget footer-col-2-'.$num.' mb-50 %2$s">',
                 'after_widget'  => '</div>',
-                'before_title'  => '<h3 class="footer__widget-title">',
+                'before_title'  => '<h3 class="footer-widget-title">',
                 'after_title'   => '</h3>',
             ] );
         }
@@ -62,9 +63,9 @@ function saasto_widgets_init() {
                 'name'          => sprintf( esc_html__( 'Footer Style 3 : %1$s', 'saasto' ), $num ),
                 'id'            => 'footer-3-' . $num,
                 'description'   => sprintf( esc_html__( 'Footer Style 3 : %1$s', 'saasto' ), $num ),
-                'before_widget' => '<div id="%1$s" class="footer__widget footer__widget-3 footer-col-3-'.$num.' mb-50 %2$s">',
+                'before_widget' => '<div id="%1$s" class="footer-widget saasto-widget footer-col-3-'.$num.' mb-50 %2$s">',
                 'after_widget'  => '</div>',
-                'before_title'  => '<h3 class="footer__widget-title">',
+                'before_title'  => '<h3 class="footer-widget-title">',
                 'after_title'   => '</h3>',
             ] );
         }
@@ -77,9 +78,9 @@ function saasto_widgets_init() {
                 'name'          => sprintf( esc_html__( 'Footer Style 4 : %1$s', 'saasto' ), $num ),
                 'id'            => 'footer-4-' . $num,
                 'description'   => sprintf( esc_html__( 'Footer Style 4 : %1$s', 'saasto' ), $num ),
-                'before_widget' => '<div id="%1$s" class="footer__widget footer-col-'.$num.' mb-50 %2$s">',
+                'before_widget' => '<div id="%1$s" class="footer-widget footer-col-'.$num.' mb-50 %2$s">',
                 'after_widget'  => '</div>',
-                'before_title'  => '<h3 class="footer__widget-title">',
+                'before_title'  => '<h3 class="footer-widget-title">',
                 'after_title'   => '</h3>',
             ] );
         }

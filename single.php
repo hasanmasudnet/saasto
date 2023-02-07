@@ -13,7 +13,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 
 ?>
 
-<section class="tp-blog-area pt-120 pb-80">
+<section class="saasto-blog-area pt-120 pb-80">
     <div class="container container-box">
         <div class="row">
 			<div class="col-lg-<?php print esc_attr( $blog_column );?>">
@@ -24,12 +24,12 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 
 						get_template_part( 'template-parts/content', get_post_format() );
 
-    					?>
+							?>
 
-						<?php
+							<?php
     						if ( get_previous_post_link() AND get_next_post_link() ): ?>
 
-							<div class="blog-details-border d-none">
+							<div class="single__post_navigation d-none">
 								<div class="row align-items-center">
 									<?php
     									if ( get_previous_post_link() ): ?>
@@ -52,8 +52,8 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 		                            </div>
 								<?php
 									endif;?>
-
 							</div>
+
 						</div>
 
 						<?php

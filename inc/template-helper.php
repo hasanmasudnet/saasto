@@ -763,3 +763,16 @@ function remove_width_attribute( $html ) {
    $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
    return $html;
 }
+
+
+/**
+ * 
+ * Remove [...] $more content from wp post excerpt
+ * 
+ * @link:https://developer.wordpress.org/reference/hooks/excerpt_more/
+ */
+
+ function saasto_excerpt_more( $more ) {
+    return '.';
+}
+add_filter('excerpt_more', 'saasto_excerpt_more');

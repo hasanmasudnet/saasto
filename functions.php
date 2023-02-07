@@ -225,7 +225,7 @@ if ( !function_exists( 'saasto_comment' ) ) {
         $replayClass = 'comment-depth-' . esc_attr( $depth );
         ?>
             <li id="comment-<?php comment_ID();?>">
-                <div class="comments-box grey-bg-2">
+                <div class="comments-box">
                     <div class="comments-avatar">
                         <?php print get_avatar( $comment, 102, null, null, [ 'class' => [] ] );?>
                     </div>

@@ -110,6 +110,7 @@ if ( post_password_required() ) {
             '.esc_html__('Logged in as','saasto').' <a href="'.esc_url(get_edit_user_link()).'">'.esc_html($user_identity).'</a>. <a href="'.esc_url(wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) )).'" title="'.esc_attr__('Log out of this account','saasto').'">'.esc_html__('Log out?','saasto').'</a>
             </p>',
         'id_form'            => 'commentform',
+        'class_form'            => 'blog-comment',
         'id_submit'          => 'submit',
         'class_submit'       => 'tp-btn',
         'title_reply'        => esc_html__( 'Leave a Reply', 'saasto' ),

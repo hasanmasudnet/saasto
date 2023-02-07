@@ -19,20 +19,20 @@ $saasto_blog_cat = get_theme_mod( 'saasto_blog_cat', false );
 
 <div class="blog-meta d-inline-block">
     <?php if ( !empty($saasto_blog_author) ): ?>
-    <span><a href="<?php print esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );?>"><i class="fal fa-user"></i> <?php print get_the_author();?></a> /</span>
+    <span><a href="<?php print esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );?>"><i class="bi bi-person-circle"></i></i> <?php print get_the_author();?></a> /</span>
     <?php endif;?>
 
     <?php if ( !empty($saasto_blog_cat) ): ?>
     <?php if ( !empty( $categories[0]->name ) ): ?>  
-    <span><i class="icon_tag_alt"></i> <a href="<?php print esc_url(get_category_link($categories[0]->term_id)); ?>"><?php echo esc_html($categories[0]->name); ?></a> /</span>
+    <span><a href="<?php print esc_url(get_category_link($categories[0]->term_id)); ?>"><i class="bi bi-tags"></i> <?php echo esc_html($categories[0]->name); ?></a> /</span>
     <?php endif;?>
     <?php endif;?>
 
     <?php if ( !empty($saasto_blog_date) ): ?>
-    <span><i class="fal fa-calendar-check"></i> <?php the_time( get_option('date_format') ); ?> /</span>
+    <span><a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j'));  ?>"><i class="bi bi-calendar4-event"></i> <?php the_time( get_option('date_format') ); ?></a> /</span>
     <?php endif;?>
 
     <?php if ( !empty($saasto_blog_comments) ): ?>
-    <span><a href="<?php comments_link();?>"><i class="fal fa-comments-alt"></i> <?php comments_number();?></a></span>
+    <span><a href="<?php comments_link();?>"><i class="bi bi-chat-right-dots"></i></i> <?php comments_number();?></a></span>
     <?php endif;?>
 </div>

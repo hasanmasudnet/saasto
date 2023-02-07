@@ -17,7 +17,7 @@ get_header();
 $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 ?>
 
-<section class="tp-blog-area pt-120 pb-120">
+<section class="saasto-blog-area pt-120 pb-120">
     <div class="container container-box">
         <div class="row">
 			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items blog-padding">
@@ -45,8 +45,8 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 						<?php
 							endwhile;
 						?>
-		               		<div class="basic-pagination mb-40 pagination justify-content-left">
-			               		<?php saasto_pagination( '<i class="fal fa-arrow-left"></i>', '<i class="fal fa-arrow-right"></i>', '', ['class' => ''] );?>
+		               		<div class="pagination-wrap">
+			               		<?php saasto_pagination( '<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>', '', ['class' => ''] );?>
 			                </div>
 						<?php
 						else:

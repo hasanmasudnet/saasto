@@ -26,7 +26,7 @@ if ( ( $paged + 2 ) <= $max ) {
     $links[] = $paged + 1;
 }
 
-echo '<div class="basic-pagination mb-40 pagination justify-content-left mt-30"><ul>' . "\n";
+echo '<div class="pagination-wrap mt-30"><ul>' . "\n";
 
 // previous Post Link
 if ( get_previous_posts_link() ){

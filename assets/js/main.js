@@ -287,6 +287,45 @@
   testimonial_Slider_Three.controller.control = testimonial_Thumbs_Three;
   testimonial_Thumbs_Three.controller.control = testimonial_Slider_Three;
 
+  /* magnific popup init for youtube vidoes */ 
+  
+  
 
+  
+    $('.post-popup-video').magnificPopup({
+      type:'iframe'
+    });
+  
 
+    var postboxSlider = new Swiper('.post-gallery-slider', {
+      slidesPerView: 1,
+          spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: ".postbox-slider-button-next",
+        prevEl: ".postbox-slider-button-prev",
+      },
+      breakpoints: {  
+        '1200': {
+          slidesPerView: 1,
+        },
+        '992': {
+          slidesPerView: 1,
+        },
+        '768': {
+          slidesPerView: 1,
+        },
+        '576': {
+          slidesPerView: 1,
+        },
+        '0': {
+          slidesPerView: 1,
+        },
+      },
+    });
+  
 }(jQuery));

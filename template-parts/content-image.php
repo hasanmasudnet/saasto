@@ -18,7 +18,7 @@ if ( is_single() ) : ?>
         <div class="postbox__content">
             <!-- blog meta -->
             <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
-            <h3 class="postbox__title">
+            <h3 class="blog-title">
                 <?php the_title();?>
             </h3>
             <div class="blog__details_content">
@@ -49,7 +49,7 @@ if ( is_single() ) : ?>
             <!-- blog meta -->
             <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
 
-            <h3 class="postbox__title">
+            <h3 class="blog-title">
                 <a href="<?php the_permalink();?>"><?php the_title();?></a>
             </h3>
             <div class="blog__details_content">

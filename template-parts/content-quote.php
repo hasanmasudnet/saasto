@@ -10,13 +10,13 @@
 
 if ( is_single() ) : ?>
     <!-- Single Post Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post blog-list-box' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
         <!-- Single post details meta -->
         <div class="blog-list-box">
             <?php if ( has_post_thumbnail() ): ?>
                 <div class="blog-list-img overflow-hidden">
-                    <?php the_post_thumbnail( 'full', ['class' => 'w-100'] );?>
+                    <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
                 </div>
             <?php endif;?>
 
@@ -26,7 +26,7 @@ if ( is_single() ) : ?>
         </div>
 
         <!-- Blog Details Info -->
-        <div class="blog__details_content">
+        <div class="blog__details_content clearfix">
             <?php the_content();?>
             <?php
                 wp_link_pages( [
@@ -46,7 +46,7 @@ if ( is_single() ) : ?>
             </div>
             <!-- Info Tag End -->
         <?php endif; ?>
-        
+
     </article>
     <!-- Single Post End -->
 

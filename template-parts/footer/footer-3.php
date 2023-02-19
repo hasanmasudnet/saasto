@@ -16,6 +16,7 @@ $saasto_footer_bg_url_from_page = function_exists( 'get_field' ) ? get_field( 's
 $saasto_footer_bg_color_from_page = function_exists( 'get_field' ) ? get_field( 'saasto_footer_bg_color' ) : '';
 $footer_bg_color = get_theme_mod( 'saasto_footer_bg_color' );
 $footer_copyright_switch = get_theme_mod( 'footer_copyright_switch', false );
+$footer_top_switch_3 = get_theme_mod( 'footer_top_switch_3', false );
 
 // bg image
 $bg_img = !empty( $saasto_footer_bg_url_from_page['url'] ) ? $saasto_footer_bg_url_from_page['url'] : $footer_bg_img;
@@ -122,82 +123,86 @@ default:
 
 
 <footer>
-        <!-- ===============  footer area start =============== -->
-        <div class="footer-style-three section-gap-top-y-1 position-relative">
-            <div class="container">
-                <div class="footer-top gap-4 d-flex justify-content-between align-items-center flex-wrap">
-                    <div class="footer-logo">
-                        <a href="<?php echo esc_attr( home_url() ) ?>">
-                            <?php echo wp_get_attachment_image( $saasto_footer_logo, 'full', '', ['class' => 'w-100']); ?>
-                        </a>
-                    </div>
+    <!-- ===============  footer area start =============== -->
+    <div class="footer-style-three section-gap-top-y-1 position-relative">
+        <div class="container">
 
-                    <?php 
-                        if( function_exists('saasto_footer_social_profiles') ){
-                            saasto_footer_social_profiles('footer-three');
-                        }
-                     ?>
+            <?php if( $footer_top_switch_3 != false ): ?>
+            <div class="footer-top gap-4 d-flex justify-content-between align-items-center flex-wrap">
+                <div class="footer-logo">
+                    <a href="<?php echo esc_attr( home_url() ) ?>">
+                        <?php echo wp_get_attachment_image( $saasto_footer_logo, 'full', '', ['class' => 'img-responsive']); ?>
+                    </a>
                 </div>
 
-                <div class="foooter-main-wrap row">
-                    <?php
-                    if ( $footer_columns < 4 ) {
-
-                    if ( is_active_sidebar('footer-3-1') ){
-                        print '<div class="col-lg-4">';
-                        dynamic_sidebar( 'footer-3-1' );
-                        print '</div>';
-                    }
-
-                    if ( is_active_sidebar('footer-3-2') OR is_active_sidebar('footer-3-3') OR is_active_sidebar('footer-3-4') ):
-
-                        print '<div class="col-lg-8">';
-                        print '<div class="row">';
-                                
-                            if ( is_active_sidebar('footer-3-2') ){
-                                print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
-                                dynamic_sidebar( 'footer-3-2' );
-                                print '</div>';
-                            }
-                            if ( is_active_sidebar('footer-3-3') ){
-                                print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
-                                dynamic_sidebar( 'footer-3-3' );
-                                print '</div>';
-                            }
-                            if ( is_active_sidebar('footer-3-4') ){
-                                print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
-                                dynamic_sidebar( 'footer-3-4' );
-                                print '</div>';
-                            }
-                            
-                        print '</div>';
-                        print '</div>';
-                    
-                    endif;
-
-                    } else {
-                        for ( $num = 1; $num <= $footer_columns; $num++ ) {
-                            if ( !is_active_sidebar( 'footer-3-' . $num ) ) {
-                                continue;
-                            }
-                            print '<div class="' . esc_attr( $footer_class[$num] ) . '">';
-                            dynamic_sidebar( 'footer-3-' . $num );
-                            print '</div>';
-                        }
+                <?php 
+                    if( function_exists('saasto_footer_social_profiles') ){
+                        saasto_footer_social_profiles('footer-three');
                     }
                     ?>
-                </div>
+            </div>
+            <?php endif; ?>
 
-                <div class="footer-bottom">
-                    <div class="row gy-3">
-                        <div class="col-md-12 pt-4 footer-right-text pb-4">
-                            <p><?php echo esc_html( saasto_copyright_text() ); ?></p>
-                        </div>
+            <div class="foooter-main-wrap row">
+            <?php
+            if ( $footer_columns < 4 ) { 
+            if ( is_active_sidebar('footer-3-1') ){
+                print '<div class="col-lg-4">';
+                dynamic_sidebar( 'footer-3-1' );
+                print '</div>';
+            }
+
+            if ( is_active_sidebar('footer-3-2') OR is_active_sidebar('footer-3-3') OR is_active_sidebar('footer-3-4') ):
+
+                print '<div class="col-lg-8">';
+                print '<div class="row">';
+                        
+                    if ( is_active_sidebar('footer-3-2') ){
+                        print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                        dynamic_sidebar( 'footer-3-2' );
+                        print '</div>';
+                    }
+                    if ( is_active_sidebar('footer-3-3') ){
+                        print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                        dynamic_sidebar( 'footer-3-3' );
+                        print '</div>';
+                    }
+                    if ( is_active_sidebar('footer-3-4') ){
+                        print '<div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-lg-center">';
+                        dynamic_sidebar( 'footer-3-4' );
+                        print '</div>';
+                    }
+                    
+                print '</div>';
+                print '</div>';
+            endif;
+            
+            
+            } else {
+                for ( $num = 1; $num <= $footer_columns; $num++ ) {
+                    if ( !is_active_sidebar( 'footer-3-' . $num ) ) {
+                        continue;
+                    }
+                    print '<div class="' . esc_attr( $footer_class[$num] ) . '">';
+                    dynamic_sidebar( 'footer-3-' . $num );
+                    print '</div>';
+                }
+            }
+            print '</div>';
+            ?>
+            
+
+            <div class="footer-bottom">
+                <div class="row gy-3">
+                    <div class="col-md-12 pt-4 footer-right-text pb-4">
+                        <p><?php echo esc_html( saasto_copyright_text() ); ?></p>
                     </div>
                 </div>
-
             </div>
+
         </div>
-        <!-- ===============  footer area end =============== -->
+    </div>
+    <!-- ===============  footer area end =============== -->
+
     </div> <!-- Bg wrapper -->
 </footer>

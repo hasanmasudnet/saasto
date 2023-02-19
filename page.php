@@ -12,14 +12,18 @@
  * @package saasto
  */
 
+
 get_header();
+
+// Sidebar column
+$blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 ?>
 
-<div class="tp-page-area pt-120 pb-120">
-    <div class="container">
-		<div class="row">
-			<div class="col-xl-12">
-				<div class="tp-page-content">
+<section class="saasto-page-area pt-120 pb-120">
+    <div class="container container-box">
+        <div class="row">
+			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items blog-padding">
+				<div class="saasto-page-content">
 					<?php
 						if ( have_posts() ):
 							while ( have_posts() ): the_post();
@@ -31,6 +35,15 @@ get_header();
 					?>
 				</div>
 			</div>
+
+			<?php if ( is_active_sidebar( 'blog-sidebar' ) ): ?>
+				<!-- Sidebar -->
+		        <div class="col-lg-4">
+		        	<div class="sidebar-wrap">
+						<?php get_sidebar();?>
+	            	</div>
+	            </div>
+			<?php endif;?>
 		</div>
     </div>
 </div>

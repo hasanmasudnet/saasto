@@ -12,7 +12,7 @@ function saasto_scripts() {
      * all css files
     */
 
-    wp_enqueue_style( 'saasto-fonts', saasto_fonts_url(), array(), '1.0.0' );
+    // wp_enqueue_style( 'saasto-fonts', saasto_fonts_url(), array(), '1.0.0' );
     wp_enqueue_style( 'bootstrap-icons', SAASTO_THEME_CSS_DIR . 'bootstrap-icons.css', [] );
     wp_enqueue_style( 'animate', SAASTO_THEME_CSS_DIR . 'animate.css', [] );
     wp_enqueue_style( 'swiper-bundle', SAASTO_THEME_CSS_DIR . 'swiper-bundle.css', [] );
@@ -25,7 +25,7 @@ function saasto_scripts() {
     wp_enqueue_style( 'magnific-popup', SAASTO_THEME_CSS_DIR . 'magnific-popup.css', [], time() );
     wp_enqueue_style( 'saasto-core', SAASTO_THEME_CSS_DIR . 'saasto-core.css', [], time() );
     wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [] );
-    wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [] );
+    wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [], time() );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     wp_enqueue_style( 'saasto-style', get_stylesheet_uri() );
 
@@ -54,7 +54,7 @@ function saasto_fonts_url() {
     by chosen font(s), translate this to 'off'. Do not translate into your own language.
      */
     if ( 'off' !== _x( 'on', 'Google font: on or off', 'saasto' ) ) {
-        $font_url = 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap';
+        // $font_url = 'https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap';
     }
     return $font_url;
 }

@@ -11,7 +11,7 @@ $saasto_audio_url = function_exists( 'get_field' ) ? get_field( 'post_format_aud
 
 if ( is_single() ): ?>
     <!-- Single Post Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post blog-list-box' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
         <!-- Single post details meta -->
         <div class="blog-list-box">
             
@@ -28,7 +28,7 @@ if ( is_single() ): ?>
         </div>
 
         <!-- Blog Details Info -->
-        <div class="blog__details_content">
+        <div class="blog__details_content clearfix">
             <?php the_content();?>
             <?php
                 wp_link_pages( [
@@ -66,7 +66,7 @@ if ( is_single() ): ?>
                 <h3 class="blog-title">
                     <a href="<?php the_permalink();?>"><?php the_title();?></a>
                 </h3>
-                <div class="blog__details_content">
+                <div class="blog__details_content clearfix">
                     <?php the_excerpt();?>
                 </div>
                 

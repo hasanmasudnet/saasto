@@ -39,7 +39,7 @@ add_filter( 'body_class', 'saasto_body_classes' );
 function saasto_get_tag() {
     $html = '';
     if ( has_tag() ) {
-        $html .= '<div class="tag-list">';
+        $html .= '<div class="tag-list"><span>' . esc_html__( 'Post Tags : ', 'saasto' ) . '</span>';
         $html .= get_the_tag_list( '<ul><li>', '</li><li>', '</li></ul>' );
         $html .= '</div>';
     }
@@ -118,3 +118,24 @@ function saasto_faq_sidebar_func() {
     }
 }
 add_action( 'saasto_faq_sidebar', 'saasto_faq_sidebar_func', 20 );
+
+
+/**
+ * Add span in wp list category items
+ */
+add_filter('wp_list_categories', 'add_span_in_archive_cat_list_widget');
+function add_span_in_archive_cat_list_widget($links) {
+  $links = str_replace('</a> (', '</a> <span class="count">(', $links);
+  $links = str_replace(')', ')</span>', $links);
+  return $links;
+}
+
+/**
+ * Add span in wp archive list items
+ */
+add_filter('get_archives_link', 'add_span_in_archive_link_widget');
+function add_span_in_archive_link_widget($links) {
+    $links = str_replace('</a>&nbsp;(', '</a> <span class="count">(', $links);
+    $links = str_replace(')', ')</span>', $links);
+    return $links;
+}

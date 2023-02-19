@@ -11,7 +11,7 @@ $gallery_images = function_exists('get_field') ? get_field('post_format_gallery'
 
 if ( is_single() ): ?>
     <!-- Single Post Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post blog-list-box' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
         <?php if ( !empty( $gallery_images ) ): ?>
             <div class="postbox__thumb post-gallery-slider swiper-container w-img p-relative">
@@ -46,7 +46,7 @@ if ( is_single() ): ?>
         </div>
 
         <!-- Blog Details Info -->
-        <div class="blog__details_content">
+        <div class="blog__details_content clearfix">
             <?php the_content();?>
             <?php
                 wp_link_pages( [

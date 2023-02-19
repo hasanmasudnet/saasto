@@ -152,15 +152,15 @@ function saasto_mobile_logo() {
  * @return [type] [description]
  */
 function saasto_header_social_profiles() {
-    $saasto_topbar_fb_url = get_theme_mod( 'saasto_topbar_fb_url', __( '#', 'saasto' ) );
+    $saasto_social_fb_url = get_theme_mod( 'saasto_social_fb_url', __( '#', 'saasto' ) );
     $saasto_topbar_twitter_url = get_theme_mod( 'saasto_topbar_twitter_url', __( '#', 'saasto' ) );
     $saasto_topbar_instagram_url = get_theme_mod( 'saasto_topbar_instagram_url', __( '#', 'saasto' ) );
     $saasto_topbar_linkedin_url = get_theme_mod( 'saasto_topbar_linkedin_url', __( '#', 'saasto' ) );
     $saasto_topbar_youtube_url = get_theme_mod( 'saasto_topbar_youtube_url', __( '#', 'saasto' ) );
     ?>
         <ul>
-        <?php if ( !empty( $saasto_topbar_fb_url ) ): ?>
-          <li><a href="<?php print esc_url( $saasto_topbar_fb_url );?>"><span><i class="fab fa-facebook-f"></i></span></a></li>
+        <?php if ( !empty( $saasto_social_fb_url ) ): ?>
+          <li><a href="<?php print esc_url( $saasto_social_fb_url );?>"><span><i class="fab fa-facebook-f"></i></span></a></li>
         <?php endif;?>
 
         <?php if ( !empty( $saasto_topbar_twitter_url ) ): ?>
@@ -199,7 +199,7 @@ function saasto_footer_social_profiles( $footer_style = '' ) {
         $social_class = 'footer-social-links d-flex';
     }
 
-    $saasto_footer_fb_url = get_theme_mod( 'saasto_footer_fb_url', __( '#', 'saasto' ) );
+    $saasto_footer_fb_url = get_theme_mod( 'saasto_social_fb_url', __( '#', 'saasto' ) );
     $saasto_footer_twitter_url = get_theme_mod( 'saasto_footer_twitter_url', __( '#', 'saasto' ) );
     $saasto_footer_instagram_url = get_theme_mod( 'saasto_footer_instagram_url', __( '#', 'saasto' ) );
     $saasto_footer_linkedin_url = get_theme_mod( 'saasto_footer_linkedin_url', __( '#', 'saasto' ) );
@@ -752,18 +752,6 @@ function saasto_kses($raw){
 
    return $allowed;
 }
-
-
-// Remove autogenareted height and width
-add_filter( 'wp_get_attachment_image', 'remove_width_attribute', 10 );
-add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
-add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
-
-function remove_width_attribute( $html ) {
-   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
-   return $html;
-}
-
 
 /**
  * 

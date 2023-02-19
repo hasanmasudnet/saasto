@@ -13,32 +13,46 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 
 ?>
 
-<div class="saasto-blog-area pt-120 pb-90">
+<section class="saasto-blog-area pt-120 pb-120">
     <div class="container container-box">
         <div class="row">
-            <div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items">
-            	<div class="postbox__wrapper pr-20">
-	                <?php
+			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items blog-padding">
+				<div class="postbox__wrapper pr-20">
+					<?php
 						if ( have_posts() ):
-					?>
-					<div class="result-bar page-header d-none">
-						<h1 class="page-title"><?php esc_html_e( 'Search Results For:', 'saasto' );?> <?php print get_search_query();?></h1>
-					</div>
+    					if ( is_home() && !is_front_page() ):
+    				?>
+					<header>
+						<h1 class="page-title screen-reader-text"><?php single_post_title();?></h1>
+					</header>
 					<?php
-						while ( have_posts() ): the_post();
-							get_template_part( 'template-parts/content', 'search' );
-						endwhile;
-					?>
-					<div class="basic-pagination basic-pagination-2 mb-40">
-						<?php saasto_pagination( '<i class="fas fa-angle-double-left"></i>', '<i class="fas fa-angle-double-right"></i>', '', [ 'class' => '' ] );?>
-					</div>
+						endif;?>
 					<?php
+						/* Start the Loop */
+						while ( have_posts() ): the_post(); ?>
+						<?php
+							/*
+							* Include the Post-Type-specific template for the content.
+							* If you want to override this in a child theme, then include a file
+							* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+							*/
+							get_template_part( 'template-parts/content', get_post_format() );?>
+							
+						<?php
+							endwhile;
+						?>
+		               		<div class="pagination-wrap">
+			               		<?php saasto_pagination( '<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>', '', ['class' => ''] );?>
+			                </div>
+						<?php
 						else:
 							get_template_part( 'template-parts/content', 'none' );
 						endif;
 					?>
-            	</div>
-            </div>
+
+				</div>
+			</div>
+
 			<?php if ( is_active_sidebar( 'blog-sidebar' ) ): ?>
 		        <div class="col-lg-4">
 		        	<div class="sidebar-wrap">
@@ -48,7 +62,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 			<?php endif;?>
         </div>
     </div>
-</div>
+</section>
 
 <?php
 get_footer();

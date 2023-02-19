@@ -10,19 +10,19 @@
 
 if ( is_single() ) : ?>
     <!-- Single Post Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post post_format-standard' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
         <!-- Single post details meta -->
         <?php if ( has_post_thumbnail() ): ?>
             <div class="blog-list-img overflow-hidden">
-                <?php the_post_thumbnail( 'full', ['class' => 'w-100'] );?>
+                <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
             </div>
         <?php endif;?>
 
         <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
 
         <!-- Blog Details Info -->
-        <div class="blog__details_content">
+        <div class="blog__details_content clearfix">
             <?php the_content();?>
             <?php
                 wp_link_pages( [

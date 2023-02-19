@@ -13,7 +13,7 @@ $post_excerpt = get_the_excerpt();
 ?>
 
 <?php if(  $post_excerpt ): ?>
-    <div class="blog__details_content">
+    <div class="blog__details_content clearfix">
         <p>
             <?php echo esc_html($post_excerpt); ?>
         </p>

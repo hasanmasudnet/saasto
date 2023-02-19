@@ -311,7 +311,7 @@ function _header_social_fields( $fields ) {
     // header section social
     $fields[] = [
         'type'     => 'text',
-        'settings' => 'saasto_topbar_fb_url',
+        'settings' => 'saasto_social_fb_url',
         'label'    => esc_html__( 'Facebook Url', 'saasto' ),
         'section'  => 'header_social',
         'default'  => esc_html__( '#', 'saasto' ),
@@ -776,6 +776,46 @@ function _header_footer_fields( $fields ) {
         'choices'  => [
             'on'  => esc_html__( 'Enable', 'saasto' ),
             'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+
+    $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'footer_top_switch_3',
+        'label'    => esc_html__( 'Footer Top', 'saasto' ),
+        'section'  => 'footer_setting',
+        'default'  => '0',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-3',
+            ],
+        ],
+    ];
+
+    $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'footer_top_switch_1',
+        'label'    => esc_html__( 'Footer Top', 'saasto' ),
+        'section'  => 'footer_setting',
+        'default'  => '0',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-1',
+            ],
         ],
     ];
 

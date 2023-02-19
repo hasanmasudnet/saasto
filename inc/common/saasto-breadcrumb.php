@@ -135,7 +135,3 @@ function saasto_search_form() {
 }
 
 add_action( 'saasto_before_main_content', 'saasto_search_form' );
-
-
-?>
-

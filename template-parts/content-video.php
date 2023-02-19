@@ -13,27 +13,26 @@ $saasto_video_url = function_exists( 'get_field' ) ? get_field( 'post_format_vid
 
 if ( is_single() ) : ?>
     <!-- Single Post Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post blog-list-box' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
         <!-- Single post details meta -->
-        <div class="blog-list-box">
-            <?php if ( has_post_thumbnail() ): ?>
-                <div class="blog-list-img overflow-hidden position-relative">
-                    <?php the_post_thumbnail( 'full', ['class' => 'w-100'] );?>
+        <?php if ( has_post_thumbnail() ): ?>
+            <div class="blog-list-img overflow-hidden position-relative">
+                <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
 
-                    <?php if(!empty($saasto_video_url)) : ?>
-                    <a href="<?php print esc_url( $saasto_video_url );?>" class="play-btn post-popup-video"><i class='bi bi-play'></i></a>
-                <?php endif; ?>
-                </div>
-            <?php endif;?>
-
-            <div class="blog-inner-details">
-                <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+                <?php if(!empty($saasto_video_url)) : ?>
+                <a href="<?php print esc_url( $saasto_video_url );?>" class="play-btn post-popup-video"><i class='bi bi-play'></i></a>
+            <?php endif; ?>
             </div>
+        <?php endif;?>
+
+        <div class="blog-inner-details">
+            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
         </div>
 
+
         <!-- Blog Details Info -->
-        <div class="blog__details_content">
+        <div class="blog__details_content clearfix">
             <?php the_content();?>
             <?php
                 wp_link_pages( [
@@ -79,7 +78,7 @@ if ( is_single() ) : ?>
         <h3 class="blog-title">
             <a href="<?php the_permalink();?>"><?php the_title();?></a>
         </h3>
-        <div class="blog__details_content">
+        <div class="blog__details_content clearfix">
             <?php the_excerpt();?>
         </div>
         

@@ -221,6 +221,7 @@
   }
 }
 
+
 /* Tablet Layout*/
 /* Wide Mobile Layout*/
 @media only screen and (max-width: 991px) {
@@ -335,6 +336,14 @@
   }
   .sidebar-wrap {
     margin-top: 60px;
+    padding-left: 20px;
+  }
+}
+
+/* Large Mobile Layout*/
+@media only screen and (max-width: 768px) {
+  .sidebar-wrap {
+    padding-left: 0;
   }
 }
 

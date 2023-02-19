@@ -21,7 +21,7 @@ if ( is_single() ) : ?>
             <h3 class="blog-title">
                 <?php the_title();?>
             </h3>
-            <div class="blog__details_content">
+            <div class="blog__details_content clearfix">
                <?php the_content();?>
                 <?php
                     wp_link_pages( [
@@ -52,7 +52,7 @@ if ( is_single() ) : ?>
             <h3 class="blog-title">
                 <a href="<?php the_permalink();?>"><?php the_title();?></a>
             </h3>
-            <div class="blog__details_content">
+            <div class="blog__details_content clearfix">
                 <?php the_excerpt();?>
             </div>
 

@@ -187,10 +187,15 @@ div.latest-comments > ul{
 }
 
 /*tp unit css */
-.saasto-blog-area > ul, .saasto-blog-area > ol, .saasto-blog-area ul, .saasto-blog-area ol {
+.saasto-blog-area > ul,
+.saasto-blog-area > ol,
+.saasto-blog-area ul,
+.saasto-blog-area ol {
 	padding-left: 20px;
 }
-.saasto-blog-area dl, .saasto-blog-area ol, .saasto-blog-area ul {
+.saasto-blog-area dl,
+.saasto-blog-area ol,
+.saasto-blog-area ul {
 	margin-top: 0;
 	margin-bottom: 25px;
 }

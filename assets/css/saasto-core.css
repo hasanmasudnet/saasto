@@ -2314,83 +2314,6 @@ header .header-style-two {
   background: rgba(137, 118, 253, 0.3);
 }
 
-.blog-list-box {
-  border-bottom: 1px solid rgba(94, 88, 122, 0.14);
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-}
-
-.blog-list-box .blog-list-img {
-  margin-bottom: 30px;
-}
-
-.blog-list-box .blog-list-img img{
-  border-radius: 20px;
-}
-
-.blog-list-box .blog-meta,
-.single-post .blog-meta {
-  font-family: var(--ff-nunito);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 150%;
-  color: var(--text-mid-gray);
-  margin: 0 0 10px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.blog-list-box h1 {
-  font-family: var(--ff-poppins);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 140%;
-  text-transform: capitalize;
-}
-
-.blog-list-box h3 a {
-  color: var(--text-bright-gray);
-}
-
-.blog-list-box p {
-  font-family: var(--ff-nunito);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
-  color: var(--text-mid-gray);
-  margin: 20px 0 35px;
-}
-
-.blog-list-box .blog-list-btn a {
-  font-family: var(--ff-poppins);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--primary-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.blog-list-box .blog-list-btn a i {
-  font-size: 15px;
-  line-height: 1;
-  margin-left: 5px;
-  margin-top: 3px;
-}
-
-.blog-list-box:last-child {
-  margin-bottom: 0px;
-}
-
-
 .single-post .blog-list-img {
   margin-bottom: 20px;
   border-radius: 12px;
@@ -4424,3 +4347,191 @@ Blog wrapper end
 ==============================*/
 
 
+/* =============================
+Blog Loop Start
+==============================*/
+
+.blog__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.blog__meta li {
+  margin-top: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5E587A;
+  font-weight: 600;
+  font-family: var(--ff-nunito);
+  font-size: 16px;
+}
+
+.blog__meta li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.blog__meta li svg, .blog__meta li i {
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 992px) {
+  .blog__meta li {
+    font-size: 14px;
+  }
+  .blog__meta li:not(:last-child) {
+    margin-right: 14px;
+  }
+  .blog__meta li svg, .blog__meta li i {
+    margin-right: 5px;
+  }
+}
+
+.blog_standard__card {
+  margin-top: 44px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(94, 88, 122, 0.14);
+}
+
+.blog_standard__card:last-child {
+  border-bottom: none;
+}
+
+.blog_standard__card .blog_standard__thumb {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog_standard__card .blog_standard__thumb img {
+  width: 100%;
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb .swiper-pagination .swiper-pagination-bullet {
+  background: #8976FD;
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb:hover .blog-arrow {
+  opacity: 1;
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb:hover .blog-arrow.blog-button-prev {
+  -webkit-transform: translate(25px, -50%);
+          transform: translate(25px, -50%);
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb:hover .blog-arrow.blog-button-next {
+  -webkit-transform: translate(-25px, -50%);
+          transform: translate(-25px, -50%);
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb .blog-arrow {
+  height: 44px;
+  width: 44px;
+  background: rgba(192, 110, 243, 0.4);
+  border-radius: 12px;
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  font-size: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb .blog-arrow:hover {
+  background: #8976FD;
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb .blog-arrow.blog-button-prev {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.blog_standard__card .blog_standard__thumb.slider__thumb .blog-arrow.blog-button-next {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.blog_standard__card .blog_standard__disc {
+  padding-top: 20px;
+}
+
+.blog_standard__card .blog_standard__disc .bs__title {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #332C5C;
+  font-family: var(--ff-poppins);
+}
+
+@media screen and (max-width: 992px) {
+  .blog_standard__card .blog_standard__disc .bs__title {
+    font-size: 24px;
+  }
+}
+
+.blog_standard__card .blog_standard__disc .bs__title a {
+  color: inherit;
+}
+
+.blog_standard__card .blog_standard__disc p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #5E587A;
+  font-family: var(--ff-nunito);
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 992px) {
+  .blog_standard__card .blog_standard__disc p {
+    font-size: 16px;
+  }
+}
+
+.blog_standard__card .blog_standard__disc .blog__btn {
+  margin-top: 32px;
+}
+
+.blog_standard__card .blog_standard__disc .blog__btn a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8976FD;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog_standard__card .blog_standard__disc .blog__btn a i, .blog_standard__card .blog_standard__disc .blog__btn a svg {
+  margin-left: 6px;
+}

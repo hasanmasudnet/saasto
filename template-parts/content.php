@@ -47,32 +47,28 @@ if ( is_single() ) : ?>
     <!-- Single Post End -->
 
 <?php else: ?>
+
 <!-- Post Loop Start -->
-<article id="post-<?php the_ID();?>" <?php post_class( 'blog-list-box post_format-standard' );?>>
-    <?php if ( has_post_thumbnail() ): ?>   
-        <!-- post loop thumbnail  -->
-        <div class="blog-list-img overflow-hidden">
-            <a href="<?php the_permalink();?>">
-                <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
-            </a>
-        </div>
-        <!-- End post loop thumbnail  -->
-    <?php endif; ?>
+    <div class="blog_standard__card">
 
-    <div class="blog-inner-details">
-        <!-- blog meta -->
-        <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
-
-        <h3 class="blog-title">
-            <a href="<?php the_permalink();?>"><?php the_title();?></a>
-        </h3>
+        <?php if ( has_post_thumbnail() ): ?>   
+            <!-- post loop thumbnail  -->
+            <div class="blog_standard__thumb">
+                <a href="<?php the_permalink();?>">
+                    <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
+                </a>
+            </div>
+            <!-- End post loop thumbnail  -->
+        <?php endif; ?>
         
-        <?php get_template_part( 'template-parts/blog/blog-excerpt' ); ?>
+        <div class="blog_standard__disc">
+            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+            <h3 class="bs__title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+            <?php get_template_part( 'template-parts/blog/blog-excerpt' ); ?>
 
-        <!-- blog btn -->
-        <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
+            <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
+        </div>
     </div>
-</article>
 <!-- Post Loop End -->
 
 <?php endif;?>

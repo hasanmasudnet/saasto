@@ -96,7 +96,7 @@ add_action( 'saasto_language', 'saasto_language_list' );
 function saasto_header_logo() { ?>
       <?php
         $saasto_logo_on = function_exists( 'get_field' ) ? get_field( 'is_enable_sec_logo' ) : NULL;
-        $saasto_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
+        $saasto_logo = get_template_directory_uri() . '/assets/img/logo.png';
         $saasto_logo_black = get_template_directory_uri() . '/assets/img/logo/logo-white.png';
 
         $saasto_site_logo = get_theme_mod( 'logo', $saasto_logo );
@@ -131,7 +131,7 @@ function saasto_mobile_logo() {
     // side info
     $saasto_mobile_logo_hide = get_theme_mod( 'saasto_mobile_logo_hide', false );
 
-    $saasto_site_logo = get_theme_mod( 'logo', get_template_directory_uri() . '/assets/img/logo/logo.png' );
+    $saasto_site_logo = get_theme_mod( 'logo', get_template_directory_uri() . '/assets/img/logo.png' );
 
     ?>
 

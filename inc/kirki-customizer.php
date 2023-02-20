@@ -385,7 +385,7 @@ function _header_header_fields( $fields ) {
         'label'       => esc_html__( 'Header Logo', 'saasto' ),
         'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
         'section'     => 'section_header_logo',
-        'default'     => get_template_directory_uri() . '/assets/img/logo/logo.png',
+        'default'     => get_template_directory_uri() . '/assets/img/logo.png',
     ];
 
     $fields[] = [
@@ -433,7 +433,7 @@ function _header_side_fields( $fields ) {
         'label'       => esc_html__( 'Logo Side', 'saasto' ),
         'description' => esc_html__( 'Logo Side', 'saasto' ),
         'section'     => 'header_side_setting',
-        'default'     => get_template_directory_uri() . '/assets/img/logo/logo.png',
+        'default'     => get_template_directory_uri() . '/assets/img/logo.png',
     ];
     $fields[] = [
         'type'     => 'textarea',

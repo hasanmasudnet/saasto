@@ -55,6 +55,7 @@ Last update : 04/19/2022
   --text-mid-gray: #5E587A;
   --text-soft-black: #1C0E0D;
   --text-bright-green: #5BC17F;
+  --border-color: #f0f0f5;
   /*font Variable*/
   --ff-poppins: 'Poppins', sans-serif;
   --ff-nunito: 'Nunito Sans', sans-serif;
@@ -134,7 +135,7 @@ textarea {
 select {
   padding: 8px 10px;
   background: #ffffff;
-  border: 1px solid #f0f0f5;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   display: block;
   width: 100%;
@@ -2600,26 +2601,6 @@ header .header-style-two {
   margin-bottom: 0px;
 }
 
-.sidebar-wrap .widget li,
-.wp-block-archives-list li,
-.wp-block-categories-list li,
-.wp-block-page-list li,
-.widget_archive ul li,
-.widget_categories ul li,
-.widget_pages ul li {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.sidebar-wrap .widget li:last-child,
-.wp-block-archives-list li:last-child,
-.wp-block-categories-list li:last-child,
-.widget_archive ul li:last-child,
-.widget_categories ul li:last-child,
-.widget_pages ul li:last-child {
-  margin-bottom: 0;
-}
-
 .sidebar-wrap .widget > ul,
 .foooter-main-wrap .widget > ul,
 .wp-block-archives-list,
@@ -2648,13 +2629,36 @@ header .header-style-two {
   right: 0;
 }
 
+.sidebar-wrap .widget li,
+.wp-block-archives-list li,
+.wp-block-categories-list li,
+.wp-block-page-list li,
+.widget_archive ul li,
+.widget_categories ul li,
+.widget_pages ul li, 
+.widget_nav_menu ul li {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.sidebar-wrap .widget li:last-child,
+.wp-block-archives-list li:last-child,
+.wp-block-categories-list li:last-child,
+.widget_archive ul li:last-child,
+.widget_categories ul li:last-child,
+.widget_pages ul li:last-child,
+.widget_nav_menu ul li:last-child {
+  margin-bottom: 0;
+}
+
 .sidebar-wrap .widget ul li a,
 .wp-block-archives-list li a,
 .wp-block-categories-list li a,
 .wp-block-page-list li a,
 .widget_archive ul li a,
 .widget_categories ul li a,
-.widget_pages ul li a {
+.widget_pages ul li a,
+.widget_nav_menu ul li a {
   display: block;
   width: 100%;
   font-family: var(--ff-nunito);
@@ -2676,7 +2680,8 @@ header .header-style-two {
 .wp-block-page-list li a:hover,
 .widget_archive ul li a:hover,
 .widget_categories ul li a:hover,
-.widget_pages ul li a:hover {
+.widget_pages ul li a:hover,
+.widget_nav_menu ul li a:hover {
   color: var(--primary-yellow);
 }
 
@@ -2686,7 +2691,8 @@ header .header-style-two {
 .wp-block-page-list li a:before,
 .widget_archive ul li a:before,
 .widget_categories ul li a:before,
-.widget_pages ul li a:before {
+.widget_pages ul li a:before,
+.widget_nav_menu ul li a:before {
   content: '\F234';
   font-family: 'bootstrap-icons';
   margin-right: 5px;

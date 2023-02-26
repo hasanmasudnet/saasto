@@ -47,10 +47,8 @@ if ( is_single() ) : ?>
     <!-- Single Post End -->
 
 <?php else: ?>
-
-<!-- Post Loop Start -->
-    <div class="blog_standard__card">
-
+    <!-- Post Loop Start -->
+    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_standard__card' );?>>
         <?php if ( has_post_thumbnail() ): ?>   
             <!-- post loop thumbnail  -->
             <div class="blog_standard__thumb">
@@ -68,7 +66,7 @@ if ( is_single() ) : ?>
 
             <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
         </div>
-    </div>
-<!-- Post Loop End -->
+    </article>
+    <!-- Post Loop End -->
 
 <?php endif;?>

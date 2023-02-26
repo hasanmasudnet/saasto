@@ -287,6 +287,26 @@
   testimonial_Slider_Three.controller.control = testimonial_Thumbs_Three;
   testimonial_Thumbs_Three.controller.control = testimonial_Slider_Three;
 
+  /* init Video Player */
+  const player = new Plyr('#player');
+
+  /* init swipper slider */
+  var swiper = new Swiper(".blog_thumb__slider", {
+      spaceBetween: 0,
+      loop: true,
+      effect: "fade",
+      fadeEffect: {
+    crossFade: true
+    },
+    navigation: {
+      nextEl: ".blog-button-next",
+      prevEl: ".blog-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }
+  });
   
 
   

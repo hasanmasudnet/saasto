@@ -51,29 +51,32 @@ if ( is_single() ): ?>
     <!-- Single Post End -->
 
 <?php else: ?>
-    <article id="post-<?php the_ID();?>" <?php post_class( 'blog-list-box post_format-standard' );?>>
 
+    <!-- Post Loop Start -->
+    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_standard__card' );?>>
             <?php if ( !empty( $saasto_audio_url ) ): ?>
                 <div class="postbox__audio w-img p-relative">
                     <?php echo wp_oembed_get( $saasto_audio_url ); ?>
                 </div>
-            <?php endif;?>
 
-            <div class="blog-inner-details">
-                <!-- blog meta -->
-                <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
-
-                <h3 class="blog-title">
-                    <a href="<?php the_permalink();?>"><?php the_title();?></a>
-                </h3>
-                <div class="blog__details_content clearfix">
-                    <?php the_excerpt();?>
+            <?php elseif ( has_post_thumbnail() ): ?>   
+                <!-- post loop thumbnail  -->
+                <div class="blog_standard__thumb">
+                    <a href="<?php the_permalink();?>">
+                        <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
+                    </a>
                 </div>
-                
-                <!-- blog btn -->
-                <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
-            </div>
-        </article>
+                <!-- End post loop thumbnail  -->
+            <?php endif; ?>
+        
+        <div class="blog_standard__disc">
+            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+            <h3 class="bs__title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+            <?php get_template_part( 'template-parts/blog/blog-excerpt' ); ?>
 
+            <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
+        </div>
+    </article>
+    <!-- Post Loop End -->
 <?php endif;?>
 

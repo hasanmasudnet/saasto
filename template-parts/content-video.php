@@ -11,6 +11,14 @@
 //  Get Video URL if exist
 $saasto_video_url = function_exists( 'get_field' ) ? get_field( 'post_format_video_url' ) : NULL;
 
+// Get the query string from the URL
+$queryString = parse_url($saasto_video_url, PHP_URL_QUERY);
+
+// Parse the query string and get the 'v' parameter value
+parse_str($queryString, $queryParams);
+$videoId = $queryParams['v'];
+
+
 if ( is_single() ) : ?>
     <!-- Single Post Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
@@ -55,36 +63,32 @@ if ( is_single() ) : ?>
     </article>
     <!-- Single Post End -->
 
+
 <?php else: ?>
-<article id="post-<?php the_ID();?>" <?php post_class( 'blog-list-box post_format-standard' );?>>
 
-    <div class="blog-list-img overflow-hidden position-relative">
-        <?php if ( has_post_thumbnail() ): ?>    
-        <div class="postbox__thumb">
-            <a href="<?php the_permalink();?>">
-                <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
-            </a>
-            <?php if(!empty($saasto_video_url)) : ?>
-                <a href="<?php print esc_url( $saasto_video_url );?>" class="play-btn post-popup-video"><i class='bi bi-play'></i></a>
-            <?php endif; ?>
-        </div>
+    <!-- Post Loop Start -->
+    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_standard__card' );?>>
+        <?php if( $videoId != '' ): ?>
+            <div class="blog_standard__thumb">
+                <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo $videoId; ?>"></div>
+            </div>
+        <?php elseif( has_post_thumbnail() ): ?>
+            <!-- post loop thumbnail  -->
+            <div class="blog_standard__thumb">
+                <a href="<?php the_permalink();?>">
+                    <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
+                </a>
+            </div>
+            <!-- End post loop thumbnail  -->
         <?php endif; ?>
-    </div>
-
-    <div class="blog-inner-details">
-        <!-- blog meta -->
-        <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
-
-        <h3 class="blog-title">
-            <a href="<?php the_permalink();?>"><?php the_title();?></a>
-        </h3>
-        <div class="blog__details_content clearfix">
-            <?php the_excerpt();?>
-        </div>
         
-        <!-- blog btn -->
-        <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
-    </div>
-</article>
+        <div class="blog_standard__disc">
+            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+            <h3 class="bs__title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
+            <?php get_template_part( 'template-parts/blog/blog-excerpt' ); ?>
 
+            <?php get_template_part( 'template-parts/blog/blog-btn' ); ?>
+        </div>
+    </article>
+    <!-- Post Loop End -->
 <?php endif;?>

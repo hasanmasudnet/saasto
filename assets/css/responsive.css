@@ -151,8 +151,12 @@
   }
   header .header-style .main-nav ul li .fl {
     display: block;
-    line-height: 35px;
+    line-height: 1;
   }
+
+  header .header-style .main-nav ul li ul.sub-menu > li {
+    padding-left: 15px;
+}
   header .header-style .main-nav ul li .sub-menu {
     position: static;
     min-width: 200px;
@@ -181,6 +185,10 @@
     padding-bottom: 8px !important;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+  }
+
+  header .header-style .main-nav ul li ul li.has-child-menu:after {
+    display: none;
   }
   header .header-style li a.active {
     color: #ddd;

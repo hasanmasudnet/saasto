@@ -326,10 +326,10 @@
   .partner-style-one .partner-one-content {
     padding-left: 70px;
   }
-  .footer-style-def .footer-quick-links li {
+  .footer-style-one .footer-quick-links li {
     margin-right: 24px;
   }
-  .footer-style-def .footer-social-links li {
+  .footer-style-one .footer-social-links li {
     margin-right: 24px;
   }
   .login-style-one .pt-xxl {
@@ -401,7 +401,7 @@
   .section-gap-bottom-y-1 {
     padding-bottom: 80px;
   }
-  .footer-style-one .footer-widget .footer-links li a {
+  .footer-style-two .footer-widget .footer-links li a {
     font-size: 18px;
   }
   .payment-style-one .payment-method-single .method-body .single-method-card {

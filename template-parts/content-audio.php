@@ -53,7 +53,7 @@ if ( is_single() ): ?>
 <?php else: ?>
 
     <!-- Post Loop Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_standard__card' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
             <?php if ( !empty( $saasto_audio_url ) ): ?>
                 <div class="postbox__audio w-img p-relative">
                     <?php echo wp_oembed_get( $saasto_audio_url ); ?>

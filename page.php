@@ -46,7 +46,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 			<?php endif;?>
 		</div>
     </div>
-</div>
+</section>
 
 <?php
 get_footer();

@@ -14,15 +14,17 @@ $saasto_footer_top_space = function_exists('get_field') ? get_field('saasto_foot
 $saasto_copyright_center = $saasto_footer_logo ? 'col-lg-4 offset-lg-4 col-md-6 text-right' : 'col-lg-12 text-center';
 $saasto_footer_bg_url_from_page = function_exists( 'get_field' ) ? get_field( 'saasto_footer_bg' ) : '';
 $saasto_footer_bg_color_from_page = function_exists( 'get_field' ) ? get_field( 'saasto_footer_bg_color' ) : '';
-$footer_bg_color = get_theme_mod( 'saasto_footer_bg_color' );
+
 $footer_top_space = get_theme_mod( 'saasto_footer_top_space' );
 $footer_copyright_switch = get_theme_mod( 'footer_copyright_switch', false );
+
+// newslaters 
+$newsletter_switch = get_theme_mod( 'footer_style_two_newsleter_switch', false );
+$newsleter_section_padding = ( $newsletter_switch == true ) ? 'style="padding-top: 285px"' : '';
 
 // bg image
 $bg_img = !empty( $saasto_footer_bg_url_from_page['url'] ) ? $saasto_footer_bg_url_from_page['url'] : $footer_bg_img;
 
-// bg color
-$bg_color = !empty( $saasto_footer_bg_color_from_page ) ? $saasto_footer_bg_color_from_page : $footer_bg_color;
 
 // footer space
 $footer_space = !empty( $saasto_footer_top_space ) ? $saasto_footer_top_space : $footer_top_space;
@@ -117,6 +119,10 @@ default:
     </div>
  </footer>
 
+ <?php 
+ 
+ if( $newsletter_switch != false ):
+ ?>
  <!-- =============== newslatter style start ============= -->
  <footer>
     <div class="newslatter-style-one position-relative section-gap-xl-top">
@@ -143,9 +149,10 @@ default:
          </div>
     </div>
     <!-- =============== newslatter style end =============== -->
+<?php endif; ?>
 
     <!-- ===============  footer style one start ============= -->
-    <div class="footer-style-one position-relative">
+    <div class="footer-style-two position-relative" <?php print esc_attr( $newsleter_section_padding ); ?>>
         <div class="container">
             <div class="row">
             <?php

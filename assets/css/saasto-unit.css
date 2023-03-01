@@ -97,7 +97,7 @@ img {
 	margin-top: 0;
 }
 .body-disply-1 {
-    font-family: var(--ff-nunito);
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -382,7 +382,7 @@ ul.wp-block-rss.wp-block-rss {
 .footer-widgets .widget.widget_rss ul li a{
 	display: block;
 	width: 100%;
-	font-family: var(--ff-nunito);
+	font-family: var(--primary-font);
 	font-style: normal;
 	font-size: 18px;
 	line-height: 1.5;
@@ -621,7 +621,7 @@ ul.wp-block-rss.wp-block-rss {
 }
 
 .sidebar-wrap .sidebar-widget .wp-block-group__inner-container h2 {
-	font-family: var(--ff-poppins);
+	font-family: var(--secondary-font);
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
@@ -688,9 +688,14 @@ left: 0;
 }
 .wp-calendar-nav {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
-
+.wp-block-calendar .wp-calendar-nav .pad, .calendar_wrap .wp-calendar-nav .pad {
+    display: none;
+}
 /*sidebar block widget*/
 .widget_recent_entries ul li:not(:last-child) {
 	border-bottom: 1px solid #f0f0f5;

@@ -288,7 +288,7 @@
   testimonial_Thumbs_Three.controller.control = testimonial_Slider_Three;
 
   /* init Video Player */
-  const player = new Plyr('#player');
+  const player = new Plyr('.player');
 
   /* init swipper slider */
   var swiper = new Swiper(".blog_thumb__slider", {

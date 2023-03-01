@@ -9,19 +9,11 @@
 */
 
 
-$footer_bg_img              = get_theme_mod( 'saasto_footer_bg' );
-$saasto_footer_logo         = get_theme_mod( 'saasto_footer_logo' );
+
+$saasto_footer_logo         = get_theme_mod( 'footer_logo_style_one' );
 $saasto_footer_top_space    = function_exists('get_field') ? get_field('saasto_footer_top_space') : '0';
 $saasto_copyright_center    = $saasto_footer_logo ? 'col-lg-4 offset-lg-4 col-md-6 text-right' : 'col-lg-12 text-center';
-$saasto_footer_bg_url_from_page     = function_exists( 'get_field' ) ? get_field( 'saasto_footer_bg' ) : '';
-$saasto_footer_bg_color_from_page   = function_exists( 'get_field' ) ? get_field( 'saasto_footer_bg_color' ) : '';
-$footer_bg_color            = get_theme_mod( 'saasto_footer_bg_color' );
 
-// bg image
-$bg_img = !empty( $saasto_footer_bg_url_from_page['url'] ) ? $saasto_footer_bg_url_from_page['url'] : $footer_bg_img;
-
-// bg color
-$bg_color = !empty( $saasto_footer_bg_color_from_page ) ? $saasto_footer_bg_color_from_page : $footer_bg_color;
 
 // footer_columns
 $footer_columns = 0;
@@ -32,7 +24,7 @@ $footer_widgets = get_theme_mod( 'footer_widget_number', 4 );
 
 <!-- ===============  footer style start =============== -->
 <footer>
-    <div class="footer-style-def">
+    <div class="footer-style-one">
         <div class="container">
             <?php if ( is_active_sidebar('footer-1') OR is_active_sidebar('footer-2') OR is_active_sidebar('footer-3') OR is_active_sidebar('footer-4') ): ?>
                 <!-- Footer widgets -->
@@ -94,7 +86,12 @@ $footer_widgets = get_theme_mod( 'footer_widget_number', 4 );
                         <div class="footer-icon">
                             <?php
                             // Site Logo
-                            saasto_header_logo();?>
+                            if( $saasto_footer_logo ){
+                                print wp_get_attachment_image( $saasto_footer_logo, 'full', '', ['class' => 'footer-logo']);
+                            }else{
+                                saasto_header_logo();
+                            }
+                            ?>
                         </div>
                     </div>
 

@@ -104,14 +104,6 @@ function saasto_customizer_panels_sections( $wp_customize ) {
         'panel'       => 'saasto_customizer',
     ] );
 
-    $wp_customize->add_section( 'tutor_course_settings', [
-        'title'       => esc_html__( 'Tutor Course Settings ', 'saasto' ),
-        'description' => '',
-        'priority'    => 19,
-        'capability'  => 'edit_theme_options',
-        'panel'       => 'saasto_customizer',
-    ] );
-
     $wp_customize->add_section( 'learndash_course_settings', [
         'title'       => esc_html__( 'Learndash Course Settings ', 'saasto' ),
         'description' => '',
@@ -135,30 +127,11 @@ function saasto_customizer_panels_sections( $wp_customize ) {
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
-    $wp_customize->add_section( 'tutor_course_settings', [
-        'title'       => esc_html__( 'Tutor Course Settings ', 'saasto' ),
-        'description' => '',
-        'priority'    => 23,
-        'capability'  => 'edit_theme_options',
-        'panel'       => 'saasto_customizer',
-    ] );
 }
 
 add_action( 'customize_register', 'saasto_customizer_panels_sections' );
 
 function _header_top_fields( $fields ) {
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_topbar_switch',
-        'label'    => esc_html__( 'Topbar Swicher', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
 
     $fields[] = [
         'type'     => 'switch',
@@ -173,20 +146,7 @@ function _header_top_fields( $fields ) {
         ],
     ];
 
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_backtotop',
-        'label'    => esc_html__( 'Back To Top On/Off', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
+    
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_header_right',
@@ -198,18 +158,70 @@ function _header_top_fields( $fields ) {
             'on'  => esc_html__( 'Enable', 'saasto' ),
             'off' => esc_html__( 'Disable', 'saasto' ),
         ],
-    ];    
+    ];
+
+    // button for headers
+    $fields[] = [
+        'type'     => 'text',
+        'settings' => 'saasto_head_r_button_text_one',
+        'label'    => esc_html__( 'Button Name', 'saasto' ),
+        'section'  => 'header_top_setting',
+        'default'  => esc_html__( 'Login', 'saasto' ),
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'saasto_header_right',
+                'operator' => '==',
+                'value'    => true,
+            ],
+        ],
+    ];
 
     $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_search',
-        'label'    => esc_html__( 'Header Search On/Off', 'saasto' ),
+        'type'     => 'url',
+        'settings' => 'saasto_head_r_button_link_one',
+        'label'    => esc_html__( 'Button URL', 'saasto' ),
         'section'  => 'header_top_setting',
-        'default'  => '0',
+        'default'  => esc_html__( '#', 'saasto' ),
         'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
+        'active_callback' => [
+            [
+                'setting'  => 'saasto_header_right',
+                'operator' => '==',
+                'value'    => true,
+            ],
+        ],
+    ];
+
+    $fields[] = [
+        'type'     => 'text',
+        'settings' => 'saasto_head_r_button_text_two',
+        'label'    => esc_html__( 'Button Name', 'saasto' ),
+        'section'  => 'header_top_setting',
+        'default'  => esc_html__( 'Sign Up', 'saasto' ),
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'saasto_header_right',
+                'operator' => '==',
+                'value'    => true,
+            ],
+        ],
+    ];
+
+    $fields[] = [
+        'type'     => 'url',
+        'settings' => 'saasto_head_r_button_link_two',
+        'label'    => esc_html__( 'Button URL', 'saasto' ),
+        'section'  => 'header_top_setting',
+        'default'  => esc_html__( '#', 'saasto' ),
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'saasto_header_right',
+                'operator' => '==',
+                'value'    => true,
+            ],
         ],
     ];
 
@@ -223,39 +235,6 @@ function _header_top_fields( $fields ) {
         'choices'  => [
             'on'  => esc_html__( 'Enable', 'saasto' ),
             'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
-    // button
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_head_r_button_text',
-        'label'    => esc_html__( 'Button Text', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => esc_html__( 'Free Trials', 'saasto' ),
-        'priority' => 10,
-        'active_callback' => [
-            [
-                'setting'  => 'saasto_header_right',
-                'operator' => '==',
-                'value'    => true,
-            ],
-        ],
-    ];
-
-    $fields[] = [
-        'type'     => 'link',
-        'settings' => 'saasto_head_r_button_link',
-        'label'    => esc_html__( 'Button URL', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-        'active_callback' => [
-            [
-                'setting'  => 'saasto_header_right',
-                'operator' => '==',
-                'value'    => true,
-            ],
         ],
     ];
 
@@ -644,11 +623,12 @@ function _header_footer_fields( $fields ) {
         'priority'    => 10,
         'multiple'    => 1,
         'choices'     => [
+            'footer-style-def' => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
             'footer-style-1'   => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
             'footer-style-2' => get_template_directory_uri() . '/inc/img/footer/footer-2.png',
-            'footer-style-3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png',
+            'footer-style-3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png'
         ],
-        'default'     => 'footer-style-1',
+        'default'     => 'footer-style-def',
     ];
 
     $fields[] = [
@@ -674,23 +654,6 @@ function _header_footer_fields( $fields ) {
         'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
         'section'     => 'footer_setting',
         'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'footer-style-1',
-            ],
-        ],
-        
-    ];
-
-    $fields[] = [
-        'type'        => 'image',
-        'settings'    => 'footer_logo_style_two',
-        'label'       => esc_html__( 'Footer Logo 2', 'saasto' ),
-        'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
-        'section'     => 'footer_setting',
-        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
         'choices'     => [
 			'save_as' => 'id',
 		],
@@ -698,7 +661,7 @@ function _header_footer_fields( $fields ) {
             [
                 'setting'  => 'choose_default_footer',
                 'operator' => '==',
-                'value'    => 'footer-style-2',
+                'value'    => 'footer-style-1',
             ],
         ],
     ];
@@ -723,21 +686,38 @@ function _header_footer_fields( $fields ) {
     ];
 
     $fields[] = [
-        'type'        => 'image',
-        'settings'    => 'saasto_footer_bg',
-        'label'       => esc_html__( 'Footer Background Image.', 'saasto' ),
-        'description' => esc_html__( 'Footer Background Image.', 'saasto' ),
+        'type'        => 'switch',
+        'settings'    => 'footer_style_two_newsleter_switch',
+        'label'       => esc_html__( 'Newslater', 'saasto' ),
+        'description' => esc_html__( 'you can control newslater from here.', 'saasto' ),
         'section'     => 'footer_setting',
-    ];
+        'default'     => '0',
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'footer-style-2',
+            ],
+        ],
+    ]; 
 
     $fields[] = [
-        'type'        => 'color',
-        'settings'    => 'saasto_footer_bg_color',
-        'label'       => __( 'Footer BG Color', 'saasto' ),
-        'description' => esc_html__( 'This is a Footer bg color control.', 'saasto' ),
-        'section'     => 'footer_setting',
-        'default'     => '#f4f9fc',
-        'priority'    => 10,
+        'type'     => 'text',
+        'settings' => 'footer_style_two_newsleter_shortcode',
+        'label'    => esc_html__( 'Newslater Shortcode', 'saasto' ),
+        'section'  => 'footer_setting',
+        'priority' => 10,
+        'active_callback' => [
+            [
+                'setting'  => 'footer_style_two_newsleter_switch',
+                'operator' => '==',
+                'value'    => '1',
+            ],
+        ],
     ];
 
     $fields[] = [
@@ -827,6 +807,8 @@ function _header_footer_fields( $fields ) {
         'default'  => esc_html__( 'Copyright &copy; 2022 wprealizer. All Rights Reserved', 'saasto' ),
         'priority' => 10,
     ];
+
+
     return $fields;
 }
 add_filter( 'kirki/fields', '_header_footer_fields' );
@@ -973,94 +955,6 @@ function saasto_learndash_fields( $fields ) {
 if ( class_exists( 'SFWD_LMS' ) ) {
 add_filter( 'kirki/fields', 'saasto_learndash_fields' );
 }
-
-
-// tutor_course_settings
-function saasto_tutor_course_fields( $fields ) {
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_tutor_course_details_author_meta_switch',
-        'label'    => esc_html__( 'Tutor Course Details Author Meta', 'saasto' ),
-        'section'  => 'tutor_course_settings',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];    
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_tutor_course_details_payment_switch',
-        'label'    => esc_html__( 'Tutor Course Details Payment', 'saasto' ),
-        'section'  => 'tutor_course_settings',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_tutor_course_desc_tab_switch',
-        'label'    => esc_html__( 'Tutor Course Description Tab Swicher', 'saasto' ),
-        'section'  => 'tutor_course_settings',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];    
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_tutor_course_curriculum_tab_switch',
-        'label'    => esc_html__( 'Tutor Course Curriculum Tab Swicher', 'saasto' ),
-        'section'  => 'tutor_course_settings',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];    
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_tutor_course_reviews_tab_switch',
-        'label'    => esc_html__( 'Tutor Course Reviews Tab Swicher', 'saasto' ),
-        'section'  => 'tutor_course_settings',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];    
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_tutor_course_instructor_tab_switch',
-        'label'    => esc_html__( 'Tutor Course Instructor Tab Swicher', 'saasto' ),
-        'section'  => 'tutor_course_settings',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-    return $fields;
-}
-
-if (  function_exists('tutor') ) {
-    add_filter( 'kirki/fields', 'saasto_tutor_course_fields' );
-}
-
 
 /**
  * Added Fields

@@ -72,7 +72,7 @@ if ( is_single() ): ?>
 <?php else: ?>
 
     <!-- Post Loop Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_standard__card' );?>>
+    <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
 
         <?php if ( !empty( $gallery_images ) ): ?>
             <div class="blog_standard__thumb slider__thumb">

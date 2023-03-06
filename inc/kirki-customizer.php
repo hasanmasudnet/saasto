@@ -64,10 +64,18 @@ function saasto_customizer_panels_sections( $wp_customize ) {
         'panel'       => 'saasto_customizer',
     ] );
 
+    $wp_customize->add_section( 'global_enable_disable_settings', [
+        'title'       => esc_html__( 'Global Enable/Disable', 'saasto' ),
+        'description' => '',
+        'priority'    => 15,
+        'capability'  => 'edit_theme_options',
+        'panel'       => 'saasto_customizer',
+    ] );
+
     $wp_customize->add_section( 'breadcrumb_setting', [
         'title'       => esc_html__( 'Breadcrumb Setting', 'saasto' ),
         'description' => '',
-        'priority'    => 15,
+        'priority'    => 16,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -75,7 +83,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( 'blog_setting', [
         'title'       => esc_html__( 'Blog Setting', 'saasto' ),
         'description' => '',
-        'priority'    => 16,
+        'priority'    => 17,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -83,7 +91,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( 'footer_setting', [
         'title'       => esc_html__( 'Footer Settings', 'saasto' ),
         'description' => '',
-        'priority'    => 16,
+        'priority'    => 19,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -91,7 +99,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( 'color_setting', [
         'title'       => esc_html__( 'Color Setting', 'saasto' ),
         'description' => '',
-        'priority'    => 17,
+        'priority'    => 21,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -99,7 +107,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( '404_page', [
         'title'       => esc_html__( '404 Page', 'saasto' ),
         'description' => '',
-        'priority'    => 18,
+        'priority'    => 23,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -107,7 +115,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( 'learndash_course_settings', [
         'title'       => esc_html__( 'Learndash Course Settings ', 'saasto' ),
         'description' => '',
-        'priority'    => 20,
+        'priority'    => 25,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -115,7 +123,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( 'typo_setting', [
         'title'       => esc_html__( 'Typography Setting', 'saasto' ),
         'description' => '',
-        'priority'    => 21,
+        'priority'    => 27,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -123,7 +131,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     $wp_customize->add_section( 'slug_setting', [
         'title'       => esc_html__( 'Slug Settings', 'saasto' ),
         'description' => '',
-        'priority'    => 22,
+        'priority'    => 30,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -509,6 +517,32 @@ function _header_page_title_fields( $fields ) {
     return $fields;
 }
 add_filter( 'kirki/fields', '_header_page_title_fields' );
+
+
+/*
+_header_page_title_fields
+ */
+function _global_enable_desable_fields( $fields ) {
+    // global Enable disable seciton
+
+    $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'page_sidebar_setting',
+        'label'    => esc_html__( 'Page sidebar', 'saasto' ),
+        'section'  => 'global_enable_disable_settings',
+        'description' => esc_html__( 'you can trun off page side bar globally For all page by desabling this.', 'saasto' ),
+        'default'  => '1',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+
+    return $fields;
+}
+add_filter( 'kirki/fields', '_global_enable_desable_fields' );
+
 
 /*
 Header Social

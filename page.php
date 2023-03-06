@@ -15,8 +15,11 @@
 
 get_header();
 
+$saasto_sidebar = get_theme_mod( 'page_sidebar_setting', true );
+
 // Sidebar column
-$blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
+$blog_column = ($saasto_sidebar==true && is_active_sidebar( 'blog-sidebar' )) ? 8 : 12;
+
 ?>
 
 <section class="saasto-page-area pt-120 pb-120">
@@ -36,7 +39,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 				</div>
 			</div>
 
-			<?php if ( is_active_sidebar( 'blog-sidebar' ) ): ?>
+			<?php if ( $saasto_sidebar==true && is_active_sidebar( 'blog-sidebar' ) ): ?>
 				<!-- Sidebar -->
 		        <div class="col-lg-4">
 		        	<div class="sidebar-wrap">

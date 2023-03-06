@@ -12,7 +12,7 @@ $categories = get_the_terms( $post->ID, 'category' );
 $saasto_blog_date = get_theme_mod( 'saasto_blog_date', true );
 $saasto_blog_comments = get_theme_mod( 'saasto_blog_comments', true );
 $saasto_blog_author = get_theme_mod( 'saasto_blog_author', true );
-$saasto_blog_cat = get_theme_mod( 'saasto_blog_cat', false );
+$saasto_blog_cat = get_theme_mod( 'saasto_blog_cat', true );
 
 ?>
 

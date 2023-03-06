@@ -17,7 +17,7 @@ if ( is_single() ): ?>
             
             <?php if ( !empty( $saasto_audio_url ) ): ?>
             <!-- Audio player -->
-            <div class="postbox__audio w-img p-relative">
+            <div class="blog_standard__thumb w-img p-relative">
                 <?php echo wp_oembed_get( $saasto_audio_url ); ?>
             </div>
             <?php endif;?>
@@ -55,7 +55,7 @@ if ( is_single() ): ?>
     <!-- Post Loop Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
             <?php if ( !empty( $saasto_audio_url ) ): ?>
-                <div class="postbox__audio w-img p-relative">
+                <div class="blog_standard__thumb w-img p-relative">
                     <?php echo wp_oembed_get( $saasto_audio_url ); ?>
                 </div>
 

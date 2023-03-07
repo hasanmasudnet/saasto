@@ -39,7 +39,9 @@ add_filter( 'body_class', 'saasto_body_classes' );
 function saasto_get_tag() {
     $html = '';
     if ( has_tag() ) {
-        $html .= '<div class="tag-list"><span>' . esc_html__( 'Post Tags : ', 'saasto' ) . '</span>';
+        
+        $title = count(wp_get_post_terms(get_the_ID(), 'post_tag')) > 1 ? esc_html__( 'Post Tags : ', 'saasto' ) : esc_html__( 'Post Tag : ', 'saasto' );
+        $html .= '<div class="tag-list"><span>' . $title . '</span>';
         $html .= get_the_tag_list( '<ul><li>', '</li><li>', '</li></ul>' );
         $html .= '</div>';
     }

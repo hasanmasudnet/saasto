@@ -2372,15 +2372,16 @@ header .header-style-two {
 }
 
 .sidebar-wrap{
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .sidebar-wrap .widget {
-  margin-bottom: 50px;
-  padding: 30px 30px;
+  margin-bottom: 40px;
+  padding: 40px 40px;
   border: 1px solid #f0f0f5;
-  border-radius: 6px;
+  border-radius: 15px;
 }
+
 
 .sidebar-wrap .widget:last-child {
   margin-bottom: 0;
@@ -2662,7 +2663,7 @@ header .header-style-two {
 .widget_categories ul li a:before,
 .widget_pages ul li a:before,
 .widget_nav_menu ul li a:before, .widget_meta ul li a:before {
-  content: '\F234';
+  content: '\F285';
   font-family: 'bootstrap-icons';
   margin-right: 5px;
   position: absolute;
@@ -4508,9 +4509,10 @@ Blog Loop Start
 }
 
 .blog_loop_item {
-  margin-top: 44px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(94, 88, 122, 0.14);
+  margin-top: 40px;
+  padding: 40px;
+  border: 1px solid rgba(94, 88, 122, 0.14);
+  border-radius: 15px;
 }
 
 .blog_loop_item .blog_standard__thumb {

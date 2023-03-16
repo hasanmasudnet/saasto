@@ -27,57 +27,58 @@ if (strpos($saasto_video_url, 'https://www.youtube.com/watch') === 0) {
 
 
 if ( is_single() ) : ?>
-    <!-- Single Post Start -->
-    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
-
-        <?php if( $videoId != '' ): ?>
-            <div class="blog_standard__thumb">
-                <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php print esc_attr( $videoId ); ?>"></div>
-            </div>
-        <?php elseif( has_post_thumbnail() ): ?>
-            <!-- post loop thumbnail  -->
-            <div class="blog_standard__thumb">
-                <a href="<?php the_permalink();?>">
-                    <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
-                </a>
-            </div>
-            <!-- End post loop thumbnail  -->
-        <?php endif; ?>
-
-        <div class="blog-inner-details">
-            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
-        </div>
-
-
-        <!-- Blog Details Info -->
-        <div class="blog__details_content clearfix">
-            <?php the_content();?>
-            <?php
-                wp_link_pages( [
-                    'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'saasto' ),
-                    'after'       => '</div>',
-                    'link_before' => '<span class="page-number">',
-                    'link_after'  => '</span>',
-                ] );
-            ?>
-        </div>
-
-        <?php if( saasto_get_tag() ): ?>
-            <!-- Info Tag -->
-            <div class="info-tag-wrap">
-                <?php print saasto_get_tag();?>
-            </div>
-            <!-- Info Tag End -->
-        <?php endif; ?>
 
     </article>
     <!-- Single Post End -->
 
+    <!-- Single Post Start -->
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
+    <?php if( $videoId != '' ): ?>
+        <div class="blog-list-img overflow-hidden">
+            <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php print esc_attr( $videoId ); ?>"></div>
+        </div>
+    <?php elseif( has_post_thumbnail() ): ?>
+        <!-- post loop thumbnail  -->
+        <div class="blog-list-img overflow-hidden">
+            <a href="<?php the_permalink();?>">
+                <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
+            </a>
+        </div>
+        <!-- End post loop thumbnail  -->
+    <?php endif; ?>
+
+    <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+
+    <!-- Blog Details Info -->
+    <div class="blog__details_content clearfix">
+        <?php the_content();?>
+        <?php
+            wp_link_pages( [
+                'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'saasto' ),
+                'after'       => '</div>',
+                'link_before' => '<span class="page-number">',
+                'link_after'  => '</span>',
+            ] );
+        ?>
+    </div>
+    <!-- .Blog Details Info -->
+
+    <?php if( saasto_get_tag() ): ?>
+        <!-- Info Tag -->
+        <div class="info-tag-wrap">
+            <?php print saasto_get_tag();?>
+        </div>
+        <!-- Info Tag End -->
+    <?php endif; ?>
+
+    </article>
+    <!-- Single Post End -->
 <?php else: ?>
 
     <!-- Post Loop Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
+
         <?php if( $videoId != '' ): ?>
             <div class="blog_standard__thumb">
                 <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr ( $videoId ); ?>"></div>
@@ -90,7 +91,10 @@ if ( is_single() ) : ?>
                 </a>
             </div>
             <!-- End post loop thumbnail  -->
-        <?php endif; ?>
+        <?php elseif( saasto_embedded_media( ['video', 'iframe' ])  ):
+                echo saasto_embedded_media( ['video', 'iframe' ] );
+        endif;
+        ?>
         
         <div class="blog_standard__disc">
             <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>

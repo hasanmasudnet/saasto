@@ -8,33 +8,43 @@
  */
 
 if ( is_single() ) : ?>
-    <article id="post-<?php the_ID();?>" <?php post_class( 'postbox__item format-image mb-50' );?>>
+    <!-- Single Post Start -->
+    <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
+
+        <!-- Single post details meta -->
         <?php if ( has_post_thumbnail() ): ?>
-            <div class="postbox__thumb">
+            <div class="blog-list-img overflow-hidden">
                 <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
             </div>
         <?php endif;?>
 
-        <div class="postbox__content">
-            <!-- blog meta -->
-            <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
-            <h3 class="blog-title">
-                <?php the_title();?>
-            </h3>
-            <div class="blog__details_content clearfix">
-               <?php the_content();?>
-                <?php
-                    wp_link_pages( [
-                        'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'saasto' ),
-                        'after'       => '</div>',
-                        'link_before' => '<span class="page-number">',
-                        'link_after'  => '</span>',
-                    ] );
-                ?>
-            </div>
-            <?php print saasto_get_tag();?>
+        <?php get_template_part( 'template-parts/blog/blog-meta' ); ?>
+
+        <!-- Blog Details Info -->
+        <div class="blog__details_content clearfix">
+            <?php the_content();?>
+            <?php
+                wp_link_pages( [
+                    'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'saasto' ),
+                    'after'       => '</div>',
+                    'link_before' => '<span class="page-number">',
+                    'link_after'  => '</span>',
+                ] );
+            ?>
         </div>
+        <!-- .Blog Details Info -->
+        
+        <?php if( saasto_get_tag() ): ?>
+            <!-- Info Tag -->
+            <div class="info-tag-wrap">
+                <?php print saasto_get_tag();?>
+            </div>
+            <!-- Info Tag End -->
+        <?php endif; ?>
+
     </article>
+    <!-- Single Post End -->
+    
 <?php else: ?>
 
     <!-- Post Loop Start -->

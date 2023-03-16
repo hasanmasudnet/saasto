@@ -31,6 +31,7 @@ Last update : 04/19/2022
   22. Blog wrapper start
   23. About wrapper start
   24. service area start
+  25. 404 Error page
 */
 /*====================
 1. Global CSS and Reset.
@@ -2705,7 +2706,8 @@ header .header-style-two {
 
 .tag-list li a:hover,
 .tagcloud a:hover,
-.wp-block-tag-cloud a:hover {
+.wp-block-tag-cloud a:hover
+ {
   background-color: var(--primary-yellow);
   color: #fff;
 }
@@ -2793,7 +2795,7 @@ header .header-style-two {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 180%;
   color: #5E587A;
   margin: 0 0 18px 0;
@@ -2803,72 +2805,10 @@ header .header-style-two {
   border-radius: 12px;
 }
 
-.blog__details_content blockquote {
-  position: relative;
-  padding: 30px 40px;
-  border-left: 3px solid var(--primary-color);
-  background-color: #f3f1ff;
-  border-radius: 15px;
-}
-
-.blog__details_content blockquote h2 {
-  font-family: var(--primary-font);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 160%;
-  color: #5E587A;
-}
-
-.blog__details_content blockquote p {
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 180%;
-  color: #5E587A;
-}
-
-blockquote cite, .wp-block-quote cite {
-  display: block;
-  font-size: 16px;
-  position: relative;
-  line-height: 1;
-  font-weight: 500;
-  padding-left: 50px;
-  margin-left: 10px;
-}
-
-blockquote cite:before, .wp-block-quote cite:before {
-  content: "";
-  height: 2px;
-  width: 50px;
-  background-color: var(--primary-color);
-  position: absolute;
-  bottom: 7px;
-  left: -10px;
-}
-
-blockquote::before {
-  content: "\F255";
-  position: absolute;
-  font-family: 'bootstrap-icons';
-  font-size: 68px;
-  color: #2b4eff;
-  line-height: 1;
-  margin-bottom: 18px;
-  display: inline-block;
-  right: 2%;
-  bottom: 2%;
-  opacity: 0.1;
-}
-
-
 .info-tag-wrap {
   margin-top: 50px;
-  padding: 20px 0;
+  padding: 20px 0 0;
   border-top: 1px solid rgba(94, 88, 122, 0.14);
-  border-bottom: 1px solid rgba(94, 88, 122, 0.14);
 }
 
 .blog-post-comment{
@@ -2880,7 +2820,7 @@ blockquote::before {
   -webkit-box-shadow: 14px 20px 48px rgba(0, 0, 0, 0.05);
           box-shadow: 14px 20px 48px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   padding: 27px 20px;
 }
 
@@ -4358,6 +4298,11 @@ Contect Wrapper end
 }
 
 /*blog details wrapper*/
+.postbox__wrapper.postbox__details {
+  border: 1px solid #f0f0f5;
+  padding: 40px 40px;
+  border-radius: 15px;
+}
 .blog-details-wrapper .blog-det-thumb img {
   width: 100%;
 }
@@ -4516,13 +4461,13 @@ Blog Loop Start
 }
 
 .blog_loop_item .blog_standard__thumb {
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
   position: relative;
 }
 
 .blog_loop_item .blog_standard__thumb img {
-  border-radius: 20px;
+  border-radius: 15px;
   max-width: 100%;
 }
 
@@ -4595,8 +4540,14 @@ Blog Loop Start
   font-size: 30px;
   line-height: 140%;
   text-transform: capitalize;
-  color: #332C5C;
+  color: var(--text-bright-gray);;
   font-family: var(--secondary-font);
+  transition: .3s all ease;
+  opacity: 1;
+}
+
+.blog_loop_item .blog_standard__disc .bs__title:hover{
+  opacity: .8;
 }
 
 @media screen and (max-width: 992px) {
@@ -5070,6 +5021,26 @@ service area end
   color: rgba(51, 44, 92, 0.8);
 }
 
+/* =============================
+25. 404 Error page
+==============================*/
+
+.content-400-error {
+  padding: 100px 0;
+}
+.content-400-error  h3.error__title {
+  color: var(--text-bright-gray);
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.error__thumb {
+  margin-bottom: 67px;
+}
+
+.content-400-error .error__content p {
+  margin-bottom: 48px;
+}
 /* =============================
 About wrapper end
 ==============================*/

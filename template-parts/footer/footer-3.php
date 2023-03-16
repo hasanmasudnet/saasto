@@ -203,6 +203,4 @@ default:
         </div>
     </div>
     <!-- ===============  footer area end =============== -->
-
-    </div> <!-- Bg wrapper -->
 </footer>

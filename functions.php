@@ -298,3 +298,26 @@ function saasto_admin_custom_scripts() {
     wp_enqueue_script( 'saasto-admin-custom' );
 }
 
+
+
+function saasto_embedded_media( $type = array() ){
+    $content = do_shortcode( apply_filters( 'the_content', get_the_content() ) );
+    $embed   = get_media_embedded_in_content( $content, $type );
+
+
+    if( in_array( 'audio' , $type) ){
+        if( count( $embed ) > 0 ){
+            $output = str_replace( '?visual=true', '?visual=false', $embed[0] );
+        }else{
+           $output = '';
+        }
+
+    }else{
+        if( count( $embed ) > 0 ){
+            $output = $embed[0];
+        }else{
+           $output = '';
+        }
+    }
+    return $output;
+}

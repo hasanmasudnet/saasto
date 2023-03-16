@@ -28,12 +28,13 @@
 
 
     <?php
-        $saasto_preloader = get_theme_mod( 'saasto_preloader', false );
-        $saasto_backtotop = get_theme_mod( 'saasto_backtotop', false );
+         $saasto_preloader = get_theme_mod( 'saasto_preloader', false );
+         $saasto_backtotop = get_theme_mod( 'saasto_backtotop', false );
 
-        $saasto_preloader_logo = get_template_directory_uri() . '/assets/img/favicon.png';
+         $saasto_preloader_logo = get_template_directory_uri() . '/assets/img/favicon.png';
 
-        $preloader_logo = get_theme_mod('preloader_logo', $saasto_preloader_logo);
+         $preloader_logo = get_theme_mod('preloader_logo', $saasto_preloader_logo);
+         $bg_style = function_exists( 'get_field' ) ? get_field( 'body_background_style' ) : NULL;
 
     ?>
 
@@ -62,6 +63,14 @@
     <!-- back to top end -->
     <?php endif;?>
 
+   <?php
+      if( $bg_style == 'style_1' || is_404() ){
+         echo '<div class="background-wrap home-bg-one">';
+      }
+      elseif( $bg_style == 'style_2' ){
+         echo '<div class="background-wrap home-bg-two">';
+      }
+   ?>
     
     <!-- header start -->
     <?php do_action( 'saasto_header_style' );?>

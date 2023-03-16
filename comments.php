@@ -78,9 +78,9 @@ if ( post_password_required() ) {
     $aria_req    = ( $req ? " aria-required='true'" : '' );
 
     $fields = array(
-        'author' => '<div class="row"><div class="col-md-6"><div class="postbox__comment-input"><input placeholder="'.  esc_attr__('Enter Name', 'saasto').'" id="author" class="tp-form-control" name="author" type="text" value="' . esc_attr( $commenter[ 'comment_author' ] ) . '" size="30"' . $aria_req . ' /></div></div>',
-        'email'  => '<div class="col-md-6"><div class="postbox__comment-input"><input placeholder="'.  esc_attr__('Enter Email', 'saasto').'" id="email" name="email" class="tp-form-control" type="email" value="' . esc_attr( $commenter[ 'comment_author_email' ] ) . '" size="30"' . $aria_req . ' /></div></div>',
-        'url'    => '<div class="col-md-12"><div class="postbox__comment-input"><input placeholder="'.  esc_attr__('Enter Website', 'saasto').'" id="url" name="url" class="tp-form-control" type="url" value="' . esc_attr( $commenter[ 'comment_author_url' ] ) . '" size="30" /></div></div></div>'
+        'author' => '<div class="row"><div class="col-md-6"><div class="postbox__comment-input"><input placeholder="'.  esc_attr__('Enter Name', 'saasto').'" id="author" class="saasto-form-control" name="author" type="text" value="' . esc_attr( $commenter[ 'comment_author' ] ) . '" size="30"' . $aria_req . ' /></div></div>',
+        'email'  => '<div class="col-md-6"><div class="postbox__comment-input"><input placeholder="'.  esc_attr__('Enter Email', 'saasto').'" id="email" name="email" class="saasto-form-control" type="email" value="' . esc_attr( $commenter[ 'comment_author_email' ] ) . '" size="30"' . $aria_req . ' /></div></div>',
+        'url'    => '<div class="col-md-12"><div class="postbox__comment-input"><input placeholder="'.  esc_attr__('Enter Website', 'saasto').'" id="url" name="url" class="saasto-form-control" type="url" value="' . esc_attr( $commenter[ 'comment_author_url' ] ) . '" size="30" /></div></div></div>'
     );
 
     if ( is_user_logged_in() ) {
@@ -93,12 +93,12 @@ if ( post_password_required() ) {
         'comment_field'      => '
             <div class="row post-input">
                 <div class="col-md-12 ' . $cl . '">
-                    <div class="postbox__comment-input"><textarea class="tp-form-control msg-box" placeholder="'.  esc_attr__('Enter Your Comments', 'saasto').'" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+                    <div class="postbox__comment-input"><textarea class="saasto-form-control msg-box" placeholder="'.  esc_attr__('Enter Your Comments', 'saasto').'" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
                 </div></div>
                 <div class="clearfix"></div>
             </div>
         ',
-        'submit_button'    => '<div class="col-xl-12"><button class="tp-btn" type="submit">' . esc_html__( 'Post Comment', 'saasto' ) . ' </button></div>',
+        'submit_button'    => '<div class="col-xl-12"><button class="saasto-btn" type="submit">' . esc_html__( 'Post Comment', 'saasto' ) . ' </button></div>',
         /** This filter is documented in wp-includes/link-template.php */
         'must_log_in'        => '
             <p class="must-log-in">
@@ -112,7 +112,7 @@ if ( post_password_required() ) {
         'id_form'            => 'commentform',
         'class_form'            => 'blog-comment',
         'id_submit'          => 'submit',
-        'class_submit'       => 'tp-btn',
+        'class_submit'       => 'saasto-btn',
         'title_reply'        => esc_html__( 'Leave a Reply', 'saasto' ),
         'title_reply_to'     => esc_html__( 'Leave a Reply to %s', 'saasto' ),
         'cancel_reply_link'  => esc_html__( 'Cancel reply', 'saasto' ),

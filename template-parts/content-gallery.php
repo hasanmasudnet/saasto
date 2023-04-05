@@ -13,30 +13,30 @@ if ( is_single() ): ?>
     <!-- Single Post Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
-        <?php if ( !empty( $gallery_images ) ): ?>
-            <div class="postbox__thumb post-gallery-slider swiper-container w-img p-relative">
-                <div class="swiper-wrapper">
-                    <?php foreach ( $gallery_images as $key => $image ): ?>
-                    <div class="post-gallery-slider-item swiper-slide">
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+    <?php if ( !empty( $gallery_images ) ): ?>
+            <div class="blog__post_thumb slider__thumb">
+                <div class="swiper-pagination"></div>
+                <div class="blog-button-next blog-arrow"><i class="bi bi-chevron-right"></i></div>
+                <div class="blog-button-prev blog-arrow"><i class="bi bi-chevron-left"></i></div>
+                <div class="swiper blog_thumb__slider">
+                    <div class="swiper-wrapper">
+                        <?php foreach ( $gallery_images as $key => $image ): ?>
+                        <div class="post-gallery-slider-item swiper-slide">
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                        </div>
+                        <?php endforeach;?>
                     </div>
-                    <?php endforeach;?>
-                </div>
-                <div class="gpost-nav">
-                    <button class="gpost-slider-button-next"><i class="bi bi-chevron-right"></i></button>
-                    <button class="gpost-slider-button-prev"><i class="bi bi-chevron-left"></i></button>
                 </div>
             </div>
-
-        <?php elseif( has_post_thumbnail() ): ?>
+        <?php elseif ( has_post_thumbnail() ): ?>   
             <!-- post loop thumbnail  -->
-            <div class="blog-list-img overflow-hidden">
+            <div class="blog__post_thumb">
                 <a href="<?php the_permalink();?>">
                     <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
                 </a>
             </div>
             <!-- End post loop thumbnail  -->
-        <?php endif;?>
+        <?php endif; ?>
 
         <!-- Single post details meta -->
         <div class="">
@@ -75,7 +75,7 @@ if ( is_single() ): ?>
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
 
         <?php if ( !empty( $gallery_images ) ): ?>
-            <div class="blog_standard__thumb slider__thumb">
+            <div class="blog__post_thumb slider__thumb">
                 <div class="swiper-pagination"></div>
                 <div class="blog-button-next blog-arrow"><i class="bi bi-chevron-right"></i></div>
                 <div class="blog-button-prev blog-arrow"><i class="bi bi-chevron-left"></i></div>
@@ -91,7 +91,7 @@ if ( is_single() ): ?>
             </div>
         <?php elseif ( has_post_thumbnail() ): ?>   
             <!-- post loop thumbnail  -->
-            <div class="blog_standard__thumb">
+            <div class="blog__post_thumb">
                 <a href="<?php the_permalink();?>">
                     <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
                 </a>

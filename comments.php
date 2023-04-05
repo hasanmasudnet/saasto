@@ -15,7 +15,7 @@ if ( post_password_required() ) {
 ?>
 
 <?php if ( have_comments() || comments_open()) : ?>
-<div id="comments" class="blog-post-comment">
+<div id="comments" class="blog__post_comment">
 
     <?php if ( get_comments_number() >= 1 ): ?>
     <div class="post-comments mb-70">

@@ -15,7 +15,7 @@ if ( is_single() ) : ?>
         <!-- Single post details meta -->
         <div class="blog-list-box">
             <?php if ( has_post_thumbnail() ): ?>
-                <div class="blog-list-img overflow-hidden">
+                <div class="blog__post_thumb overflow-hidden">
                     <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
                 </div>
             <?php endif;?>
@@ -55,7 +55,7 @@ if ( is_single() ) : ?>
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
         <?php if ( has_post_thumbnail() ): ?>   
             <!-- post loop thumbnail  -->
-            <div class="blog_standard__thumb">
+            <div class="blog__post_thumb">
                 <a href="<?php the_permalink();?>">
                     <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
                 </a>

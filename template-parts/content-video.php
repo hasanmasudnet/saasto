@@ -35,12 +35,12 @@ if ( is_single() ) : ?>
     <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
     <?php if( $videoId != '' ): ?>
-        <div class="blog-list-img overflow-hidden">
+        <div class="blog__post_video overflow-hidden">
             <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php print esc_attr( $videoId ); ?>"></div>
         </div>
     <?php elseif( has_post_thumbnail() ): ?>
         <!-- post loop thumbnail  -->
-        <div class="blog-list-img overflow-hidden">
+        <div class="blog__post_thumb overflow-hidden">
             <a href="<?php the_permalink();?>">
                 <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
             </a>
@@ -80,12 +80,12 @@ if ( is_single() ) : ?>
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
 
         <?php if( $videoId != '' ): ?>
-            <div class="blog_standard__thumb">
+            <div class="blog__post_thumb">
                 <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr ( $videoId ); ?>"></div>
             </div>
         <?php elseif( has_post_thumbnail() ): ?>
             <!-- post loop thumbnail  -->
-            <div class="blog_standard__thumb">
+            <div class="blog__post_thumb">
                 <a href="<?php the_permalink();?>">
                     <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
                 </a>

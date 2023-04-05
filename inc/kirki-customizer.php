@@ -908,6 +908,18 @@ add_filter( 'kirki/fields', 'saasto_color_fields' );
 function saasto_404_fields( $fields ) {
     // 404 settings
     $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'saasto_404_breadcrumb',
+        'label'    => esc_html__( 'Show Breadcrumb', 'saasto' ),
+        'section'  => '404_page',
+        'default'  => 0,
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+    $fields[] = [
         'type'        => 'image',
         'settings'    => 'saasto_404_bg',
         'label'       => esc_html__( '404 Image.', 'saasto' ),

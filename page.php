@@ -26,7 +26,7 @@ $blog_column = ($saasto_sidebar==true && is_active_sidebar( 'blog-sidebar' )) ? 
     <div class="container container-box">
         <div class="row">
 			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items blog-padding">
-				<div class="saasto-page-content">
+				<div class="saasto__page_content">
 					<?php
 						if ( have_posts() ):
 							while ( have_posts() ): the_post();

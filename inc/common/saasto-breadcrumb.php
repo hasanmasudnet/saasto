@@ -14,7 +14,10 @@ function saasto_breadcrumb_func() {
     global $post;  
     $breadcrumb_class = '';
     $breadcrumb_show = 1;
+    $error_page = get_theme_mod( 'saasto_404_breadcrumb', false );
 
+
+    if(  (is_404() &&  $error_page != false) || !is_404()  ) {
     if ( is_front_page() && is_home() ) {
         $title = get_theme_mod('breadcrumb_blog_title', __('Blog','saasto'));
         $breadcrumb_class = 'home_front_page';
@@ -115,6 +118,7 @@ function saasto_breadcrumb_func() {
          <!-- page title area end -->
         <?php
       }
+    } // 404 page condition
 }
 
 add_action( 'saasto_before_main_content', 'saasto_breadcrumb_func' );

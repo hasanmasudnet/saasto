@@ -18,7 +18,7 @@ get_header();
                $saasto_404_bg = get_theme_mod('saasto_404_bg',get_template_directory_uri() . '/assets/img/404.png');
                $saasto_error_title = get_theme_mod('saasto_error_title', __('Page not found', 'saasto'));
                $saasto_error_link_text = get_theme_mod('saasto_error_link_text', __('Back To Home', 'saasto'));
-               $saasto_error_desc = get_theme_mod('saasto_error_desc', __('Oops! The page you are looking for does not exist. %s It might have been moved or deleted.', 'saasto'));
+               $saasto_error_desc = get_theme_mod('saasto_error_desc', __('Oops! The page you are looking for does not exist. It might have been moved or deleted.', 'saasto'));
             ?>
 
             <div class="content-400-error text-center">
@@ -32,7 +32,6 @@ get_header();
                </div>
             </div>
          </div>
-         <img class="position-" src="<?php echo get_template_directory_uri() . '/assets/img/flying-shadow.png'?>" alt="">
       </div>
    </div>
 </section>

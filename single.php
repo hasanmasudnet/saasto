@@ -60,7 +60,6 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 							endif;?>
 						<?php
 
-							get_template_part( 'template-parts/biography' );
 
 							// If comments are open or we have at least one comment, load up the comment template.
 							if ( comments_open() || get_comments_number() ):

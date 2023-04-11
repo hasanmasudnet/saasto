@@ -95,17 +95,16 @@ add_action( 'saasto_language', 'saasto_language_list' );
 // header logo
 function saasto_header_logo() { ?>
       <?php
-        $saasto_logo_on = function_exists( 'get_field' ) ? get_field( 'is_enable_sec_logo' ) : NULL;
+        $saasto_custom_logo_on = function_exists( 'get_field' ) ? get_field( 'is_enable_cust_logo' ) : NULL;
         $saasto_logo = get_template_directory_uri() . '/assets/img/logo.png';
-        $saasto_logo_black = get_template_directory_uri() . '/assets/img/logo/logo-white.png';
 
         $saasto_site_logo = get_theme_mod( 'logo', $saasto_logo );
-        $saasto_secondary_logo = get_theme_mod( 'seconday_logo', $saasto_logo_black );
+        $saasto_custom_logo = function_exists( 'get_field' ) ? get_field( 'custom_logo' ) : NULL;
       ?>
 
-      <?php if ( !empty( $saasto_logo_on ) ) : ?>
+      <?php if ( !empty( $saasto_custom_logo_on ) && !empty( $saasto_custom_logo) ) : ?>
          <a class="secondary-logo" href="<?php print esc_url( home_url( '/' ) );?>">
-             <img src="<?php print esc_url( $saasto_secondary_logo );?>" alt="<?php print esc_attr__( 'logo', 'saasto' );?>" />
+            <?php print wp_get_attachment_image( $saasto_custom_logo, 'full', '', ['class' => 'custom-logo']); ?>
          </a>
       <?php else : ?>
          <a class="standard-logo" href="<?php print esc_url( home_url( '/' ) );?>">
@@ -350,11 +349,11 @@ function saasto_check_footer() {
     if ( $saasto_footer_style == 'footer-style-def' ) {
         get_template_part( 'template-parts/footer/footer-def' );
     } 
-    elseif ( $saasto_footer_style == 'footer-style-2' ) {
+    elseif ( $saasto_footer_style == 'footer-style-1' ) {
         get_template_part( 'template-parts/footer/footer-2' );
     } 
-    elseif ( $saasto_footer_style == 'footer-style-3' ) {
-        get_template_part( 'template-parts/footer/footer-3' );
+    elseif ( $saasto_footer_style == 'footer-style-2' ) {
+        get_template_part( 'template-parts/footer/footer-2' );
     }
     else {
 
@@ -377,7 +376,7 @@ function saasto_check_footer() {
 
 // saasto_copyright_text
 function saasto_copyright_text() {
-   return get_theme_mod( 'saasto_copyright', esc_html__( '© 2022 Saasto, All Rights Reserved. Design By wprealizer', 'saasto' ) );
+   return get_theme_mod( 'saasto_copyright', esc_html__( '© 2023 Saasto, All Rights Reserved. Design By wprealizer', 'saasto' ) );
 }
 
 
@@ -762,3 +761,12 @@ function saasto_kses($raw){
     return '.';
 }
 add_filter('excerpt_more', 'saasto_excerpt_more');
+
+//Always safe acf json file. 
+function acf_json_save_point($path)
+{
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json';
+    return $path;
+}
+add_filter('acf/settings/save_json', 'acf_json_save_point');

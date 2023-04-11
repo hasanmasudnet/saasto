@@ -377,15 +377,6 @@ function _header_header_fields( $fields ) {
 
     $fields[] = [
         'type'        => 'image',
-        'settings'    => 'seconday_logo',
-        'label'       => esc_html__( 'Header Secondary Logo', 'saasto' ),
-        'description' => esc_html__( 'Header Logo Black', 'saasto' ),
-        'section'     => 'section_header_logo',
-        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-2.png',
-    ];
-
-    $fields[] = [
-        'type'        => 'image',
         'settings'    => 'preloader_logo',
         'label'       => esc_html__( 'Preloader Logo', 'saasto' ),
         'description' => esc_html__( 'Upload Preloader Logo.', 'saasto' ),

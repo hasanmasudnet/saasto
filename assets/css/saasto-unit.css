@@ -978,7 +978,7 @@ left: 0;
 }
 /*sidebar block widget*/
 .widget_recent_entries ul li:not(:last-child),
-.postbox__wrapper.postbox__details ul.wp-block-latest-posts:not(.is-grid) li {
+.postbox__wrapper.postbox__details ul.wp-block-latest-posts:not(.is-grid) li:not(:last-child) {
 	border-bottom: 1px solid #f0f0f5;
 	padding-bottom: 12px;
 	margin-bottom: 12px;

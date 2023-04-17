@@ -649,11 +649,37 @@ function _header_footer_fields( $fields ) {
         'multiple'    => 1,
         'choices'     => [
             'footer-style-def' => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
-            'footer-style-1'   => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
-            'footer-style-2' => get_template_directory_uri() . '/inc/img/footer/footer-2.png',
-            'footer-style-3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png'
+            'footer-style-1'   => get_template_directory_uri() . '/inc/img/footer/footer-style-1.webp',
+            'footer-style-2' => get_template_directory_uri() . '/inc/img/footer/footer-style-2.webp',
+            'footer-style-3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png',
+            'saasto-template-builder' => get_template_directory_uri() . '/inc/img/footer/footer-3.png'
         ],
         'default'     => 'footer-style-def',
+    ];
+
+     $fields[] = [
+        'type'        => 'select',
+        'settings'    => 'footer_custom_style',
+        'label'       => esc_html__( 'Select Footer', 'saasto' ),
+        'section'     => 'footer_setting',
+        'default'     => '4',
+        'placeholder' => esc_html__( 'Select an option...', 'saasto' ),
+        'priority'    => 10,
+        'multiple'    => 1,
+        'choices'     => Kirki\Util\Helper::get_posts(
+            array(
+                'posts_per_page' => 10,
+                'post_type'      => 'saasto-templates'
+            ) ,
+        ),
+        'active_callback' => [
+            [
+                'setting'  => 'choose_default_footer',
+                'operator' => '==',
+                'value'    => 'saasto-template-builder',
+            ],
+        ],
+
     ];
 
     $fields[] = [
@@ -671,6 +697,7 @@ function _header_footer_fields( $fields ) {
             '2' => esc_html__( 'Widget Number 2', 'saasto' ),
         ],
     ];
+
 
     $fields[] = [
         'type'        => 'image',

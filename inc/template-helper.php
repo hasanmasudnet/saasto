@@ -367,6 +367,13 @@ function saasto_check_footer() {
         elseif ( $saasto_default_footer_style == 'footer-style-3' ) {
             get_template_part( 'template-parts/footer/footer-3' );
         } 
+        elseif ( $saasto_default_footer_style == 'saasto-template-builder' ) {
+
+            $post_id  = get_theme_mod( 'footer_custom_style' );
+            // echo Elementor\Plugin::instance()->frontend->get_builder_content_for_display($post_id);
+            echo Elementor\Plugin::instance()->frontend->get_builder_content($post_id);
+
+        } 
         else {
             get_template_part( 'template-parts/footer/footer-def' );
         }

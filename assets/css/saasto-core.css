@@ -638,6 +638,11 @@ h5 {
   padding: 18px 32px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  align-items: center;
+}
+
+a.saasto-btn:not(.download-btn-outlined) i {
+    margin-left: 10px;
 }
 
 .btn-fill-rounded:hover {

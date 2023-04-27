@@ -320,5 +320,35 @@ $(".counter-item").each(function () {
   }
   });
 });
+
+
+// Pricing Toggle
+
+var checkBox = document.querySelectorAll("#checbox")
+
+for(let i = 0; i < checkBox.length; i++){
+  checkBox[i].addEventListener("click", ()=>{
+    var text1 = document.querySelectorAll(".text1")
+    var text2 = document.querySelectorAll(".text2")
+    
+    if(checkBox[i].checked == true){
+      console.log(text2)
+      text1.forEach((e)=>{
+        e.style.display = "block";
+      })
+      text2.forEach((e)=>{
+        e.style.display = "none";
+      })
+    } else if (checkBox[i].checked == false) {
+      text1.forEach((e)=>{
+        e.style.display = "none";
+      })
+      text2.forEach((e)=>{
+        e.style.display = "block";
+      })
+    }
+
+  })
+}
   
 }(jQuery));

@@ -346,6 +346,33 @@
     margin-top: 60px;
     padding-left: 20px;
   }
+
+  .tab-wrap {
+    justify-content: start;
+    background-color: unset;
+    border-radius: 0;
+  }
+
+  .tab-wrap .nav-link.active, .tab-wrap .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #8976FD;
+    box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
+  }
+
+  .tab-wrap .nav-link {
+    font-size: 16px;
+    padding: 10px 23px;
+    margin-bottom: 10px;
+  }
+
+  .timeline-wrap .timeline-info::before {
+    display: none;
+  }
+
+  .timeline-wrap .timeline-info {
+    max-width: unset;
+  }
+  
 }
 
 /* Large Mobile Layout*/

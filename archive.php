@@ -39,9 +39,9 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 						endwhile;
 					?>
 
-					<div class="basic-pagination basic-pagination-2 mb-40">
-						<?php saasto_pagination( '<i class="fas fa-angle-double-left"></i>', '<i class="fas fa-angle-double-right"></i>', '', [ 'class' => '' ] );?>
-					</div>
+						<div class="pagination-wrap">
+							<?php saasto_pagination( '<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>', '', ['class' => ''] );?>
+						</div>
 					<?php
 						else:
 							get_template_part( 'template-parts/content', 'none' );

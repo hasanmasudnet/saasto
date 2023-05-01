@@ -294,10 +294,11 @@ padding: 0;
 	margin-top: 20px;
 	clear: both;
 }
-.saasto__page_content ul.wp-block-categories-list.wp-block-categories {
+ul.wp-block-categories-list.wp-block-categories {
     list-style: none;
     padding-left: 0;
 }
+
 
 .wp-block-archives-list.extraclass.wp-block-archives li a {
 	color: var(--tp-text-body);
@@ -324,11 +325,6 @@ padding: 0;
     margin-bottom: 30px;
 }
 
-ol.wp-block-latest-comments {
-	margin-left: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-}
 .postbox__details p:last-child{
 	margin-bottom: 0;
 }
@@ -997,23 +993,7 @@ left: 0;
 	color: var(--text-bright-gray);
 	padding-left: 0;
 }
-.postbox__wrapper.postbox__details .wp-block-latest-comments{
-	list-style-type: none;
-}
-.sidebar-widget.widget_block .wp-block-latest-comments article a,
-.wp-block-latest-comments__comment-meta a
- {
-	font-weight: 500;
-	line-height: 24px;
-	color: var(--text-bright-gray);
-	transition: .3s all ease;
-	opacity: 1;
-}
 
-.sidebar-widget.widget_block .wp-block-latest-comments article a:hover,
-.wp-block-latest-comments__comment-meta a:hover{
-	opacity: 0.8;
-}
 
 .sidebar-widget .wp-block-calendar table th {
 	background: no-repeat;
@@ -1200,18 +1180,7 @@ li.wp-block-pages-list__item.has-child .wp-block-pages-list__item__link{
 	font-weight: 500;
 	line-height: 24px;
 }
-.footer-widget.widget_block .wp-block-latest-comments article a {
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 24px;
-	color: var(--tp-common-black);
-}
-.footer-widget.widget_block .wp-block-latest-comments article .wp-block-latest-comments__comment-meta {
-	color: #666;
-}
-.footer-widget.widget_block .wp-block-latest-comments article a.wp-block-latest-comments__comment-author {
-	color: var(--tp-theme-1);
-}
+
 .footer-widget .wp-block-tag-cloud a {
 	display: inline-block;
 	height: 36px;
@@ -1358,6 +1327,53 @@ input#rememberme {
 ul.blog__meta {
 	padding-left: 0;
 }
+
+/* Recent Comments Widgets  #1 */
+
+.wp-block-latest-comments {
+	margin-left: 0;
+	margin-bottom: 0 !important;
+	padding-left: 0;
+}
+
+.wp-block-latest-comments .wp-block-latest-comments__comment:not(ol.wp-block-latest-comments .wp-block-latest-comments__comment:last-child) {
+    border-bottom: 1px solid #f0f0f5;
+    padding-bottom: 15px;
+}
+
+.postbox__wrapper.postbox__details .wp-block-latest-comments{
+	list-style-type: none;
+}
+.sidebar-widget.widget_block .wp-block-latest-comments article a,
+.wp-block-latest-comments__comment-meta a
+ {
+	font-family: var(--primary-font);
+	font-weight: 500;
+	line-height: 24px;
+	color: var(--text-bright-gray);
+	transition: .3s all ease;
+	opacity: 1;
+}
+
+.sidebar-widget.widget_block .wp-block-latest-comments article a:hover,
+.wp-block-latest-comments__comment-meta a:hover{
+	opacity: 0.8;
+}
+
+.footer-widget.widget_block .wp-block-latest-comments article a {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 24px;
+	color: var(--tp-common-black);
+}
+.footer-widget.widget_block .wp-block-latest-comments article .wp-block-latest-comments__comment-meta {
+	color: #666;
+}
+.footer-widget.widget_block .wp-block-latest-comments article a.wp-block-latest-comments__comment-author {
+	color: var(--tp-theme-1);
+}
+
+/* Recent Comments end */
 
 /* Large Mobile Layout*/
 @media only screen and (max-width: 768px) {

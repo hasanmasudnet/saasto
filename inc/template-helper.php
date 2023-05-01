@@ -368,10 +368,12 @@ function saasto_check_footer() {
             get_template_part( 'template-parts/footer/footer-3' );
         } 
         elseif ( $saasto_default_footer_style == 'saasto-template-builder' ) {
-
-            $post_id  = get_theme_mod( 'footer_custom_style' );
-            // echo Elementor\Plugin::instance()->frontend->get_builder_content_for_display($post_id);
-            echo Elementor\Plugin::instance()->frontend->get_builder_content($post_id);
+            
+            if (class_exists("\Elementor\Plugin")) {
+                $post_id  = get_theme_mod( 'footer_custom_style' );
+				$cont = new \Elementor\Frontend();
+				echo $cont->get_builder_content_for_display( $post_id, $with_css = true );
+            }
 
         } 
         else {
@@ -777,3 +779,4 @@ function acf_json_save_point($path)
     return $path;
 }
 add_filter('acf/settings/save_json', 'acf_json_save_point');
+

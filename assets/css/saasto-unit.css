@@ -1394,3 +1394,12 @@ ul.blog__meta {
 		padding: 30px;
 	}
   }
+
+  /**
+ Customizer 
+  */
+  li#accordion-panel-saasto_customizer h3 {
+    text-transform: uppercase;
+    background-color: #8976FC !important;
+    color: #fff !important;
+}

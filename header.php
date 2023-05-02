@@ -33,24 +33,24 @@
 
          $saasto_preloader_logo = get_template_directory_uri() . '/assets/img/favicon.png';
 
-         $preloader_logo = get_theme_mod('preloader_logo', $saasto_preloader_logo);
+         $preloader_logo = get_theme_mod('preloader_logo') ? get_theme_mod('preloader_logo') : $saasto_preloader_logo;
          $bg_style = function_exists( 'get_field' ) ? get_field( 'body_background_style' ) : NULL;
+         $loader_spinner = get_theme_mod( 'saasto_preloader_spinner' ) ? 'spinner' : NULL;
 
     ?>
 
     <?php if ( !empty( $saasto_preloader ) ): ?>
-    <!-- pre loader area start -->
-    <div id="loading">
-     <div id="loading-center">
-        <div id="loading-center-absolute">
-           <svg id="loader">
-              <path id="corners" d="m 0 12.5 l 0 -12.5 l 50 0 l 0 50 l -50 0 l 0 -37.5" />
-           </svg>
-           <img src="<?php echo esc_url($preloader_logo); ?>" alt="<?php echo esc_attr__('logo','saasto'); ?>">
-        </div>
-     </div>  
-    </div>
-    <!-- pre loader area end -->
+        <!-- ===============  Preloder start =============== -->
+            <div class="preloader">
+               <div class="spinner-wrap">
+                     <div class="preloder-logo">
+                     
+                        <img src="<?php echo esc_url($preloader_logo); ?>" alt="<?php echo esc_attr__('logo','saasto'); ?>" class="img-fluid">
+                     </div>
+                     <div class="<?php echo esc_attr($loader_spinner); ?>"></div> 
+               </div>
+            </div>
+         <!-- ===============  Preloder end =============== -->
     <?php endif;?>
 
     <?php if ( !empty( $saasto_backtotop ) ): ?>

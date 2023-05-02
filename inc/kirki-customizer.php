@@ -24,8 +24,9 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     /**
      * Customizer Section
      */
-    $wp_customize->add_section( 'header_top_setting', [
-        'title'       => esc_html__( 'Header Info Setting', 'saasto' ),
+
+    $wp_customize->add_section( 'global_enable_disable_settings', [
+        'title'       => esc_html__( 'Global Enable/Disable', 'saasto' ),
         'description' => '',
         'priority'    => 10,
         'capability'  => 'edit_theme_options',
@@ -60,14 +61,6 @@ function saasto_customizer_panels_sections( $wp_customize ) {
         'title'       => esc_html__( 'Side Info', 'saasto' ),
         'description' => '',
         'priority'    => 14,
-        'capability'  => 'edit_theme_options',
-        'panel'       => 'saasto_customizer',
-    ] );
-
-    $wp_customize->add_section( 'global_enable_disable_settings', [
-        'title'       => esc_html__( 'Global Enable/Disable', 'saasto' ),
-        'description' => '',
-        'priority'    => 15,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -139,13 +132,28 @@ function saasto_customizer_panels_sections( $wp_customize ) {
 
 add_action( 'customize_register', 'saasto_customizer_panels_sections' );
 
-function _header_top_fields( $fields ) {
+function _global_enable_desable_fields( $fields ) {
+    // global Enable disable seciton
+
+    $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'page_sidebar_setting',
+        'label'    => esc_html__( 'Page sidebar', 'saasto' ),
+        'section'  => 'global_enable_disable_settings',
+        'description' => esc_html__( 'you can trun off page side bar globally For all page by desabling this.', 'saasto' ),
+        'default'  => '1',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
 
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_preloader',
         'label'    => esc_html__( 'Preloader On/Off', 'saasto' ),
-        'section'  => 'header_top_setting',
+        'section'  => 'global_enable_disable_settings',
         'default'  => '0',
         'priority' => 10,
         'choices'  => [
@@ -154,12 +162,41 @@ function _header_top_fields( $fields ) {
         ],
     ];
 
+    $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'saasto_preloader_spinner',
+        'label'    => esc_html__( 'Spinner', 'saasto' ),
+        'section'  => 'global_enable_disable_settings',
+        'default'  => '0',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+
+    $fields[] = [
+        'type'        => 'image',
+        'settings'    => 'preloader_logo',
+        'label'       => esc_html__( 'Preloader Logo', 'saasto' ),
+        'description' => esc_html__( 'Upload Preloader Logo.', 'saasto' ),
+        'section'     => 'global_enable_disable_settings',
+        'default'     => get_template_directory_uri() . '/assets/img/favicon.png',
+        'active_callback' => [
+            [
+                'setting'  => 'saasto_preloader',
+                'operator' => '==',
+                'value'    => true,
+            ],
+        ],
+    ];
+
     
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_header_right',
         'label'    => esc_html__( 'Header Right On/Off', 'saasto' ),
-        'section'  => 'header_top_setting',
+        'section'  => 'global_enable_disable_settings',
         'default'  => '0',
         'priority' => 10,
         'choices'  => [
@@ -173,7 +210,7 @@ function _header_top_fields( $fields ) {
         'type'     => 'text',
         'settings' => 'saasto_head_r_button_text_one',
         'label'    => esc_html__( 'Button Name', 'saasto' ),
-        'section'  => 'header_top_setting',
+        'section'  => 'global_enable_disable_settings',
         'default'  => esc_html__( 'Login', 'saasto' ),
         'priority' => 10,
         'active_callback' => [
@@ -189,7 +226,7 @@ function _header_top_fields( $fields ) {
         'type'     => 'url',
         'settings' => 'saasto_head_r_button_link_one',
         'label'    => esc_html__( 'Button URL', 'saasto' ),
-        'section'  => 'header_top_setting',
+        'section'  => 'global_enable_disable_settings',
         'default'  => esc_html__( '#', 'saasto' ),
         'priority' => 10,
         'active_callback' => [
@@ -205,7 +242,7 @@ function _header_top_fields( $fields ) {
         'type'     => 'text',
         'settings' => 'saasto_head_r_button_text_two',
         'label'    => esc_html__( 'Button Name', 'saasto' ),
-        'section'  => 'header_top_setting',
+        'section'  => 'global_enable_disable_settings',
         'default'  => esc_html__( 'Sign Up', 'saasto' ),
         'priority' => 10,
         'active_callback' => [
@@ -221,7 +258,7 @@ function _header_top_fields( $fields ) {
         'type'     => 'url',
         'settings' => 'saasto_head_r_button_link_two',
         'label'    => esc_html__( 'Button URL', 'saasto' ),
-        'section'  => 'header_top_setting',
+        'section'  => 'global_enable_disable_settings',
         'default'  => esc_html__( '#', 'saasto' ),
         'priority' => 10,
         'active_callback' => [
@@ -233,63 +270,9 @@ function _header_top_fields( $fields ) {
         ],
     ];
 
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_header_lang',
-        'label'    => esc_html__( 'language On/Off', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
-
-    // phone
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_phone_num',
-        'label'    => esc_html__( 'Phone Number', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => esc_html__( '+(088) 234 567 899', 'saasto' ),
-        'priority' => 10,
-    ];    
-
-    // email
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_mail_id',
-        'label'    => esc_html__( 'Mail ID', 'saasto' ),
-        'section'  => 'saasto_mail_id',
-        'default'  => esc_html__( 'info@saasto.com', 'saasto' ),
-        'priority' => 10,
-    ];    
-
-    // email
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_address',
-        'label'    => esc_html__( 'Address', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => esc_html__( 'Moon ave, New York, 2020 NY US', 'saasto' ),
-        'priority' => 10,
-    ];    
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_address_url',
-        'label'    => esc_html__( 'Address URL', 'saasto' ),
-        'section'  => 'header_top_setting',
-        'default'  => esc_html__( 'https://goo.gl/maps/qzqY2PAcQwUz1BYN9', 'saasto' ),
-        'priority' => 10,
-    ];
-
     return $fields;
-
 }
-add_filter( 'kirki/fields', '_header_top_fields' );
+add_filter( 'kirki/fields', '_global_enable_desable_fields' );
 
 /*
 Header Social
@@ -373,15 +356,6 @@ function _header_header_fields( $fields ) {
         'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
         'section'     => 'section_header_logo',
         'default'     => get_template_directory_uri() . '/assets/img/logo.png',
-    ];
-
-    $fields[] = [
-        'type'        => 'image',
-        'settings'    => 'preloader_logo',
-        'label'       => esc_html__( 'Preloader Logo', 'saasto' ),
-        'description' => esc_html__( 'Upload Preloader Logo.', 'saasto' ),
-        'section'     => 'section_header_logo',
-        'default'     => get_template_directory_uri() . '/assets/img/favicon.png',
     ];
 
     return $fields;
@@ -513,26 +487,6 @@ add_filter( 'kirki/fields', '_header_page_title_fields' );
 /*
 _header_page_title_fields
  */
-function _global_enable_desable_fields( $fields ) {
-    // global Enable disable seciton
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'page_sidebar_setting',
-        'label'    => esc_html__( 'Page sidebar', 'saasto' ),
-        'section'  => 'global_enable_disable_settings',
-        'description' => esc_html__( 'you can trun off page side bar globally For all page by desabling this.', 'saasto' ),
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
-    return $fields;
-}
-add_filter( 'kirki/fields', '_global_enable_desable_fields' );
 
 
 /*

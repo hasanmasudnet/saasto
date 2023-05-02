@@ -17,6 +17,8 @@
     $saasto_head_btn_two = get_theme_mod( 'saasto_head_r_button_text_two', __( 'Sign Up', 'saasto' ) );
     $saasto_head_btn_two_link = get_theme_mod( 'saasto_head_r_button_link_two', __( '#', 'saasto' ) );
 
+    // Header Options
+    $is_transparent = function_exists( 'get_field' ) ? (get_field( 'transparent_header' ) == true ) ? 'header-transparent' : NULL : NULL;
 
    // header right
    $saasto_header_right = get_theme_mod( 'saasto_header_right', false );
@@ -27,7 +29,7 @@
 
 <!-- ===============  header area start =============== -->
 <header>
-    <div class="header-area header-style header-style-one">
+    <div class="header-area header-one <?php echo esc_attr($is_transparent); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
@@ -81,6 +83,3 @@
     </div>
 </header>
 <!-- ===============  header area end =============== -->
-
-
-<?php get_template_part( 'template-parts/header/header-side-info' ); ?>

@@ -18,7 +18,9 @@
     $saasto_head_btn_two = get_theme_mod( 'saasto_head_r_button_text_two', __( 'Sign Up', 'saasto' ) );
     $saasto_head_btn_two_link = get_theme_mod( 'saasto_head_r_button_link_two', __( '#', 'saasto' ) );
 
-
+   // Header Options
+   $is_transparent = function_exists( 'get_field' ) ? (get_field( 'transparent_header' ) == true ) ? 'header-transparent' : NULL : NULL;
+   
    // header right
    $saasto_header_right = get_theme_mod( 'saasto_header_right', false );
    $saasto_menu_col = ( $saasto_header_right ) ? 'col-xl-6 col-lg-8 col-md-8 col-sm-6 col-xs-6 d-xl-flex justify-content-lg-center' : 'col-xl-9 d-xl-flex justify-content-lg-end';
@@ -27,7 +29,7 @@
 
 <!-- ===============  header area start =============== -->
 <header>
-   <div class="header-area header-style header-style-two">
+   <div class="header-area header-two <?php echo esc_attr($is_transparent); ?>">
       <div class="container">
             <div class="row">
                <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
@@ -47,7 +49,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-6 col-lg-8 col-md-8 col-sm-6 col-xs-6 d-xl-flex justify-content-lg-center">
+               <div class="<?php echo esc_attr($saasto_menu_col); ?>">
                   <nav class="main-nav float-end">
                      <div class="inner-logo d-xl-none text-center">
                         <?php 
@@ -81,5 +83,3 @@
    </div>
 </header>
 <!-- ===============  header area end =============== -->
-
-<?php get_template_part( 'template-parts/header/header-side-info' ); ?>

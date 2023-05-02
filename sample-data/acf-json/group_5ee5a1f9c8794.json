@@ -1,10 +1,139 @@
 {
     "key": "group_5ee5a1f9c8794",
-    "title": "Page Info",
+    "title": "MetaBox",
     "fields": [
         {
+            "key": "field_6450b44f99562",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ee5b7e62edef",
+            "label": "Header Style",
+            "name": "header_style",
+            "type": "select",
+            "instructions": "Please chose header style.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "header-style-Default": "Header Style Default",
+                "header-style-1": "Header Style 1",
+                "header-style-2": "Header Style 2",
+                "header-style-3": "Header Style 3"
+            },
+            "default_value": "header-style-1",
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6450b4006b2a6",
+            "label": "Transparent Header",
+            "name": "transparent_header",
+            "type": "true_false",
+            "instructions": "Enable this option if you want to make the header transparent",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        },
+        {
+            "key": "field_5ee5ba74c315f",
+            "label": "Enable Custom Logo",
+            "name": "is_enable_cust_logo",
+            "type": "true_false",
+            "instructions": "For Enable Secondary Logo Please Go Here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6433a4bf797ac",
+            "label": "Custom Logo",
+            "name": "custom_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ee5ba74c315f",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6450b46699563",
+            "label": "Page",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_5ee5a2875481b",
-            "label": "Is it invisible breadcrumb?",
+            "label": "Breadcrumb",
             "name": "is_it_invisible_breadcrumb",
             "type": "true_false",
             "instructions": "",
@@ -18,8 +147,8 @@
             "message": "Is it invisible breadcrumb?",
             "default_value": 0,
             "ui": 1,
-            "ui_on_text": "Yes",
-            "ui_off_text": "No"
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
         },
         {
             "key": "field_5ee5a3275481c",
@@ -80,82 +209,20 @@
             "placeholder": ""
         },
         {
-            "key": "field_5ee5ba74c315f",
-            "label": "Enable Custom Logo",
-            "name": "is_enable_cust_logo",
-            "type": "true_false",
-            "instructions": "For Enable Secondary Logo Please Go Here",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_6433a4bf797ac",
-            "label": "Custom Logo",
-            "name": "custom_logo",
-            "type": "image",
+            "key": "field_6450b523571b4",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ee5ba74c315f",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5ee5b7e62edef",
-            "label": "Header Style",
-            "name": "header_style",
-            "type": "select",
-            "instructions": "Please chose header style.",
-            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "20",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "header-style-Default": "Header Style Default",
-                "header-style-1": "Header Style 1",
-                "header-style-2": "Header Style 2",
-                "header-style-3": "Header Style 3"
-            },
-            "default_value": "header-style-1",
-            "allow_null": 1,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_5efb0ded987fe",
@@ -263,5 +330,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683002252
+    "modified": 1683011000
 }

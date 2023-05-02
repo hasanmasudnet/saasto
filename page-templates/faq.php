@@ -28,7 +28,7 @@
          </div>
          <div class="row justify-content-between pt-60">
             <div class="col-lg-4">
-               <img src=<?php echo get_template_directory_uri()?>.'../assets/img/faq.png' alt="">
+               <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/faq.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
             </div>
             <div class="col-lg-6">
                <div class="accordion faq-wrap" id="accordionExample">
@@ -94,7 +94,7 @@
             </div>
          </div>
       </div>
-      <img class="subscribe-sp-img position-absolute top-50 start-50 translate-middle d-none d-lg-block" src=<?php echo get_template_directory_uri()?>.'../assets/img/subscribe-bg-sp.png' alt="">
+      <img class="subscribe-sp-img position-absolute top-50 start-50 translate-middle d-none d-lg-block" src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/subscribe-bg-sp.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
    </div>
 
 

@@ -25,62 +25,6 @@
 
 ?>
 
-
-<!-- ===============  header area start =============== -->
-<header class="d-none">
-   <div class="header-area header-style header-style-two">
-      <div class="container">
-            <div class="row">
-               <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
-                  <div class="nav-logo d-flex justify-content-between align-items-center">
-                        <?php saasto_header_logo();?>
-
-                        <div class="d-flex align-items-center gap-4">
-                           <div class="mobile-menu d-flex ">
-                              <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
-                                    <span class="h-top"></span>
-                                    <span class="h-middle"></span>
-                                    <span class="h-bottom"></span>
-                              </a>
-                           </div>
-                        </div>
-                  </div>
-               </div>
-               <div class="<?php print esc_attr( $saasto_menu_col ); ?>">
-                  <nav class="main-nav float-end">
-                        <div class="inner-logo d-xl-none text-center">
-                           <?php saasto_header_logo();?>
-                        </div>
-                        
-                        <?php 
-                        // Site menu
-                        saasto_header_menu();?>
-
-                     <?php if ( !empty( $saasto_header_right ) ): ?>
-                           <div class="inner-contact-options d-xl-none d-inline-flex flex-column  px-3">
-                              <a href="<?php echo esc_html($saasto_button_link); ?>" class="btn-fill-pill md-btn"><?php echo esc_html($saasto_button_text); ?></a>
-                           </div>
-                     <?php endif; ?>
-                        <div class="inner-contact-options d-xl-none d-inline-flex flex-column  px-3">
-                           <a href="signup.html" class="btn-fill-pill md-btn">Free Trial<span></span></a>
-                        </div>
-                  </nav>
-               </div>
-
-               <?php if ( !empty( $saasto_header_right ) ): ?>
-                  <div class="col-xl-2">
-                     <div class="nav-right float-end d-xl-flex d-none">
-                        <a href="<?php echo esc_html($saasto_button_link); ?>" class="btn-fill-pill md-btn"><?php echo esc_html($saasto_button_text); ?></a>
-                     </div>
-                  </div>
-               <?php endif; ?>
-
-            </div>
-      </div>
-   </div>
-</header>
-    <!-- ===============  header area end =============== -->
-
 <!-- ===============  header area start =============== -->
 <header>
    <div class="header-area header-style header-style-two">

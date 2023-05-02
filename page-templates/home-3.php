@@ -18,7 +18,7 @@
         <!-- ===============  hero style start =============== -->
         <div class="hero-style-three position-relative z-index-1">
             <div class="dot-shape anima-trasform-y-1 low-index d-none d-lg-block">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-three-dots-shape.png" alt="">
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-three-dots-shape.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
             </div>
 
             <div class="hero-animated-blobs">
@@ -35,7 +35,7 @@
                             <h1 class="text-xxl">Manage Your
                                 business <span class="d-inline-block position-relative text-bright-green">finance <img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle d-none d-lg-block"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter.svg" alt=""></span>
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span>
                                 easily</h1>
                             <p class="body-disply-2">An enim nullam tempor sapien gravida donec enim ipsum porta justo
                                 congue magna at pretium purus pretium ligula </p>
@@ -49,11 +49,11 @@
 
                     <div class="col-lg-5">
                         <div class="hero-mobil-screen position-relative">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/hero-screen-3.png" alt="" class="hero-screen-three">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/hero-screen-3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="hero-screen-three">
                             <img class="animated-kit position-absolute anima-trasform-y-1 translate-middle-y"
-                                src="<?php echo get_template_directory_uri() ?>/assets/img/screen/hero-three-animated-kit.png" alt="">
+                                src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/hero-three-animated-kit.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                             <img class="animated-kit-two animated-kit-two wow fadeInLeft position-absolute"
-                                src="<?php echo get_template_directory_uri() ?>/assets/img/screen/hero-three-animated-kit-two.png" alt="">
+                                src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/hero-three-animated-kit-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                     </div>
                 </div>
@@ -100,8 +100,8 @@
                 <div class="row align-items-center justify-content-between gy-4">
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center wow fadeInLeft">
                         <div class="feature-four-screens position-relative">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/features-four-screen-group.png" alt="" class="img-fluid">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-four-flort.png" alt=""
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/features-four-screen-group.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-four-flort.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                 class="anima-trasform-y-1 position-absolute bottom-0 feature-four-animi">
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             <h2 class="line-height-70 text-nevy-blue">Quick and easy
                                 <span class="d-inline-block position-relative text-bright-green">payments <img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle low-index"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-two.svg" alt=""></span>with <br>
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-two.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span>with <br>
                                 just a few clicks
                             </h2>
                             <p class="body-disply-2 pt-4 wow fadeInUp" data-wow-delay="0.3s">An enim nullam tempor
@@ -136,7 +136,7 @@
                             <h2 class="line-height-70 text-nevy-blue">You can view <span
                                     class="d-inline-block position-relative">transaction<img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle low-index"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-two.svg" alt=""></span> <br>
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-two.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> <br>
                                 history easily
                             </h2>
                             <p class="body-disply-2 pt-4 wow fadeInUp" data-wow-delay="0.3s">An enim nullam tempor
@@ -153,8 +153,8 @@
                     </div>
                     <div class="col-lg-6 order-0 order-lg-1 wow fadeInRight">
                         <div class="feature-five-screen position-relative">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-screen-five.png" alt="" class="screen-five">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/features-five-animi.png " alt=""
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-screen-five.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="screen-five">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/features-five-animi.png " alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                 class="position-absolute top-0 start-50 feature-animi anima-trasform-x-1">
                         </div>
 
@@ -171,7 +171,7 @@
                             <h2 class="line-height-70 text-nevy-blue">Some excellent <span
                                     class="d-inline-block position-relative">features<img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle low-index"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-three.svg" alt=""></span> for
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-three.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> for
                                 you </h2>
                             <p class="body-disply-2 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta
                                 justo congue magna at pretium purus pretium ligula </p>
@@ -182,7 +182,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft">
                         <div class="feature-card-style-four">
                             <div class="feature-icon">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/swap-icon-g.svg" alt="">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/swap-icon-g.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                             </div>
                             <div class="feature-disc">
                                 <h5>Bill Payment</h5>
@@ -193,7 +193,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
                         <div class="feature-card-style-four">
                             <div class="feature-icon">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/wallet-icon-g.svg" alt="">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/wallet-icon-g.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                             </div>
                             <div class="feature-disc">
                                 <h5>Withdraw Money</h5>
@@ -204,7 +204,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="feature-card-style-four">
                             <div class="feature-icon">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/paper-plus-icon-g.svg" alt="">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/paper-plus-icon-g.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                             </div>
                             <div class="feature-disc">
                                 <h5>Add card</h5>
@@ -215,7 +215,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.9s">
                         <div class="feature-card-style-four">
                             <div class="feature-icon">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/history-icon-g.svg" alt="">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/history-icon-g.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                             </div>
                             <div class="feature-disc">
                                 <h5>Bill Payment</h5>
@@ -232,7 +232,7 @@
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6">
                         <div class="feature-six-screen d-flex justify-content-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-six-screen.png" alt=""
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-six-screen.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                 class="img-fluid wow fadeInUp">
                             <div class="feature-six-bg"></div>
                         </div>
@@ -242,7 +242,7 @@
                             <h2 class="line-height-70 text-nevy-blue">Platform to make it <span
                                     class="d-inline-block position-relative">easier<img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle low-index"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-four.svg" alt=""></span> for
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-four.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> for
                                 users
                             </h2>
                             <p class="body-disply-2 pt-3">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
@@ -281,7 +281,7 @@
                             <h2 class="line-height-70 text-nevy-blue">What our happy <span
                                     class="d-inline-block position-relative">users<img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle low-index"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-four.svg" alt=""></span> say
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-four.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> say
                             </h2>
                             <p class="body-disply-2 pt-3">Read real experience of our user</p>
                         </div>
@@ -291,19 +291,19 @@
                 <div class="swiper testimonial-thumbs-three pt-5 pb-5">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-thumb-style-three">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/reviewers/testi-three-avater-one.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/reviewers/testi-three-avater-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                         <div class="swiper-slide swiper-thumb-style-three">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/reviewers/testi-three-avater-two.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/reviewers/testi-three-avater-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                         <div class="swiper-slide swiper-thumb-style-three">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/reviewers/testi-three-avater-three.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/reviewers/testi-three-avater-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                         <div class="swiper-slide swiper-thumb-style-three">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/reviewers/testi-three-avater-four.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/reviewers/testi-three-avater-four.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                         <div class="swiper-slide swiper-thumb-style-three">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/reviewers/testi-three-avater-five.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/reviewers/testi-three-avater-five.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                     </div>
                 </div>
@@ -377,7 +377,7 @@
                             <h2 class="line-height-70 text-nevy-blue"> See Our <span
                                     class="d-inline-block position-relative text-bright-green">trusted <img
                                         class="d-none d-lg-block position-absolute start-50 top-50 translate-middle low-index"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-three.svg" alt=""></span> <br>
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-three.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> <br>
                                 partners
                             </h2>
                             <p class="body-disply-2 pt-4">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
@@ -392,18 +392,18 @@
                     <div class="col-lg-6">
                         <div class="partner-logo-row d-flex gap-lg-5 gap-4">
                             <div class="partner-logo wow zoomIn"> <img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/client-logo-one.png" alt="" class="img-fluid"></div>
+                                    src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/client-logo-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid"></div>
 
                             <div class="partner-logo mt-lg-5">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/client-logo-four.png" alt="" class="img-fluid">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/client-logo-four.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                             </div>
 
                             <div class="partner-logo  wow zoomIn" data-wow-delay="0.3s"><img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/client-logo-two.png" alt="" class="img-fluid"></div>
+                                    src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/client-logo-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid"></div>
                         </div>
                         <div class="partner-logo-row d-flex">
                             <div class="partner-logo  wow zoomIn mt-4 single-client-logo" data-wow-delay="0.6s">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/client-logo-three.png" alt="" class="img-fluid">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/client-logo-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                             </div>
 
                         </div>
@@ -422,7 +422,7 @@
                             <h2 class="line-height-70 text-nevy-blue">Keep Your Customer <span
                                     class="d-inline-block position-relative">Trust<img
                                         class="position-absolute start-50 top-50 translate-middle low-index d-none d-lg-block"
-                                        src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/ring-text-highlighter-four.svg" alt=""></span> </h2>
+                                        src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-four.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> </h2>
                             <p class="body-disply-2 pt-3">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
                                 altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita aliu.</p>
                         </div>
@@ -434,7 +434,7 @@
                         <div class="payment-method-single mt-5">
                             <div class="method-top flex-wrap flex-sm-nowrap">
                                 <div class="system-icon">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/green-doller-icon.svg" alt="" class="img-fluid">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-doller-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                                 </div>
                                 <div class="top-info">
                                     <h5>Multiple Payment Method</h5>
@@ -445,28 +445,28 @@
                             <div class="method-body row">
                                 <div class="col-sm-6">
                                     <div class="single-method-card single-payment-logo wow fadeInDown">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/payment/payment-method-one.png" alt=""
+                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/payment/payment-method-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                             class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="single-method-card single-payment-logo wow fadeInDown"
                                         data-wow-delay="0.3s">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/payment/payment-method-two.png" alt=""
+                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/payment/payment-method-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                             class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="single-method-card single-payment-logo wow fadeInDown"
                                         data-wow-delay="0.6s">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/payment/payment-method-three.png" alt=""
+                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/payment/payment-method-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                             class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="single-method-card single-payment-logo wow fadeInDown"
                                         data-wow-delay="0.9s">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/payment/payment-method-four.png" alt=""
+                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/payment/payment-method-four.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -478,7 +478,7 @@
                         <div class="payment-method-single mt-5">
                             <div class="method-top flex-wrap flex-sm-nowrap">
                                 <div class="system-icon">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/green-lock-icon.svg" alt="" class="img-fluid">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-lock-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                                 </div>
                                 <div class="top-info">
                                     <h5>Payment Protection</h5>
@@ -490,14 +490,14 @@
                                 <div class="single-method-card single-payment-safety wow fadeInDown"
                                     data-wow-delay="0.4s">
                                     <div class="safety-icon">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/green-finger-icon.svg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-finger-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                     </div>
                                     <p>Set up your payment method with PayUp. The linking of commercial</p>
                                 </div>
                                 <div class="single-method-card single-payment-safety wow fadeInDown"
                                     data-wow-delay="0.8s">
                                     <div class="safety-icon">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/green-qr-icon.svg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-qr-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                     </div>
                                     <p>Set up your payment method with PayUp. The linking of commercial</p>
                                 </div>
@@ -531,7 +531,7 @@
 
                     <div class="col-lg-5 d-none d-lg-block">
                         <div class="register-one-screen text-center wow fadeInRight">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/register-one-screen.png" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/register-one-screen.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                         </div>
                     </div>
                 </div>

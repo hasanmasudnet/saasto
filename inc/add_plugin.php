@@ -28,29 +28,19 @@ function saasto_register_required_plugins() {
             'slug'     => 'elementor',
             'required' => true,
         ],
-        array(
-            'name'               => esc_html__('Tutor LMS','saasto'),
-            'slug'               => 'tutor',
-            'required'           => true, 
-        ),
         [
-            'name'         => esc_html__( 'TP Core ', 'saasto' ),
-            'slug'         => 'tp-core',
-            'source'       => esc_url( 'https://wprealizer.com/wp/saasto/source/tp-core.zip' ),
+            'name'         => esc_html__( 'Saasto Core ', 'saasto' ),
+            'slug'         => 'saasto-core',
+            'source'       => esc_url( get_template_directory_uri() . '/sample-data/plugins/saasto-core.zip' ),
             'required'     => true,
-            'external_url' => esc_url( 'https://wprealizer.com/wp/saasto/source/tp-core.zip' ),
+            'external_url' => esc_url( get_template_directory_uri() . '/sample-data/plugins/saasto-core.zip' ),
         ],
         [
             'name'         => esc_html__( 'Advanced Custom Fields Pro', 'saasto' ),
             'slug'         => 'advanced-custom-fields-pro',
-            'source'       => esc_url( 'https://wprealizer.com/wp/saasto/source/advanced-custom-fields-pro.zip' ),
+            'source'       => esc_url( get_template_directory_uri() . '/sample-data/plugins/advanced-custom-fields-pro.zip' ),
             'required'     => true,
-            'external_url' => esc_url( 'https://wprealizer.com/wp/saasto/source/advanced-custom-fields-pro.zip' ),
-        ],
-        [
-            'name'     => esc_html__( 'WP Classic Editor', 'saasto' ),
-            'slug'     => 'classic-editor',
-            'required' => false,
+            'external_url' => esc_url( get_template_directory_uri() . '/sample-data/plugins/advanced-custom-fields-pro.zip' ),
         ],
         [
             'name'     => esc_html__( 'Contact Form 7', 'saasto' ),
@@ -70,7 +60,7 @@ function saasto_register_required_plugins() {
         array(
             'name'     =>  esc_html__('Kirki Customizer Framework','saasto'),
             'slug'     => 'kirki',
-            'required' => false,
+            'required' => true,
         ), 
         array(
             'name'     =>  esc_html__('Breadcrumb NavXT','saasto'),

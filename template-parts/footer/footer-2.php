@@ -136,7 +136,7 @@ default:
                           <form action="#" method="POST">
                               <div class="newslatter-form-style-one mt-5">
                                   <div class="form-icon">
-                                    <img src="assets/img/Icons/form-Icon.svg" alt="">
+                                    <img src="assets/img/Icons/form-Icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                    
                                   </div>
                                   <input type="text" placeholder="Type your email">

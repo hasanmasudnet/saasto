@@ -16,14 +16,14 @@ get_header();
 <!-- <div class="background-wrap home-bg-one"> -->
     <!-- =============== hero style one start=============== -->
      <div class="hero-style-one position-relative overflow-hidden">
-         <div class="position-absolute top-0 start-0 d-none d-lg-block"><img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/shape-wave.svg" alt=""></div>
-         <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-dots-one.svg" alt="" class="d-none d-lg-block position-absolute bottom-0 left-0">
+         <div class="position-absolute top-0 start-0 d-none d-lg-block"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/shape-wave.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></div>
+         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-dots-one.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="d-none d-lg-block position-absolute bottom-0 left-0">
          <div class="container ">
              <div class="row hero-one-row align-items-center py-5 py-lg-0">
                  <div class="col-lg-7">
                     <div class="hero-content py-5 mt-5 mt-lg-3 position-relative">
                         <div class="hero-animated-shape position-absolute bottom-50 anima-trasform-y-1 low-index d-none d-lg-block">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-idea-icon.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-idea-icon.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
                         <h1 class="text-bright-gray">Committed to People Committed to <span class="primary-purple">the Future</span></h1>
                         <p class="body-disply-1 pt-20">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
@@ -33,22 +33,22 @@ get_header();
                     </div>
                  </div>
                  <div class="col-xl-6 col-lg-4 hero-florting-col position-absolute end-0 top-50 translate-middle-y pt-0 pt-lg-5 mt-4">
-                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-line-vactor.svg" alt="" class="hero-line-vactor d-xl-block d-none">
-                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-carve.png" alt="" class="d-xl-block d-none position-absolute top-50 end-0 translate-middle-y">
+                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-line-vactor.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="hero-line-vactor d-xl-block d-none">
+                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-carve.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="d-xl-block d-none position-absolute top-50 end-0 translate-middle-y">
                      <div class="row justify-content-center">
                          <div class="col-lg-12 col-8 text-center">
-                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/hero-graph-2.png" alt=""  class="hero-img-filter img-fluid anima-trasform-y-1">
+                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/hero/hero-graph-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"  class="hero-img-filter img-fluid anima-trasform-y-1">
                          </div>
 
                      </div>
                      <div class="item-row d-flex justify-content-center gap-xl-5 gap-4 mt-xl-5 mt-3">
-                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-dots.svg" alt="" class="position-absolute start-0 bottom-0">
+                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-dots.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="position-absolute start-0 bottom-0">
                          <div class="item">
-                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/hero-graph-1.png" alt="" class="hero-img-filter img-fluid anima-trasform-x-1">
+                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/hero/hero-graph-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="hero-img-filter img-fluid anima-trasform-x-1">
                          </div>
                          <div class="d-inline-flex flex-column">
-                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/hero-graph-4.png" alt="" class="fit-content img-fluid">
-                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/hero/hero-graph-3.png" alt="" class="hero-img-filter img-fluid mt-xl-5 mt-3 fit-content">
+                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/hero/hero-graph-4.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="fit-content img-fluid">
+                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/hero/hero-graph-3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="hero-img-filter img-fluid mt-xl-5 mt-3 fit-content">
                          </div>
                      </div>
                  </div>
@@ -64,7 +64,7 @@ get_header();
                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp">
                    <div class="single-fact">
                        <div class="fact-icon">
-                           <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/user_three.svg" alt="">
+                           <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/user_three.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                        </div>
                        <div class="fact-disc">
                            <h2>15k+</h2>
@@ -75,7 +75,7 @@ get_header();
                <div class="col-lg-4 col-md-6 col-sm-6 d-lg-flex justify-content-lg-center wow fadeInUp" data-wow-delay="0.3s">
                    <div class="single-fact ">
                        <div class="fact-icon bg-varient-1">
-                           <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/download.svg" alt="">
+                           <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/download.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                        </div>
                        <div class="fact-disc">
                            <h2>10k+</h2>
@@ -86,7 +86,7 @@ get_header();
                <div class="col-lg-4 col-md-6 col-sm-6 d-lg-flex justify-content-lg-end wow fadeInUp" data-wow-delay="0.6s">
                    <div class="single-fact ">
                        <div class="fact-icon bg-varient-2">
-                           <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/user_two.svg" alt="">
+                           <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/user_two.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                        </div>
                        <div class="fact-disc">
                            <h2>30k+</h2>
@@ -101,7 +101,7 @@ get_header();
 
     <!-- =============== work Process area start ============= -->
      <div class="work-feature-style-one position-relative section-gap-xl-top ">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/hero-dots.svg" alt="" class="feature-screen-dots">
+        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-dots.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feature-screen-dots">
         <div class="container">
             <div class="row align-items-center gy-4">
                  <div class="col-lg-6">
@@ -114,7 +114,7 @@ get_header();
                          <div class="work-features">
                              <div class="work-feature-card wow fadeInUp" >
                                  <div class="feature-icon">
-                                   <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/time-circle.svg" alt="">
+                                   <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/time-circle.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                  </div>
                                  <div class="feature-info">
                                      <h5 class="text-bright-gray">Automatic time tracking</h5>
@@ -123,7 +123,7 @@ get_header();
                              </div>
                              <div class="work-feature-card wow fadeInUp" data-wow-delay="0.3s">
                                  <div class="feature-icon">
-                                   <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/Chart.svg" alt="">
+                                   <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/Chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                  </div>
                                  <div class="feature-info">
                                      <h5 class="text-bright-gray">Customizable dashboard</h5>
@@ -132,7 +132,7 @@ get_header();
                              </div>
                              <div class="work-feature-card wow fadeInUp" data-wow-delay="0.6s">
                                  <div class="feature-icon">
-                                   <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/Graph.svg" alt="">
+                                   <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/Graph.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                  </div>
                                  <div class="feature-info">
                                      <h5 class="text-bright-gray">Statistics retroactively</h5>
@@ -145,7 +145,7 @@ get_header();
 
                  <div class="col-lg-6 wow fadeInUp">
                      <div class="feature-screen-one fadeInRight wow position-relative">
-                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-screen1.png" alt="" class="feature-filter-img">
+                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-screen1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feature-filter-img">
                      </div>
                  </div>
             </div>
@@ -156,7 +156,7 @@ get_header();
     <!-- =============== single features style start ============= -->
     <div class="single-feature-one-style position-relative section-gap-xl-top section-gap-xl-bottom">
         <div class="florting-balon-icon d-none d-lg-block translate-middle-y end-0 anima-trasform-y-1 position-absolute" >
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/balon-icon.png" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/balon-icon.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
         </div>
 
 
@@ -164,17 +164,17 @@ get_header();
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6 order-1 order-lg-0">
                     <div class="single-feature-screens position-relative">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/features-line-vactor.svg" alt="" class="img-fluid feat-one-line d-lg-block d-none">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/features-dots.svg" alt="" class="img-fluid feat-one-dots">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/features-line-vactor.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid feat-one-line d-lg-block d-none">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/features-dots.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid feat-one-dots">
                         <div class="row justify-content-center align-items-center gy-4 position-relative z-index-1">
                             <div class=" d-lg-block d-none single-feature-one-bg position-absolute low-index">
                             </div>
                             <div class="col-xl-5 col-6 text-end">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-one-screen-one.png" alt="" class="feat-one-screen img-fluid wow fadeInLeft">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-one-screen-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feat-one-screen img-fluid wow fadeInLeft">
                             </div>
                             <div class="col-xl-5 col-6">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-one-screen-three.png" alt="" class="feat-one-screen feat-one-screen-sm img-fluid wow fadeIn d-block">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-one-screen-two.png" alt="" class="feat-one-screen img-fluid mt-4 wow fadeInUp" data-wow-delay="0.4s">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-one-screen-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feat-one-screen feat-one-screen-sm img-fluid wow fadeIn d-block">
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-one-screen-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feat-one-screen img-fluid mt-4 wow fadeInUp" data-wow-delay="0.4s">
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@ get_header();
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6">
                    <div class="single-feature-content position-relative">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/features-dots.svg" alt="" class="feature-single-dot">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/features-dots.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feature-single-dot">
                        <h3 class="text-bright-gray">Simple Solution for Complex Connections</h3>
                        <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
@@ -211,7 +211,7 @@ get_header();
                 </div>
                 <div class="col-lg-6">
                     <div class="feature-screen-three">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/feature-screen3.png" alt="" class="wow fadeInRight">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-screen3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="wow fadeInRight">
                     </div>
                 </div>
                
@@ -233,36 +233,36 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-xxl-10">
                     <div class="mobil-map d-block d-lg-none pt-60">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/mobil-map.png" alt="" class="img-contain">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/mobil-map.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-contain">
                     </div>
                     <div class="country-map-wrap d-lg-block d-none">
                         <div class="map-bg">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/dot-map-body.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/dot-map-body.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
 
                         <div class="single-country country-1 d-inline-flex wow zoomIn" data-wow-delay="0.3s">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-1.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="single-country country-2 d-inline-block wow zoomIn">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-3.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="single-country country-3 d-inline-block wow zoomIn" data-wow-delay="0.6s">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-2.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="single-country country-4 d-inline-block wow zoomIn" data-wow-delay="0.3s">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-4.png" alt="" class="circle-shadow rounded-circle ">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-4.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle ">
                         </div>
                         <div class="single-country country-5 d-inline-block wow zoomIn" data-wow-delay="0.3s">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-5.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-5.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="single-country country-6 d-inline-block wow zoomIn">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-6.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-6.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="single-country country-7 d-inline-block wow zoomIn" data-wow-delay="0.6s">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-7.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-7.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="single-country country-8 d-inline-block wow zoomIn">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/flag-8.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/flag-8.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                     </div>
                 </div>
@@ -300,16 +300,16 @@ get_header();
                     <div class="swiper-slide">
                         <div class="blog-card-style-one">
                             <div class="blog-thumb">
-                                <a href="blog-details.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/blog/blog-thumb-1.png" alt=""></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog/blog-thumb-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></a>
                             </div>
                             <div class="blog-disc">
                                 <div class="blog-meta d-flex justify-content-between">
                                     <a href="#">Random</a>
                                     <a href="#">24 nov, 2021</a>
                                 </div>
-                                <h5 class="blog-title"><a href="blog-details.html">Weekly roundup SaaS global SaaS </a></h5>
+                                <h5 class="blog-title"><a href="#">Weekly roundup SaaS global SaaS </a></h5>
                                 <div class="blog-btn">
-                                    <a href="blog-details.html">Read more</a>
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -317,16 +317,16 @@ get_header();
                     <div class="swiper-slide">
                         <div class="blog-card-style-one">
                             <div class="blog-thumb">
-                                <a href="blog-details.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/blog/blog-thumb-2.png" alt=""></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog/blog-thumb-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></a>
                             </div>
                             <div class="blog-disc">
                                 <div class="blog-meta d-flex justify-content-between">
                                     <a href="#">Random</a>
                                     <a href="#">24 nov, 2021</a>
                                 </div>
-                                <h5 class="blog-title"><a href="blog-details.html">Weekly roundup SaaS global SaaS </a></h5>
+                                <h5 class="blog-title"><a href="#">Weekly roundup SaaS global SaaS </a></h5>
                                 <div class="blog-btn">
-                                    <a href="blog-details.html">Read more</a>
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -334,16 +334,16 @@ get_header();
                     <div class="swiper-slide">
                         <div class="blog-card-style-one">
                             <div class="blog-thumb">
-                                <a href="blog-details.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/blog/blog-thumb-3.png" alt=""></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog/blog-thumb-3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></a>
                             </div>
                             <div class="blog-disc">
                                 <div class="blog-meta d-flex justify-content-between">
                                     <a href="#">Random</a>
                                     <a href="#">24 nov, 2021</a>
                                 </div>
-                                <h5 class="blog-title"><a href="blog-details.html">Weekly roundup SaaS global SaaS </a></h5>
+                                <h5 class="blog-title"><a href="#">Weekly roundup SaaS global SaaS </a></h5>
                                 <div class="blog-btn">
-                                    <a href="blog-details.html">Read more</a>
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
                         </div>

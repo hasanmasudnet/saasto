@@ -17,8 +17,8 @@
 
 <!-- ===============  service wrapper start =============== -->
 <div class="service-wrapper pt-xxl section-gap-xl-bottom position-relative">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/line-svg-blue.svg" alt="" class="position-absolute top-0 start-0 corner-line low-index">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes//hero-square-dots.png" alt="" class="position-absolute bottom-0 start-0 corner-line low-index">
+    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/line-svg-blue.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="position-absolute top-0 start-0 corner-line low-index">
+    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes//hero-square-dots.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="position-absolute bottom-0 start-0 corner-line low-index">
 
     <div class="container-fluid">
         <div class="row align-items-center gy-5">
@@ -39,7 +39,7 @@
                         <div class="swiper-slide">
                             <div class="single-service-slide">
                                 <div class="service-slide-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/service/service-one.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/service/service-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="service-slide-overlay featured d-flex align-items-end justify-content-between">
                                     <h5 class="text-white">Our business <br> goes on fire</h5>
@@ -54,7 +54,7 @@
                         <div class="swiper-slide slide-v2">
                             <div class="single-service-slide">
                                 <div class="service-slide-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/service/service-three.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/service/service-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="service-slide-overlay d-flex align-items-end">
                                     <h5 class="topic"><a href="#" class="text-white ">Writing</a></h5>
@@ -64,7 +64,7 @@
                         <div class="swiper-slide">
                             <div class="single-service-slide">
                                 <div class="service-slide-img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/service/service-three.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/service/service-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="service-slide-overlay d-flex align-items-end">
                                     <h5 class="topic"><a href="#" class="text-white ">Business</a></h5>
@@ -89,7 +89,7 @@
                <div class="col-lg-4 col-md-6 col-sm-10">
                    <div class="service-card-style">
                        <div class="service-icon">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/line-chart.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
                            <h5 class="text-purple-haze">Analytics and reporting</h5>
@@ -104,7 +104,7 @@
                <div class="col-lg-4 col-md-6 col-sm-10">
                    <div class="service-card-style">
                        <div class="service-icon bg-2">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/line-chart.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
                            <h5 class="text-purple-haze">Creative development</h5>
@@ -119,7 +119,7 @@
                <div class="col-lg-4 col-md-6 col-sm-10">
                    <div class="service-card-style">
                        <div class="service-icon bg-3">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/line-chart.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
                            <h5 class="text-purple-haze">Email marketing</h5>
@@ -134,7 +134,7 @@
                <div class="col-lg-4 col-md-6 col-sm-10">
                    <div class="service-card-style">
                        <div class="service-icon bg-4">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/line-chart.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
                            <h5 class="text-purple-haze">Business analytics</h5>
@@ -149,7 +149,7 @@
                <div class="col-lg-4 col-md-6 col-sm-10">
                    <div class="service-card-style">
                        <div class="service-icon bg-5">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/line-chart.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
                            <h5 class="text-purple-haze">Video Marketing</h5>
@@ -164,7 +164,7 @@
                <div class="col-lg-4 col-md-6 col-sm-10">
                    <div class="service-card-style ">
                        <div class="service-icon bg-6">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/Icons/line-chart.svg" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
                            <h5 class="text-purple-haze">UX process of businessg</h5>
@@ -194,16 +194,16 @@
                         <div class="swiper company-clients-slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide single-client-logo">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/cus-logo-one.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/cus-logo-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="swiper-slide single-client-logo">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/cus-client-logo-two.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/cus-client-logo-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="swiper-slide single-client-logo">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/cus-client-logo-three.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/cus-client-logo-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="swiper-slide single-client-logo">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/client-logo/cus-client-logo-four.png" alt="">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/client-logo/cus-client-logo-four.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                             </div>
                         </div>
@@ -236,16 +236,16 @@
                 <div class="col-xl-5 col-lg-6 text-lg-end">
                     <div class="position-relative about-experience-screens d-lg-inline-block d-flex flex-wrap flex-sm-nowrap">
                         <div class="about-experience-bg d-lg-block d-none">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/experience-bg.png" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/experience-bg.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                         </div>
                         <div class="wow fadeInDown experience-screen screen-1 text-start position-absolute start-0">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/experince-screen-one.png" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/experince-screen-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                         </div>
                         <div class="wow fadeInUp experience-screen screen-2 position-absolute  end-0">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/experince-screen-two.png" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/experince-screen-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                         </div>
                         <div class="experience-screen screen-3 position-absolute d-none d-lg-block">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/screen/experince-screen-three.png" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/experince-screen-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="team-card-style-one">
                     <div class="team-avater">
-                       <img src="<?php echo get_template_directory_uri() ?>/assets/img/team/team-one.png" alt="">
+                       <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/team/team-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                     </div>
                     <div class="team-disc">
                         <h5>Andree lena</h5>
@@ -296,7 +296,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="team-card-style-one">
                     <div class="team-avater">
-                       <img src="<?php echo get_template_directory_uri() ?>/assets/img/team/team-two.png" alt="">
+                       <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/team/team-two.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                     </div>
                     <div class="team-disc">
                         <h5>Mark Busnek</h5>
@@ -307,7 +307,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="team-card-style-one">
                     <div class="team-avater">
-                       <img src="<?php echo get_template_directory_uri() ?>/assets/img/team/team-three.png" alt="">
+                       <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/team/team-three.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                     </div>
                     <div class="team-disc">
                         <h5>Kristofer salcot</h5>
@@ -356,27 +356,27 @@
                     <div class="col-lg-6 col-xl-5 position-relative">
                        <div class="d-none d-lg-block">
                         <div class="floarting-avater-1 position-absolute  end-0">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/testi-avater-3.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="floarting-avater-2 position-absolute top-0 start-100">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/testi-avater-1.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="floarting-avater-2 position-absolute top-0 start-0">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/testi-avater-2.png" alt="" class="circle-shadow rounded-circle">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="circle-shadow rounded-circle">
                         </div>
                         <div class="swiper testimonial-thumbs px-lg-4 ">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="testimonial-thumb-style">
                                         <div class="thumb-avater">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/testimonial-avater-xl.png" alt="">
+                                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testimonial-avater-xl.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonial-thumb-style">
                                         <div class="thumb-avater">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/shapes/testimonial-avater-xl2.png" alt="">
+                                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testimonial-avater-xl2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                         </div>
                                     </div>
                                 </div>

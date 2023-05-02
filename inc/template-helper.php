@@ -372,7 +372,7 @@ function saasto_check_footer() {
             if (class_exists("\Elementor\Plugin")) {
                 $post_id  = get_theme_mod( 'footer_custom_style' );
 				$cont = new \Elementor\Frontend();
-				echo $cont->get_builder_content_for_display( $post_id, $with_css = true );
+				return $cont->get_builder_content_for_display( $post_id, $with_css = true );
             }
 
         } 
@@ -775,8 +775,24 @@ add_filter('excerpt_more', 'saasto_excerpt_more');
 function acf_json_save_point($path)
 {
     // update path
-    $path = get_stylesheet_directory() . '/acf-json';
+    $path = get_stylesheet_directory() . '/sample-data/acf-json';
     return $path;
 }
 add_filter('acf/settings/save_json', 'acf_json_save_point');
 
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+function my_acf_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    
+    // append path
+    $paths[] = get_stylesheet_directory() . '/sample-data/acf-json';
+    
+    
+    // return
+    return $paths;
+    
+}

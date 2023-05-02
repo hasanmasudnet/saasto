@@ -52,7 +52,7 @@
                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <div class="row">
                      <div class="col-lg-6">
-                        <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/tab.png' alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                      </div>
                      <div class="col-lg-6">
                         <div class="w-feature-content-title tab-info">
@@ -68,7 +68,7 @@
                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <div class="row">
                      <div class="col-lg-6">
-                        <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/tab.png' alt="">
+                     <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                      </div>
                      <div class="col-lg-6">
                         <div class="w-feature-content-title tab-info">
@@ -84,7 +84,7 @@
                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                   <div class="row">
                      <div class="col-lg-6">
-                        <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/tab.png' alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                      </div>
                      <div class="col-lg-6">
                         <div class="w-feature-content-title tab-info">
@@ -100,7 +100,7 @@
                <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
                   <div class="row">
                      <div class="col-lg-6">
-                        <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/tab.png' alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                      </div>
                      <div class="col-lg-6">
                         <div class="w-feature-content-title tab-info">
@@ -116,7 +116,7 @@
                <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab">
                   <div class="row">
                      <div class="col-lg-6">
-                        <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/tab.png' alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                      </div>
                      <div class="col-lg-6">
                         <div class="w-feature-content-title tab-info">

@@ -110,8 +110,8 @@ function saasto_breadcrumb_func() {
                     </div>
                 </div>
             </div>
-            <img class="top-0 start-0 position-absolute d-none d-lg-block" src="<?php echo get_template_directory_uri( ) ?>/assets/img/shapes/breadcrumb-sp-1.png" alt="">
-            <img class="position-absolute end-0 d-none d-lg-block" style=" bottom: -20px;" src="<?php echo get_template_directory_uri( ) ?>/assets/img/shapes/breadcrumb-sp-2.png" alt="">
+            <img class="top-0 start-0 position-absolute d-none d-lg-block" src="<?php echo esc_url(get_template_directory_uri( )) ?>/assets/img/shapes/breadcrumb-sp-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
+            <img class="position-absolute end-0 d-none d-lg-block" style=" bottom: -20px;" src="<?php echo esc_url(get_template_directory_uri( )) ?>/assets/img/shapes/breadcrumb-sp-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
         </div>
         <?php endif; ?>
 

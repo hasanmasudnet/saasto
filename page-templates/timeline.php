@@ -40,7 +40,7 @@
                   </div>
                </div>
                <div class="timeline-img flex-shrink-0">
-                  <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/timeline.png' alt="">
+                  <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/timeline.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                </div>
             </div>
             <div class="timeline-wrap d-flex justify-content-between flex-column flex-lg-row">
@@ -52,7 +52,7 @@
                   </div>
                </div>
                <div class="timeline-img flex-shrink-0">
-                  <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/timeline.png' alt="">
+                  <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/timeline.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                </div>
             </div>
             <div class="timeline-wrap d-flex justify-content-between flex-column flex-lg-row">
@@ -64,7 +64,7 @@
                   </div>
                </div>
                <div class="timeline-img flex-shrink-0">
-                  <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/timeline.png' alt="">
+                  <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/timeline.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                </div>
             </div>
          </div>

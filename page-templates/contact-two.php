@@ -32,14 +32,14 @@
       <div class="row mt-4 align-items-center gy-4">
          <div class="col-lg-4 col-md-6">
             <div class="contact-vector-box text-center">
-               <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/contact-vector.png' alt="">
+               <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/contact-vector.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                <h2>E-mail Address</h2>
                <a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
             </div>
          </div>
          <div class="col-lg-4 col-md-6">
             <div class="contact-vector-box text-center">
-               <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/contact-vector.png' alt="">
+               <img  src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/contact-vector.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                <h2>Support Number</h2>
                <a href="tel:021000000">+021-000-000</a>
                <div class="contact-vector-btn-wrap">
@@ -49,7 +49,7 @@
          </div>
          <div class="col-lg-4 col-md-6">
             <div class="contact-vector-box text-center">
-               <img src=<?php echo get_template_directory_uri(  )?>.'../assets/img/contact-vector.png' alt="">
+               <img  src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/contact-vector.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                <h2>Head Office</h2>
                <a href="#">123 St Anytown, USA</a>
             </div>

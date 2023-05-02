@@ -37,7 +37,7 @@
             </div>
          </div>
          <div class="col-lg-5">
-            <img src=<?php echo get_template_directory_uri(  ) ?>.'../assets/img/progress.png' alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/progress.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
          </div>
       </div>
    </div>

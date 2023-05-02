@@ -59,7 +59,7 @@
             </div>
          </div>
          <div class="col-lg-5">
-            <img class="w-100" src=<?php echo get_template_directory_uri(  ) ?>.'../assets/img/progress.png' alt="">
+            <img class="w-100" src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/progress.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
          </div>
       </div>
    </div>

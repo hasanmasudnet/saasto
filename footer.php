@@ -10,7 +10,7 @@
  */
 
 $bg_style = function_exists( 'get_field' ) ? get_field( 'body_background_style' ) : NULL;
-do_action( 'saasto_footer_style' );
+do_action( 'saasto_footer_area' );
 
 if( $bg_style != 'normal_style' ||  is_404()){
     echo '</div>'; // bg style closing

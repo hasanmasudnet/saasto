@@ -135,7 +135,7 @@ p.comment-notes {
     margin-bottom: 1.5rem;
 }
 .body-disply-1 {
-    font-family: var(--primary-font);
+    font-family: var(--saasto-primary-font);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -368,7 +368,7 @@ div.postbox__details .wp-block-cover-text {
 }
 
 .blog__details_content a {
-    color: var(--primary-color);
+    color: var(--saasto-primary-color);
 }
 .tag-list li a, .tagcloud a,
  .wp-block-tag-cloud a{
@@ -379,7 +379,7 @@ div.postbox__details .wp-block-cover-text {
 }
 .wp-block-button .wp-block-button__link:hover {
     color: #fff;
-    background-color: var(--primary-color);
+    background-color: var(--saasto-primary-color);
 	transition: .3s all ease-in-out;
 }
 
@@ -461,7 +461,7 @@ ul.wp-block-rss.wp-block-rss {
 .footer-widgets .widget.widget_rss ul li a{
 	display: block;
 	width: 100%;
-	font-family: var(--primary-font);
+	font-family: var(--saasto-primary-font);
 	font-style: normal;
 	font-size: 18px;
 	line-height: 1.5;
@@ -534,7 +534,7 @@ blockquote,
  {
   position: relative;
   padding: 30px 40px;
-  border-left: 3px solid var(--primary-color);
+  border-left: 3px solid var(--saasto-primary-color);
   background-color: #f3f1ff;
   border-radius: 15px;
   margin: 35px 0;
@@ -545,7 +545,7 @@ blockquote p,
 }
 blockquote h2,
 .wp-block-quote h2 {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: italic;
   font-weight: 700;
   font-size: 20px;
@@ -555,7 +555,7 @@ blockquote h2,
 
 blockquote p,
 .wp-block-quote p {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -577,7 +577,7 @@ blockquote cite:before, .wp-block-quote cite:before {
   content: "";
   height: 2px;
   width: 50px;
-  background-color: var(--primary-color);
+  background-color: var(--saasto-primary-color);
   position: absolute;
   bottom: 7px;
   left: -10px;
@@ -639,7 +639,7 @@ blockquote.is-large:not(.is-style-plain):not(.has-text-align-right) cite, blockq
 }
 
 .wp-block-quote.has-text-align-right {
-	border-right: 3px solid var(--primary-color);
+	border-right: 3px solid var(--saasto-primary-color);
 }
 blockquote.has-text-align-right cite, .wp-block-quote.has-text-align-right cite {
     padding-left: 0;
@@ -834,7 +834,7 @@ figure.wp-block-pullquote blockquote {
 .post-password-form input[type="submit"]{
   width: 120px;
   height: 50px;
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   color: #fff;
   border: 0;
   transition: .3s;
@@ -855,7 +855,7 @@ figure.wp-block-pullquote blockquote {
 .wp-block-search__button{
   width: 120px;
   height: 50px;
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   color: #fff;
   border: 0;
   transition: .3s;
@@ -1056,7 +1056,7 @@ li.wp-block-pages-list__item.has-child .wp-block-pages-list__item__link{
 	caption-side: top;
 	text-align: center;
 	color: #fff;
-	background-color: var(--primary-color);
+	background-color: var(--saasto-primary-color);
 }
 #wp-calendar thead {
 	font-size: 14px;
@@ -1114,10 +1114,10 @@ li.wp-block-pages-list__item.has-child .wp-block-pages-list__item__link{
 
 
 .footer-widget .wp-calendar-table a {
-	color: var(--primary-color);
+	color: var(--saasto-primary-color);
 }
 #wp-calendar tbody td#today {
-	background: var(--primary-color);
+	background: var(--saasto-primary-color);
 	color: #fff;
 }
 .wp-calendar-nav {
@@ -1347,7 +1347,7 @@ ul.blog__meta {
 .sidebar-widget.widget_block .wp-block-latest-comments article a,
 .wp-block-latest-comments__comment-meta a
  {
-	font-family: var(--primary-font);
+	font-family: var(--saasto-primary-font);
 	font-weight: 500;
 	line-height: 24px;
 	color: var(--text-bright-gray);

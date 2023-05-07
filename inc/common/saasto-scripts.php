@@ -12,6 +12,16 @@ function saasto_scripts() {
      * all css files
     */
 
+    if ( class_exists( '\Elementor\Plugin' ) ) {
+        $elementor = \Elementor\Plugin::instance();
+        $elementor->frontend->enqueue_styles();
+    }
+
+    if ( class_exists( '\ElementorPro\Plugin' ) ) {
+        $elementor_pro = \ElementorPro\Plugin::instance();
+        $elementor_pro->enqueue_styles();
+    }
+    
     // wp_enqueue_style( 'saasto-fonts', saasto_fonts_url(), array(), '1.0.0' );
     wp_enqueue_style( 'bootstrap-icons', SAASTO_THEME_CSS_DIR . 'bootstrap-icons.css', [] );
     wp_enqueue_style( 'animate', SAASTO_THEME_CSS_DIR . 'animate.css', [] );

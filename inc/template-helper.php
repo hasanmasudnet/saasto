@@ -340,48 +340,16 @@ function saasto_category_menu() {
  *
  * saasto footer
  */
-add_action( 'saasto_footer_style', 'saasto_check_footer', 10 );
+add_action( 'saasto_footer_area', 'saasto_call_default_footer', 10 );
 
-function saasto_check_footer() {
-    $saasto_footer_style = function_exists( 'get_field' ) ? get_field( 'footer_style' ) : NULL;
-    $saasto_default_footer_style = get_theme_mod( 'choose_default_footer', 'footer-style-def' );
+ function saasto_call_default_footer() {
 
-    if ( $saasto_footer_style == 'footer-style-def' ) {
+    // Display Default Footer
+    if( !class_exists('Saasto_Core') ){
         get_template_part( 'template-parts/footer/footer-def' );
-    } 
-    elseif ( $saasto_footer_style == 'footer-style-1' ) {
-        get_template_part( 'template-parts/footer/footer-2' );
-    } 
-    elseif ( $saasto_footer_style == 'footer-style-2' ) {
-        get_template_part( 'template-parts/footer/footer-2' );
     }
-    else {
 
-        /** default footer style **/
-        if ( $saasto_default_footer_style == 'footer-style-1' ) {
-            get_template_part( 'template-parts/footer/footer-1' );
-        } 
-        elseif ( $saasto_default_footer_style == 'footer-style-2' ) {
-            get_template_part( 'template-parts/footer/footer-2' );
-        } 
-        elseif ( $saasto_default_footer_style == 'footer-style-3' ) {
-            get_template_part( 'template-parts/footer/footer-3' );
-        } 
-        elseif ( $saasto_default_footer_style == 'saasto-template-builder' ) {
-            
-            if (class_exists("\Elementor\Plugin")) {
-                $post_id  = get_theme_mod( 'footer_custom_style' );
-				$cont = new \Elementor\Frontend();
-				return $cont->get_builder_content_for_display( $post_id, $with_css = true );
-            }
-
-        } 
-        else {
-            get_template_part( 'template-parts/footer/footer-def' );
-        }
-
-    }
-}
+ }
 
 // saasto_copyright_text
 function saasto_copyright_text() {

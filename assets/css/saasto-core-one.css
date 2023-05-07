@@ -42,7 +42,7 @@ Last update : 04/19/2022
 :root {
   /*color Variable*/
   --c-white: #ffffff;
-  --primary-color: #8976FD;
+  --saasto-primary-color: #8976FD;
   --primary-yellow: #FCA61F;
   --c-skyblue: #6DCBFF;
   --c-easter-purple: #C06EF3;
@@ -59,7 +59,7 @@ Last update : 04/19/2022
   --border-color: #f0f0f5;
   /*font Variable*/
   --secondary-font: 'Poppins', sans-serif;
-  --primary-font: 'Nunito Sans', sans-serif;
+  --saasto-primary-font: 'Nunito Sans', sans-serif;
   --ff-inter: 'Inter', sans-serif;
 }
 
@@ -352,11 +352,11 @@ Animations and Background end
 }
 
 .font-nunito {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
 }
 
 .primary-purple {
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
 }
 
 .primary-yellow {
@@ -512,7 +512,7 @@ Custom utilities end
 /*body typography styles*/
 p {
   margin: 0;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-size: 16px;
 }
@@ -576,7 +576,7 @@ h5 {
 }
 
 .body-disply-1 {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -639,7 +639,7 @@ h5 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
@@ -662,11 +662,11 @@ h5 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   border-radius: 15px;
   position: relative;
   padding: 18px 32px;
@@ -694,9 +694,9 @@ a.saasto-btn:not(.download-btn-outlined) i {
   display: inline-flex;
   font-weight: 700;
   font-size: 18px;
-  color: var(--primary-color);
-  font-family: var(--primary-font);
-  border: 1px solid var(--primary-color);
+  color: var(--saasto-primary-color);
+  font-family: var(--saasto-primary-font);
+  border: 1px solid var(--saasto-primary-color);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
@@ -715,14 +715,14 @@ a.saasto-btn:not(.download-btn-outlined) i {
   background: rgba(137, 118, 253, 0.1);
   -webkit-transform: translate3d(0, -3px, 0);
           transform: translate3d(0, -3px, 0);
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
 }
 
 .btn-transparent-xl {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   font-size: 18px;
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
   padding: 13px;
 }
 
@@ -743,7 +743,7 @@ a.saasto-btn:not(.download-btn-outlined) i {
 }
 
 .btn-transparent-xl:hover {
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
 }
 
 .btn-fill-pill {
@@ -1176,7 +1176,7 @@ header .header-style .main-nav ul li .sub-menu > li {
 
 header .header-style .main-nav ul > li a:hover {
   background: transparent;
-  color: var(--primary-color) !important;
+  color: var(--saasto-primary-color) !important;
 }
 
 header .header-style .main-nav .fl {
@@ -1235,7 +1235,7 @@ header .header-style .main-nav ul li:last-child {
 }
 
 header .header-style .main-nav ul li:hover > a {
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
 }
 
 header .header-style .main-nav ul li:hover > a::before {
@@ -1251,7 +1251,7 @@ header .header-style .main-nav ul li a {
   transition: all 0.3s ease;
   padding: 30.5px 0;
   position: relative;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1281,7 +1281,7 @@ header .header-style .main-nav ul li ul.sub-menu > li a.active {
 
 header .header-style .main-nav ul li ul.sub-menu > li a:hover {
   background: transparent;
-  color: var(--primary-color) !important;
+  color: var(--saasto-primary-color) !important;
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
 }
@@ -1771,7 +1771,7 @@ header .header-style-two {
 }
 
 .work-feature-card .feature-info p {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 18px;
   color: #5E587A;
@@ -2281,11 +2281,11 @@ header .header-style-two {
           justify-content: center;
   -webkit-transition: all .35s;
   transition: all .35s;
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
 }
 
 .blog-style-one .blog-slider-nav .blog-next i:hover, .blog-style-one .blog-slider-nav .blog-prev i:hover {
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   color: #fff;
 }
 
@@ -2322,7 +2322,7 @@ header .header-style-two {
 
 .blog-card-style-one .blog-disc .blog-meta a {
   display: inline-block;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2345,10 +2345,10 @@ header .header-style-two {
 }
 
 .blog-card-style-one .blog-disc .blog-btn a {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   font-size: 18px;
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
   display: inline-block;
   background: rgba(137, 118, 253, 0.2);
   border-radius: 15px;
@@ -2373,7 +2373,7 @@ header .header-style-two {
 }
 
 .single-post .blog-meta i {
-  color: var(--primary-color);
+  color: var(--saasto-primary-color);
   font-size: 14px;
 }
 
@@ -2517,7 +2517,7 @@ header .header-style-two {
   content: "";
   height: 2px;
   width: 20%;
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   bottom: 0;
   left: 0;
 }
@@ -2556,7 +2556,7 @@ header .header-style-two {
 }
 
 .widget .latest-post .latest-post-meta {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2657,7 +2657,7 @@ header .header-style-two {
 .widget_nav_menu ul li a, .widget_meta ul li a, .footer-widgets .widget.widget_recent_comments ul li a {
   display: block;
   width: 100%;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2672,7 +2672,7 @@ header .header-style-two {
 .footer-widgets .widget.widget_recent_entries ul li a{
   display: block;
   width: 100%;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2730,7 +2730,7 @@ header .header-style-two {
   -webkit-box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 30px -7px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -2830,7 +2830,7 @@ header .header-style-two {
 }
 
 .blog__details_content p {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2866,7 +2866,7 @@ header .header-style-two {
   background: #8976FD;
   border-radius: 20px;
   border: none;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -3025,7 +3025,7 @@ team style end
 }
 
 .newslatter-style-one .newslatter-wrap {
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   border-radius: 60px;
   padding-bottom: 120px;
   padding-top: 100px;
@@ -3073,28 +3073,28 @@ team style end
 }
 
 .newslatter-form-style-one input::-webkit-input-placeholder {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 20px;
   color: rgba(94, 88, 122, 0.6);
 }
 
 .newslatter-form-style-one input:-ms-input-placeholder {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 20px;
   color: rgba(94, 88, 122, 0.6);
 }
 
 .newslatter-form-style-one input::-ms-input-placeholder {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 20px;
   color: rgba(94, 88, 122, 0.6);
 }
 
 .newslatter-form-style-one input::placeholder {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 20px;
   color: rgba(94, 88, 122, 0.6);
@@ -3148,7 +3148,7 @@ team style end
 }
 
 .footer-social-2 li a:hover {
-  background: var(--primary-color);
+  background: var(--saasto-primary-color);
   -webkit-transform: translate3d(0, -3px, 0);
           transform: translate3d(0, -3px, 0);
 }
@@ -3158,7 +3158,7 @@ team style end
 }
 
 .footer-style-two .footer-widget .footer-links li a {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 20px;
   color: #494369;
@@ -3176,7 +3176,7 @@ team style end
 
 
 .footer-right-text p{
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 16px;
   color: #5E587A;
@@ -4017,7 +4017,7 @@ team style end
 }
 
 .contact-wrapper .contact-info .contact-info-box p {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -4059,7 +4059,7 @@ team style end
   padding: 0;
   background: transparent;
   font-size: 20px;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   color: #494369;
 }
@@ -4085,7 +4085,7 @@ team style end
   padding: 0;
   background: transparent;
   font-size: 20px;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   color: #494369;
 }
@@ -4107,7 +4107,7 @@ team style end
 }
 
 .primary-input-group label {
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 700;
   font-size: 20px;
   color: #494369;
@@ -4155,7 +4155,7 @@ Contect Wrapper end
 
 .blog-card-sm .blog-inner-details h5 {
   padding-top: 16px;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -4208,7 +4208,7 @@ Contect Wrapper end
   font-size: 18px;
   line-height: 180%;
   color: rgba(73, 67, 105, 0.8);
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
 }
 
 .blog-card-md .blog-meta li a {
@@ -4233,7 +4233,7 @@ Contect Wrapper end
 
 .blog-card-md p {
   padding-top: 6px;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 180%;
@@ -4371,7 +4371,7 @@ Contect Wrapper end
   font-size: 18px;
   line-height: 180%;
   color: rgba(73, 67, 105, 0.8);
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
 }
 
 .blog-details-wrapper .blog-det-featured .meta li a {
@@ -4394,7 +4394,7 @@ Contect Wrapper end
 }
 
 .blog-details-wrapper .related-links {
-  border-top: 10px solid var(--primary-color);
+  border-top: 10px solid var(--saasto-primary-color);
   padding-top: 20px;
   margin-top: 10px;
 }
@@ -4467,7 +4467,7 @@ Blog Loop Start
           align-items: center;
   color: #5E587A;
   font-weight: 500;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   font-size: 15px;
 }
 
@@ -4599,7 +4599,7 @@ Blog Loop Start
   font-size: 16px;
   line-height: 180%;
   color: #5E587A;
-  font-family: var(--primary-font);
+  font-family: var(--saasto-primary-font);
   margin-top: 10px;
   margin-bottom: 0;
 }

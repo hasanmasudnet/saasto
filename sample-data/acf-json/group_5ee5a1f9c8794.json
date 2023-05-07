@@ -225,6 +225,55 @@
             "endpoint": 0
         },
         {
+            "key": "field_64574d8bbbc70",
+            "label": "Enable Custom Footer",
+            "name": "enable_custom_footer",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        },
+        {
+            "key": "field_64574cad9b42d",
+            "label": "Select Custom Footer",
+            "name": "saasto_select_custom_footer",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64574d8bbbc70",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "saasto-templates"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
             "key": "field_5efb0ded987fe",
             "label": "Footer Style",
             "name": "footer_style",
@@ -250,66 +299,6 @@
             "return_format": "value",
             "ajax": 0,
             "placeholder": ""
-        },
-        {
-            "key": "field_5f0d8782e4a95",
-            "label": "Footer BG Image",
-            "name": "eduker_footer_bg",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5f0d88eae4a96",
-            "label": "Footer BG Color",
-            "name": "eduker_footer_bg_color",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
-            "key": "field_6120c8dc8cb05",
-            "label": "Footer Top Space",
-            "name": "eduker_footer_top_space",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -330,5 +319,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683011000
+    "modified": 1683443225
 }

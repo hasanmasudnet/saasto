@@ -592,9 +592,10 @@ Footer
  */
 function _header_footer_fields( $fields ) {
     // Footer Setting
+
     $fields[] = [
         'type'        => 'radio-image',
-        'settings'    => 'choose_default_footer',
+        'settings'    => 'choose_saasto_footer',
         'label'       => esc_html__( 'Choose Footer Style', 'saasto' ),
         'section'     => 'footer_setting',
         'default'     => '5',
@@ -602,39 +603,38 @@ function _header_footer_fields( $fields ) {
         'priority'    => 10,
         'multiple'    => 1,
         'choices'     => [
-            'footer-style-def' => get_template_directory_uri() . '/inc/img/footer/footer-1.png',
-            'footer-style-1'   => get_template_directory_uri() . '/inc/img/footer/footer-style-1.webp',
-            'footer-style-2' => get_template_directory_uri() . '/inc/img/footer/footer-style-2.webp',
-            'footer-style-3' => get_template_directory_uri() . '/inc/img/footer/footer-3.png',
-            'saasto-template-builder' => get_template_directory_uri() . '/inc/img/footer/footer-3.png'
+            'footer-style-def' => get_template_directory_uri() . '/inc/img/footer/footer-style-2.webp',
+            'saasto-template-builder' => get_template_directory_uri() . '/assets/img/custom-footer.png'
         ],
         'default'     => 'footer-style-def',
     ];
 
-     $fields[] = [
-        'type'        => 'select',
-        'settings'    => 'footer_custom_style',
-        'label'       => esc_html__( 'Select Footer', 'saasto' ),
-        'section'     => 'footer_setting',
-        'default'     => '4',
-        'placeholder' => esc_html__( 'Select an option...', 'saasto' ),
-        'priority'    => 10,
-        'multiple'    => 1,
-        'choices'     => Kirki\Util\Helper::get_posts(
-            array(
-                'posts_per_page' => 10,
-                'post_type'      => 'saasto-templates'
-            ) ,
-        ),
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'saasto-template-builder',
+    if(class_exists('Saasto_Core')){
+        $fields[] = [
+            'type'        => 'select',
+            'settings'    => 'footer_custom_style',
+            'label'       => esc_html__( 'Select Footer', 'saasto' ),
+            'section'     => 'footer_setting',
+            'default'     => '4',
+            'placeholder' => esc_html__( 'Select an option...', 'saasto' ),
+            'priority'    => 10,
+            'multiple'    => 1,
+            'choices'     => Kirki\Util\Helper::get_posts(
+                array(
+                    'posts_per_page' => 10,
+                    'post_type'      => 'saasto-templates'
+                ) ,
+            ),
+            'active_callback' => [
+                [
+                    'setting'  => 'choose_saasto_footer',
+                    'operator' => '==',
+                    'value'    => 'saasto-template-builder',
+                ],
             ],
-        ],
 
-    ];
+        ];
+    }
 
     $fields[] = [
         'type'        => 'select',
@@ -649,159 +649,6 @@ function _header_footer_fields( $fields ) {
             '4' => esc_html__( 'Widget Number 4', 'saasto' ),
             '3' => esc_html__( 'Widget Number 3', 'saasto' ),
             '2' => esc_html__( 'Widget Number 2', 'saasto' ),
-        ],
-    ];
-
-
-    $fields[] = [
-        'type'        => 'image',
-        'settings'    => 'footer_logo_style_one',
-        'label'       => esc_html__( 'Footer Logo', 'saasto' ),
-        'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
-        'section'     => 'footer_setting',
-        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
-        'choices'     => [
-			'save_as' => 'id',
-		],
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'footer-style-1',
-            ],
-        ],
-    ];
-
-    $fields[] = [
-        'type'        => 'image',
-        'settings'    => 'footer_logo_style_three',
-        'label'       => esc_html__( 'Footer Logo 3', 'saasto' ),
-        'description' => esc_html__( 'Upload Your Logo.', 'saasto' ),
-        'section'     => 'footer_setting',
-        'default'     => get_template_directory_uri() . '/assets/img/logo/logo-v2.png',
-        'choices'     => [
-			'save_as' => 'id',
-		],
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'footer-style-3',
-            ],
-        ],
-    ];
-
-    $fields[] = [
-        'type'        => 'switch',
-        'settings'    => 'footer_style_two_newsleter_switch',
-        'label'       => esc_html__( 'Newslater', 'saasto' ),
-        'description' => esc_html__( 'you can control newslater from here.', 'saasto' ),
-        'section'     => 'footer_setting',
-        'default'     => '0',
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'footer-style-2',
-            ],
-        ],
-    ]; 
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'footer_style_two_newsleter_shortcode',
-        'label'    => esc_html__( 'Newslater Shortcode', 'saasto' ),
-        'section'  => 'footer_setting',
-        'priority' => 10,
-        'active_callback' => [
-            [
-                'setting'  => 'footer_style_two_newsleter_switch',
-                'operator' => '==',
-                'value'    => '1',
-            ],
-        ],
-    ];
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'footer_style_2_switch',
-        'label'    => esc_html__( 'Footer Style 2 On/Off', 'saasto' ),
-        'section'  => 'footer_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];    
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'footer_style_3_switch',
-        'label'    => esc_html__( 'Footer Style 3 On/Off', 'saasto' ),
-        'section'  => 'footer_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'footer_style_4_switch',
-        'label'    => esc_html__( 'Footer Style 4 On/Off', 'saasto' ),
-        'section'  => 'footer_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'footer_top_switch_3',
-        'label'    => esc_html__( 'Footer Top', 'saasto' ),
-        'section'  => 'footer_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'footer-style-3',
-            ],
-        ],
-    ];
-
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'footer_top_switch_1',
-        'label'    => esc_html__( 'Footer Top', 'saasto' ),
-        'section'  => 'footer_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-        'active_callback' => [
-            [
-                'setting'  => 'choose_default_footer',
-                'operator' => '==',
-                'value'    => 'footer-style-1',
-            ],
         ],
     ];
 

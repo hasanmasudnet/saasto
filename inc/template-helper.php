@@ -13,84 +13,28 @@
  */
 
 function saasto_check_header() {
-    $saasto_header_style = function_exists( 'get_field' ) ? get_field( 'header_style' ) : NULL;
-    $saasto_default_header_style = get_theme_mod( 'choose_default_header', 'header-style-1' );
-
-    if ( $saasto_header_style == 'header-style-1' && empty($_GET['s']) ) {
+    // Display Default Header
+    if( !class_exists('Saasto_Core') ){
         get_template_part( 'template-parts/header/header-1' );
-    } 
-    elseif ( $saasto_header_style == 'header-style-2' && empty($_GET['s']) ) {
-        get_template_part( 'template-parts/header/header-2' );
-    } 
-    elseif ( $saasto_header_style == 'header-style-3' && empty($_GET['s']) ) {
-        get_template_part( 'template-parts/header/header-3' );
-    } 
-    else {
-
-        /** default header style **/
-        if ( $saasto_default_header_style == 'header-style-2' ) {
-            get_template_part( 'template-parts/header/header-2' );
-        } 
-        elseif ( $saasto_default_header_style == 'header-style-3' ) {
-            get_template_part( 'template-parts/header/header-3' );
-        }
-        else {
-            get_template_part( 'template-parts/header/header-1' );
-        }
     }
-
 }
 add_action( 'saasto_header_style', 'saasto_check_header', 10 );
 
 
 /**
- * [saasto_header_lang description]
- * @return [type] [description]
+ *
+ * saasto footer
  */
-function saasto_header_lang_defualt() {
-    $saasto_header_lang = get_theme_mod( 'saasto_header_lang', false );
-    if ( $saasto_header_lang ): ?>
+add_action( 'saasto_footer_area', 'saasto_call_default_footer', 10 );
 
-    <ul>
-        <li><a href="javascript:void(0)" class="lang__btn"><?php print esc_html__( 'English', 'saasto' );?> <i class="fa-light fa-angle-down"></i></a>
-        <?php do_action( 'saasto_language' );?>
-        </li>
-    </ul>
+ function saasto_call_default_footer() {
 
-    <?php endif;?>
-<?php
-}
-
-/**
- * [saasto_language_list description]
- * @return [type] [description]
- */
-function _saasto_language( $mar ) {
-    return $mar;
-}
-function saasto_language_list() {
-
-    $mar = '';
-    $languages = apply_filters( 'wpml_active_languages', NULL, 'orderby=id&order=desc' );
-    if ( !empty( $languages ) ) {
-        $mar = '<ul>';
-        foreach ( $languages as $lan ) {
-            $active = $lan['active'] == 1 ? 'active' : '';
-            $mar .= '<li class="' . $active . '"><a href="' . $lan['url'] . '">' . $lan['translated_name'] . '</a></li>';
-        }
-        $mar .= '</ul>';
-    } else {
-        //remove this code when send themeforest reviewer team
-        $mar .= '<ul>';
-        $mar .= '<li><a href="#">' . esc_html__( 'English', 'saasto' ) . '</a></li>';
-        $mar .= '<li><a href="#">' . esc_html__( 'Bangla', 'saasto' ) . '</a></li>';
-        $mar .= '<li><a href="#">' . esc_html__( 'French', 'saasto' ) . '</a></li>';
-        $mar .= ' </ul>';
+    // Display Default Footer
+    if( !class_exists('Saasto_Core') ){
+        get_template_part( 'template-parts/footer/footer-def' );
     }
-    print _saasto_language( $mar );
-}
-add_action( 'saasto_language', 'saasto_language_list' );
 
+ }
 
 // header logo
 function saasto_header_logo() { ?>
@@ -146,108 +90,6 @@ function saasto_mobile_logo() {
 
 <?php }
 
-/**
- * [saasto_header_social_profiles description]
- * @return [type] [description]
- */
-function saasto_header_social_profiles() {
-    $saasto_social_fb_url = get_theme_mod( 'saasto_social_fb_url', __( '#', 'saasto' ) );
-    $saasto_topbar_twitter_url = get_theme_mod( 'saasto_topbar_twitter_url', __( '#', 'saasto' ) );
-    $saasto_topbar_instagram_url = get_theme_mod( 'saasto_topbar_instagram_url', __( '#', 'saasto' ) );
-    $saasto_topbar_linkedin_url = get_theme_mod( 'saasto_topbar_linkedin_url', __( '#', 'saasto' ) );
-    $saasto_topbar_youtube_url = get_theme_mod( 'saasto_topbar_youtube_url', __( '#', 'saasto' ) );
-    ?>
-        <ul>
-        <?php if ( !empty( $saasto_social_fb_url ) ): ?>
-          <li><a href="<?php print esc_url( $saasto_social_fb_url );?>"><span><i class="fab fa-facebook-f"></i></span></a></li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_topbar_twitter_url ) ): ?>
-            <li><a href="<?php print esc_url( $saasto_topbar_twitter_url );?>"><span><i class="fab fa-twitter"></i></span></a></li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_topbar_instagram_url ) ): ?>
-            <li><a href="<?php print esc_url( $saasto_topbar_instagram_url );?>"><span><i class="fab fa-instagram"></i></span></a></li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_topbar_linkedin_url ) ): ?>
-            <li><a href="<?php print esc_url( $saasto_topbar_linkedin_url );?>"><span><i class="fab fa-linkedin"></i></span></a></li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_topbar_youtube_url ) ): ?>
-            <li><a href="<?php print esc_url( $saasto_topbar_youtube_url );?>"><span><i class="fab fa-youtube"></i></span></a></li>
-        <?php endif;?>
-        </ul>
-
-<?php
-}
-
-function saasto_footer_social_profiles( $footer_style = '' ) {
-
-    $social_class = '';
-    if( 'footer-one' == $footer_style ){
-        $social_class = 'footer-social-links d-flex justify-content-md-end';
-    }
-    elseif( 'footer-two' == $footer_style ){
-        $social_class = 'footer-social-links d-flex';
-    }
-    elseif( 'footer-three' == $footer_style ){
-        $social_class = 'footer-social-links d-flex justify-content-md-end gap-lg-5 gap-4';
-    }
-    else{
-        $social_class = 'footer-social-links d-flex';
-    }
-
-    $saasto_footer_fb_url = get_theme_mod( 'saasto_social_fb_url', __( '#', 'saasto' ) );
-    $saasto_footer_twitter_url = get_theme_mod( 'saasto_footer_twitter_url', __( '#', 'saasto' ) );
-    $saasto_footer_instagram_url = get_theme_mod( 'saasto_footer_instagram_url', __( '#', 'saasto' ) );
-    $saasto_footer_linkedin_url = get_theme_mod( 'saasto_footer_linkedin_url', __( '#', 'saasto' ) );
-    $saasto_footer_youtube_url = get_theme_mod( 'saasto_footer_youtube_url', __( '#', 'saasto' ) );
-    ?>
-
-        <ul class="<?php echo esc_attr( $social_class ); ?>">
-        <?php if ( !empty( $saasto_footer_fb_url ) ): ?>
-            <li>
-                <a href="<?php print esc_url( $saasto_footer_fb_url );?>">
-                    <i class="bi bi-facebook"></i>
-                </a>
-            </li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_footer_twitter_url ) ): ?>
-            <li>
-                <a href="<?php print esc_url( $saasto_footer_twitter_url );?>">
-                    <i class="bi bi-twitter"></i>
-                </a>
-            </li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_footer_instagram_url ) ): ?>
-            <li>
-                <a href="<?php print esc_url( $saasto_footer_instagram_url );?>">
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_footer_linkedin_url ) ): ?>
-            <li>
-                <a href="<?php print esc_url( $saasto_footer_linkedin_url );?>">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-            </li>
-        <?php endif;?>
-
-        <?php if ( !empty( $saasto_footer_youtube_url ) ): ?>
-            <li>
-                <a href="<?php print esc_url( $saasto_footer_youtube_url );?>">
-                    <i class="bi bi-youtube"></i>
-                </a>
-            </li>
-        <?php endif;?>
-        </ul>
-<?php
-}
 
 /**
  * [saasto_header_menu description]
@@ -336,26 +178,11 @@ function saasto_category_menu() {
     ] );
 }
 
-/**
- *
- * saasto footer
- */
-add_action( 'saasto_footer_area', 'saasto_call_default_footer', 10 );
-
- function saasto_call_default_footer() {
-
-    // Display Default Footer
-    if( !class_exists('Saasto_Core') ){
-        get_template_part( 'template-parts/footer/footer-def' );
-    }
-
- }
 
 // saasto_copyright_text
 function saasto_copyright_text() {
    return get_theme_mod( 'saasto_copyright', esc_html__( '© 2023 Saasto, All Rights Reserved. Design By wprealizer', 'saasto' ) );
 }
-
 
 
 /**

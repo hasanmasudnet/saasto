@@ -133,10 +133,10 @@ a:hover {
   color: unset;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 input:focus, textarea:focus, button:focus {
   outline: none;
@@ -303,6 +303,9 @@ table tfoot tr th {
 /* =============================
   3. Custom utilities start
  ==============================*/
+ .page-gap-xl-top {
+  padding-top: 240px;
+}
 .section-gap-xl-top {
   padding-top: 140px;
 }
@@ -447,6 +450,10 @@ table tfoot tr th {
 
 .pt-80 {
   padding-top: 80px;
+}
+
+.pt-50 {
+  padding-top: 50px;
 }
 
 .pt-60 {
@@ -2959,7 +2966,12 @@ p.logged-in-as {
 .team-style-one {
   background: url(../img/shapes/team-bg.png) no-repeat center;
   background-size: cover;
-  padding-top: 50px;
+}
+
+.team-member-page {
+  padding-top: 110px;
+  padding-bottom: 60px;
+  margin-top: 110px;
 }
 
 .team-card-style-one {
@@ -3516,6 +3528,38 @@ p.logged-in-as {
 /* =============================
    14. testimonial style start
  ==============================*/
+
+ .testimonial-style-one .testimonial-slider-wrap h3 {
+  padding-bottom: 36px;
+}
+
+.testimonial-card-style-one p {
+  font-family: var(--ff-poppins);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 190%;
+  color: rgba(64, 64, 64, 0.9);
+}
+
+.testimonial-card-style-one .testimonial-bottom {
+  padding-top: 55px;
+}
+
+.testimonial-style-one .testi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--saasto-primary-color);
+  opacity: 1;
+}
+
+.testimonial-style-one .testi-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+  border: 1px solid var(--saasto-primary-color);
+  background: transparent;
+  margin: 0 10px;
+}
+
 .testimonial-thumb-style .thumb-avater {
   border-radius: 50%;
   opacity: 0;
@@ -3729,6 +3773,10 @@ p.logged-in-as {
 
 .testimonial-style-three .testi-pagination-three .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #5BC17F;
+}
+
+.testimonial-style-one .floarting-avater-1 {
+  top: 98%;
 }
 
 /* =============================
@@ -4891,7 +4939,7 @@ p.logged-in-as {
   -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
   box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
-  padding: 90px 42px;
+  padding: 85px 42px;
   margin-top: 45px;
 }
 
@@ -5159,6 +5207,7 @@ h2.text1 {
   display: none;
 }
 
+
 .pricing-wrap {
   border: 1px solid #8976FD;
   border-radius: 24px;
@@ -5255,16 +5304,85 @@ h2.text1 {
 /* =============================
  Price Page End
  ==============================*/
+
+/* =============================
+ Price table two
+ ==============================*/
+
+ .pricing-card-style-two {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
+  border-radius: 30px;
+  padding: 48px 36px;
+  padding-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+ul.pricing-features{
+  list-style: none;
+}
+
+.pricing-card-style-two h4 {
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 140%;
+}
+
+.pricing-card-style-two .pricing-tag {
+  padding-top: 12px;
+}
+
+.pricing-card-style-two .pricing-features li {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 180%;
+  color: #494369;
+  font-family: var(--ff-nunito);
+  margin-top: 12px;
+  padding-left: 40px;
+}
+
+.pricing-card-style-two .pricing-features li::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #494369;
+  border-radius: 50%;
+  top: 50%;
+  left: 14px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ /* =============================
+ Price table two End
+ ==============================*/
+
 /* =============================
  FAQ Css
  ==============================*/
 .faq-wrap .accordion-button {
   background-color: #fff;
-  padding: 20px 27px;
+  padding: 15px 27px;
   font-weight: 400;
   font-size: 20px;
   color: #332C5C;
-  margin-bottom: 23px;
+  line-height: 135%;
+  margin-bottom: 15px;
   -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
   border-radius: 20px;
@@ -5571,11 +5689,11 @@ h2.text1 {
 .icon-listing-wrap .single-icon-listing .icon-listing-brand span {
   font-weight: 700;
   font-size: 20px;
-  color: #494369;
+  color: #706993;
 }
 
 .icon-listing-wrap .single-icon-listing:not(:last-child) {
-  border-bottom: 1px solid #BEBEBF;
+  border-bottom: 1px solid #40404014;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }

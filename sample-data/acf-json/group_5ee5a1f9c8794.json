@@ -32,10 +32,10 @@
                 "id": ""
             },
             "choices": {
-                "header-style-Default": "Header Style Default",
                 "header-style-1": "Header Style 1",
                 "header-style-2": "Header Style 2",
-                "header-style-3": "Header Style 3"
+                "header-style-3": "Header Style 3",
+                "header-style-custom": "Header Style Custom"
             },
             "default_value": "header-style-1",
             "allow_null": 1,
@@ -44,6 +44,36 @@
             "return_format": "value",
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_6458d2d4fbac6",
+            "label": "Select Custom Header",
+            "name": "saasto_select_custom_header",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ee5b7e62edef",
+                        "operator": "==",
+                        "value": "header-style-Custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "saasto-templates"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
         },
         {
             "key": "field_6450b4006b2a6",
@@ -198,7 +228,8 @@
             "choices": {
                 "normal_style": "Normal Style",
                 "style_1": "Style 1",
-                "style_2": "Style 2"
+                "style_2": "Style 2",
+                "style_3": "Style 3"
             },
             "default_value": "normal_style",
             "allow_null": 0,
@@ -249,7 +280,7 @@
             "name": "saasto_select_custom_footer",
             "type": "post_object",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
@@ -272,33 +303,6 @@
             "multiple": 0,
             "return_format": "id",
             "ui": 1
-        },
-        {
-            "key": "field_5efb0ded987fe",
-            "label": "Footer Style",
-            "name": "footer_style",
-            "type": "select",
-            "instructions": "Please chose footer style.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "footer-style-default": "Footer Style default",
-                "footer-style-1": "Footer Style 1",
-                "footer-style-2": "Footer Style 2",
-                "footer-style-3": "Footer Style 3"
-            },
-            "default_value": "footer-style-def",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
         }
     ],
     "location": [
@@ -319,5 +323,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683443225
+    "modified": 1683545595
 }

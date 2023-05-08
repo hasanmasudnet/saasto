@@ -15,11 +15,8 @@
 
 
 <?php get_header( ); ?>
-
-
-<div class="background-wrap home-bg-one">
    
-<div class="price-area section-gap-xl-top section-gap-xl-bottom">
+<div class="price-area pt-xxl section-gap-bottom-y-1">
    <div class="container">
       <div class="row justify-content-center gy-4">
          <div class="col-lg-6">
@@ -100,8 +97,5 @@
       </div>   
    </div>
 </div>
-
-</div>
-
 
 <?php get_footer( ); ?>

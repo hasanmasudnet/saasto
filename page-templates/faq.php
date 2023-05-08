@@ -16,14 +16,11 @@
 
 <?php get_header( ); ?>
 
-<div class="background-wrap home-bg-one">
-
-
    <div class="faq-area section-gap-xl-top section-gap-xl-bottom">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
-               <h2 class="text-bright-gray text-end">Frequently Asked Questions</h2>
+               <h2 class="text-bright-gray text-center">Frequently Asked Questions</h2>
             </div>
          </div>
          <div class="row justify-content-between pt-60">
@@ -81,7 +78,7 @@
             <div class="col-lg-8">
                <div class="w-feature-content-title text-center">
                   <h3 class="text-bright-gray text-white">Subscribe to Our Newsletter & get the Coupon code.</h3>
-                  <p class="text-purple-haze body-disply-1 pt-2 subscribe-desc">All your information is completely confidential</p>
+                  <p class="text-purple-haze body-disply-1 pt-3 subscribe-desc">All your information is completely confidential</p>
                </div>
             </div>
          </div>
@@ -96,8 +93,5 @@
       </div>
       <img class="subscribe-sp-img position-absolute top-50 start-50 translate-middle d-none d-lg-block" src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/subscribe-bg-sp.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
    </div>
-
-
-</div>
 
 <?php get_footer( ); ?>

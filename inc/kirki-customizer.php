@@ -275,67 +275,12 @@ function _global_enable_desable_fields( $fields ) {
 add_filter( 'kirki/fields', '_global_enable_desable_fields' );
 
 /*
-Header Social
- */
-function _header_social_fields( $fields ) {
-    // header section social
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_social_fb_url',
-        'label'    => esc_html__( 'Facebook Url', 'saasto' ),
-        'section'  => 'header_social',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_topbar_twitter_url',
-        'label'    => esc_html__( 'Twitter Url', 'saasto' ),
-        'section'  => 'header_social',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_topbar_linkedin_url',
-        'label'    => esc_html__( 'Linkedin Url', 'saasto' ),
-        'section'  => 'header_social',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_topbar_instagram_url',
-        'label'    => esc_html__( 'Instagram Url', 'saasto' ),
-        'section'  => 'header_social',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_topbar_youtube_url',
-        'label'    => esc_html__( 'Youtube Url', 'saasto' ),
-        'section'  => 'header_social',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-    ];
-
-
-    return $fields;
-}
-add_filter( 'kirki/fields', '_header_social_fields' );
-
-/*
 Header Settings
  */
 function _header_header_fields( $fields ) {
     $fields[] = [
         'type'        => 'radio-image',
-        'settings'    => 'choose_default_header',
+        'settings'    => 'choose_saasto_header',
         'label'       => esc_html__( 'Select Header Style', 'saasto' ),
         'section'     => 'section_header_logo',
         'placeholder' => esc_html__( 'Select an option...', 'saasto' ),
@@ -344,10 +289,38 @@ function _header_header_fields( $fields ) {
         'choices'     => [
             'header-style-1'   => get_template_directory_uri() . '/inc/img/header/header-1.png',
             'header-style-2' => get_template_directory_uri() . '/inc/img/header/header-2.png',
-            'header-style-3'  => get_template_directory_uri() . '/inc/img/header/header-3.png'
+            'header-style-3'  => get_template_directory_uri() . '/inc/img/header/header-3.png',
+            'saasto-template-builder'  => get_template_directory_uri() . '/inc/img/header/custom-header.png'
         ],
         'default'     => 'header-style-1',
     ];
+
+    if(class_exists('Saasto_Core')){
+        $fields[] = [
+            'type'        => 'select',
+            'settings'    => 'header_custom_style',
+            'label'       => esc_html__( 'Select Header', 'saasto' ),
+            'section'     => 'section_header_logo',
+            'default'     => '4',
+            'placeholder' => esc_html__( 'Select an option...', 'saasto' ),
+            'priority'    => 10,
+            'multiple'    => 1,
+            'choices'     => Kirki\Util\Helper::get_posts(
+                array(
+                    'posts_per_page' => 10,
+                    'post_type'      => 'saasto-templates'
+                ) ,
+            ),
+            'active_callback' => [
+                [
+                    'setting'  => 'choose_saasto_header',
+                    'operator' => '==',
+                    'value'    => 'saasto-template-builder',
+                ],
+            ],
+
+        ];
+    }
 
     $fields[] = [
         'type'        => 'image',
@@ -362,86 +335,6 @@ function _header_header_fields( $fields ) {
 }
 add_filter( 'kirki/fields', '_header_header_fields' );
 
-/*
-Header Side Info
- */
-function _header_side_fields( $fields ) {
-    // side info settings
-    $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'saasto_side_hide',
-        'label'    => esc_html__( 'Side Info On/Off', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => '0',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
-    ];  
-    $fields[] = [
-        'type'        => 'image',
-        'settings'    => 'saasto_side_logo',
-        'label'       => esc_html__( 'Logo Side', 'saasto' ),
-        'description' => esc_html__( 'Logo Side', 'saasto' ),
-        'section'     => 'header_side_setting',
-        'default'     => get_template_directory_uri() . '/assets/img/logo.png',
-    ];
-    $fields[] = [
-        'type'     => 'textarea',
-        'settings' => 'saasto_extra_about_text',
-        'label'    => esc_html__( 'Side Description Text', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => esc_html__( 'But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'textarea',
-        'settings' => 'saasto_extra_map',
-        'label'    => esc_html__( 'Map Address Iframe', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => esc_html__( '#', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    // contact
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_contact_title',
-        'label'    => esc_html__( 'Contact Title', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => esc_html__( 'Contact Title', 'saasto' ),
-        'priority' => 10,
-    ];
-    $fields[] = [
-        'type'     => 'textarea',
-        'settings' => 'saasto_extra_address',
-        'label'    => esc_html__( 'Office Address', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => esc_html__( '12/A, Mirnada City Tower, NYC', 'saasto' ),
-        'priority' => 10,
-    ];
-    $fields[] = [
-        'type'     => 'textarea',
-        'settings' => 'saasto_extra_phone',
-        'label'    => esc_html__( 'Phone Number', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => esc_html__( '+0989 7876 9865 9', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'textarea',
-        'settings' => 'saasto_extra_email',
-        'label'    => esc_html__( 'Email ID', 'saasto' ),
-        'section'  => 'header_side_setting',
-        'default'  => esc_html__( 'info@wprealizer.com', 'saasto' ),
-        'priority' => 10,
-    ];
-    return $fields;
-}
-add_filter( 'kirki/fields', '_header_side_fields' );
 
 /*
 _header_page_title_fields
@@ -1090,37 +983,6 @@ function saasto_course_fields( $fields ) {
 }
 
 add_filter( 'kirki/fields', 'saasto_course_fields' );
-
-
-
-
-/**
- * Added Fields
- */
-function saasto_slug_setting( $fields ) {
-    // slug settings
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_ev_slug',
-        'label'    => esc_html__( 'Event Slug', 'saasto' ),
-        'section'  => 'slug_setting',
-        'default'  => esc_html__( 'ourevent', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    $fields[] = [
-        'type'     => 'text',
-        'settings' => 'saasto_port_slug',
-        'label'    => esc_html__( 'Portfolio Slug', 'saasto' ),
-        'section'  => 'slug_setting',
-        'default'  => esc_html__( 'ourportfolio', 'saasto' ),
-        'priority' => 10,
-    ];
-
-    return $fields;
-}
-
-add_filter( 'kirki/fields', 'saasto_slug_setting' );
 
 
 /**

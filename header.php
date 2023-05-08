@@ -70,6 +70,9 @@
       elseif( $bg_style == 'style_2' ){
          echo '<div class="background-wrap home-bg-two">';
       }
+      elseif( $bg_style == 'style_3' ){
+         echo '<div class="background-wrap inner-bg">';
+      }
    ?>
     
     <!-- header start -->

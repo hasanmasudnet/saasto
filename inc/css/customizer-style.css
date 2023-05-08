@@ -20,11 +20,11 @@ div .customize-control-kirki-radio-image input:checked + label::after {
 	padding: 1px 0 0 1px;
 }
 
-#input_choose_default_header > label {
+#input_choose_saasto_header > label {
 	background: #fff;
 	padding: 3px;
 }
-div .customize-control-kirki-radio-image #input_choose_default_header input:checked +  label::after {
+div .customize-control-kirki-radio-image #input_choose_saasto_header input:checked +  label::after {
 	right: -5px;
 	bottom: 8px;
 }

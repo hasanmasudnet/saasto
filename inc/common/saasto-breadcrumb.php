@@ -76,7 +76,7 @@ function saasto_breadcrumb_func() {
       $is_breadcrumb = null;
     }
 
-      if ( empty( $is_breadcrumb ) && $breadcrumb_show == 1 ) {
+      if ( !empty( $is_breadcrumb ) && $breadcrumb_show == 1 ) {
 
         $bg_img_from_page = function_exists('get_field') ? get_field('breadcrumb_background_image',$_id) : '';
         $hide_bg_img = function_exists('get_field') ? get_field('hide_breadcrumb_background_image',$_id) : '';

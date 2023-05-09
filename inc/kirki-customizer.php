@@ -358,11 +358,14 @@ function _header_page_title_fields( $fields ) {
     $fields[] = [
         'type'        => 'image',
         'settings'    => 'breadcrumb_bg_img',
-        'label'       => esc_html__( 'Breadcrumb Background Image', 'saasto' ),
-        'description' => esc_html__( 'Breadcrumb Background Image', 'saasto' ),
+        'label'       => esc_html__( 'Background Image', 'saasto' ),
+        'description' => esc_html__( 'Background Image', 'saasto' ),
         'section'     => 'breadcrumb_setting',
         'default'     => get_template_directory_uri() . '/assets/img/page-title/page-title.jpg',
     ];
+
+
+
     $fields[] = [
         'type'        => 'color',
         'settings'    => 'breadcrumb_bg_color',

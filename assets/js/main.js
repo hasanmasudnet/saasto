@@ -322,8 +322,8 @@ $(".counter-item").each(function () {
 });
 
 
-// Pricing Toggle
 
+  /* Pricing Toggle */
 var checkBox = document.querySelectorAll("#checbox")
 
 for(let i = 0; i < checkBox.length; i++){
@@ -350,5 +350,15 @@ for(let i = 0; i < checkBox.length; i++){
 
   })
 }
+
+  /* Breadcrumb styles */
+$("[data-background").each(function () {
+  $(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
+});
+
+$("[data-bg-color]").each(function () {
+      $(this).css("background-color", $(this).attr("data-bg-color"));
+  });
+  
   
 }(jQuery));

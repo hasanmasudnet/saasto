@@ -174,13 +174,13 @@ get_header();
                     <div class="tab-content" id="pills-tabContent">
 
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="row">
+                        <div class="row justify-content-between">
 
-                            <div class="col-lg-6">
-                                <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
+                            <div class="col-lg-5">
+                                <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" class='w-100' alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                             </div>
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-5">
                                 <div class="w-feature-content-title tab-info mt-5">
                                 <h3 class="text-bright-gray">Analytics & Reporting Brackdown</h3>
                                 <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
@@ -193,12 +193,9 @@ get_header();
                     </div>
 
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/tab.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="w-feature-content-title tab-info mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <div class="w-feature-content-title tab-info text-center mt-5">
                                     <h3 class="text-bright-gray">Analytics & Reporting Brackdown</h3>
                                     <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
                                     <p class="text-purple-haze body-disply-1 pt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>

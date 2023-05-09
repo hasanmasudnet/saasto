@@ -340,7 +340,21 @@ add_filter( 'kirki/fields', '_header_header_fields' );
 _header_page_title_fields
  */
 function _header_page_title_fields( $fields ) {
+    
     // Breadcrumb Setting
+    $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'breadcrumb_switch',
+        'label'    => esc_html__( 'Breadcrumb Info switch', 'saasto' ),
+        'section'  => 'breadcrumb_setting',
+        'default'  => '1',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+
     $fields[] = [
         'type'        => 'image',
         'settings'    => 'breadcrumb_bg_img',
@@ -351,25 +365,27 @@ function _header_page_title_fields( $fields ) {
     ];
     $fields[] = [
         'type'        => 'color',
-        'settings'    => 'saasto_breadcrumb_bg_color',
+        'settings'    => 'breadcrumb_bg_color',
         'label'       => __( 'Breadcrumb BG Color', 'saasto' ),
         'description' => esc_html__( 'This is a Breadcrumb bg color control.', 'saasto' ),
         'section'     => 'breadcrumb_setting',
-        'default'     => '#f4f9fc',
+        'default'     => 'rgba(137, 118, 253, 0.1)',
         'priority'    => 10,
     ];
 
     $fields[] = [
-        'type'     => 'switch',
-        'settings' => 'breadcrumb_info_switch',
-        'label'    => esc_html__( 'Breadcrumb Info switch', 'saasto' ),
-        'section'  => 'breadcrumb_setting',
-        'default'  => '1',
-        'priority' => 10,
-        'choices'  => [
-            'on'  => esc_html__( 'Enable', 'saasto' ),
-            'off' => esc_html__( 'Disable', 'saasto' ),
-        ],
+        'type'        => 'number',
+        'settings'    => 'breadcrumb_pt',
+        'label'       => esc_html__( 'Padding top', 'saasto' ),
+        'section'     => 'breadcrumb_setting',
+        'default'     => '150'
+    ];
+    $fields[] = [
+        'type'        => 'number',
+        'settings'    => 'breadcrumb_pb',
+        'label'       => esc_html__( 'Padding Bottom', 'saasto' ),
+        'section'     => 'breadcrumb_setting',
+        'default'     => '150'
     ];
 
     return $fields;

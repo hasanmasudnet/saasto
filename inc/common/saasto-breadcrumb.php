@@ -37,9 +37,6 @@ function saasto_breadcrumb_func() {
     elseif ( is_single() && 'product' == get_post_type() ) {
         $title = get_theme_mod( 'breadcrumb_product_details', __( 'Shop', 'saasto' ) );
     } 
-    elseif ( is_single() && 'courses' == get_post_type() ) {
-      $title = esc_html__( 'Course Details', 'saasto' );
-    } 
     elseif ( is_search() ) {
 
         $title = esc_html__( 'Search Results for : ', 'saasto' ) . get_search_query();
@@ -71,20 +68,20 @@ function saasto_breadcrumb_func() {
         $_id = get_option( 'page_for_posts' );
     }
 
-    $is_breadcrumb = function_exists( 'get_field' ) ? get_field( 'is_it_invisible_breadcrumb', $_id ) : '';
+    $is_breadcrumb = function_exists( 'get_field' ) ? get_field( 'is_it_invisible_breadcrumb', $_id ) : true;
+
     if( !empty($_GET['s']) ) {
       $is_breadcrumb = null;
     }
 
-      if ( !empty( $is_breadcrumb ) && $breadcrumb_show == 1 ) {
+      if ( $is_breadcrumb != NULL && $breadcrumb_show == 1 ) {
 
         $bg_img_from_page = function_exists('get_field') ? get_field('breadcrumb_background_image',$_id) : '';
         $hide_bg_img = function_exists('get_field') ? get_field('hide_breadcrumb_background_image',$_id) : '';
 
         // get_theme_mod
         $bg_img = get_theme_mod( 'breadcrumb_bg_img' );
-        $saasto_breadcrumb_shape_switch = get_theme_mod( 'saasto_breadcrumb_shape_switch', true );
-        $breadcrumb_info_switch = get_theme_mod( 'breadcrumb_info_switch', true );
+        $breadcrumb_switch = get_theme_mod( 'breadcrumb_switch', true );
 
         if ( $hide_bg_img && empty($_GET['s']) ) {
             $bg_img = '';
@@ -96,7 +93,7 @@ function saasto_breadcrumb_func() {
 
         <?php
         // Breadcrumb controller
-        if (!empty($breadcrumb_info_switch)) : ?>
+        if (!empty($breadcrumb_switch)) : ?>
         <div class="breadcrumb-area position-relative overflow-hidden <?php print esc_attr( $breadcrumb_class );?>" data-background="<?php print esc_attr($bg_img);?>">
             <div class="container">
                 <div class="row">
@@ -110,8 +107,6 @@ function saasto_breadcrumb_func() {
                     </div>
                 </div>
             </div>
-            <img class="top-0 start-0 position-absolute d-none d-lg-block" src="<?php echo esc_url(get_template_directory_uri( )) ?>/assets/img/shapes/breadcrumb-sp-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
-            <img class="position-absolute end-0 d-none d-lg-block" style=" bottom: -20px;" src="<?php echo esc_url(get_template_directory_uri( )) ?>/assets/img/shapes/breadcrumb-sp-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
         </div>
         <?php endif; ?>
 

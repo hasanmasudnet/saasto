@@ -41,6 +41,9 @@ function saasto_scripts() {
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     wp_enqueue_style( 'saasto-style', get_stylesheet_uri() );
 
+    // add dynamic style
+
+
     // all js
     wp_enqueue_script( 'bootstrap-bundle', SAASTO_THEME_JS_DIR . 'bootstrap-bundle.js', [ 'jquery' ], '', true );
     wp_enqueue_script( 'swiper-bundle', SAASTO_THEME_JS_DIR . 'swiper-bundle.js', [ 'jquery' ], false, false );

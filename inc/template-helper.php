@@ -300,83 +300,26 @@ add_action( 'wp_enqueue_scripts', 'saasto_scrollup_switch' );
 // theme color
 function saasto_custom_color() {
     $color_code = get_theme_mod( 'saasto_color_option', '#2b4eff' );
+    $breadcrumb_pt = get_theme_mod( 'breadcrumb_pt', '150' );
+    $breadcrumb_pb = get_theme_mod( 'breadcrumb_pb', '150' );
+    $breadcrumb_bg_color = get_theme_mod( 'breadcrumb_bg_color', 'rgba(137, 118, 253, 0.1)' );
+    $breadcrumb_bg = get_theme_mod( 'breadcrumb_bg', false );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
-    if ( $color_code != '' ) {
+    // if ( $color_code != '' ) {
         $custom_css = '';
-        $custom_css .= ".demo-class { background-color: " . $color_code . "}";
 
-        $custom_css .= ".demo-class { color: " . $color_code . "}";
-
-        $custom_css .= ".demo-class { border-color: " . $color_code . "}";
-        $custom_css .= ".demo-class { border-left-color: " . $color_code . "}";
-        $custom_css .= ".demo-class { stroke: " . $color_code . "}";
-        $custom_css .= ".demo-class { border-color: " . $color_code . "}";
+        $custom_css .= ".breadcrumb-area { 
+            background-image: " . $breadcrumb_bg . ";
+            background-color: " . $breadcrumb_bg_color . ";
+            padding-top: " . $breadcrumb_pt . "px;
+            padding-bottom: " . $breadcrumb_pb . "px;
+            background-color: " . $breadcrumb_bg_color . ";
+        
+        }";
         wp_add_inline_style( 'saasto-custom', $custom_css );
-    }
+    // }
 }
 add_action( 'wp_enqueue_scripts', 'saasto_custom_color' );
-
-
-// theme color
-function saasto_custom_color_primary() {
-    $color_code = get_theme_mod( 'saasto_color_option_2', '#f2277e' );
-    wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
-    if ( $color_code != '' ) {
-        $custom_css = '';
-        $custom_css .= ".demo-class { background-color: " . $color_code . "}";
-
-        $custom_css .= ".demo-class { color: " . $color_code . "}";
-
-        $custom_css .= ".demo-class { border-left-color: " . $color_code . "}";
-        wp_add_inline_style( 'saasto-custom', $custom_css );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'saasto_custom_color_primary' );
-
-// theme color
-function saasto_custom_color_scrollup() {
-    $color_code = get_theme_mod( 'saasto_color_scrollup', '#2b4eff' );
-    wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
-    if ( $color_code != '' ) {
-        $custom_css = '';
-        $custom_css .= ".demo-class { color: " . $color_code . "}";
-        $custom_css .= ".demo-class { stroke: " . $color_code . "}";
-        wp_add_inline_style( 'saasto-custom', $custom_css );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'saasto_custom_color_scrollup' );
-
-// theme color
-function saasto_custom_color_secondary() {
-    $color_code = get_theme_mod( 'saasto_color_option_3', '#30a820' );
-    wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
-    if ( $color_code != '' ) {
-        $custom_css = '';
-        $custom_css .= ".demo-class { background-color: " . $color_code . "}";
-
-        $custom_css .= ".demo-class { color: " . $color_code . "}";
-
-        $custom_css .= ".asdf { border-color: " . $color_code . "}";
-        wp_add_inline_style( 'saasto-custom', $custom_css );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'saasto_custom_color_secondary' );
-
-// theme color
-function saasto_custom_color_secondary_2() {
-    $color_code = get_theme_mod( 'saasto_color_option_3_2', '#ffb352' );
-    wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
-    if ( $color_code != '' ) {
-        $custom_css = '';
-        $custom_css .= ".demo-class { background-color: " . $color_code . "}";
-
-        $custom_css .= ".demo-class { color: " . $color_code . "}";
-
-        $custom_css .= ".demo-class { border-color: " . $color_code . "}";
-        wp_add_inline_style( 'saasto-custom', $custom_css );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'saasto_custom_color_secondary_2' );
 
 
 // saasto_kses_intermediate

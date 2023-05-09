@@ -1,6 +1,6 @@
 {
     "key": "group_5ee5a1f9c8794",
-    "title": "MetaBox",
+    "title": "Page options",
     "fields": [
         {
             "key": "field_6450b44f99562",
@@ -175,7 +175,7 @@
                 "id": ""
             },
             "message": "Is it invisible breadcrumb?",
-            "default_value": 0,
+            "default_value": 1,
             "ui": 1,
             "ui_on_text": "Enable",
             "ui_off_text": "Disable"
@@ -191,7 +191,7 @@
                 [
                     {
                         "field": "field_5ee5a2875481b",
-                        "operator": "!=",
+                        "operator": "==",
                         "value": "1"
                     }
                 ]
@@ -312,6 +312,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 0,
@@ -323,5 +330,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683545595
+    "modified": 1683627621
 }

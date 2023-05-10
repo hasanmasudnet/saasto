@@ -373,7 +373,7 @@ function _header_page_title_fields( $fields ) {
         'description' => esc_html__( 'This is a Breadcrumb bg color control.', 'saasto' ),
         'section'     => 'breadcrumb_setting',
         'default'     => 'rgba(137, 118, 253, 0.1)',
-        'priority'    => 10,
+        'priority'    => 10, 
     ];
 
     $fields[] = [

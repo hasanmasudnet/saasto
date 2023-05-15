@@ -14,7 +14,7 @@ function saasto_breadcrumb_func() {
     global $post;  
     $breadcrumb_class = '';
     $breadcrumb_show = 1;
-
+    $title =  __('Blog','saasto');
 
     if ( is_front_page() && is_home() ) {
         $title = get_theme_mod('breadcrumb_blog_title', __('Blog','saasto'));

@@ -53,20 +53,21 @@ function saasto_register_required_plugins() {
             'required' => false,
         ],
         [
-            'name'     => esc_html__( 'Mailchimp For WP', 'saasto' ),
-            'slug'     => 'mailchimp-for-wp',
+            'name'     => esc_html__( 'Contact Form 7 Extension For Mailchimp
+            ', 'saasto' ),
+            'slug'     => 'contact-form-7-mailchimp-extension',
             'required' => false,
         ],
-        array(
+        [
             'name'     =>  esc_html__('Kirki Customizer Framework','saasto'),
             'slug'     => 'kirki',
             'required' => true,
-        ), 
-        array(
+        ], 
+        [
             'name'     =>  esc_html__('Breadcrumb NavXT','saasto'),
             'slug'     => 'breadcrumb-navxt',
             'required' => false,
-        )     
+        ]   
 
     ];
     $config = [

@@ -149,35 +149,6 @@ function saasto_header_search_menu() {
     <?php
 }
 
-/**
- * [saasto_footer_menu description]
- * @return [type] [description]
- */
-function saasto_footer_menu() {
-    wp_nav_menu( [
-        'theme_location' => 'footer-menu',
-        'menu_class'     => 'footer-quick-links d-flex justify-content-lg-end flex-wrap',
-        'container'      => '',
-        'fallback_cb'    => 'Saasto_Navwalker_Class::fallback',
-        'walker'         => new Saasto_Navwalker_Class,
-    ] );
-}
-
-
-/**
- * [saasto_category_menu description]
- * @return [type] [description]
- */
-function saasto_category_menu() {
-    wp_nav_menu( [
-        'theme_location' => 'category-menu',
-        'menu_class'     => 'cat-submenu m-0',
-        'container'      => '',
-        'fallback_cb'    => 'Saasto_Navwalker_Class::fallback',
-        'walker'         => new Saasto_Navwalker_Class,
-    ] );
-}
-
 
 // saasto_copyright_text
 function saasto_copyright_text() {
@@ -508,29 +479,3 @@ function saasto_kses($raw){
     return '.';
 }
 add_filter('excerpt_more', 'saasto_excerpt_more');
-
-//Always safe acf json file. 
-function acf_json_save_point($path)
-{
-    // update path
-    $path = get_stylesheet_directory() . '/sample-data/acf-json';
-    return $path;
-}
-add_filter('acf/settings/save_json', 'acf_json_save_point');
-
-add_filter('acf/settings/load_json', 'my_acf_json_load_point');
-
-function my_acf_json_load_point( $paths ) {
-    
-    // remove original path (optional)
-    unset($paths[0]);
-    
-    
-    // append path
-    $paths[] = get_stylesheet_directory() . '/sample-data/acf-json';
-    
-    
-    // return
-    return $paths;
-    
-}

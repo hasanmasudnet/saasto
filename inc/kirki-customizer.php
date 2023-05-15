@@ -356,6 +356,19 @@ function _header_page_title_fields( $fields ) {
     ];
 
     $fields[] = [
+        'type'     => 'switch',
+        'settings' => 'saasto_breadcrumb_shape_switch',
+        'label'    => esc_html__( 'Enable Shap', 'saasto' ),
+        'section'  => 'breadcrumb_setting',
+        'default'  => '1',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+
+    $fields[] = [
         'type'        => 'image',
         'settings'    => 'breadcrumb_bg_img',
         'label'       => esc_html__( 'Background Image', 'saasto' ),

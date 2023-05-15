@@ -1346,6 +1346,10 @@ header .header-transparent {
   top: 25px;
 }
 
+.admin-bar .header-area.header-one.sticky{
+  margin-top: 32px;
+}
+
 .header-area.sticky {
   position: fixed;
   top: 0;

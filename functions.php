@@ -46,8 +46,6 @@ if ( !function_exists( 'saasto_setup' ) ):
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( [
             'main-menu' => esc_html__( 'Main Menu', 'saasto' ),
-            'category-menu' => esc_html__( 'Category Menu', 'saasto' ),
-            'footer-menu' => esc_html__( 'Footer Menu', 'saasto' ),
         ] );
 
         /*

@@ -500,6 +500,9 @@ table tfoot tr th {
 .breadcrumb-info span {
   font-weight: 500;
 }
+.breadcrumb_right_arr i {
+  font-size: 13px;
+}
 
 /* =============================
  Custom utilities end

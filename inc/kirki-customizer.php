@@ -308,7 +308,7 @@ function _header_header_fields( $fields ) {
             'choices'     => Kirki\Util\Helper::get_posts(
                 array(
                     'posts_per_page' => 10,
-                    'post_type'      => 'saasto-templates'
+                    'post_type'      => 'saasto-blocks'
                 ) ,
             ),
             'active_callback' => [
@@ -547,7 +547,7 @@ function _header_footer_fields( $fields ) {
             'choices'     => Kirki\Util\Helper::get_posts(
                 array(
                     'posts_per_page' => 10,
-                    'post_type'      => 'saasto-templates'
+                    'post_type'      => 'saasto-blocks'
                 ) ,
             ),
             'active_callback' => [

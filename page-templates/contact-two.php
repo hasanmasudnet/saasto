@@ -87,30 +87,4 @@
    </div>
 </div>
 
-
-<!-- =============== subscribe style 2 start =============== -->
-<div class="subscribe-area position-relative">
-   <div class="container">
-      <div class="row justify-content-center">
-         <div class="col-lg-8">
-            <div class="w-feature-content-title text-center">
-               <h3 class="text-bright-gray text-white">Subscribe to Our Newsletter & get the Coupon code.</h3>
-               <p class="text-purple-haze body-disply-1 pt-3 subscribe-desc">All your information is completely confidential</p>
-            </div>
-         </div>
-      </div>
-      <div class="row justify-content-center mt-5">
-         <div class="col-lg-6">
-            <form action="#" class="subscribe-form">
-               <input type="text" placeholder="Type your email">
-               <button type="submit" class=" border-0"><i class="bi bi-arrow-right"></i></button>
-            </form>
-         </div>
-      </div>
-   </div>
-   <img class="subscribe-sp-img position-absolute top-50 start-50 translate-middle d-none d-lg-block" src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/subscribe-bg-sp.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
-</div>
-<!-- =============== subscribe style 2 end =============== -->
-
-
 <?php get_footer( ); ?>

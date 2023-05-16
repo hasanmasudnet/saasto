@@ -53,9 +53,8 @@ function saasto_register_required_plugins() {
             'required' => false,
         ],
         [
-            'name'     => esc_html__( 'Contact Form 7 Extension For Mailchimp
-            ', 'saasto' ),
-            'slug'     => 'contact-form-7-mailchimp-extension',
+            'name'     => esc_html__( 'MC4WP: Mailchimp for WordPress', 'saasto' ),
+            'slug'     => 'mailchimp-for-wp',
             'required' => false,
         ],
         [

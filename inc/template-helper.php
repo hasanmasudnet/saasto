@@ -43,7 +43,9 @@ function saasto_header_logo() { ?>
         $saasto_logo = get_template_directory_uri() . '/assets/img/logo.png';
 
         $saasto_site_logo = get_theme_mod( 'logo', $saasto_logo );
+        $saasto_logo_max_width = get_theme_mod( 'logo_max_width', 180 );
         $saasto_custom_logo = function_exists( 'get_field' ) ? get_field( 'custom_logo' ) : NULL;
+
       ?>
 
       <?php if ( !empty( $saasto_custom_logo_on ) && !empty( $saasto_custom_logo) ) : ?>
@@ -361,88 +363,88 @@ function saasto_get_allowed_html_tags( $level = 'basic' ) {
 function saasto_kses($raw){
 
    $allowed_tags = array(
-      'a'                         => array(
-         'class'   => array(),
-         'href'    => array(),
-         'rel'  => array(),
-         'title'   => array(),
-         'target' => array(),
+        'a'         => array(
+            'class'    => [],
+            'href'     => [],
+            'rel'      => [],
+            'title'    => [],
+            'target'   => [],
       ),
       'abbr'                      => array(
-         'title' => array(),
+         'title' => [],
       ),
-      'b'                         => array(),
+      'b'                         => [],
       'blockquote'                => array(
-         'cite' => array(),
+         'cite' => [],
       ),
       'cite'                      => array(
-         'title' => array(),
+         'title' => [],
       ),
-      'code'                      => array(),
+      'code'                      => [],
       'del'                    => array(
-         'datetime'   => array(),
-         'title'      => array(),
+         'datetime'   => [],
+         'title'      => [],
       ),
-      'dd'                     => array(),
+      'dd'                     => [],
       'div'                    => array(
-         'class'   => array(),
-         'title'   => array(),
-         'style'   => array(),
+         'class'   => [],
+         'title'   => [],
+         'style'   => [],
       ),
-      'dl'                     => array(),
-      'dt'                     => array(),
-      'em'                     => array(),
-      'h1'                     => array(),
-      'h2'                     => array(),
-      'h3'                     => array(),
-      'h4'                     => array(),
-      'h5'                     => array(),
-      'h6'                     => array(),
+      'dl'                     => [],
+      'dt'                     => [],
+      'em'                     => [],
+      'h1'                     => [],
+      'h2'                     => [],
+      'h3'                     => [],
+      'h4'                     => [],
+      'h5'                     => [],
+      'h6'                     => [],
       'i'                         => array(
-         'class' => array(),
+         'class' => [],
       ),
       'img'                    => array(
-         'alt'  => array(),
-         'class'   => array(),
-         'height' => array(),
-         'src'  => array(),
-         'width'   => array(),
+         'alt'  => [],
+         'class'   => [],
+         'height' => [],
+         'src'  => [],
+         'width'   => [],
       ),
       'li'                     => array(
-         'class' => array(),
+         'class' => [],
       ),
       'ol'                     => array(
-         'class' => array(),
+         'class' => [],
       ),
       'p'                         => array(
-         'class' => array(),
+         'class' => [],
       ),
       'q'                         => array(
-         'cite'    => array(),
-         'title'   => array(),
+         'cite'    => [],
+         'title'   => [],
       ),
       'span'                      => array(
-         'class'   => array(),
-         'title'   => array(),
-         'style'   => array(),
+         'class'   => [],
+         'title'   => [],
+         'style'   => [],
       ),
       'iframe'                 => array(
-         'width'         => array(),
-         'height'     => array(),
-         'scrolling'     => array(),
-         'frameborder'   => array(),
-         'allow'         => array(),
-         'src'        => array(),
+         'width'         => [],
+         'height'     => [],
+         'scrolling'     => [],
+         'frameborder'   => [],
+         'allow'         => [],
+         'src'        => [],
       ),
-      'strike'                 => array(),
-      'br'                     => array(),
-      'strong'                 => array(),
-      'data-wow-duration'            => array(),
-      'data-wow-delay'            => array(),
-      'data-wallpaper-options'       => array(),
-      'data-stellar-background-ratio'   => array(),
+      'strike'                 => [],
+      'br'                     => [],
+      'strong'                 => [],
+      'data-wow-duration'            => [],
+      'data-wow-delay'            => [],
+      'data-wallpaper-options'       => [],
+      'data-stellar-background-ratio'   => [],
       'ul'                     => array(
-         'class' => array(),
+         'class' => [],
       ),
       'svg' => array(
            'class' => true,

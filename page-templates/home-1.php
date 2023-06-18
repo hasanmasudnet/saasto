@@ -375,57 +375,48 @@ get_header();
 
             <div class="swiper blog-slider-one pt-5">
                 <div class="swiper-wrapper ">
-                    <div class="swiper-slide">
-                        <div class="blog-card-style-one">
-                            <div class="blog-thumb">
-                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog/blog-thumb-1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></a>
-                            </div>
-                            <div class="blog-disc">
-                                <div class="blog-meta d-flex justify-content-between">
-                                    <a href="#">Random</a>
-                                    <a href="#">24 nov, 2021</a>
+                    <?php 
+                    
+                    $blog_args = [
+                        'post_type' => 'post',
+                        'posts_per_page' => 5, // Change this number to the desired number of posts per page
+                    ];
+                    $blog_query = new WP_Query($blog_args);
+
+						if ( $blog_query->have_posts() ):
+							/* Start the Loop */
+							while ( $blog_query->have_posts() ): $blog_query->the_post(); ?>
+                                <div class="swiper-slide">
+                                    <div class="blog-card-style-one">
+                                        
+                                    <?php if ( has_post_thumbnail() ): ?>   
+                                        <!-- post loop thumbnail  -->
+                                        <div class="blog-thumb">
+                                            <a href="<?php the_permalink();?>">
+                                                <?php the_post_thumbnail( 'full', ['class' => 'img-responsive'] );?>
+                                            </a>
+                                        </div>
+                                        <!-- End post loop thumbnail  -->
+                                    <?php endif; ?>
+
+                                        <div class="blog-disc">
+                                            <div class="blog-meta d-flex justify-content-between">
+                                                <a href="<?php print esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );?>"><?php print get_the_author();?></a>
+
+                                                <a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j'));  ?>"><?php the_time( get_option('date_format') ); ?></a>
+
+                                            </div>
+                                            <h5 class="blog-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h5>
+                                            
+                                            <div class="blog-btn">
+                                                <a href="<?php the_permalink();?>">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h5 class="blog-title"><a href="#">Weekly roundup SaaS global SaaS </a></h5>
-                                <div class="blog-btn">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="blog-card-style-one">
-                            <div class="blog-thumb">
-                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog/blog-thumb-2.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></a>
-                            </div>
-                            <div class="blog-disc">
-                                <div class="blog-meta d-flex justify-content-between">
-                                    <a href="#">Random</a>
-                                    <a href="#">24 nov, 2021</a>
-                                </div>
-                                <h5 class="blog-title"><a href="#">Weekly roundup SaaS global SaaS </a></h5>
-                                <div class="blog-btn">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="blog-card-style-one">
-                            <div class="blog-thumb">
-                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog/blog-thumb-3.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></a>
-                            </div>
-                            <div class="blog-disc">
-                                <div class="blog-meta d-flex justify-content-between">
-                                    <a href="#">Random</a>
-                                    <a href="#">24 nov, 2021</a>
-                                </div>
-                                <h5 class="blog-title"><a href="#">Weekly roundup SaaS global SaaS </a></h5>
-                                <div class="blog-btn">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endwhile;
+                        endif;
+                        wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>

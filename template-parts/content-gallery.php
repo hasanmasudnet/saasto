@@ -20,10 +20,12 @@ if ( is_single() ): ?>
                 <div class="blog-button-prev blog-arrow"><i class="bi bi-chevron-left"></i></div>
                 <div class="swiper blog_thumb__slider">
                     <div class="swiper-wrapper">
-                        <?php foreach ( $gallery_images as $key => $image ): ?>
-                        <div class="post-gallery-slider-item swiper-slide">
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-                        </div>
+                        <?php foreach ( $gallery_images as $key => $image ): 
+                        if( !empty($image['url'])): ?>
+                            <div class="post-gallery-slider-item swiper-slide">
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                            </div>
+                        <?php endif; ?>
                         <?php endforeach;?>
                     </div>
                 </div>

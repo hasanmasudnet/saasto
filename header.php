@@ -38,7 +38,6 @@
          $loader_spinner = get_theme_mod( 'saasto_preloader_spinner' ) ? 'spinner' : NULL;
 
     ?>
-
     <?php if ( !empty( $saasto_preloader ) ): ?>
         <!-- ===============  Preloder start =============== -->
             <div class="preloader">
@@ -52,6 +51,7 @@
             </div>
          <!-- ===============  Preloder end =============== -->
     <?php endif;?>
+
 
     <?php if ( !empty( $saasto_backtotop ) ): ?>
     <!-- back to top start -->

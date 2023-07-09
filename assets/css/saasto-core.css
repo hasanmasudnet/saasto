@@ -1159,7 +1159,7 @@ header .header-area .main-nav ul li .sub-menu {
   min-width: 200px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   background: #fff;
   opacity: 0;
   z-index: 9999;
@@ -1269,9 +1269,9 @@ header .header-area .main-nav ul li ul.sub-menu > li {
 
 header .header-area .main-nav ul li ul.sub-menu > li a {
   display: block;
-  padding: 15px 10px;
-  color: #162b32;
-  line-height: 1;
+  padding: 7px 15px;
+  color: #565c5e;
+  line-height: 140%;
   text-transform: capitalize;
   font-size: 16px;
   text-decoration: none;
@@ -2363,6 +2363,12 @@ header .header-transparent {
 
 .blog-card-style-one .blog-disc .blog-btn a:hover {
   background: rgba(137, 118, 253, 0.3);
+}
+
+.blog-carousel .blog-thumb img{
+  min-height: 360px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .blog__post_thumb,
@@ -5723,6 +5729,7 @@ ul.pricing-features{
           justify-content: space-between;
   background-color: #E0E1EF;
   border-radius: 40px;
+  
 }
 
 .tab-wrap .nav-link {
@@ -5743,6 +5750,11 @@ ul.pricing-features{
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
+}
+.tab-info{
+  max-width: 770px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 /* =============================
@@ -5873,4 +5885,34 @@ ul.pricing-features{
   color: #fff;
   background-color: #000;
 }
+
+/* cursor style */
+/* .cursor {
+  position: fixed;
+  z-index: 999999;;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+  transform: translate(calc(-50% + 15px), -50%);
+} */
+.cursor { 
+  position: fixed;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  /* transition: all 0.1s ease-out; */
+  left: -100px;
+  overflow: visible;
+  z-index: 999999;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: top 0.1s ease, left 0.1s ease;
+ }
+
 /*# sourceMappingURL=saasto-core.css.map */

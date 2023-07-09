@@ -5,9 +5,11 @@ Author: wprealizer
 Author URI: https://themeforest.net/user/wprealizer/portfolio
 Description: Saasto – Saas landing page WordPress Theme
 Requires at least: 5.4
+Default branch: main
+GitHub Theme URI: https://github.com/hasanmasudnet/SAASTO-WP.git
 Tested up to: 6.1
 Requires PHP: 7.4
-Version: 0.30
+Version: 0.32
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: saasto
@@ -17,9 +19,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-.nav-logo {
-	padding: 20px 0;
-}
 .admin-bar .header-area.header-one.sticky{
   margin-top: 32px;
 }

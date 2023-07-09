@@ -85,7 +85,7 @@ if ( is_single() ): ?>
                     <div class="swiper-wrapper">
                         <?php foreach ( $gallery_images as $key => $image ): ?>
                         <div class="post-gallery-slider-item swiper-slide">
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                            <?php echo wp_get_attachment_image( $image, 'full') ?>
                         </div>
                         <?php endforeach;?>
                     </div>

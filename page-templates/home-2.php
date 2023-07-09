@@ -76,7 +76,7 @@
     </div>
 
     <!-- ===============  features style start =============== -->
-    <div class="feature-style-two pt-30">
+    <div class="feature-style-two pt-30 ">
         <div class="container">
             <div class="row justify-content-center position-relative">
                 <div class="col-lg-8">

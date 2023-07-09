@@ -28,3 +28,13 @@ div .customize-control-kirki-radio-image #input_choose_saasto_header input:check
 	right: -5px;
 	bottom: 8px;
 }
+
+li#accordion-panel-saasto_customizer h3 {
+    background: #8976fd !important;
+    color: #fff !important;
+}
+
+#customize-theme-controls li#accordion-panel-saasto_customizer .accordion-section-title:after{
+	content: "\f345";
+    color: #ffff !important;
+}

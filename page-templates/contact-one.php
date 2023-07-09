@@ -55,7 +55,7 @@
             </div>
          </div>
          <div class="col-lg-6">
-            <div class="contact-form-wrap">
+            <div class="contact-form-wrap mt-5 mt-lg-0">
                <form action="#">
                   <div class="row">
                      <div class="col-lg-12">

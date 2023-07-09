@@ -40,7 +40,7 @@
    ************/
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll >= 20) {
+    if (scroll >= 500) {
       $(".header-area").addClass("sticky");
     } else {
       $(".header-area").removeClass("sticky");
@@ -360,5 +360,18 @@ $("[data-bg-color]").each(function () {
       $(this).css("background-color", $(this).attr("data-bg-color"));
   });
   
+
+// Custom CSS Animation
+$(document).on("mousemove", function(e) {
+  var cursor = $(".cursor");
+  requestAnimationFrame(function() {
+    cursor.css({
+      top: e.pageY - $(window).scrollTop() - 10,
+      left: e.pageX - 10
+    });
+
+  });
+});
   
+
 }(jQuery));

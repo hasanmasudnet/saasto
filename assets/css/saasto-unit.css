@@ -6,21 +6,6 @@
   Version: 1.0
 */
 
-/* CSS Index
------------------------------------
-1. Theme default css
-2. Header
-3. Hero
-4. Archivement
-5. Video
-6. We Do
-7. Movie
-8. Team
-9. Blog
-10. Subscribe
-11. footer
-12. Contact
-*/
 
 /*.........<! 1. Theme default css !>.........*/
 body {
@@ -868,6 +853,9 @@ figure.wp-block-pullquote blockquote {
 }
 .postbox__wrapper.postbox__details .wp-block-search{
 	margin-bottom: 30px;
+}
+:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){
+	border: 0;
 }
 
 /*widget*/

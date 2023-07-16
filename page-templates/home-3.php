@@ -442,7 +442,7 @@
                                         commercial networks and enterprises</p>
                                 </div>
                             </div>
-                            <div class="method-body row">
+                            <div class="method-body row gy-4">
                                 <div class="col-sm-6">
                                     <div class="single-method-card single-payment-logo wow fadeInDown">
                                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/payment/payment-method-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"

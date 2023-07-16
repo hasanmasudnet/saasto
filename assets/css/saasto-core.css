@@ -677,6 +677,13 @@ h5 {
           align-items: center;
 }
 
+@media screen and (max-width: 992px) {
+  .btn-fill-rounded, .btn-fill-rounded {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}
+
 a.saasto-btn:not(.download-btn-outlined) i {
   margin-left: 10px;
 }
@@ -763,6 +770,12 @@ a.saasto-btn:not(.download-btn-outlined) i {
   transition: all .4s;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  .btn-fill-pill {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
 }
 
 .btn-fill-pill.md-btn {
@@ -856,6 +869,13 @@ a.saasto-btn:not(.download-btn-outlined) i {
   transition: all .4s;
 }
 
+@media screen and (max-width: 992) {
+  .btn-fill-pill-v2 {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
 .btn-fill-pill-v2.md-btn {
   padding: 16px 32px;
 }
@@ -946,7 +966,12 @@ a.saasto-btn:not(.download-btn-outlined) i {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-
+@media screen and (max-width: 992px) {
+  .btn-fill-pill-v3 {
+    padding: 16px 34px;
+    font-size: 16px;
+  }
+}
 .btn-fill-pill-v3 span {
   position: absolute;
   width: 40%;
@@ -1889,7 +1914,18 @@ header .header-transparent {
   -webkit-transition: all .35s;
   transition: all .35s;
 }
-
+@media screen and (max-width: 992px) {
+  .feature-card-style-one .feature-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .feature-card-style-one .feature-icon img{
+    max-width: 38px;
+  }
+  .feature-card-style-one .feature-disc h5{
+    font-size: 24px !important;
+  }
+}
 .feature-card-style-one .feature-disc {
   padding-top: 18px;
 }
@@ -2014,6 +2050,15 @@ header .header-transparent {
   color: #404040;
   padding-bottom: 12px;
 }
+
+@media screen and (max-width: 992px) {
+ 
+  .feature-card-style-three .feature-disc h5 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+}
+
 
 .single-feature-style-two {
   overflow: hidden;
@@ -2359,6 +2404,13 @@ header .header-transparent {
   padding: 15px 32px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  
+}
+@media screen and (max-width: 992px) {
+  .blog-card-style-one .blog-disc .blog-btn a{
+    padding: 12px 28px;
+    font-size: 16px;
+  }
 }
 
 .blog-card-style-one .blog-disc .blog-btn a:hover {
@@ -3634,7 +3686,21 @@ p.logged-in-as {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-
+@media screen and (max-width: 992px) {
+  .testimonial-thumb-style-two{
+    max-width: 200px !important;
+    margin: 0 auto;
+  }
+  .testimonial-card-style-two p{
+    text-align: center;
+  }
+  .testimonial-card-style-two .testimonial-card-bottom{
+    text-align: center;
+  }
+  .testi-pagination-two{
+    justify-content: center !important;
+  }
+}
 .testimonial-thumb-style-two {
   background: #FFF8F2;
   border-radius: 370px;
@@ -4007,6 +4073,7 @@ p.logged-in-as {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 10px;
+  width: 100%;
 }
 
 .payment-style-one .payment-method-single .method-body .single-method-card.single-payment-safety {
@@ -4039,6 +4106,20 @@ p.logged-in-as {
   line-height: 28px;
   padding-top: 17px;
 }
+@media screen and (max-width: 992px) {
+  .payment-style-one .payment-method-single .method-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .payment-style-one .payment-method-single .method-top .system-icon{
+    margin-bottom: 20px;
+  }
+  .payment-style-one .payment-method-single .method-top .system-icon{
+    height: 80px;
+    width: 80px;
+    min-width: 80px;
+  }
+}
 
 /* =============================
    Pyment method style end
@@ -4058,6 +4139,12 @@ p.logged-in-as {
 .partner-style-one .partner-one-content {
   max-width: 540px;
   padding-left: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .partner-style-one .partner-one-content{
+    padding-left: 0 !important;
+  }
 }
 
 /* =============================

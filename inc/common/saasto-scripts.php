@@ -36,7 +36,7 @@ function saasto_scripts() {
     wp_enqueue_style( 'plyr', SAASTO_THEME_CSS_DIR . 'plyr.css', [], time() );
     wp_enqueue_style( 'odometer', SAASTO_THEME_CSS_DIR . 'odometer.css', [], time() );
     wp_enqueue_style( 'saasto-core', SAASTO_THEME_CSS_DIR . 'saasto-core.css', [], time() );
-    wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [] );
+    wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [], time() );
     wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [], time() );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     wp_enqueue_style( 'saasto-style', get_stylesheet_uri() );

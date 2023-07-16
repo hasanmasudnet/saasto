@@ -32,7 +32,6 @@ body {
 .blog__post_comment h4,
 .blog__post_comment h5,
 .blog__post_comment h6{
-    margin-top: 25px;
     margin-bottom: 15px;
 }
 
@@ -58,34 +57,40 @@ body {
     margin-top: 0;
 }
 
-.h1, h1 {
-    font-size: 48px;
+.blog__details_content h1,
+.comments-box h1 {
+    font-size: 40px;
     line-height: 1.208;
 }
 
-.h2, h2 {
-    font-size: 40px;
+.blog__details_content h2,
+.comments-box h2 {
+    font-size: 32px;
     line-height: 1.25;
 }
 
-.h3, h3 {
-    font-size: 33px;
+.blog__details_content h3,
+.comments-box h3 {
+    font-size: 28px;
     line-height: 1.278;
 }
 
-.h4, h4 {
-    font-size: 30px;
+.blog__details_content h4,
+.comments-box h4 {
+    font-size: 24px;
     line-height: 1.333;
 }
 
-.h5, h5 {
-    font-size: 24px;
+.blog__details_content h5,
+.comments-box h5  {
+    font-size: 20px;
     line-height: 1.417;
 }
 
-.h6, h6 {
-    font-size: 20px;
-    line-height: 1.5;
+.blog__details_content h6,
+.comments-box h6  {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .comments-box h1, h3
@@ -328,6 +333,17 @@ ul.wp-block-categories-list.wp-block-categories {
 }
 .wp-block-button {
 	margin-bottom: 10px;
+	color: #fff !important;
+}
+.wp-element-button,
+.wp-block-file__button{
+	color: #fff !important;
+}
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background),
+.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background) {
+    background-color: transparent;
+    background-image: none;
+    color: #000 !important;
 }
 .is-style-squared .wp-block-button__link {
 	border-radius: 0;
@@ -348,10 +364,9 @@ div.postbox__details .wp-block-cover-text {
 .wp-block-gallery.wp-block-gallery-1 {
     margin-bottom: 22px;
 }
-.wp-block-group.has-background {
+.is-layout-constrained.wp-block-group {
 	margin-bottom: 25px;
 }
-
 .blog__details_content a {
     color: var(--saasto-primary-color);
 }
@@ -672,11 +687,17 @@ figure.wp-block-pullquote blockquote {
     padding: 10px;
     border-radius: 0 15px 0 15px;
 }
+figure.wp-block-pullquote.has-background {
+    padding: 10px 0;
+}
 
 /* Video */
 .blog_loop_item.format-video iframe {
     width: 100%;
 	border-radius: 15px;
+}
+.post_format-post-format-video iframe {
+    margin-bottom: 25px;
 }
 
 /*gallery */
@@ -686,6 +707,9 @@ figure.wp-block-pullquote blockquote {
 	vertical-align: top;
 	width: 100%;
 	padding-right: 5px !important;
+}
+.gallery-columns-1 .gallery-item {
+	text-align: left;
 }
 
 .gallery-columns-2 .gallery-item {
@@ -754,7 +778,11 @@ figure.wp-block-pullquote blockquote {
 .wp-block-table.is-style-stripes td {
     border-color: #f0f0f5;
 }
-
+.wp-block-table thead,
+.wp-block-table tfoot,
+.wp-block-pullquote {
+    border-color: #ddd;
+}
 /*pabe table*/
 .saasto__page_content table{
 	margin-bottom: 30px;
@@ -857,6 +885,12 @@ figure.wp-block-pullquote blockquote {
 :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){
 	border: 0;
 }
+.wp-block-post-template{
+	padding-left: 0 !important;
+}
+.blog__details_content hr.wp-block-separator{
+    opacity: .25;
+}
 
 /*widget*/
 .sidebar-widget ul{
@@ -934,6 +968,7 @@ left: 0;
 }
 #wp-calendar tbody {
 	color: #666;
+	transition: .3s all ease;
 }
 #wp-calendar tbody td {
 	background: #fff;
@@ -945,9 +980,10 @@ left: 0;
 .sidebar-widget .wp-calendar-table a {
 	color: var(--tp-theme-1);
 }
+
 #wp-calendar tbody td#today {
-	background: var(--tp-theme-1);
-	color: #fff;
+	color: var(--saasto-primary-color);
+	font-weight: 600;
 }
 .wp-calendar-nav {
 	display: flex;
@@ -959,6 +995,10 @@ left: 0;
 .wp-block-calendar .wp-calendar-nav .pad, .calendar_wrap .wp-calendar-nav .pad {
     display: none;
 }
+#wp-calendar tbody td:hover {
+    background: #f0f0f0;
+}
+
 /*sidebar block widget*/
 .widget_recent_entries ul li:not(:last-child),
 .postbox__wrapper.postbox__details ul.wp-block-latest-posts:not(.is-grid) li:not(:last-child) {
@@ -1102,10 +1142,6 @@ li.wp-block-pages-list__item.has-child .wp-block-pages-list__item__link{
 
 .footer-widget .wp-calendar-table a {
 	color: var(--saasto-primary-color);
-}
-#wp-calendar tbody td#today {
-	background: var(--saasto-primary-color);
-	color: #fff;
 }
 .wp-calendar-nav {
 	display: flex;
@@ -1359,6 +1395,16 @@ ul.blog__meta {
 .footer-widget.widget_block .wp-block-latest-comments article a.wp-block-latest-comments__comment-author {
 	color: var(--tp-theme-1);
 }
+.is-layout-constrained{
+	padding:0;
+}
+
+ul.wp-block-page-list {
+	padding-left: unset;;
+}
+ul.wp-block-page-list li a:before {
+    display: none;
+}
 
 /* Recent Comments end */
 
@@ -1382,11 +1428,21 @@ ul.blog__meta {
 	}
   }
 
-  /**
- Customizer 
-  */
-  li#accordion-panel-saasto_customizer h3 {
-    text-transform: uppercase;
-    background-color: #8976FC !important;
-    color: #fff !important;
-}
+  span.form_response.error {
+	padding: 5px;
+	display: block;
+	background: red;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 10px;
+  }
+  span.form_response.success {
+	padding: 5px;
+	display: block;
+	background: #5bc17f;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 10px;
+  }

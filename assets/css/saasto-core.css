@@ -6001,5 +6001,24 @@ ul.pricing-features{
   mix-blend-mode: difference;
   transition: top 0.1s ease, left 0.1s ease;
  }
+ span.form_response.error {
+  padding: 5px;
+  display: block;
+  background: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+span.form_response.success {
+  padding: 5px;
+  display: block;
+  background: #5bc17f;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 
 /*# sourceMappingURL=saasto-core.css.map */

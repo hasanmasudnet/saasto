@@ -2011,6 +2011,11 @@ header .header-transparent {
   max-width: 464px;
   margin-top: 60px;
 }
+@media screen and (max-width: 992px) {
+  .feature-card-style-three {
+    margin-top: 40px;
+  }
+}
 
 .feature-card-style-three.feature-futured-card {
   margin-left: 145px;

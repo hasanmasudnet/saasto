@@ -89,7 +89,7 @@
             </div>
 
             <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" >
+                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" >
                     <div class="feature-card-style-one ">
                         <div class="feature-icon">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/task-list-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="feature-card-style-one bg-varient-1">
                         <div class="feature-icon">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/bell-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="feature-card-style-one bg-varient-2">
                         <div class="feature-icon">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/agenda-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
@@ -268,7 +268,7 @@
     <!-- ===============  features style end =============== -->
 
     <!-- ===============  partner style start =============== -->
-    <div class="partner-style-one section-gap-xl-top section-gap-bottom-y-1">
+    <div class="partner-style-one section-gap-bottom-y-1">
         <div class="container-fluid">
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6 order-1 order-lg-0">

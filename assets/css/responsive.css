@@ -494,7 +494,7 @@
   }
   /*typography*/
   /*spacing*/
-  
+
   .fun-fact-style-two .fun-fact-bg-wrap {
     padding: 50px 0 10px;
   }
@@ -662,6 +662,46 @@
   }
   .sidebar-wrap .widget {
     padding: 30px 30px;
+  }
+
+}
+
+@media only screen and (max-width: 396px) {
+  /* Typography */
+  h2 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  /* spacing */
+  .section-gap-top-y-1 {
+    padding-top: 40px;
+  }
+
+  /* page */
+  .feature-card-style-two .feature-disc h5 {
+    font-size: 17px;
+  }
+  .feature-card-style-two .feature-disc p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .feature-card-style-two .feature-icon {
+    min-width: 80px;
+    height: 80px;
+    margin-top: 0;
+    margin-right: 15px;
+  }
+  .feature-card-style-three .feature-disc h5 {
+    font-size: 17px;
+    padding-bottom: 0;
+  }
+  .feature-card-style-three .feature-icon {
+    min-width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    padding: 15px;
   }
 
 }

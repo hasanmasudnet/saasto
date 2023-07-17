@@ -75,9 +75,7 @@
       }
    ?>
     
-    <!-- header start -->
     <?php do_action( 'saasto_header_style' );?>
-    <!-- header end -->
     
     <!-- wrapper-box start -->
     <?php do_action( 'saasto_before_main_content' );?>

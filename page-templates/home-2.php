@@ -268,7 +268,7 @@
     <!-- ===============  features style end =============== -->
 
     <!-- ===============  partner style start =============== -->
-    <div class="partner-style-one section-gap-xl-top">
+    <div class="partner-style-one section-gap-xl-top section-gap-bottom-y-1">
         <div class="container-fluid">
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6 order-1 order-lg-0">

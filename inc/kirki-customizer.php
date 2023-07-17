@@ -137,6 +137,20 @@ function _global_enable_desable_fields( $fields ) {
 
     $fields[] = [
         'type'     => 'switch',
+        'settings' => 'cursor_style_setting',
+        'label'    => esc_html__( 'Cursor Style', 'saasto' ),
+        'section'  => 'global_enable_disable_settings',
+        'description' => esc_html__( 'you can trun off Cursor Style globally For all page by desabling this.', 'saasto' ),
+        'default'  => '0',
+        'priority' => 10,
+        'choices'  => [
+            'on'  => esc_html__( 'Enable', 'saasto' ),
+            'off' => esc_html__( 'Disable', 'saasto' ),
+        ],
+    ];
+
+    $fields[] = [
+        'type'     => 'switch',
         'settings' => 'page_sidebar_setting',
         'label'    => esc_html__( 'Page sidebar', 'saasto' ),
         'section'  => 'global_enable_disable_settings',

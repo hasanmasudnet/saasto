@@ -224,6 +224,9 @@
     padding: 0 7px;
     margin: 16px 0;
   }
+  .hero-one-row {
+      min-height: 770px;
+  }
   .single-feature-style-two .float-screen-two {
     left: 0;
     top: 10%;
@@ -242,6 +245,21 @@
     padding-bottom: 80px;
   }
 
+  .section-gap-xl-top {
+    padding-top: 60px;
+  }
+  .section-gap-xl-bottom {
+    padding-bottom: 60px;
+  }
+  .section-gap-top-y-1 {
+    padding-top: 80px;
+  }
+  .section-gap-top-y-2 {
+    padding-top: 80px;
+  }
+  .section-gap-bottom-y-1 {
+    padding-bottom: 80px;
+  }
   /*typography*/
   .text-xxl {
     font-size: 48px;
@@ -288,6 +306,18 @@
     right: 0;
   }
   .hero-style-three .hero-mobil-screen img {
+    max-width: 100%;
+  }
+  .fun-fact-style-one{
+    padding-top: 60px;
+  }
+  .single-feature-one-style {
+    padding-bottom: 80px;
+  }
+  .single-feature-style-two .feature-analytics-contents {
+  max-width: 700px;
+  }
+  .work-feature-card{
     max-width: 100%;
   }
   .blog_loop_item{
@@ -411,11 +441,15 @@
 
 /* Large Mobile Layout*/
 @media only screen and (max-width: 768px) {
+
   .sidebar-wrap {
     padding-left: 0;
   }
   .breadcrumb-area {
     padding: 80px 0 80px;
+  }
+  .tab-info {
+    margin-bottom: 30px;
   }
 }
 
@@ -427,6 +461,9 @@
   }
   .pb-120 {
     padding-bottom: 60px;
+  }
+  .section-gap-xl-bottom {
+    padding-bottom: 40px;
   }
   /*typography*/
   .body-disply-2 {
@@ -457,20 +494,9 @@
   }
   /*typography*/
   /*spacing*/
-  .section-gap-xl-top {
-    padding-top: 60px;
-  }
-  .section-gap-xl-bottom {
-    padding-bottom: 60px;
-  }
-  .section-gap-top-y-1 {
-    padding-top: 80px;
-  }
-  .section-gap-top-y-2 {
-    padding-top: 80px;
-  }
-  .section-gap-bottom-y-1 {
-    padding-bottom: 80px;
+  
+  .fun-fact-style-two .fun-fact-bg-wrap {
+    padding: 50px 0 10px;
   }
   .footer-style-two .footer-widget .footer-links li a {
     font-size: 18px;
@@ -526,6 +552,9 @@
   }
   .hero-style-three .hero-content p {
     font-size: 18px;
+  }
+  .fun-fact-style-one{
+    padding-top: 40px;
   }
   .disply-feature-card {
     gap: 20px;

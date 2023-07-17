@@ -481,3 +481,16 @@ function saasto_kses($raw){
     return '.';
 }
 add_filter('excerpt_more', 'saasto_excerpt_more');
+
+// Add cusror to wp_footer
+// ----------------------------------------------------------------------------------------
+
+function saasto_custom_cursor() {
+    // Kirki options
+    $cursosr_switch = get_theme_mod('cursor_style_setting');
+
+    if($cursosr_switch != false){
+        echo '<div class="cursor"></div>';
+    }
+}
+add_action('wp_footer', 'saasto_custom_cursor');

@@ -19,7 +19,7 @@ get_header();
          <div class="position-absolute top-0 start-0 d-none d-lg-block"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/shape-wave.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></div>
          <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-dots-one.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="d-none d-lg-block position-absolute bottom-0 left-0">
          <div class="container ">
-             <div class="row hero-one-row align-items-center py-5 py-lg-0">
+             <div class="row hero-one-row align-items-center section-gap-xl-bottom section-gap-xl-top py-lg-0">
                  <div class="col-lg-7">
                     <div class="hero-content py-5 mt-5 mt-lg-3 position-relative">
                         <div class="hero-animated-shape position-absolute bottom-50 anima-trasform-y-1 low-index d-none d-lg-block">
@@ -58,7 +58,7 @@ get_header();
     <!-- =============== hero style one end =============== -->
  
     <!-- =============== fun-fact style one start =============== -->
-    <div class="fun-fact-style-one position-relative small-gap">
+    <div class="fun-fact-style-one position-relative">
         <div class="container">
             <div class="row gy-4">
                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp">
@@ -154,12 +154,12 @@ get_header();
     <!-- =============== work Process area end =============== -->
 
     <!-- =============== Services Tab =============== -->
-    <div class="tab-area section-gap-xl-top section-gap-xl-bottom">
+    <div class="tab-area section-gap-top-y-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="d-flex justify-content-center">
-                        <ul class="nav nav-pills tab-wrap mb-5 mt-0 mt-lg-5 d-inline-flex" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills tab-wrap mb-4 mb-md-5 mt-0 mt-lg-5 d-inline-flex" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Time tracking</button>
                             </li>

@@ -18,6 +18,5 @@ if( $bg_style != 'normal_style' ||  is_404()){
 }
 
 wp_footer();?>
-        <div class="cursor"></div>
     </body>
 </html>

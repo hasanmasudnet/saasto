@@ -320,6 +320,14 @@
   .work-feature-card{
     max-width: 100%;
   }
+  .single-feature-content-one,
+  .single-feature-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .single-feature-style {
+    padding-top: 40px;
+  }
   .blog_loop_item{
     margin-top: 30px;
     padding: 30px;

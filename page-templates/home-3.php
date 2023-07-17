@@ -492,14 +492,14 @@
                                     <div class="safety-icon">
                                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-finger-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                     </div>
-                                    <p>Set up your payment method with PayUp. The linking of commercial</p>
+                                    <p>Set up your payment method with PayUp. The linking of commercial and personal imporovemnt</p>
                                 </div>
                                 <div class="single-method-card single-payment-safety wow fadeInDown"
                                     data-wow-delay="0.8s">
                                     <div class="safety-icon">
                                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-qr-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                     </div>
-                                    <p>Set up your payment method with PayUp. The linking of commercial</p>
+                                    <p>Set up your payment method with PayUp. The linking of commercial and personal imporovemnt</p>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +521,7 @@
                         <div class="register-content py-lg-5">
                             <h2 class="text-white">Why you are waiting for,
                                 let’s Register now</h2>
-                            <p class="body-disply-2 pt-4">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
+                            <p class="body-disply-2 pt-4 text-white">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict
                                 altera legimu. Me vita de lege ndos expet end is ad.</p>
                             <div class="register-btn pt-5">
                                 <a href="#" class="btn-fill-pill-v3">Register Now <span></span></a>

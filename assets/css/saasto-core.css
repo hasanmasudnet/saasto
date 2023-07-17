@@ -390,9 +390,9 @@ table tfoot tr th {
   color: var(--text-nevy-blue);
 }
 
-.feature-filter-img {
-  -webkit-filter: drop-shadow(-40px 60px 120px rgba(0, 0, 0, 0.03));
-  filter: drop-shadow(-40px 60px 120px rgba(0, 0, 0, 0.03));
+.feature-shadow-img {
+  -webkit-box-shadow: 40px 60px 120px rgba(0, 0, 0, 0.03);
+  box-shadow: 40px 60px 120px rgba(0, 0, 0, 0.03);
   border-radius: 31px;
 }
 
@@ -1832,8 +1832,8 @@ header .header-transparent {
 }
 
 .single-feature-screens .feat-one-screen {
-  -webkit-filter: drop-shadow(10px 34px 120px rgba(0, 0, 0, 0.07));
-  filter: drop-shadow(10px 34px 120px rgba(0, 0, 0, 0.07));
+  -webkit-box-shadow: 40px 60px 120px rgba(0, 0, 0, 0.03);
+  box-shadow: 40px 60px 120px rgba(0, 0, 0, 0.03);
   border-radius: 14px;
 }
 

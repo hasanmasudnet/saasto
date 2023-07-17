@@ -143,9 +143,9 @@ get_header();
                      </div>
                  </div>
 
-                 <div class="col-lg-6 wow fadeInUp">
-                     <div class="feature-screen-one fadeInRight wow position-relative">
-                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-screen1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feature-filter-img">
+                 <div class="col-lg-6">
+                     <div class="feature-screen-one feature-shadow-img position-relative">
+                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/screen/feature-screen1.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="fadeInRight wow">
                      </div>
                  </div>
             </div>
@@ -263,7 +263,7 @@ get_header();
                        <h3 class="text-bright-gray">Know more about our key features</h3>
                        <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
-                       <div class="trial-btn mt-5">
+                       <div class="trial-btn mt-3 mt-md-5">
                            <a href="#" class="btn-fill-rounded">Start Trial</a>
                        </div>
                     </div>
@@ -274,7 +274,7 @@ get_header();
     </div>
 
 
-    <div class="single-feature-style section-gap-bottom-y-2 position-relative">
+    <div class="single-feature-style position-relative">
         <div class="container">
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6">
@@ -283,7 +283,7 @@ get_header();
                        <h3 class="text-bright-gray">Simple Solution for Complex Connections</h3>
                        <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
-                       <div class="trial-btn mt-5">
+                       <div class="trial-btn mt-3 mt-md-5">
                            <a href="#" class="btn-fill-rounded">Start Trial</a>
                        </div>
                     </div>

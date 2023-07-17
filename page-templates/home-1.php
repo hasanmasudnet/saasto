@@ -25,10 +25,10 @@ get_header();
                         <div class="hero-animated-shape position-absolute bottom-50 anima-trasform-y-1 low-index d-none d-lg-block">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-idea-icon.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
-                        <h1 class="text-bright-gray wow flipInX">Committed to People Committed to <span class="primary-purple">the Future</span></h1>
-                        <p class="body-disply-1 pt-20 wow flipInX" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
+                        <h1 class="text-bright-gray wow fadeInUp">Committed to People Committed to <span class="primary-purple">the Future</span></h1>
+                        <p class="body-disply-1 pt-20 wow fadeInUp" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
                         <div class="hero-btn">
-                            <a href="#" class="btn-fill-rounded wow flipInX" data-wow-delay="0.3s">Get Started Now</a>
+                            <a href="#" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Get Started Now</a>
                         </div>
                     </div>
                  </div>
@@ -233,7 +233,7 @@ get_header();
 
 
     <!-- =============== single features style start ============= -->
-    <div class="single-feature-one-style position-relative section-gap-xl-top section-gap-xl-bottom">
+    <div class="single-feature-one-style position-relative section-gap-xl-top">
         <div class="florting-balon-icon d-none d-lg-block translate-middle-y end-0 anima-trasform-y-1 position-absolute" >
             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/balon-icon.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
         </div>
@@ -274,7 +274,7 @@ get_header();
     </div>
 
 
-    <div class="single-feature-style position-relative">
+    <div class="single-feature-style position-relative section-gap-xl-top ">
         <div class="container">
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6">

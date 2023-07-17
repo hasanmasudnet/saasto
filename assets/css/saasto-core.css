@@ -1994,7 +1994,7 @@ header .header-transparent {
 }
 
 .single-feature-style-three {
-  background: rgba(243, 253, 254, 0.6);
+  background: rgb(239 249 250 / 60%);
   overflow-x: hidden;
 }
 

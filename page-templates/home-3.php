@@ -113,11 +113,11 @@
                                         src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-two.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span>with <br>
                                 just a few clicks
                             </h2>
-                            <p class="body-disply-2 pt-4 wow fadeInUp" data-wow-delay="0.3s">An enim nullam tempor
+                            <p class="body-disply-2 pt-2 pt-md-4 wow fadeInUp" data-wow-delay="0.3s">An enim nullam tempor
                                 sapien gravida donec enim ipsum porta justo congue magna at pretium purus pretium ligula
                             </p>
 
-                            <div class="feature-btn pt-5 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="feature-btn pt-4 pt-md-5 wow fadeInUp" data-wow-delay="0.6s">
                                 <a href="#" class="btn-fill-pill-v2">
                                     Start 14 Days Trial <span></span>
                                 </a>
@@ -128,7 +128,7 @@
             </div>
         </div>
 
-        <div class="feature-style-five section-gap-top-y-1">
+        <div class="feature-style-five section-gap-xl-top">
             <div class="container">
                 <div class="row align-items-center gy-4">
                     <div class="col-lg-6 order-1 order-lg-0">
@@ -139,11 +139,11 @@
                                         src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/ring-text-highlighter-two.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"></span> <br>
                                 history easily
                             </h2>
-                            <p class="body-disply-2 pt-4 wow fadeInUp" data-wow-delay="0.3s">An enim nullam tempor
+                            <p class="body-disply-2 pt-2 pt-md-4 wow fadeInUp" data-wow-delay="0.3s">An enim nullam tempor
                                 sapien gravida donec enim ipsum porta justo congue magna at pretium purus pretium ligula
                             </p>
 
-                            <div class="feature-btn pt-5 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="feature-btn pt-4 pt-md-5 wow fadeInUp" data-wow-delay="0.6s">
                                 <a href="#" class="btn-fill-pill-v2">
                                     Get Started <span></span>
                                 </a>
@@ -273,7 +273,7 @@
         <!-- ===============  features style end =============== -->
 
         <!-- ===============  testimonia style start =============== -->
-        <div class="testimonial-style-three section-gap-top-y-1 position-relative">
+        <div class="testimonial-style-three section-gap-xl-top position-relative">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5">

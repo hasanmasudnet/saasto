@@ -197,7 +197,7 @@
     </div>
 
     <!-- single feature three -->
-    <div class="single-feature-style-three section-gap-top-y-1 section-gap-bottom-y-1 position-relative z-index-1">
+    <div class="single-feature-style-three section-gap-xl-top pb-80 position-relative z-index-1">
         <img  class="d-none d-lg-block position-absolute top-0 end-0  low-index" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/3D-focus.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" data-aos="fade-left">
         <div class="container"> 
             <div class="row">
@@ -268,7 +268,7 @@
     <!-- ===============  features style end =============== -->
 
     <!-- ===============  partner style start =============== -->
-    <div class="partner-style-one section-gap-bottom-y-1">
+    <div class="partner-style-one pt-80 section-gap-bottom-y-1">
         <div class="container-fluid">
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6 order-1 order-lg-0">

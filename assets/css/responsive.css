@@ -311,9 +311,6 @@
   .fun-fact-style-one{
     padding-top: 60px;
   }
-  .single-feature-one-style {
-    padding-bottom: 80px;
-  }
   .single-feature-style-two .feature-analytics-contents {
   max-width: 700px;
   }
@@ -324,9 +321,6 @@
   .single-feature-content {
     margin: 0 auto;
     text-align: center;
-  }
-  .single-feature-style {
-    padding-top: 40px;
   }
   .blog_loop_item{
     margin-top: 30px;
@@ -356,6 +350,16 @@
   }
   .feature-style-four .feature-four-content {
     margin-left: 0;
+    text-align: center;
+  }
+  .feature-style-four .feature-four-content h2{
+    font-size: 35px;
+  }
+  .feature-style-five .feature-four-content h2{
+    font-size: 35px;
+  }
+  .feature-style-five .feature-four-content{
+    text-align: center;
   }
   .feature-five-screen .screen-five {
     max-width: 100%;
@@ -364,7 +368,7 @@
     border: none;
   }
   .line-height-70 {
-    line-height: 65px;
+    line-height: 50px;
   }
   .hero-style-two .hero-contents h1 {
     font-weight: 700;
@@ -473,9 +477,7 @@
   .pb-120 {
     padding-bottom: 60px;
   }
-  .section-gap-xl-bottom {
-    padding-bottom: 40px;
-  }
+
   /*typography*/
   .body-disply-2 {
     line-height: 150%;
@@ -484,6 +486,9 @@
   .body-disply-1 {
     font-size: 16px;
     line-height: 150%;
+  }
+  .line-height-70 {
+    line-height: 35px;
   }
   .text-xxl {
     font-size: 38px;
@@ -558,7 +563,10 @@
     max-width: 100%;
     width: 100%;
   }
-  
+  .feature-style-four .feature-four-content h2,
+  .feature-style-five .feature-four-content h2{
+    font-size: 22px;
+  }
   .single-feature-style-two .float-screen-four, .single-feature-style-two .float-screen-three {
     right: 0;
   }
@@ -570,9 +578,6 @@
   }
   .testimonial-card-style-three {
     padding: 0;
-  }
-  .line-height-70 {
-    line-height: 50px;
   }
   .newslatter-form-style-one .submit-btn-one {
     font-size: 16px;
@@ -603,7 +608,7 @@
     font-size: 18px;
   }
   .fun-fact-style-one{
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .disply-feature-card {
     gap: 20px;
@@ -727,7 +732,12 @@
   .section-gap-top-y-1 {
     padding-top: 40px;
   }
-
+  .pb-80{
+    padding-bottom: 60px;
+  }
+  .pt-80{
+    padding-top: 60px;
+  }
   /* page */
   .feature-card-style-two .feature-disc h5 {
     font-size: 17px;

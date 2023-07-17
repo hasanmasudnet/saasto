@@ -526,7 +526,7 @@
     font-size: 16px;
   }
   .fun-fact-style-two .fun-fact-bg-wrap {
-    padding: 50px 0 10px;
+    padding: 60px 0 0;
   }
   .fun-fact-style-three.pt-60 {
     padding-top: 0;
@@ -566,6 +566,9 @@
   .feature-style-four .feature-four-content h2,
   .feature-style-five .feature-four-content h2{
     font-size: 22px;
+  }
+  .feature-style-two{
+    padding-top: 60px;
   }
   .single-feature-style-two .float-screen-four, .single-feature-style-two .float-screen-three {
     right: 0;
@@ -683,6 +686,12 @@
   .payment-style-one .payment-method-single .method-body .single-method-card.single-payment-logo{
     width: 100%;
   }
+  .app-download-style.section-gap-top-y-1{
+    padding-top: 60px;
+  }
+  .app-download-style .app-download-content-wrap{
+    padding-bottom: 60px;
+  }
 
   .flex-sm-nowrap{
     flex-wrap: nowrap !important;
@@ -718,6 +727,36 @@
     padding: 30px 30px;
   }
 
+  /* contact */
+  .contact-form-wrap{
+    padding: 40px 30px;
+  }
+  .contact-form-wrap input, .contact-form-wrap textarea {
+    padding: 20px 15px;
+  }
+  .contact-form-wrap button {
+    padding: 11px 0;
+  }
+  .contact-address-wrap .single-contact-address:not(:last-child) {
+    padding-bottom: 40px;
+  }
+  .contact-address-wrap .single-contact-address .contact-address-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  .contact-address-wrap .single-contact-address .contact-address-info h2 {
+    font-size: 20px;
+  }
+  .contact-address-wrap .single-contact-address .contact-address-info p{
+    margin-top: 0;
+  }
+
+  /* faq */
+  .faq-wrap .accordion-button {
+    padding: 9px 24px;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 396px) {

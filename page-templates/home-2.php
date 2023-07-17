@@ -76,7 +76,7 @@
     </div>
 
     <!-- ===============  features style start =============== -->
-    <div class="feature-style-two pt-30 ">
+    <div class="feature-style-two">
         <div class="container">
             <div class="row justify-content-center position-relative">
                 <div class="col-lg-8">
@@ -377,7 +377,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="app-download-content-wrap pb-5 pb-lg-0">
+                    <div class="app-download-content-wrap">
                         <div class="text-start pb-5">
                             <h2> Get it now <span class="z-index-1 d-inline-block position-relative">for free <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> </h2>
                             <p class="body-disply-2 pt-3">We are offering free debit cards once you sing up and order a card. we wont chargeyou for our debit card.</p>

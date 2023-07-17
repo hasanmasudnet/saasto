@@ -15,6 +15,7 @@ function saasto_breadcrumb_func() {
     $breadcrumb_class = '';
     $breadcrumb_show = 1;
     $title =  __('Blog','saasto');
+    $header_transparent = function_exists( 'get_field' ) ? (get_field( 'transparent_header' ) == true ) ? 'breadcrumb-transparent' : NULL : NULL;
 
     if ( is_front_page() && is_home() ) {
         $title = get_theme_mod('breadcrumb_blog_title', __('Blog','saasto'));
@@ -88,7 +89,7 @@ function saasto_breadcrumb_func() {
 
          <!-- page title area start -->
         <?php if(!empty($breadcrumb_switch)) : ?>
-            <div class="breadcrumb-area position-relative overflow-hidden <?php print esc_attr( $breadcrumb_class );?>" data-background="<?php print esc_attr($bg_img);?>">
+            <div class="breadcrumb-area position-relative overflow-hidden <?php print esc_attr( $breadcrumb_class); print esc_attr( $header_transparent )?>" data-background="<?php print esc_attr($bg_img);?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">

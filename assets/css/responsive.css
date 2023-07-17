@@ -464,6 +464,9 @@
 /* Mobile Layout*/
 @media only screen and (max-width: 575.98px) {
   /* spacing */
+  .mt-100{
+    margin-top: 50px;
+  }
   .pt-120 {
     padding-top: 60px;
   }
@@ -475,11 +478,12 @@
   }
   /*typography*/
   .body-disply-2 {
-    line-height: 32px;
+    line-height: 150%;
     font-size: 16px;
   }
   .body-disply-1 {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 150%;
   }
   .text-xxl {
     font-size: 38px;
@@ -502,7 +506,13 @@
   }
   /*typography*/
   /*spacing*/
-
+  .hero-style-two .hero-contents .hero-btn {
+    padding-top: 30px;
+  }
+  .hero-style-two .hero-contents p{
+    font-size: 18px;
+    line-height: 170%;
+  }
   .fun-fact-style-two .fun-fact-bg-wrap {
     padding: 50px 0 10px;
   }
@@ -520,6 +530,10 @@
     min-width: 90px;
     height: 90px;
     margin-right: 20px;
+  }
+  .feature-card-style-one .feature-disc p{
+    font-size: 16px;
+    line-height: 150%;
   }
   .single-feature-style-two .float-screen-four, .single-feature-style-two .float-screen-three {
     right: 0;
@@ -554,8 +568,8 @@
   }
   .hero-style-two .hero-contents h1 {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 62px;
+    font-size: 32px;
+    line-height: 50px;
   }
   .pricing-card-style {
     border-radius: 44px;

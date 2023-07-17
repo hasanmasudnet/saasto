@@ -527,6 +527,9 @@
   .single-feature-style-two .float-screen-four img, .single-feature-style-two .float-screen-three img {
     width: 70%;
   }
+  .single-fact-style-two span{
+    font-size: 14px;
+  }
   .testimonial-card-style-three {
     padding: 0;
   }

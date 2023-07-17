@@ -29,10 +29,10 @@
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-two-ball.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="position-absolute end-100 hero-floting-img-one anima-trasform-y-1 d-none d-lg-block" >
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-two-sheet.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="hero-floting-img-two position-absolute end-0 top-50 d-none d-xl-block low-index fadeInUp wow">
 
-                            <h1 class="text-soft-black">A collaborative  Time <span class="d-inline-block position-relative z-index-1">Tracking <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute bottom-0 start-0 low-index" ></span> that you Need</h1>
-                            <p>An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
+                            <h1 class="text-soft-black wow fadeInUp">A collaborative  Time <span class="d-inline-block position-relative z-index-1">Tracking <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute bottom-0 start-0 low-index" ></span> that you Need</h1>
+                            <p class="wow fadeInUp">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
                             <div class="hero-btn">
-                                <a href="#" class="btn-fill-pill">Start 14 Days Trial <span></span></a>
+                                <a href="#" class="btn-fill-pill wow fadeInUp">Start 14 Days Trial <span></span></a>
                             </div>
                         </div>
                     </div>
@@ -47,20 +47,20 @@
             <div class="fun-fact-bg-wrap">
                 <div class="container">
                     <div class="row gy-4">
-                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-4 wow fadeInLeft">
                             <div class="single-fact-style-two">
                                 <h2 class="text-soft-black">15k+</h2>
                                 <span>Active user</span>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-4 wow fadeInLeft" data-wow-delay="0.3s">
                             <div class="single-fact-style-two">
                                 <h2 class="text-soft-black">30k</h2>
                                 <span>Total Download</span>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-4 wow fadeInLeft" data-wow-delay="0.6s">
                             <div class="single-fact-style-two">
                                 <h2 class="text-soft-black">10k</h2>
                                 <span>Customer</span>
@@ -82,8 +82,8 @@
                 <div class="col-lg-8">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/3d_rocket.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="position-absolute end-0 d-none d-lg-block anima-trasform-z-1 " data-aos="fade-left" data-aos-delay="300">
                     <div class="section-title-2 text-center pb-60">
-                        <h2 class="text-soft-black">Some excellent <span class="d-inline-block position-relative">features <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> for you</h2>
-                        <p class="body-disply-2 px-lg-5 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
+                        <h2 class="text-soft-black wow fadeInUp">Some excellent <span class="d-inline-block position-relative">features <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> for you</h2>
+                        <p class="body-disply-2 px-lg-5 pt-3 wow fadeInUp">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
                     </div>
                 </div>
             </div>
@@ -150,13 +150,13 @@
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start">
                     <div class="feature-analytics-contents">
-                        <div class="text-start">
+                        <div class="text-start wow fadeInUp">
                             <h2>
                             Analytics & 
-                            <span class="d-inline-block position-relative">Reporting <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span>
+                            <span class="d-inline-block position-relative ">Reporting <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span>
                              Brackdown
                             </h2>
-                            <p class="body-disply-2 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
+                            <p class="body-disply-2 pt-3 wow fadeInUp">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
                         </div>
 
                         <div class="feature-card-style-two wow fadeInUp">
@@ -203,9 +203,9 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="text-start pb-2">
-                        <h2>
+                        <h2 class="wow fadeInUp">
                         How our  <span class="d-inline-block position-relative">Tracker <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> work for you </h2>
-                        <p class="body-disply-2 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula  </p>
+                        <p class="body-disply-2 pt-3 wow fadeInUp">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula  </p>
                     </div>
                 </div>
             </div>
@@ -298,11 +298,11 @@
                 <div class="col-lg-5 order-0 order-lg-1">
                     <div class="partner-one-content">
                         <div class="text-start">
-                            <h2>See Our <span class="d-inline-block position-relative">trusted<img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> partners
+                            <h2 class="wow fadeInUp">See Our <span class="d-inline-block position-relative">trusted<img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> partners
                             </h2>
-                            <p class="body-disply-2 pt-3">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita aliu mi ando</p>
+                            <p class="body-disply-2 pt-3 wow fadeInUp">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita aliu mi ando</p>
                             <div class="partner-btn mt-5">
-                                <a href="#" class="btn-fill-outlined">Get Started</a>
+                                <a href="#" class="btn-fill-outlined wow fadeInUp">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -318,9 +318,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="text-center pb-60">
-                        <h2 class="text-soft-black">What our <span class="d-inline-block position-relative">client<img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> says </h2>
+                        <h2 class="text-soft-black wow fadeInUp">What our <span class="d-inline-block position-relative">client<img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span> says </h2>
 
-                        <p class="body-disply-2 pt-3">Growth your business with using us</p>
+                        <p class="body-disply-2 pt-3 wow fadeInUp">Growth your business with using us</p>
                     </div>
                 </div>
             </div>

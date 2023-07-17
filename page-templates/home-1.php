@@ -25,10 +25,10 @@ get_header();
                         <div class="hero-animated-shape position-absolute bottom-50 anima-trasform-y-1 low-index d-none d-lg-block">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-idea-icon.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                         </div>
-                        <h1 class="text-bright-gray">Committed to People Committed to <span class="primary-purple">the Future</span></h1>
-                        <p class="body-disply-1 pt-20">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
+                        <h1 class="text-bright-gray wow flipInX">Committed to People Committed to <span class="primary-purple">the Future</span></h1>
+                        <p class="body-disply-1 pt-20 wow flipInX" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
                         <div class="hero-btn">
-                            <a href="#" class="btn-fill-rounded">Get Started Now</a>
+                            <a href="#" class="btn-fill-rounded wow flipInX" data-wow-delay="0.3s">Get Started Now</a>
                         </div>
                     </div>
                  </div>
@@ -72,7 +72,7 @@ get_header();
                        </div>
                    </div>
                </div>
-               <div class="col-lg-4 col-md-6 col-sm-6 d-lg-flex justify-content-lg-center wow fadeInUp" data-wow-delay="0.3s">
+               <div class="col-lg-4 col-md-6 col-sm-6 d-lg-flex justify-content-lg-center wow fadeInUp" data-wow-delay="0.2s">
                    <div class="single-fact ">
                        <div class="fact-icon bg-varient-1">
                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/download.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
@@ -83,7 +83,7 @@ get_header();
                        </div>
                    </div>
                </div>
-               <div class="col-lg-4 col-md-6 col-sm-6 d-lg-flex justify-content-lg-end wow fadeInUp" data-wow-delay="0.6s">
+               <div class="col-lg-4 col-md-6 col-sm-6 d-lg-flex justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                    <div class="single-fact ">
                        <div class="fact-icon bg-varient-2">
                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/user_two.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
@@ -108,8 +108,8 @@ get_header();
                      <div class="w-feature-content">
 
                        <div class="w-feature-content-title">
-                           <h3 class="text-bright-gray">We are focus on your ultimate goal</h3>
-                           <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
+                           <h3 class="text-bright-gray wow fadeInUp">We are focus on your ultimate goal</h3>
+                           <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.1s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
                        </div>
                          <div class="work-features">
                              <div class="work-feature-card wow fadeInUp" >
@@ -178,8 +178,8 @@ get_header();
 
                             <div class="col-lg-12">
                                 <div class="w-feature-content-title tab-info mt-2 text-center">
-                                <h3 class="text-bright-gray">Analytics & Reporting Brackdown</h3>
-                                <p class="text-purple-haze body-disply-1 pt-3">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
+                                <h3 class="text-bright-gray wow fadeInUp">Analytics & Reporting Brackdown</h3>
+                                <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
 
                                 </div>
                             </div>
@@ -195,8 +195,8 @@ get_header();
 
                             <div class="col-lg-12">
                                 <div class="w-feature-content-title tab-info mt-2 text-center">
-                                <h3 class="text-bright-gray">Analytics & Reporting Brackdown</h3>
-                                <p class="text-purple-haze body-disply-1 pt-3">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
+                                <h3 class="text-bright-gray wow fadeInUp">Analytics & Reporting Brackdown</h3>
+                                <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
 
                                 </div>
                             </div>
@@ -260,11 +260,11 @@ get_header();
                 </div>
                 <div class="col-lg-6 order-0 order-lg-1 position-relative z-index-5">
                    <div class="single-feature-content-one">
-                       <h3 class="text-bright-gray">Know more about our key features</h3>
-                       <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
+                       <h3 class="text-bright-gray wow fadeInUp">Know more about our key features</h3>
+                       <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
                        <div class="trial-btn mt-3 mt-md-5">
-                           <a href="#" class="btn-fill-rounded">Start Trial</a>
+                           <a href="#" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Start Trial</a>
                        </div>
                     </div>
                 </div>
@@ -281,10 +281,10 @@ get_header();
                    <div class="single-feature-content position-relative">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/features-dots.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="feature-single-dot">
                        <h3 class="text-bright-gray">Simple Solution for Complex Connections</h3>
-                       <p class="text-purple-haze body-disply-1 pt-3">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
+                       <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
                        <div class="trial-btn mt-3 mt-md-5">
-                           <a href="#" class="btn-fill-rounded">Start Trial</a>
+                           <a href="#" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Start Trial</a>
                        </div>
                     </div>
                 </div>
@@ -304,7 +304,7 @@ get_header();
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
-                    <h3 class="text-bright-gray text-center">We have support language for more than 30 languages arounf the world</h3>
+                    <h3 class="text-bright-gray text-center wow fadeInUp">We have support language for more than 30 languages arounf the world</h3>
                 </div>
             </div>
         </div>
@@ -357,8 +357,8 @@ get_header();
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="blog-header text-center">
-                        <h3 class="text-bright-gray">Read our blog</h3>
-                        <p class="pt-3 body-disply-1 text-mid-gray">Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
+                        <h3 class="text-bright-gray wow fadeInUp">Read our blog</h3>
+                        <p class="pt-3 body-disply-1 text-mid-gray wow fadeInUp" data-wow-delay="0.2s">Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
                     </div>
                 </div>
             </div>

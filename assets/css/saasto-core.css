@@ -2226,12 +2226,6 @@ header .header-transparent {
   transition: all .3s;
 }
 
-@media screen and (max-width: 567px) {
-  .feature-action-single {
-    max-width: unset;
-  }
-}
-
 .feature-action-single:hover {
   background: #5BC17F;
   color: #FFFEFE;

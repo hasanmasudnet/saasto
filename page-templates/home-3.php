@@ -65,25 +65,25 @@
         <div class="fun-fact-style-three pt-60">
             <div class="container">
                 <div class="row gy-4">
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInRight">
                         <div class="single-fact-style-three has-border-right">
                             <h1 class="text-xxl text-soft-black">115k+</h1>
                             <p>Active user</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInRight" data-wow-delay="0.3s">
                         <div class="single-fact-style-three has-border-right">
                             <h1 class="text-xxl text-soft-black">88k</h1>
                             <p>User passive</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInRight" data-wow-delay="0.6s">
                         <div class="single-fact-style-three has-border-right">
                             <h1 class="text-xxl text-soft-black">30%</h1>
                             <p>Increase in user</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.9s">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInRight" data-wow-delay="0.9s">
                         <div class="single-fact-style-three">
                             <h1 class="text-xxl text-soft-black">>10k</h1>
                             <p>Good Tesimonials</p>
@@ -475,7 +475,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="payment-method-single mt-5">
+                        <div class="payment-method-single payment-method-single-two mt-5">
                             <div class="method-top flex-wrap flex-sm-nowrap">
                                 <div class="system-icon">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-lock-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">

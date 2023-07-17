@@ -506,6 +506,10 @@
   }
   /*typography*/
   /*spacing*/
+  .btn-fill-pill-v2{
+    font-size: 16px;
+    padding: 16px 32px;
+  }
   .hero-style-two .hero-contents .hero-btn {
     padding-top: 30px;
   }
@@ -513,8 +517,14 @@
     font-size: 18px;
     line-height: 170%;
   }
+  .work-feature-card .feature-info p{
+    font-size: 16px;
+  }
   .fun-fact-style-two .fun-fact-bg-wrap {
     padding: 50px 0 10px;
+  }
+  .fun-fact-style-three.pt-60 {
+    padding-top: 0;
   }
   .footer-style-two .footer-widget .footer-links li a {
     font-size: 18px;
@@ -522,6 +532,15 @@
   .payment-style-one .payment-method-single .method-body .single-method-card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .payment-style-one .payment-method-single .method-body{
+    flex-direction: column;
+  }
+  .payment-style-one .payment-method-single .method-body .single-method-card{
+    margin-right: 0;
+  }
+  .payment-method-single-two .single-method-card {
+    margin-bottom: 20px;
   }
   .feature-single-three-screens img {
     max-width: 100%;
@@ -535,6 +554,11 @@
     font-size: 16px;
     line-height: 150%;
   }
+  .feature-action-single {
+    max-width: 100%;
+    width: 100%;
+  }
+  
   .single-feature-style-two .float-screen-four, .single-feature-style-two .float-screen-three {
     right: 0;
   }

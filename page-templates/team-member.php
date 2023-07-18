@@ -16,7 +16,7 @@
 
 
 <!-- =============== team style start =============== -->
-<div class="team-style-one position-relative z-index-1  team-member-page">
+<div class="team-style-one position-relative z-index-1  team-member-page section-gap-top-y-1 section-gap-bottom-y-1">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center pb-60">

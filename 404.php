@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<section class="error__area pt-200 pb-200">
+<section class="error__area section-gap-top-y-2 pb-200">
    <div class="container">
       <div class="row">
          <div class="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
@@ -23,7 +23,7 @@ get_header();
 
             <div class="content-400-error text-center">
                <div class="error__thumb mb-45">
-                  <img src="<?php echo esc_url($saasto_404_bg); ?>" alt="<?php print esc_attr__('Error 404','saasto'); ?>">
+                  <img class='w-60 img-100' src="<?php echo esc_url($saasto_404_bg); ?>" alt="<?php print esc_attr__('Error 404','saasto'); ?>">
                </div>
                <div class="error__content">
                   <h3 class="error__title"><?php print esc_html($saasto_error_title);?></h3>

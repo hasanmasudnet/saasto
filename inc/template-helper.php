@@ -478,13 +478,25 @@ function saasto_kses($raw){
  */
 
  function saasto_excerpt_more( $more ) {
-    return '.';
+    return '..';
 }
 add_filter('excerpt_more', 'saasto_excerpt_more');
 
+function custom_excerpt_length($excerpt, $length) {
+    if (is_admin()) {
+        return $excerpt;
+    }
+
+    $length = 25; // Change this number to the desired word count
+    $excerpt = wp_trim_words($excerpt, $length);
+
+    return $excerpt;
+}
+add_filter('wp_trim_excerpt', 'custom_excerpt_length', 10, 2);
+
+
 // Add cusror to wp_footer
 // ----------------------------------------------------------------------------------------
-
 function saasto_custom_cursor() {
     // Kirki options
     $cursosr_switch = get_theme_mod('cursor_style_setting');

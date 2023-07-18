@@ -28,7 +28,7 @@
                         <h1 class="text-bright-gray">We Serve lot of services For Customers</h1>
                         <p class="text-purple-haze-700 mt-4 body-disply-1">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
                         <div class="hero-btn mt-5">
-                            <a href="#" class="btn-fill-rounded">Get Started Now</a>
+                            <a href="<?php print esc_url( site_url('/contact') ) ?>" class="btn-fill-rounded">Get Started Now</a>
                         </div>
                     </div>
                 </div>
@@ -42,12 +42,7 @@
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/service/service-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
                                 <div class="service-slide-overlay featured d-flex align-items-end justify-content-between">
-                                    <h5 class="text-white">Our business <br> goes on fire</h5>
-
-                                    <div class="text-center text-white">
-                                        <h4>100</h4>
-                                        <span>Topic</span>
-                                    </div>
+                                    <h5 class="text-white">Consulting</h5>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +73,7 @@
     </div>
    </div>
 
-   <div class="service-cards-wrapper position-relative z-index-1">
+   <div class="service-cards-wrapper position-relative z-index-1" id="service_list">
        <div class="container">
            <div class="row justify-content-center pb-60">
                <div class="col-lg-7">
@@ -96,7 +91,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="#">Read details <i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -111,7 +106,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="#">Read details <i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -126,7 +121,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="#">Read details <i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -141,7 +136,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="#">Read details <i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -156,7 +151,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="#">Read details <i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -171,7 +166,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="#">Read details <i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>

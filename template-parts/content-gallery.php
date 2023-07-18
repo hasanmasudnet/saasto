@@ -23,7 +23,7 @@ if ( is_single() ): ?>
                         <?php foreach ( $gallery_images as $key => $image ): 
                         if( !empty($image['url'])): ?>
                             <div class="post-gallery-slider-item swiper-slide">
-                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                                <?php echo wp_get_attachment_image( $image['ID'], 'full') ?>
                             </div>
                         <?php endif; ?>
                         <?php endforeach;?>
@@ -75,7 +75,6 @@ if ( is_single() ): ?>
 
     <!-- Post Loop Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
-
         <?php if ( !empty( $gallery_images ) ): ?>
             <div class="blog__post_thumb slider__thumb">
                 <div class="swiper-pagination"></div>
@@ -85,7 +84,7 @@ if ( is_single() ): ?>
                     <div class="swiper-wrapper">
                         <?php foreach ( $gallery_images as $key => $image ): ?>
                         <div class="post-gallery-slider-item swiper-slide">
-                            <?php echo wp_get_attachment_image( $image, 'full') ?>
+                            <?php echo wp_get_attachment_image( $image['ID'], 'full') ?>
                         </div>
                         <?php endforeach;?>
                     </div>

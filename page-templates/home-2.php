@@ -32,7 +32,7 @@
                             <h1 class="text-soft-black wow fadeInUp">A collaborative  Time <span class="d-inline-block position-relative z-index-1">Tracking <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute bottom-0 start-0 low-index" ></span> that you Need</h1>
                             <p class="wow fadeInUp">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
                             <div class="hero-btn">
-                                <a href="#" class="btn-fill-pill wow fadeInUp">Start 14 Days Trial <span></span></a>
+                                <a href="<?php print esc_url( site_url('/pricing') ) ?>" class="btn-fill-pill wow fadeInUp">Start 14 Days Trial <span></span></a>
                             </div>
                         </div>
                     </div>
@@ -302,7 +302,7 @@
                             </h2>
                             <p class="body-disply-2 pt-3 wow fadeInUp">Vero homero perfecto mei ut, sonet aperiam an nec. Ni nec dict altera legimu. Me vita de lege ndos expet end is ad. Ex mei omita aliu mi ando</p>
                             <div class="partner-btn mt-5">
-                                <a href="#" class="btn-fill-outlined wow fadeInUp">Get Started</a>
+                                <a href="<?php print esc_url( site_url('/contact') ) ?>" class="btn-fill-outlined wow fadeInUp">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -384,14 +384,14 @@
                         </div>
 
                         <div class="download-options">
-                            <a href="#" class="download-btn-fill">
+                            <a href="<?php print esc_url( site_url('/contact') ) ?>" class="download-btn-fill">
                                 <i class="bi bi-apple"></i>
                                 <div>
                                     <span>Download on the</span>
                                     <h5>App Store</h5>
                                 </div>
                             </a>
-                            <a href="#" class="download-btn-outlined">
+                            <a href="<?php print esc_url( site_url('/contact') ) ?>" class="download-btn-outlined">
                                 <i class="bi bi-microsoft"></i>
                                 <div>
                                     <span>GET IT NOW</span>

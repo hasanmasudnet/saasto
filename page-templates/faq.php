@@ -23,7 +23,7 @@
                <h2 class="text-bright-gray text-center">Frequently Asked Questions</h2>
             </div>
          </div>
-         <div class="row justify-content-between pt-60">
+         <div class="row justify-content-between align-items-center pt-60">
             <div class="col-lg-4 mb-4 mb-lg-0">
                <img src="<?php echo esc_url(get_template_directory_uri())?>/assets/img/faq.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
             </div>

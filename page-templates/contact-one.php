@@ -65,7 +65,7 @@
 
 <div class="contact-one-area pt-xxl section-gap-bottom-y-1">
    <div class="container">
-      <div class="row justify-content-between align-items-center">
+      <div class="row justify-content-between">
          <div class="col-lg-5">
             <div class="w-feature-content-title">
                <h3 class="text-bright-gray">Let’s get in touch!</h3>

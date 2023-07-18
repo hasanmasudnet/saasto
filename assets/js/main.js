@@ -372,6 +372,5 @@ $(document).on("mousemove", function(e) {
 
   });
 });
-  
 
 }(jQuery));

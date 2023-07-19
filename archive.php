@@ -13,18 +13,12 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 
 ?>
 
-<div class="saasto-blog-area pt-120 pb-90">
+<div class="saasto-blog-loops archive-contents">
     <div class="container container-box">
         <div class="row">
-			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items">
+			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items blog-padding">
 				<div class="postbox__wrapper pr-20">
 				<?php if ( have_posts() ): ?>
-					<header class="page-header d-none">
-						<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="archive-description">', '</div>' );
-						?>
-					</header><!-- .page-header -->
 					<?php
 						/* Start the Loop */
 						while ( have_posts() ):

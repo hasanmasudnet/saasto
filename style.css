@@ -9,7 +9,7 @@ Default branch: main
 GitHub Theme URI: https://github.com/hasanmasudnet/SAASTO-WP.git
 Tested up to: 6.1
 Requires PHP: 7.4
-Version: 0.47
+Version: 0.48
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: saasto
@@ -18,7 +18,3 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
-.admin-bar .header-area{
-  margin-top: 32px;
-}

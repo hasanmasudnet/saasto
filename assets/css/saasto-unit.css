@@ -58,36 +58,42 @@ body {
 }
 
 .blog__details_content h1,
+.saasto__page_content h1,
 .comments-box h1 {
     font-size: 40px;
     line-height: 1.208;
 }
 
 .blog__details_content h2,
+.saasto__page_content h2,
 .comments-box h2 {
     font-size: 32px;
     line-height: 1.25;
 }
 
 .blog__details_content h3,
+.saasto__page_content h3,
 .comments-box h3 {
     font-size: 28px;
     line-height: 1.278;
 }
 
 .blog__details_content h4,
+.saasto__page_content h4,
 .comments-box h4 {
     font-size: 24px;
     line-height: 1.333;
 }
 
 .blog__details_content h5,
+.saasto__page_content h5,
 .comments-box h5  {
     font-size: 20px;
     line-height: 1.417;
 }
 
 .blog__details_content h6,
+.saasto__page_content h6,
 .comments-box h6  {
     font-size: 16px;
     margin-bottom: 15px;
@@ -875,6 +881,11 @@ figure.wp-block-pullquote.has-background {
 }
 .wp-block-search__button:hover {
 	background: #031220;
+}
+.no-results .blog-search-title {
+	font-size: 35px;
+	font-family: var(--saasto-primary-font);
+	font-weight: 600;
 }
 .postbox__wrapper.postbox__details .wp-block-search .wp-block-search__label {
     margin: 0 0 10px 0;

@@ -2313,7 +2313,8 @@ header .header-transparent {
     10. Blog Style start
  ==============================*/
  .saasto-blog-loops,
- .saasto-blog-area{
+ .saasto-blog-area,
+ .saasto-page-area{
   margin-top: 100px;
   margin-bottom: 100px;
  }

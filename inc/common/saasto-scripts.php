@@ -32,17 +32,12 @@ function saasto_scripts() {
     }else{
         wp_enqueue_style( 'bootstrap', SAASTO_THEME_CSS_DIR.'bootstrap.css', array() );
     }
-    wp_enqueue_style( 'magnific-popup', SAASTO_THEME_CSS_DIR . 'magnific-popup.css', [], time() );
     wp_enqueue_style( 'plyr', SAASTO_THEME_CSS_DIR . 'plyr.css', [], time() );
-    wp_enqueue_style( 'odometer', SAASTO_THEME_CSS_DIR . 'odometer.css', [], time() );
     wp_enqueue_style( 'saasto-core', SAASTO_THEME_CSS_DIR . 'saasto-core.css', [], time() );
     wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [], time() );
     wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [], time() );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     wp_enqueue_style( 'saasto-style', get_stylesheet_uri() );
-
-    // add dynamic style
-
 
     // all js
     wp_enqueue_script( 'bootstrap-bundle', SAASTO_THEME_JS_DIR . 'bootstrap-bundle.js', [ 'jquery' ], '', true );
@@ -50,7 +45,6 @@ function saasto_scripts() {
     wp_enqueue_script( 'magnific-popup', SAASTO_THEME_JS_DIR . 'magnific-popup.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'wow', SAASTO_THEME_JS_DIR . 'wow.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'plyr', SAASTO_THEME_JS_DIR . 'plyr.polyfilled.js', [ 'jquery' ], false, true );
-    wp_enqueue_script( 'odometer', SAASTO_THEME_JS_DIR . 'odometer.min.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'viewport-jquery', SAASTO_THEME_JS_DIR . 'viewport.jquery.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'saasto-main', SAASTO_THEME_JS_DIR . 'main.js', [ 'jquery' ], false, true );
 

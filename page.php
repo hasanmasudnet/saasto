@@ -22,7 +22,7 @@ $blog_column = ($saasto_sidebar==true && is_active_sidebar( 'blog-sidebar' )) ? 
 
 ?>
 
-<section class="saasto-page-area pt-120 pb-120">
+<section class="saasto-page-area">
     <div class="container container-box">
         <div class="row">
 			<div class="col-lg-<?php print esc_attr( $blog_column );?> blog-post-items blog-padding">

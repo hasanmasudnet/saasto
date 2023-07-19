@@ -16,7 +16,7 @@
 
 <?php get_header( ); ?>
    
-<div class="price-area section-gap-top-y-1 section-gap-bottom-y-1">
+<div class="price-area section-gap-top-y-1 page-end-gap-bottom">
    <div class="container">
       <div class="row justify-content-center gy-4">
          <div class="col-lg-7">

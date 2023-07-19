@@ -352,16 +352,8 @@ get_header();
 
    
     <!-- =============== blog style start ============= -->
-    <div class="blog-style-one position-relative section-gap-xl-top">
+    <div class="blog-style-one position-relative section-gap-xl-top page-end-gap-bottom">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="blog-header text-center">
-                        <h3 class="text-bright-gray wow fadeInUp">Read our blog</h3>
-                        <p class="pt-3 body-disply-1 text-mid-gray wow fadeInUp" data-wow-delay="0.2s">Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
-                    </div>
-                </div>
-            </div>
             <div class="row align-content-center pt-60">
                 <div class="col-md-7">
                     <h4>Most popular posts</h4>

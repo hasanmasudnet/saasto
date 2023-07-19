@@ -273,8 +273,8 @@ add_action( 'wp_enqueue_scripts', 'saasto_scrollup_switch' );
 // theme color
 function saasto_custom_color() {
     $color_code = get_theme_mod( 'saasto_color_option', '#2b4eff' );
-    $breadcrumb_pt = get_theme_mod( 'breadcrumb_pt', '150' );
-    $breadcrumb_pb = get_theme_mod( 'breadcrumb_pb', '150' );
+    $breadcrumb_pt = get_theme_mod( 'breadcrumb_pt', '100' );
+    $breadcrumb_pb = get_theme_mod( 'breadcrumb_pb', '100' );
     $breadcrumb_bg_color = get_theme_mod( 'breadcrumb_bg_color', 'rgba(137, 118, 253, 0.1)' );
     $breadcrumb_bg = get_theme_mod( 'breadcrumb_bg', false );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );

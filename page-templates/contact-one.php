@@ -63,7 +63,7 @@
 
  get_header( ); ?>
 
-<div class="contact-one-area section-gap-top-y-1 section-gap-bottom-y-1">
+<div class="contact-one-area section-gap-top-y-1 page-end-gap-bottom">
    <div class="container">
       <div class="row justify-content-between">
          <div class="col-lg-5">

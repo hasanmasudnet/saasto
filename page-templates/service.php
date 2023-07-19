@@ -316,7 +316,7 @@
     <!-- =============== team style end =============== -->
 
     <!-- =============== testimonial style start ============= -->
-    <div class="testimonial-style-one position-relative section-gap-xl-top">
+    <div class="testimonial-style-one position-relative section-gap-xl-top page-end-gap-bottom">
         <div class="container"> 
             <div class="testimonial-slider-wrap">
                 <div class="row align-items-center justify-content-between">

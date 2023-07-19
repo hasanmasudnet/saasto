@@ -509,7 +509,7 @@
 
 
     <!-- =============== Register style one start =============== -->
-    <div class="register-style-one z-index-1 position-relative">
+    <div class="register-style-one z-index-1 position-relative page-end-gap-bottom">
         <div class="register-style-one-bg low-index d-none d-lg-block">
 
         </div>

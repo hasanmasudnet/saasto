@@ -510,6 +510,14 @@
   .tab-info {
     margin-bottom: 30px;
   }
+  .saasto-blog-loops,
+  .saasto-blog-area{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .page-end-gap-bottom{
+    padding-bottom: 60px;
+  }
 }
 
 /* Mobile Layout*/
@@ -634,11 +642,14 @@
     padding: 18px 25px;
   }
   .newslatter-form-style-one .form-icon {
-    left: 18px;
+    left: 16px;
   }
   .newslatter-form-style-one input {
     padding-left: 62px;
-    height: 72px;
+    height: 60px;
+  }
+  .newslatter-form-style-one input{
+    border-radius: 15px;
   }
   .newslatter-style-one .newslatter-wrap {
     padding-bottom: 80px;
@@ -721,7 +732,7 @@
   }
 
   .newslatter-form-style-one .form-icon {
-    top: 16%;
+    top: 13%;
     transform: unset;
   }
 
@@ -791,9 +802,6 @@
   .breadcrumb-info h3 {
     font-size: 29px;
     margin-bottom: 0;
-  }
-  .breadcrumb-info span{
-    font-weight: 400;
   }
   .sidebar-wrap .widget {
     padding: 30px 30px;

@@ -373,7 +373,7 @@
     <!-- ===============  Testimonial style end =============== -->
 
     <!-- ===============  app download style start =============== -->
-    <div class="app-download-style section-gap-top-y-1">
+    <div class="app-download-style section-gap-top-y-1 page-end-gap-bottom">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">

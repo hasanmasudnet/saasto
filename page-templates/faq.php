@@ -16,7 +16,7 @@
 
 <?php get_header( ); ?>
 
-   <div class="faq-area section-gap-xl-top section-gap-xl-bottom">
+   <div class="faq-area section-gap-xl-top page-end-gap-bottom">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">

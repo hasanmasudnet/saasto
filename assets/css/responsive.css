@@ -487,6 +487,15 @@
     height: 23px;
     width: 23px;
   }
+  .feature-card-style-one {
+    text-align: center;
+  }
+  .section-title-2.pb-60 {
+    padding-bottom: 25px;
+  }
+  .testimonial-card-style-two p {
+    font-size: 17px;
+  }
 }
 
 /* Large Mobile Layout*/

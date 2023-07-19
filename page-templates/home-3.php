@@ -440,7 +440,7 @@
                                     commercial networks and enterprises</p>
                             </div>
                         </div>
-                        <div class="method-body row gy-4">
+                        <div class="method-body mt-15 row gy-4">
                             <div class="col-sm-6">
                                 <div class="single-method-card single-payment-logo wow fadeInDown">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/payment/payment-method-one.png" alt="<?php echo esc_attr('saasto', 'saasto'); ?>"
@@ -490,14 +490,14 @@
                                 <div class="safety-icon">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-finger-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
-                                <p>Set up your payment method with PayUp. The linking of commercial and personal imporovemnt</p>
+                                <p>Set up your payment method with PayUp. The linking of commercial</p>
                             </div>
                             <div class="single-method-card single-payment-safety wow fadeInDown"
                                 data-wow-delay="0.8s">
                                 <div class="safety-icon">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/green-qr-icon.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>">
                                 </div>
-                                <p>Set up your payment method with PayUp. The linking of commercial and personal imporovemnt</p>
+                                <p>Set up your payment method with PayUp. The linking of commercial</p>
                             </div>
                         </div>
                     </div>

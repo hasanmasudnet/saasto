@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
  get_header( ); ?>
 
-<div class="contact-one-area pt-xxl section-gap-bottom-y-1">
+<div class="contact-one-area section-gap-top-y-1 section-gap-bottom-y-1">
    <div class="container">
       <div class="row">
          <div class="col-lg-12">

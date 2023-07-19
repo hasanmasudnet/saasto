@@ -436,6 +436,10 @@ table tfoot tr th {
   margin-top: 20px;
 }
 
+.mt-15{
+  margin-top: 15px !important;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
@@ -3118,6 +3122,7 @@ p.logged-in-as {
   left: 30px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .newslatter-form-style-one .submit-btn-one {

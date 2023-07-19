@@ -28,19 +28,20 @@ function saasto_register_required_plugins() {
             'slug'     => 'elementor',
             'required' => true,
         ],
+
         [
-            'name'         => esc_html__( 'Saasto Core ', 'saasto' ),
+            'name'         => esc_html__( 'Saasto Core', 'saasto' ),
             'slug'         => 'saasto-core',
-            'source'       => esc_url( get_template_directory_uri() . '/sample-data/plugins/saasto-core.zip' ),
+            'source'       => esc_url('https://themeforest.wprealizer.com/saasto-wp/demo-content/plugins/saasto-core.zip'),
             'required'     => true,
-            'external_url' => esc_url( get_template_directory_uri() . '/sample-data/plugins/saasto-core.zip' ),
+            'external_url' => esc_url('https://themeforest.wprealizer.com/saasto-wp/demo-content/plugins/saasto-core.zip'),
         ],
         [
             'name'         => esc_html__( 'Advanced Custom Fields Pro', 'saasto' ),
             'slug'         => 'advanced-custom-fields-pro',
-            'source'       => esc_url( get_template_directory_uri() . '/sample-data/plugins/advanced-custom-fields-pro.zip' ),
+            'source'       => esc_url('https://themeforest.wprealizer.com/saasto-wp/demo-content/plugins/advanced-custom-fields-pro.zip'),
             'required'     => true,
-            'external_url' => esc_url( get_template_directory_uri() . '/sample-data/plugins/advanced-custom-fields-pro.zip' ),
+            'external_url' => esc_url('https://themeforest.wprealizer.com/saasto-wp/demo-content/plugins/advanced-custom-fields-pro.zip'),
         ],
         [
             'name'     => esc_html__( 'Contact Form 7', 'saasto' ),

@@ -185,7 +185,7 @@ get_header();
                             </div>
 
                             <div class="col-lg-12 text-center">
-                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/screen/feature-screen1.png" class='w-100' alt="<?php print esc_attr('saasto', 'saasto'); ?>">
+                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='w-100' alt="<?php print esc_attr('saasto', 'saasto'); ?>">
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@ get_header();
                             </div>
 
                             <div class="col-lg-12 text-center">
-                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/screen/feature-screen1.png" class='w-100'  alt="<?php print esc_attr('saasto', 'saasto'); ?>">
+                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='w-100'  alt="<?php print esc_attr('saasto', 'saasto'); ?>">
                             </div>
                         </div>
                         </div>
@@ -219,7 +219,7 @@ get_header();
                             </div>
 
                             <div class="col-lg-12 text-center">
-                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/screen/feature-screen1.png" class='w-100' alt="<?php print esc_attr('saasto', 'saasto'); ?>">
+                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='w-100' alt="<?php print esc_attr('saasto', 'saasto'); ?>">
                             </div>
                         </div>
                         </div>

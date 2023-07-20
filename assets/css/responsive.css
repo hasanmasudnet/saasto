@@ -427,7 +427,7 @@
     margin-right: 10px;
     color: #8875FB;
     border: 1px solid #8875FB;
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .timeline-wrap .timeline-info::before {

@@ -9,6 +9,6 @@
  * @package saasto
  */
 
-wp_footer();?>
+        wp_footer();?>
     </body>
 </html>

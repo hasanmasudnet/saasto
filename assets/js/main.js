@@ -35,18 +35,6 @@
     });
 
 
-    /***********
-   Sticky Navbar js
-   ************/
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 500) {
-      $(".header-area").addClass("sticky");
-    } else {
-      $(".header-area").removeClass("sticky");
-    }
-  });
-
   /***********
    Wow js Initialization
    ************/
@@ -308,19 +296,6 @@
     }
   });
   
-
-  /* Odometer Counter */
-$(".counter-item").each(function () {
-  $(this).isInViewport(function (status) {
-  if (status === "entered") {
-      for (var i = 0; i < document.querySelectorAll(".odometer").length; i++) {
-      var el = document.querySelectorAll('.odometer')[i];
-      el.innerHTML = el.getAttribute("data-odometer-final");
-    }
-  }
-  });
-});
-
 
 
   /* Pricing Toggle */

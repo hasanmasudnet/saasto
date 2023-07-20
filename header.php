@@ -14,6 +14,7 @@
 <!doctype html>
 <html <?php language_attributes();?>>
 <head>
+   <!-- ========== Meta Tags ========== -->
 	<meta charset="<?php bloginfo( 'charset' );?>">
     <?php if ( is_singular() && pings_open( get_queried_object() ) ): ?>
     <?php endif;?>
@@ -24,21 +25,15 @@
 
 <body <?php body_class();?>>
 
-    <?php wp_body_open();?>
+   <?php 
+      wp_body_open();
+      $saasto_preloader       = get_theme_mod( 'saasto_preloader', false );
+      $saasto_preloader_logo  = get_template_directory_uri() . '/assets/img/favicon.png';
+      $preloader_logo         = get_theme_mod('preloader_logo') ? get_theme_mod('preloader_logo') : $saasto_preloader_logo;
+      $bg_style               = function_exists( 'get_field' ) ? get_field( 'body_background_style' ) : NULL;
+      $loader_spinner         = get_theme_mod( 'saasto_preloader_spinner' ) ? 'spinner' : NULL;
 
-
-    <?php
-         $saasto_preloader = get_theme_mod( 'saasto_preloader', false );
-         $saasto_backtotop = get_theme_mod( 'saasto_backtotop', false );
-
-         $saasto_preloader_logo = get_template_directory_uri() . '/assets/img/favicon.png';
-
-         $preloader_logo = get_theme_mod('preloader_logo') ? get_theme_mod('preloader_logo') : $saasto_preloader_logo;
-         $bg_style = function_exists( 'get_field' ) ? get_field( 'body_background_style' ) : NULL;
-         $loader_spinner = get_theme_mod( 'saasto_preloader_spinner' ) ? 'spinner' : NULL;
-
-    ?>
-    <?php if ( !empty( $saasto_preloader ) ): ?>
+      if ( !empty( $saasto_preloader ) ): ?>
         <!-- ===============  Preloder start =============== -->
             <div class="preloader">
                <div class="spinner-wrap">
@@ -52,18 +47,15 @@
          <!-- ===============  Preloder end =============== -->
     <?php endif;?>
 
-
-    <?php if ( !empty( $saasto_backtotop ) ): ?>
-    <!-- back to top start -->
-    <div class="progress-wrap">
-     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-     </svg>
-    </div>
-    <!-- back to top end -->
-    <?php endif;?>
-
    <?php
+
+      /**
+      *
+      * Set background illustration
+      *
+      * @since  1.0.0
+      * @param  $bg_style -- Controlled from ACF
+      */ 
       if( $bg_style == 'style_1' || is_404() ){
          echo '<div class="background-wrap home-bg-one">';
       }

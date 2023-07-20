@@ -40,11 +40,10 @@ add_action( 'saasto_footer_area', 'saasto_call_default_footer', 10 );
 function saasto_header_logo() { ?>
       <?php
         $saasto_custom_logo_on = function_exists( 'get_field' ) ? get_field( 'is_enable_cust_logo' ) : NULL;
-        $saasto_logo = get_template_directory_uri() . '/assets/img/logo.png';
-
-        $saasto_site_logo = get_theme_mod( 'logo', $saasto_logo );
+        $saasto_logo           = get_template_directory_uri() . '/assets/img/logo.png';
+        $saasto_site_logo      = get_theme_mod( 'logo', $saasto_logo );
         $saasto_logo_max_width = get_theme_mod( 'logo_max_width', 180 );
-        $saasto_custom_logo = function_exists( 'get_field' ) ? get_field( 'custom_logo' ) : NULL;
+        $saasto_custom_logo    = function_exists( 'get_field' ) ? get_field( 'custom_logo' ) : NULL;
 
       ?>
 
@@ -63,7 +62,7 @@ function saasto_header_logo() { ?>
 // header logo
 function saasto_header_sticky_logo() {?>
     <?php
-        $saasto_logo_black = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
+        $saasto_logo_black     = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
         $saasto_secondary_logo = get_theme_mod( 'seconday_logo', $saasto_logo_black );
     ?>
       <a class="sticky-logo" href="<?php print esc_url( home_url( '/' ) );?>">
@@ -75,8 +74,7 @@ function saasto_header_sticky_logo() {?>
 function saasto_mobile_logo() {
     // side info
     $saasto_mobile_logo_hide = get_theme_mod( 'saasto_mobile_logo_hide', false );
-
-    $saasto_site_logo = get_theme_mod( 'logo', get_template_directory_uri() . '/assets/img/logo.png' );
+    $saasto_site_logo        = get_theme_mod( 'logo', get_template_directory_uri() . '/assets/img/logo.png' );
 
     ?>
 
@@ -272,11 +270,11 @@ add_action( 'wp_enqueue_scripts', 'saasto_scrollup_switch' );
 
 // theme color
 function saasto_custom_color() {
-    $color_code = get_theme_mod( 'saasto_color_option', '#2b4eff' );
-    $breadcrumb_pt = get_theme_mod( 'breadcrumb_pt', '100' );
-    $breadcrumb_pb = get_theme_mod( 'breadcrumb_pb', '100' );
+    $color_code     = get_theme_mod( 'saasto_color_option', '#2b4eff' );
+    $breadcrumb_pt  = get_theme_mod( 'breadcrumb_pt', '100' );
+    $breadcrumb_pb  = get_theme_mod( 'breadcrumb_pb', '100' );
     $breadcrumb_bg_color = get_theme_mod( 'breadcrumb_bg_color', 'rgba(137, 118, 253, 0.1)' );
-    $breadcrumb_bg = get_theme_mod( 'breadcrumb_bg', false );
+    $breadcrumb_bg  = get_theme_mod( 'breadcrumb_bg', false );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     // if ( $color_code != '' ) {
         $custom_css = '';

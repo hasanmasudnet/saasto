@@ -12,6 +12,8 @@ function saasto_scripts() {
      * all css files
     */
 
+
+    // Load Elementor assets for front end  if elementor installed
     if ( class_exists( '\Elementor\Plugin' ) ) {
         $elementor = \Elementor\Plugin::instance();
         $elementor->frontend->enqueue_styles();
@@ -28,14 +30,14 @@ function saasto_scripts() {
     wp_enqueue_style( 'swiper-bundle', SAASTO_THEME_CSS_DIR . 'swiper-bundle.css', [] );
 
     if( is_rtl() ){
-        wp_enqueue_style( 'bootstrap-rtl', SAASTO_THEME_CSS_DIR.'bootstrap.rtl.min.css', array() );
+        wp_enqueue_style( 'bootstrap-rtl', SAASTO_THEME_CSS_DIR.'bootstrap.rtl.min.css' );
     }else{
         wp_enqueue_style( 'bootstrap', SAASTO_THEME_CSS_DIR.'bootstrap.css', array() );
     }
-    wp_enqueue_style( 'plyr', SAASTO_THEME_CSS_DIR . 'plyr.css', [], time() );
-    wp_enqueue_style( 'saasto-core', SAASTO_THEME_CSS_DIR . 'saasto-core.css', [], time() );
-    wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [], time() );
-    wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [], time() );
+    wp_enqueue_style( 'plyr', SAASTO_THEME_CSS_DIR . 'plyr.css', [] );
+    wp_enqueue_style( 'saasto-core', SAASTO_THEME_CSS_DIR . 'saasto-core.css', [] );
+    wp_enqueue_style( 'saasto-unit', SAASTO_THEME_CSS_DIR . 'saasto-unit.css', [] );
+    wp_enqueue_style( 'saasto-responsive', SAASTO_THEME_CSS_DIR . 'responsive.css', [] );
     wp_enqueue_style( 'saasto-custom', SAASTO_THEME_CSS_DIR . 'saasto-custom.css', [] );
     wp_enqueue_style( 'saasto-style', get_stylesheet_uri() );
 

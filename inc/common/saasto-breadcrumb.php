@@ -12,9 +12,9 @@
 
 function saasto_breadcrumb_func() {
     global $post;  
-    $breadcrumb_class = '';
-    $breadcrumb_show = 1;
-    $title =  __('Blog','saasto');
+    $breadcrumb_class   = '';
+    $breadcrumb_show    = 1;
+    $title              =  __('Blog','saasto');
     $header_transparent = function_exists( 'get_field' ) ? (get_field( 'transparent_header' ) == true ) ? 'breadcrumb-transparent' : NULL : NULL;
 
     // hide breadcrumb for 404 page
@@ -78,13 +78,13 @@ function saasto_breadcrumb_func() {
 
       if ( empty( $is_breadcrumb ) && $breadcrumb_show == 1 ) {
 
-        $bg_img_from_page = function_exists('get_field') ? get_field('breadcrumb_background_image',$_id) : '';
-        $hide_bg_img = function_exists('get_field') ? get_field('hide_breadcrumb_background_image',$_id) : '';
+        $bg_img_from_page   = function_exists('get_field') ? get_field('breadcrumb_background_image',$_id) : '';
+        $hide_bg_img        = function_exists('get_field') ? get_field('hide_breadcrumb_background_image',$_id) : '';
 
         // get_theme_mod
-        $bg_img = get_theme_mod( 'breadcrumb_bg_img' );
+        $bg_img                         = get_theme_mod( 'breadcrumb_bg_img' );
         $saasto_breadcrumb_shape_switch = get_theme_mod( 'saasto_breadcrumb_shape_switch', false );
-        $breadcrumb_switch = get_theme_mod( 'breadcrumb_switch', true );
+        $breadcrumb_switch              = get_theme_mod( 'breadcrumb_switch', true );
 
         if ( $hide_bg_img && empty($_GET['s']) ) {
             $bg_img = '';

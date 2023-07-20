@@ -541,7 +541,7 @@ function _header_footer_fields( $fields ) {
         'priority'    => 10,
         'multiple'    => 1,
         'choices'     => [
-            'footer-style-def' => get_template_directory_uri() . '/inc/img/footer/footer-style-2.webp',
+            'footer-style-def' => get_template_directory_uri() . '/inc/img/footer/default-footer.png',
             'saasto-template-builder' => get_template_directory_uri() . '/assets/img/custom-footer.png'
         ],
         'default'     => 'footer-style-def',

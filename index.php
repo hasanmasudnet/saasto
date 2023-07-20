@@ -38,6 +38,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 							<?php
 								endwhile;
 							?>
+								<!-- Pagination -->
 								<div class="pagination-wrap">
 									<?php saasto_pagination( '<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>', '', ['class' => ''] );?>
 								</div>
@@ -51,11 +52,13 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 			</div>
 
 			<?php if ( is_active_sidebar( 'blog-sidebar' ) ): ?>
+				<!-- Start Sidebar -->
 		        <div class="col-lg-4">
 		        	<div class="sidebar-wrap">
 						<?php get_sidebar();?>
 	            	</div>
 	            </div>
+				<!-- End Start Sidebar -->
 			<?php endif;?>
         </div>
     </div>

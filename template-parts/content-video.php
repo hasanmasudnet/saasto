@@ -12,14 +12,14 @@
 $saasto_video_url = function_exists( 'get_field' ) ? get_field( 'post_format_video_url' ) : NULL;
 
 
-if (strpos($saasto_video_url, 'https://www.youtube.com/watch') === 0) {
+if ($saasto_video_url != null && strpos($saasto_video_url, 'https://www.youtube.com/watch') === 0) {
     // Get the query string from the URL
     $queryString = parse_url($saasto_video_url, PHP_URL_QUERY);
   
     // Parse the query string and get the 'v' parameter value
     parse_str($queryString, $queryParams);
     $videoId = $queryParams['v'];
-  } else {
+  } elseif($saasto_video_url != null) {
     // Extract the video ID from the URL
     $videoId = substr(parse_url($saasto_video_url, PHP_URL_PATH), 1);
   }
@@ -79,7 +79,7 @@ if ( is_single() ) : ?>
     <!-- Post Loop Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'blog_loop_item' );?>>
 
-        <?php if( $videoId != '' ): ?>
+        <?php if( isset($videoId) && $videoId != '' ): ?>
             <div class="blog__post_thumb">
                 <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr ( $videoId ); ?>"></div>
             </div>

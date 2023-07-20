@@ -34,7 +34,7 @@ if ( is_single() ) : ?>
     <!-- Single Post Start -->
     <article id="post-<?php the_ID();?>" <?php post_class( 'single-post' );?>>
 
-    <?php if( $videoId != '' ): ?>
+    <?php if( isset($videoId) && $videoId != '' ): ?>
         <div class="blog__post_video overflow-hidden">
             <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="<?php print esc_attr( $videoId ); ?>"></div>
         </div>

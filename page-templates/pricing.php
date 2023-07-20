@@ -42,7 +42,7 @@
                   <span>Perfect to get started</span>
                   <h2 class="text2 text-bright-gray"><sup>$</sup>0 <sub>/ Per Month</sub></h2>
                   <h2 class="text1 text-bright-gray"><sup>$</sup>0 <sub>/ Per Year</sub></h2>
-                  <a class="trial-btn w-100 text-center d-inline-block" href="<?php print esc_url( site_url('/contact') ) ?>">Start 15 days trial</a>
+                  <a class="trial-btn w-100 text-center d-inline-block" href="<?php print esc_url( home_url('/contact') ) ?>">Start 15 days trial</a>
                   <ul>
                      <li>CMS integration</li>
                      <li>Email & SMS reminders</li>
@@ -50,7 +50,7 @@
                   </ul>
                </div>
                <div class="pricing-btn-wrap">
-                  <a class="pricing-btn w-100 text-center d-inline-block" href="<?php print esc_url( site_url('/contact') ) ?>">Get Started</a>
+                  <a class="pricing-btn w-100 text-center d-inline-block" href="<?php print esc_url( home_url('/contact') ) ?>">Get Started</a>
                </div>
             </div>
          </div>
@@ -61,7 +61,7 @@
                   <span>Best for professionals</span>
                   <h2 class="text2 text-bright-gray"><sup>$</sup>15 <sub>/ Per Month</sub></h2>
                   <h2 class="text1 text-bright-gray"><sup>$</sup>49 <sub>/ Per Year</sub></h2>
-                  <a class="trial-btn w-100 text-center d-inline-block" href="<?php print esc_url( site_url('/contact') ) ?>">Start 15 days trial</a>
+                  <a class="trial-btn w-100 text-center d-inline-block" href="<?php print esc_url( home_url('/contact') ) ?>">Start 15 days trial</a>
                   <ul>
                      <li>Advanced analytics</li>
                      <li>100+ integrations</li>
@@ -70,7 +70,7 @@
                   </ul>
                </div>
                <div class="pricing-btn-wrap">
-                  <a class="pricing-btn w-100 text-center d-inline-block" href="<?php print esc_url( site_url('/contact') ) ?>">Get Started</a>
+                  <a class="pricing-btn w-100 text-center d-inline-block" href="<?php print esc_url( home_url('/contact') ) ?>">Get Started</a>
                </div>
             </div>
          </div>
@@ -81,7 +81,7 @@
                   <span>Everything in one pro-hand</span>
                   <h2 class="text2 text-bright-gray"><sup>$</sup>30 <sub>/ Per Month</sub></h2>
                   <h2 class="text1 text-bright-gray"><sup>$</sup>79 <sub>/ Per Year</sub></h2>
-                  <a class="trial-btn w-100 text-center d-inline-block" href="<?php print esc_url( site_url('/contact') ) ?>">Start 15 days trial</a>
+                  <a class="trial-btn w-100 text-center d-inline-block" href="<?php print esc_url( home_url('/contact') ) ?>">Start 15 days trial</a>
                   <ul>
                      <li>Daily Performance report</li>
                      <li>Dedicated Assistant</li>
@@ -90,7 +90,7 @@
                   </ul>
                </div>
                <div class="pricing-btn-wrap">
-                  <a class="pricing-btn w-100 text-center d-inline-block" href="<?php print esc_url( site_url('/contact') ) ?>">Get Started</a>
+                  <a class="pricing-btn w-100 text-center d-inline-block" href="<?php print esc_url( home_url('/contact') ) ?>">Get Started</a>
                </div>
             </div>
          </div>

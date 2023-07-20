@@ -28,7 +28,7 @@
                         <h1 class="text-bright-gray">We Serve lot of services For Customers</h1>
                         <p class="text-purple-haze-700 mt-4 body-disply-1">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
                         <div class="hero-btn mt-5">
-                            <a href="<?php print esc_url( site_url('/contact') ) ?>" class="btn-fill-rounded">Get Started Now</a>
+                            <a href="<?php print esc_url( home_url('/contact') ) ?>" class="btn-fill-rounded">Get Started Now</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( home_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -106,7 +106,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( home_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -121,7 +121,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( home_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -136,7 +136,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( home_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -151,7 +151,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( home_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>
@@ -166,7 +166,7 @@
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">
-                               <a href="<?php print esc_url( site_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
+                               <a href="<?php print esc_url( home_url('/contact') ) ?>">Learn more<i class="bi bi-arrow-right"></i> </a>
                            </div>
                        </div>
                    </div>

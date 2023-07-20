@@ -28,7 +28,7 @@ get_header();
                         <h1 class="text-bright-gray wow fadeInUp">Committed to People Committed to <span class="primary-purple">the Future</span></h1>
                         <p class="body-disply-1 pt-20 wow fadeInUp" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at </p>
                         <div class="hero-btn">
-                            <a href="<?php print esc_url( site_url('/contact') ) ?>" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Get Started Now</a>
+                            <a href="<?php print esc_url( home_url('/contact') ) ?>" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Get Started Now</a>
                         </div>
                     </div>
                  </div>
@@ -264,7 +264,7 @@ get_header();
                        <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
                        <div class="trial-btn mt-3 mt-md-5">
-                           <a href="<?php print esc_url( site_url('/pricing') ) ?>" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Start Trial</a>
+                           <a href="<?php print esc_url( home_url('/pricing') ) ?>" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Start Trial</a>
                        </div>
                     </div>
                 </div>
@@ -284,7 +284,7 @@ get_header();
                        <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium</p>
 
                        <div class="trial-btn mt-3 mt-md-5">
-                           <a href="<?php print esc_url( site_url('/pricing') ) ?>" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Start Trial</a>
+                           <a href="<?php print esc_url( home_url('/pricing') ) ?>" class="btn-fill-rounded wow fadeInUp" data-wow-delay="0.3s">Start Trial</a>
                        </div>
                     </div>
                 </div>

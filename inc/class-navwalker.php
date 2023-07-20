@@ -76,7 +76,7 @@ if ( !class_exists( 'Saasto_Navwalker_Class' ) ) {
                 // build a string to use as aria-labelledby.
                 $labelledby = 'aria-labelledby="' . end( $matches[2] ) . '"';
             }
-            $output .= "<i class='fl flaticon-plus'>+</i>{$n}{$indent}<ul$class_names $labelledby role=\"menu\">{$n}";
+            $output .= "<i class='fl f_icon-plus'>+</i>{$n}{$indent}<ul$class_names $labelledby role=\"menu\">{$n}";
         }
 
         /**

@@ -38,7 +38,7 @@
                         <p class="body-disply-2">An enim nullam tempor sapien gravida donec enim ipsum porta justo
                             congue magna at pretium purus pretium ligula </p>
                         <div class="hero-btn">
-                            <a href="<?php print esc_url( site_url('/pricing') ) ?>" class="btn-fill-pill-v2">
+                            <a href="<?php print esc_url( home_url('/pricing') ) ?>" class="btn-fill-pill-v2">
                                 Start 14 Days Trial <span></span>
                             </a>
                         </div>
@@ -116,7 +116,7 @@
                         </p>
 
                         <div class="feature-btn pt-4 pt-md-5 wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="<?php print esc_url( site_url('/contact') ) ?>" class="btn-fill-pill-v2">
+                            <a href="<?php print esc_url( home_url('/contact') ) ?>" class="btn-fill-pill-v2">
                                 Contact Us <span></span>
                             </a>
                         </div>
@@ -142,7 +142,7 @@
                         </p>
 
                         <div class="feature-btn pt-4 pt-md-5 wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="<?php print esc_url( site_url('/services') ) ?>" class="btn-fill-pill-v2">
+                            <a href="<?php print esc_url( home_url('/services') ) ?>" class="btn-fill-pill-v2">
                                 See Services <span></span>
                             </a>
                         </div>

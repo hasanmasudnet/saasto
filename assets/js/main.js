@@ -18,11 +18,11 @@
   $(".main-nav .fl").on('click', function (event) {
     var $fl = $(this);
     $(this).parent().siblings().find('.sub-menu').slideUp();
-    $(this).parent().siblings().find('.fl').addClass('flaticon-plus').text("+");
-    if ($fl.hasClass('flaticon-plus')) {
-      $fl.removeClass('flaticon-plus').addClass('flaticon-minus').text("-");
+    $(this).parent().siblings().find('.fl').addClass('f_icon-plus').text("+");
+    if ($fl.hasClass('f_icon-plus')) {
+      $fl.removeClass('f_icon-plus').addClass('f_icon-minus').text("-");
     } else {
-      $fl.removeClass('flaticon-minus').addClass('flaticon-plus').text("+");
+      $fl.removeClass('f_icon-minus').addClass('f_icon-plus').text("+");
     }
     $fl.next(".sub-menu").slideToggle();
   });

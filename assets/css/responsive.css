@@ -542,6 +542,10 @@
   .page-end-gap-bottom{
     margin-bottom: 60px;
   }
+  .postbox__wrapper.postbox__details,
+  .sidebar-wrap .widget{
+    padding: 20px;
+  }
 }
 
 /* Mobile Layout*/

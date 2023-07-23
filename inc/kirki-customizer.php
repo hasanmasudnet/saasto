@@ -195,7 +195,7 @@ function _global_enable_desable_fields( $fields ) {
         'label'       => esc_html__( 'Preloader Logo', 'saasto' ),
         'description' => esc_html__( 'Upload Preloader Logo.', 'saasto' ),
         'section'     => 'global_enable_disable_settings',
-        'default'     => get_template_directory_uri() . '/assets/img/favicon.png',
+        'default'     => get_template_directory_uri() . '/assets/img/favicon.svg',
         'active_callback' => [
             [
                 'setting'  => 'saasto_preloader',

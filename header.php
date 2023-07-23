@@ -28,7 +28,7 @@
    <?php 
       wp_body_open();
       $saasto_preloader       = get_theme_mod( 'saasto_preloader', false );
-      $saasto_preloader_logo  = get_template_directory_uri() . '/assets/img/favicon.png';
+      $saasto_preloader_logo  = get_template_directory_uri() . '/assets/img/favicon.svg';
       $preloader_logo         = get_theme_mod('preloader_logo') ? get_theme_mod('preloader_logo') : $saasto_preloader_logo;
       $bg_style               = function_exists( 'get_field' ) ? get_field( 'body_background_style' ) : NULL;
       $loader_spinner         = get_theme_mod( 'saasto_preloader_spinner' ) ? 'spinner' : NULL;

@@ -5852,7 +5852,11 @@ ul.pricing-features{
   margin: 0 auto;
   margin-bottom: 60px;
 }
-
+.tab-content-img {
+  max-width: 70%;
+  width: 100%;
+  border-radius: 1.25rem;
+}
 /* =============================
   Tab End
  ==============================*/

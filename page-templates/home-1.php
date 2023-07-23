@@ -19,7 +19,7 @@ get_header();
          <div class="position-absolute top-0 start-0 d-none d-lg-block"><img src="<?php print esc_url(get_template_directory_uri()) ?>/assets/img/shapes/shape-wave.svg" alt="<?php print esc_attr('saasto', 'saasto'); ?>"></div>
          <img src="<?php print esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-dots-one.svg" alt="<?php print esc_attr('saasto', 'saasto'); ?>" class="d-none d-lg-block position-absolute bottom-0 left-0">
          <div class="container ">
-             <div class="row hero-one-row align-items-center section-gap-xl-bottom section-gap-xl-top py-lg-0">
+             <div class="row hero-one-row align-items-center py-lg-0">
                  <div class="col-lg-7">
                     <div class="hero-content py-5 mt-5 mt-lg-3 position-relative">
                         <div class="hero-animated-shape position-absolute bottom-50 anima-trasform-y-1 low-index d-none d-lg-block">
@@ -185,7 +185,7 @@ get_header();
                             </div>
 
                             <div class="col-lg-12 text-center">
-                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='w-100' alt="<?php print esc_attr('saasto', 'saasto'); ?>">
+                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='tab-content-img' alt="<?php print esc_attr('saasto', 'saasto'); ?>">
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@ get_header();
                             </div>
 
                             <div class="col-lg-12 text-center">
-                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='w-100'  alt="<?php print esc_attr('saasto', 'saasto'); ?>">
+                                <img src="<?php print esc_url(get_template_directory_uri())?>/assets/img/dashboard.png" class='tab-content-img'  alt="<?php print esc_attr('saasto', 'saasto'); ?>">
                             </div>
                         </div>
                         </div>

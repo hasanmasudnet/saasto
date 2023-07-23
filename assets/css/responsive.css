@@ -7,6 +7,23 @@
   }
 }
 
+@media only screen and (min-width:1200px) and (max-width:1400px) {
+  .section-gap-xl-top {
+    padding-top: 110px;
+  }
+  .section-gap-xl-bottom {
+    padding-top: 110px;
+  }
+  .hero-one-row {
+    min-height: 850px;
+    margin-bottom: 50px;
+  }
+  .hero-style-one .hero-content h1{
+    font-size: 47px;
+  }
+
+}
+
 @media only screen and (max-width: 1199px) {
   header .header-area.header-area-three .main-nav ul li ul.sub-menu > li a::before {
     background: #5bc17f;
@@ -429,6 +446,12 @@
     border: 1px solid #8875FB;
     white-space: nowrap;
   }
+
+  .tab-content-img {
+      max-width: 100%;
+      width: 100%;
+  }
+
 
   .timeline-wrap .timeline-info::before {
     display: none;

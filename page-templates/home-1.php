@@ -37,7 +37,7 @@ get_header();
                      <img src="<?php print esc_url(get_template_directory_uri()) ?>/assets/img/shapes/hero-carve.png" alt="<?php print esc_attr('saasto', 'saasto'); ?>" class="d-xl-block d-none position-absolute top-50 end-0 translate-middle-y">
                      <div class="row justify-content-center">
                          <div class="col-lg-12 col-8 text-center">
-                             <img src="<?php print esc_url(get_template_directory_uri()) ?>/assets/img/hero/hero-graph-2.png" alt="<?php print esc_attr('saasto', 'saasto'); ?>"  class="hero-img-filter img-fluid anima-trasform-y-1">
+                             <img src="<?php print esc_url(get_template_directory_uri()) ?>/assets/img/hero/hero-graph-2.svg" alt="<?php print esc_attr('saasto', 'saasto'); ?>"  class="hero-img-filter img-fluid anima-trasform-y-1">
                          </div>
 
                      </div>

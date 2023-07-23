@@ -154,7 +154,7 @@
                             <h2>
                             Analytics & 
                             <span class="d-inline-block position-relative ">Reporting <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/text-cuntom-underline.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="highlighter-shape position-absolute start-0 bottom-0 low-index"></span>
-                             Brackdown
+                            breakdown
                             </h2>
                             <p class="body-disply-2 pt-3 wow fadeInUp">An enim nullam tempor sapien gravida donec enim ipsum porta justo  congue magna at pretium purus pretium ligula </p>
                         </div>

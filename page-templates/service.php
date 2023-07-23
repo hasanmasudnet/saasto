@@ -162,7 +162,7 @@
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Icons/line-chart.svg" alt="<?php echo esc_attr('saasto', 'saasto'); ?>" class="img-fluid">
                        </div>
                        <div class="service-card-info">
-                           <h5 class="text-purple-haze">UX process of businessg</h5>
+                           <h5 class="text-purple-haze">UX process of business</h5>
                            <p class="body-disply-1 text-purple-haze-700">Increase your team’s productivity and save time with a bot that answers and fields customer inquiries</p>
 
                            <div class="service-card-btn">

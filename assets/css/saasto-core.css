@@ -4497,7 +4497,9 @@ p.logged-in-as {
   padding: 40px 40px;
   border-radius: 15px;
 }
-
+.post-gallery-slider-item img {
+  height: 100%;
+}
 .blog-details-wrapper .blog-det-thumb img {
   width: 100%;
 }

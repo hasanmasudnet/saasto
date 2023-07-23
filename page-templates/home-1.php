@@ -178,7 +178,7 @@ get_header();
 
                             <div class="col-lg-12">
                                 <div class="w-feature-content-title tab-info mt-2 text-center">
-                                <h3 class="text-bright-gray wow fadeInUp">Analytics & Reporting Brackdown</h3>
+                                <h3 class="text-bright-gray wow fadeInUp">Analytics & Reporting Breakdown</h3>
                                 <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
 
                                 </div>
@@ -195,7 +195,7 @@ get_header();
 
                             <div class="col-lg-12">
                                 <div class="w-feature-content-title tab-info mt-2 text-center">
-                                <h3 class="text-bright-gray wow fadeInUp">Analytics & Reporting Brackdown</h3>
+                                <h3 class="text-bright-gray wow fadeInUp">Analytics & Reporting Breakdown</h3>
                                 <p class="text-purple-haze body-disply-1 pt-3 wow fadeInUp" data-wow-delay="0.2s">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
 
                                 </div>
@@ -212,7 +212,7 @@ get_header();
 
                             <div class="col-lg-12">
                                 <div class="w-feature-content-title tab-info  mt-2 text-center">
-                                <h3 class="text-bright-gray">Analytics & Reporting Brackdown</h3>
+                                <h3 class="text-bright-gray">Analytics & Reporting Breakdown</h3>
                                 <p class="text-purple-haze body-disply-1 pt-3">Donec augue lorem, mollis quis dui sed, dictum vehicula turpis. Aliquam bibendum vel mi id tempor. Sed efficitur scelerisque mi. Nullam posuere nec ex in malesuada. Praesent ligula ante, accumsan eget ornare vel, fermentum quis erat.</p>
 
                                 </div>
@@ -304,7 +304,7 @@ get_header();
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
-                    <h3 class="text-bright-gray text-center wow fadeInUp">We have support language for more than 30 languages arounf the world</h3>
+                    <h3 class="text-bright-gray text-center wow fadeInUp">We have support language for more than 30 languages around the world</h3>
                 </div>
             </div>
         </div>

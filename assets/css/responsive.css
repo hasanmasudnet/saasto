@@ -544,7 +544,7 @@
   }
   .postbox__wrapper.postbox__details,
   .sidebar-wrap .widget{
-    padding: 20px;
+    padding: 25px;
   }
 }
 
@@ -838,9 +838,6 @@
     border-radius: 15px;
     font-size: 16px;
     padding: 10px 25px;
-  }
-  .sidebar-wrap .widget {
-    padding: 30px 30px;
   }
   .blog_loop_item .blog_standard__disc .bs__title {
     font-size: 18px;

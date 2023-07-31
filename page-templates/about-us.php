@@ -261,75 +261,75 @@ get_header();
 
     <!-- =============== testimonial style start ============= -->
     <div class="testimonial-style-one position-relative section-gap-xl-top section-gap-bottom-y-1">
-    <div class="container"> 
-        <div class="testimonial-slider-wrap">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5">
-                    <h3 class="text-bright-gray">See our success stories</h3>
-                    <div class="swiper testimonial-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-card-style-one">
-                                    <p>Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
+        <div class="container"> 
+            <div class="testimonial-slider-wrap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5">
+                        <h3 class="text-bright-gray">See our success stories</h3>
+                        <div class="swiper testimonial-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card-style-one">
+                                        <p>Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
 
-                                    <div class="testimonial-bottom">
-                                        <h5 class="text-bright-gray">Jhon Kelaven</h5>
-                                        <span>Creative designer</span>
+                                        <div class="testimonial-bottom">
+                                            <h5 class="text-bright-gray">Jhon Kelaven</h5>
+                                            <span>Creative designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card-style-one">
+                                        <p>Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
+
+                                        <div class="testimonial-bottom">
+                                            <h5 class="text-bright-gray">Jahid Hassan</h5>
+                                            <span>Creative designer</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-card-style-one">
-                                    <p>Frontegg dramatically sped our go-to-market by cutting our up-front development time</p>
 
-                                    <div class="testimonial-bottom">
-                                        <h5 class="text-bright-gray">Jahid Hassan</h5>
-                                        <span>Creative designer</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-5 position-relative">
+                        <div class="d-none d-lg-block">
+                        <div class="floarting-avater-1 position-absolute  end-0">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-3.png" alt="" class="circle-shadow rounded-circle">
+                        </div>
+                        <div class="floarting-avater-2 position-absolute top-0 start-100">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-1.png" alt="" class="circle-shadow rounded-circle">
+                        </div>
+                        <div class="floarting-avater-2 position-absolute top-0 start-0">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-2.png" alt="" class="circle-shadow rounded-circle">
+                        </div>
+                        <div class="swiper testimonial-thumbs px-lg-4 ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-thumb-style">
+                                        <div class="thumb-avater">
+                                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testimonial-avater-xl.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-thumb-style">
+                                        <div class="thumb-avater">
+                                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testimonial-avater-xl2.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-xl-5 position-relative">
-                    <div class="d-none d-lg-block">
-                    <div class="floarting-avater-1 position-absolute  end-0">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-3.png" alt="" class="circle-shadow rounded-circle">
-                    </div>
-                    <div class="floarting-avater-2 position-absolute top-0 start-100">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-1.png" alt="" class="circle-shadow rounded-circle">
-                    </div>
-                    <div class="floarting-avater-2 position-absolute top-0 start-0">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testi-avater-2.png" alt="" class="circle-shadow rounded-circle">
-                    </div>
-                    <div class="swiper testimonial-thumbs px-lg-4 ">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-thumb-style">
-                                    <div class="thumb-avater">
-                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testimonial-avater-xl.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial-thumb-style">
-                                    <div class="thumb-avater">
-                                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/shapes/testimonial-avater-xl2.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    </div>
-                </div>
 
+                </div>
+                <div class="d-none d-lg-block testi-pagination text-center pt-60"></div>
             </div>
-            <div class="d-none d-lg-block testi-pagination text-center pt-60"></div>
         </div>
     </div>
-</div>
 <!-- =============== testimonial style end ============= -->
 
 <?php get_footer( ); ?>

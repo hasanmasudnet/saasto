@@ -1466,13 +1466,13 @@ header .header-transparent {
   overflow: hidden;
 }
 
-.hero-style-two {
+/* .hero-style-two {
   background: url("../img/hero/hero-bg-2.png"), -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fff8f2), to(#fff8f2));
   background: url("../img/hero/hero-bg-2.png"), linear-gradient(#fff8f2 100%, #fff8f2 100%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .hero-style-two .hero-mobil-screen {
   right: -102px;
@@ -2070,11 +2070,6 @@ header .header-transparent {
     font-size: 24px;
     padding-bottom: 8px;
   }
-}
-
-
-.single-feature-style-two {
-  overflow: hidden;
 }
 
 .single-feature-style-two .feature-analytics-contents {
@@ -3047,6 +3042,8 @@ p.logged-in-as {
 
 .team-card-style-one {
   background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
   text-align: center;
   padding: 60px 25px;
@@ -3660,14 +3657,6 @@ p.logged-in-as {
 }
 
 /*testimonial style two*/
-.testimonial-style-two {
-  background: url("../img/shapes/testimonial-bg-2.png"), -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
-  background: url("../img/shapes/testimonial-bg-2.png"), linear-gradient(rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-}
 
 .testimonial-style-two .testi-pagination-two .swiper-pagination-bullet {
   width: 12px;
@@ -4139,10 +4128,6 @@ p.logged-in-as {
 .single-client-logo {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-}
-
-.partner-style-one {
-  background: #F8FEFE;
 }
 
 .partner-style-one .partner-one-content {
@@ -5572,12 +5557,13 @@ ul.pricing-features{
 /* =============================
   Contact
  ==============================*/
-.contact-address-wrap .single-contact-address .contact-address-icon {
+.st-timeline-wrapper .st-timeline-item .st-timeline-item-icon {
   width: 80px;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-shrink: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5585,13 +5571,11 @@ ul.pricing-features{
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 30px;
-  background: #8976FD;
-  color: #fff;
   border-radius: 50%;
   position: relative;
 }
 
-.contact-address-wrap .single-contact-address .contact-address-icon::before {
+.st-timeline-wrapper .st-timeline-item .st-timeline-item-icon::before {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -5599,39 +5583,39 @@ ul.pricing-features{
           transform: translateX(-50%);
   height: 100%;
   width: 1px;
-  border: 1px dashed #8976FD;
+  border: 1px dashed;
   content: "";
 }
 
-.contact-address-wrap .single-contact-address .contact-address-info {
+.st-timeline-wrapper .st-timeline-item .st-timeline-item-info {
   padding-left: 30px;
 }
 
-.contact-address-wrap .single-contact-address .contact-address-info h2 {
+.st-timeline-wrapper .st-timeline-item .st-timeline-item-info h2 {
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
   color: #332C5C;
 }
 
-.contact-address-wrap .single-contact-address .contact-address-info p {
+.st-timeline-wrapper .st-timeline-item .st-timeline-item-info p {
   color: rgba(73, 67, 105, 0.7);
   margin-top: 10px;
 }
 
-.contact-address-wrap .single-contact-address:not(:last-child) {
+.st-timeline-wrapper .st-timeline-item:not(:last-child) {
   padding-bottom: 70px;
 }
 
-.contact-address-wrap .single-contact-address:last-child .contact-address-icon::before {
+.st-timeline-wrapper .st-timeline-item:last-child .st-timeline-item-icon::before {
   display: none;
 }
 
-.contact-form-wrap {
+/* .contact-form-wrap {
   padding: 60px 50px;
   background-color: #8976FD;
   border-radius: 30px;
-}
+} */
 
 .contact-form-wrap input, .contact-form-wrap textarea {
   background: #FFFFFF;
@@ -5659,29 +5643,7 @@ ul.pricing-features{
   border: 1px solid #8976FD;
 }
 
-.contact-vector-box {
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
-          box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
-  border-radius: 30px;
-  padding: 30px;
-}
-
-.contact-vector-box h2 {
-  font-weight: 600;
-  font-size: 24px;
-  text-transform: capitalize;
-  color: #5E587A;
-  margin: 40px 0 8px;
-}
-
-.contact-vector-box p {
-  font-size: 20px;
-  line-height: 180%;
-  color: #5E587A;
-}
-
-.contact-vector-box .contact-vector-btn {
+.team-card-style-one .team-inner-btn {
   font-weight: 400;
   font-size: 20px;
   color: #FFFFFF;
@@ -5692,12 +5654,11 @@ ul.pricing-features{
   background-color: #8976FD;
   border-radius: 48px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 40px;
 }
-
-.contact-vector-box .contact-vector-btn i {
+.team-card-style-one .team-inner-btn i {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -5718,7 +5679,7 @@ ul.pricing-features{
   transition: all .4s;
 }
 
-.contact-vector-box .contact-vector-btn:hover i {
+.team-card-style-one .team-inner-btn:hover i {
   background-color: #000;
   color: #fff;
 }
@@ -6016,25 +5977,29 @@ ul.pricing-features{
   mix-blend-mode: difference;
   transition: top 0.1s ease, left 0.1s ease;
  }
- span.form_response.error {
-  padding: 5px;
+
+
+ /* Contact form 7 reponse message */
+.contact-form-wrap-two .wpcf7-not-valid-tip {
+  color: #dc3232;
+  font-size: 14px;
+  font-weight: normal;
   display: block;
-  background: red;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 10px;
+  margin: -24px 0 0 19px;
+  padding-bottom: 10px;
 }
-span.form_response.success {
-  padding: 5px;
-  display: block;
-  background: #5bc17f;
-  color: #fff;
-  text-align: center;
+.contact-form-wrap-two .wpcf7 form .wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+  border: 2px solid #00a0d2;
   border-radius: 10px;
-  margin-top: 10px;
 }
 
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  border-color: #fca61f;
+}
 
 /* Scrollbar style */
 body::-webkit-scrollbar {

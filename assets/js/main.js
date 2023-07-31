@@ -159,32 +159,6 @@
     }
   });
 
-  /* testimonial slider two and testimonial thumbs two */
-  var testimonial_Thumbs_Two = new Swiper('.testimonial-thumbs-two', {
-    spaceBetween: 24,
-    slidesPerView: 1,
-    effect: 'fade',
-    speed: 1000,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    allowTouchMove : false,
-    fadeEffect: {
-      crossFade: true
-    },
-  });
-  var testimonial_Slider_Two = new Swiper('.testimonial-slider-two', {
-    spaceBetween: 24,
-    slidesPerView: 1,
-    speed: 1000,
-    loop: true,
-    pagination: {
-      el: ".testi-pagination-two",
-      clickable: true
-    },
-    thumbs: {
-      swiper: testimonial_Thumbs_Two
-    }
-  });
 
   /* Client slider */
   var company_Client_Slider = new Swiper('.company-clients-slider', {

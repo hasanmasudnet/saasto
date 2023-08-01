@@ -923,35 +923,3 @@
   }
 
 }
-
-/* elementor styles
-=====================*/
-
-
-
-
-@media (min-width: 576px){
-  .elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 540px !important;
-  }
-}
-@media (min-width: 768px){
-  .elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 720px !important;
-  }
-}
-@media (min-width: 992px){
-  .elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 960px !important;
-  }
-}
-@media (min-width: 1200px){
-  .elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 1140px !important;
-  }
-}
-@media (min-width: 1400px){
-  .elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 1320px !important;
-  }
-}

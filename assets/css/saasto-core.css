@@ -329,6 +329,9 @@ table tfoot tr th {
   margin-bottom: 100px;
 }
 
+.max-unset{
+  max-width: unset;
+}
 .img-contain {
   width: 100%;
 }

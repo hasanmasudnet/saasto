@@ -297,6 +297,11 @@
   h5 {
     font-size: 22px;
   }
+
+  .max-width-unset{
+    max-width: 100% !important;
+  }
+
   /*typography*/
   .single-country img {
     width: 50%;
@@ -324,9 +329,6 @@
   }
   .hero-style-three .hero-mobil-screen img {
     max-width: 100%;
-  }
-  .fun-fact-style-one{
-    padding-top: 60px;
   }
   .single-feature-style-two .feature-analytics-contents {
   max-width: 700px;
@@ -695,9 +697,6 @@
   }
   .hero-style-three .hero-content p {
     font-size: 18px;
-  }
-  .fun-fact-style-one{
-    padding-top: 60px;
   }
   .disply-feature-card {
     gap: 20px;

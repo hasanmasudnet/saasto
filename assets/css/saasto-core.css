@@ -329,8 +329,8 @@ table tfoot tr th {
   margin-bottom: 100px;
 }
 
-.max-unset{
-  max-width: unset;
+.max-width-unset{
+  max-width: unset !important;
 }
 .img-contain {
   width: 100%;
@@ -1469,13 +1469,11 @@ header .header-transparent {
   overflow: hidden;
 }
 
-/* .hero-style-two {
-  background: url("../img/hero/hero-bg-2.png"), -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fff8f2), to(#fff8f2));
-  background: url("../img/hero/hero-bg-2.png"), linear-gradient(#fff8f2 100%, #fff8f2 100%);
+.hero-style-two {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-} */
+}
 
 .hero-style-two .hero-mobil-screen {
   right: -102px;
@@ -6018,4 +6016,16 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
   border-radius: 10px;
+}
+
+/* Contact form response */
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  border-color: #fca61f;
+  border-radius: 15px;
+  background: #fca61f;
+  color: #fff;
+  padding: 10px 30px;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 13px;
 }

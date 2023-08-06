@@ -695,6 +695,22 @@
     border-radius: 44px;
     padding: 40px;
   }
+  .pricing-wrap .pricing-info{
+    padding: 25px 30px 0;
+  }
+  .pricing-wrap .pricing-info ul {
+    margin: 0 0 30px;
+  }
+  .pricing-wrap .pricing-info span{
+    margin: 0 0 5px;
+  }
+  .pricing-wrap .pricing-btn-wrap .pricing-btn {
+    font-size: 17px;
+    padding: 13px 10px;
+  }
+  .pricing-wrap .pricing-info h2 {
+    margin-bottom: 15px;
+  }
   .hero-style-three .hero-content p {
     font-size: 18px;
   }

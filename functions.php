@@ -212,6 +212,31 @@ function saasto_move_comment_textarea_to_bottom( $fields ) {
 }
 add_filter( 'comment_form_fields', 'saasto_move_comment_textarea_to_bottom' );
 
+if( ! function_exists('saasto_filesystem') ) {
+	/**
+	 * [fixkar_filesystem description]
+	 * @return [type] [description]
+	 */
+	function saasto_filesystem() {
+		if( ! function_exists('require_filesystem_credentials')) {
+			require_once ABSPATH . 'wp-admin/includes/file.php';
+		}
+
+		/* you can safely run request_filesystem_credentials() without any issues and don't need to worry about passing in a URL */
+		$creds = request_filesystem_credentials(esc_url(home_url('/')), '', false, false, array());
+
+		/* initialize the API */
+		if ( ! WP_Filesystem($creds) ) {
+			/* any problems and we exit */
+			return false;
+		}	
+
+		global $wp_filesystem;
+		/* do our file manipulations below */
+
+		return $wp_filesystem;
+	}
+}
 
 // saasto_comment 
 if ( !function_exists( 'saasto_comment' ) ) {

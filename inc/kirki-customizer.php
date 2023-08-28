@@ -42,7 +42,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     ] );
 
     $wp_customize->add_section( 'section_header_logo', [
-        'title'       => esc_html__( 'Header Setting', 'saasto' ),
+        'title'       => esc_html__( 'Header Settings', 'saasto' ),
         'description' => '',
         'priority'    => 12,
         'capability'  => 'edit_theme_options',
@@ -50,7 +50,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     ] );
 
     $wp_customize->add_section( 'blog_setting', [
-        'title'       => esc_html__( 'Blog Setting', 'saasto' ),
+        'title'       => esc_html__( 'Blog Settings', 'saasto' ),
         'description' => '',
         'priority'    => 13,
         'capability'  => 'edit_theme_options',
@@ -74,7 +74,7 @@ function saasto_customizer_panels_sections( $wp_customize ) {
     ] );
 
     $wp_customize->add_section( 'blog_setting', [
-        'title'       => esc_html__( 'Blog Setting', 'saasto' ),
+        'title'       => esc_html__( 'Blog Settings', 'saasto' ),
         'description' => '',
         'priority'    => 17,
         'capability'  => 'edit_theme_options',
@@ -85,14 +85,6 @@ function saasto_customizer_panels_sections( $wp_customize ) {
         'title'       => esc_html__( 'Footer Settings', 'saasto' ),
         'description' => '',
         'priority'    => 19,
-        'capability'  => 'edit_theme_options',
-        'panel'       => 'saasto_customizer',
-    ] );
-
-    $wp_customize->add_section( 'color_setting', [
-        'title'       => esc_html__( 'Color Setting', 'saasto' ),
-        'description' => '',
-        'priority'    => 21,
         'capability'  => 'edit_theme_options',
         'panel'       => 'saasto_customizer',
     ] );
@@ -435,7 +427,7 @@ function _header_blog_fields( $fields ) {
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_blog_btn_switch',
-        'label'    => esc_html__( 'Blog BTN On/Off', 'saasto' ),
+        'label'    => esc_html__( 'Read more', 'saasto' ),
         'section'  => 'blog_setting',
         'default'  => '1',
         'priority' => 10,
@@ -448,7 +440,7 @@ function _header_blog_fields( $fields ) {
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_blog_cat',
-        'label'    => esc_html__( 'Blog Category Meta On/Off', 'saasto' ),
+        'label'    => esc_html__( 'Category', 'saasto' ),
         'section'  => 'blog_setting',
         'default'  => '1',
         'priority' => 10,
@@ -461,7 +453,7 @@ function _header_blog_fields( $fields ) {
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_blog_author',
-        'label'    => esc_html__( 'Blog Author Meta On/Off', 'saasto' ),
+        'label'    => esc_html__( 'Author', 'saasto' ),
         'section'  => 'blog_setting',
         'default'  => '1',
         'priority' => 10,
@@ -473,7 +465,7 @@ function _header_blog_fields( $fields ) {
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_blog_date',
-        'label'    => esc_html__( 'Blog Date Meta On/Off', 'saasto' ),
+        'label'    => esc_html__( 'Date', 'saasto' ),
         'section'  => 'blog_setting',
         'default'  => '1',
         'priority' => 10,
@@ -485,7 +477,7 @@ function _header_blog_fields( $fields ) {
     $fields[] = [
         'type'     => 'switch',
         'settings' => 'saasto_blog_comments',
-        'label'    => esc_html__( 'Blog Comments Meta On/Off', 'saasto' ),
+        'label'    => esc_html__( 'Comments', 'saasto' ),
         'section'  => 'blog_setting',
         'default'  => '1',
         'priority' => 10,
@@ -603,63 +595,6 @@ function _header_footer_fields( $fields ) {
     return $fields;
 }
 add_filter( 'kirki/fields', '_header_footer_fields' );
-
-// color
-function saasto_color_fields( $fields ) {
-    // Color Settings
-    $fields[] = [
-        'type'        => 'color',
-        'settings'    => 'saasto_color_option',
-        'label'       => __( 'Theme Color', 'saasto' ),
-        'description' => esc_html__( 'This is a Theme color control.', 'saasto' ),
-        'section'     => 'color_setting',
-        'default'     => '#2b4eff',
-        'priority'    => 10,
-    ];
-    // Color Settings
-    $fields[] = [
-        'type'        => 'color',
-        'settings'    => 'saasto_color_option_2',
-        'label'       => __( 'Primary Color', 'saasto' ),
-        'description' => esc_html__( 'This is a Primary color control.', 'saasto' ),
-        'section'     => 'color_setting',
-        'default'     => '#f2277e',
-        'priority'    => 10,
-    ];
-     // Color Settings
-    $fields[] = [
-        'type'        => 'color',
-        'settings'    => 'saasto_color_option_3',
-        'label'       => __( 'Secondary Color', 'saasto' ),
-        'description' => esc_html__( 'This is a Secondary color control.', 'saasto' ),
-        'section'     => 'color_setting',
-        'default'     => '#30a820',
-        'priority'    => 10,
-    ];
-     // Color Settings
-    $fields[] = [
-        'type'        => 'color',
-        'settings'    => 'saasto_color_option_3_2',
-        'label'       => __( 'Secondary Color 2', 'saasto' ),
-        'description' => esc_html__( 'This is a Secondary color 2 control.', 'saasto' ),
-        'section'     => 'color_setting',
-        'default'     => '#ffb352',
-        'priority'    => 10,
-    ];
-     // Color Settings
-    $fields[] = [
-        'type'        => 'color',
-        'settings'    => 'saasto_color_scrollup',
-        'label'       => __( 'ScrollUp Color', 'saasto' ),
-        'description' => esc_html__( 'This is a ScrollUp colo control.', 'saasto' ),
-        'section'     => 'color_setting',
-        'default'     => '#2b4eff',
-        'priority'    => 10,
-    ];
-
-    return $fields;
-}
-add_filter( 'kirki/fields', 'saasto_color_fields' );
 
 // 404
 function saasto_404_fields( $fields ) {

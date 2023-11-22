@@ -6239,6 +6239,13 @@ AI Works
   color: var(--text-light-purple);
 }
 
+.ai-work-box img {
+  height: 58px;
+  max-width: 58px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .ai-work-box h4 {
   font-size: 20px;
   margin: 15px 0 10px;

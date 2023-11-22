@@ -427,10 +427,8 @@
   .tab-wrap {
     justify-content: start;
     background-color: unset;
-    border-radius: 0;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    padding-bottom: 10px;
   }
   
 

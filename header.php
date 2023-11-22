@@ -65,6 +65,9 @@
       elseif( $bg_style == 'style_3' ){
          echo '<div class="background-wrap inner-bg">';
       }
+      elseif( $bg_style == 'style_4' ){
+         echo '<div class="background-wrap home-bg-ai">';
+      }
    ?>
     
     <?php do_action( 'saasto_header_style' );?>

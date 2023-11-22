@@ -72,6 +72,47 @@
   /***********
    All swiper slider JS
    ************/
+
+     /*Ai hero Slide*/
+
+  // var aiheroSlider = new Swiper('.ai-hero-slider', {
+  //   effect: "coverflow",
+  //     grabCursor: true,
+  //     centeredSlides: true,
+  //     loop: true,
+  //     autoplay: false,
+  //     speed: 2500,
+  //     spaceBetween: 0,
+  //     slidesPerView: "1", 
+  //     coverflowEffect: {
+  //       rotate: 30,
+  //       stretch: 75,
+  //       depth: 100,
+  //       modifier: 1,
+  //       slideShadows: false,
+  //     },
+  //     pagination: {
+  //       el: ".ai-hero-pagination",
+  //       clickable: true,
+  //     },
+  //     breakpoints: {
+  //       320: {
+  //         slidesPerView: 1,
+  //         speed: 1500,
+  //         coverflowEffect: {
+  //           stretch: 150,
+  //         },
+  //       },
+  //       768: {
+  //         slidesPerView: 2
+  //       },
+  //       992: {
+  //         slidesPerView: 3
+  //       }
+  //     }
+  // });
+  
+  /*Ai hero Slide End*/
   
   /*blog slider one */
   var blog_Slider_One = new Swiper('.blog-slider-one', {
@@ -250,7 +291,7 @@
   testimonial_Thumbs_Three.controller.control = testimonial_Slider_Three;
 
   /* init Video Player */
-  const player = new Plyr('.player');
+  // const player = new Plyr('.player');
 
   /* init swipper slider */
   var swiper = new Swiper(".blog_thumb__slider", {
@@ -321,5 +362,7 @@ $(document).on("mousemove", function(e) {
 
   });
 });
+
+
 
 }(jQuery));

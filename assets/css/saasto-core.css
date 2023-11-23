@@ -5836,6 +5836,22 @@ ul.pricing-features{
   width: 100%;
   border-radius: 1.25rem;
 }
+
+.tab-wrap .nav-link span {
+  border-radius: 7px;
+  border: 2px solid var(--text-light-purple);
+  padding: 5px 14px 2px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 3px;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.tab-wrap .nav-link.active span, .tab-wrap .nav-pills .show > .nav-link span{
+  border: 2px solid #fff;
+}
+
 /* =============================
   Tab End
  ==============================*/
@@ -6522,13 +6538,16 @@ AI Price
 
 .ai-price-wrap .ai-price-content ul {
   margin-bottom: 40px;
+  list-style: none;
 }
 
 .ai-price-wrap .ai-price-content ul li {
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
-.ai-price-wrap .ai-price-content ul li svg {
+.ai-price-wrap .ai-price-content ul li svg, .ai-price-wrap .ai-price-content ul li i {
   color: var(--text-light-purple);
   margin-right: 6px;
 }

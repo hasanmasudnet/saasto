@@ -525,6 +525,25 @@ table tfoot tr th {
   font-size: 13px;
 }
 
+.btn-fill-purple {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-light-purple);
+  padding: 15px 40px;
+  background: transparent;
+  border-radius: 40px;
+  line-height: 28px;
+  border: 1px solid var(--text-light-purple);
+  font-family: var(--ff-poppins);
+  transition: all .3s;
+}
+
+.btn-fill-purple:hover {
+  color: #8976FD;
+  background: #e9e6ff;
+}
+
 /* =============================
  Custom utilities end
  ==============================*/

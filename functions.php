@@ -8,7 +8,7 @@
  * @package saasto
  */
 
-if ( !function_exists( 'saasto_setup' ) ):
+if (!function_exists('saasto_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -16,17 +16,18 @@ if ( !function_exists( 'saasto_setup' ) ):
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
-    function saasto_setup() {
+    function saasto_setup()
+    {
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
          * If you're building a theme based on saasto, use a find and replace
          * to change 'saasto' to the name of your theme in all the template files.
          */
-        load_theme_textdomain( 'saasto', get_template_directory() . '/languages' );
+        load_theme_textdomain('saasto', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
-        add_theme_support( 'automatic-feed-links' );
+        add_theme_support('automatic-feed-links');
 
         /*
          * Let WordPress manage the document title.
@@ -34,87 +35,87 @@ if ( !function_exists( 'saasto_setup' ) ):
          * hard-coded <title> tag in the document head, and expect WordPress to
          * provide it for us.
          */
-        add_theme_support( 'title-tag' );
+        add_theme_support('title-tag');
 
         /*
          * Enable support for Post Thumbnails on posts and pages.
          *
          * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
          */
-        add_theme_support( 'post-thumbnails' );
+        add_theme_support('post-thumbnails');
 
         // This theme uses wp_nav_menu() in one location.
-        register_nav_menus( [
-            'main-menu' => esc_html__( 'Main Menu', 'saasto' ),
-        ] );
+        register_nav_menus([
+            'main-menu' => esc_html__('Main Menu', 'saasto'),
+        ]);
 
         /*
          * Switch default core markup for search form, comment form, and comments
          * to output valid HTML5.
          */
-        add_theme_support( 'html5', [
+        add_theme_support('html5', [
             'search-form',
             'comment-form',
             'comment-list',
             'gallery',
             'caption',
-        ] );
+        ]);
 
         // Set up the WordPress core custom background feature.
-        add_theme_support( 'custom-background', apply_filters( 'saasto_custom_background_args', [
+        add_theme_support('custom-background', apply_filters('saasto_custom_background_args', [
             'default-color' => 'ffffff',
             'default-image' => '',
-        ] ) );
+        ]));
 
         // Add theme support for selective refresh for widgets.
-        add_theme_support( 'customize-selective-refresh-widgets' );
+        add_theme_support('customize-selective-refresh-widgets');
 
         //Enable custom header
-        add_theme_support( 'custom-header' );
+        add_theme_support('custom-header');
 
         /**
          * Add support for core custom logo.
          *
          * @link https://codex.wordpress.org/Theme_Logo
          */
-        add_theme_support( 'custom-logo', [
+        add_theme_support('custom-logo', [
             'height'      => 250,
             'width'       => 250,
             'flex-width'  => true,
             'flex-height' => true,
-        ] );
+        ]);
 
         /**
          * Enable suporrt for Post Formats
          *
          * see: https://codex.wordpress.org/Post_Formats
          */
-        add_theme_support( 'post-formats', [
+        add_theme_support('post-formats', [
             'image',
             'audio',
             'video',
             'gallery',
             'quote',
-        ] );
+        ]);
 
         // Add support for Block Styles.
-        add_theme_support( 'wp-block-styles' );
+        add_theme_support('wp-block-styles');
 
         // Add support for full and wide align images.
-        add_theme_support( 'align-wide' );
+        add_theme_support('align-wide');
 
         // Add support for editor styles.
-        add_theme_support( 'editor-styles' );
+        add_theme_support('editor-styles');
 
         // Add support for responsive embedded content.
-        add_theme_support( 'responsive-embeds' );
+        add_theme_support('responsive-embeds');
 
         // remove_theme_support( 'widgets-block-editor' );
 
-        add_image_size( 'saasto-case-details', 1170, 600, [ 'center', 'center' ] );
+        add_image_size('saasto-case-details', 1170, 600, ['center', 'center']);
     }
 endif;
-add_action( 'after_setup_theme', 'saasto_setup' );
+add_action('after_setup_theme', 'saasto_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -123,13 +124,14 @@ add_action( 'after_setup_theme', 'saasto_setup' );
  *
  * @global int $content_width
  */
-function saasto_content_width() {
+function saasto_content_width()
+{
     // This variable is intended to be overruled from themes.
     // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
     // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-    $GLOBALS['content_width'] = apply_filters( 'saasto_content_width', 640 );
+    $GLOBALS['content_width'] = apply_filters('saasto_content_width', 640);
 }
-add_action( 'after_setup_theme', 'saasto_content_width', 0 );
+add_action('after_setup_theme', 'saasto_content_width', 0);
 
 
 
@@ -137,18 +139,19 @@ add_action( 'after_setup_theme', 'saasto_content_width', 0 );
  * Enqueue scripts and styles.
  */
 
-define( 'SAASTO_THEME_DIR', get_template_directory() );
-define( 'SAASTO_THEME_URI', get_template_directory_uri() );
-define( 'SAASTO_THEME_CSS_DIR', SAASTO_THEME_URI . '/assets/css/' );
-define( 'SAASTO_THEME_JS_DIR', SAASTO_THEME_URI . '/assets/js/' );
-define( 'SAASTO_THEME_INC', SAASTO_THEME_DIR . '/inc/' );
+define('SAASTO_THEME_DIR', get_template_directory());
+define('SAASTO_THEME_URI', get_template_directory_uri());
+define('SAASTO_THEME_CSS_DIR', SAASTO_THEME_URI . '/assets/css/');
+define('SAASTO_THEME_JS_DIR', SAASTO_THEME_URI . '/assets/js/');
+define('SAASTO_THEME_INC', SAASTO_THEME_DIR . '/inc/');
 
 
 
 // wp_body_open
-if ( !function_exists( 'wp_body_open' ) ) {
-    function wp_body_open() {
-        do_action( 'wp_body_open' );
+if (!function_exists('wp_body_open')) {
+    function wp_body_open()
+    {
+        do_action('wp_body_open');
     }
 }
 
@@ -176,7 +179,7 @@ include_once SAASTO_THEME_INC . 'class-saasto-kirki.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
     require SAASTO_THEME_INC . 'jetpack.php';
 }
 
@@ -195,76 +198,80 @@ require_once SAASTO_THEME_INC . '/common/saasto-widgets.php';
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function saasto_pingback_header() {
-    if ( is_singular() && pings_open() ) {
-        printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+function saasto_pingback_header()
+{
+    if (is_singular() && pings_open()) {
+        printf('<link rel="pingback" href="%s">', esc_url(get_bloginfo('pingback_url')));
     }
 }
-add_action( 'wp_head', 'saasto_pingback_header' );
+add_action('wp_head', 'saasto_pingback_header');
 
 // change textarea position in comment form
 // ----------------------------------------------------------------------------------------
-function saasto_move_comment_textarea_to_bottom( $fields ) {
-    $comment_field       = $fields[ 'comment' ];
-    unset( $fields[ 'comment' ] );
-    $fields[ 'comment' ] = $comment_field;
+function saasto_move_comment_textarea_to_bottom($fields)
+{
+    $comment_field       = $fields['comment'];
+    unset($fields['comment']);
+    $fields['comment'] = $comment_field;
     return $fields;
 }
-add_filter( 'comment_form_fields', 'saasto_move_comment_textarea_to_bottom' );
+add_filter('comment_form_fields', 'saasto_move_comment_textarea_to_bottom');
 
-if( ! function_exists('saasto_filesystem') ) {
-	/**
-	 * [fixkar_filesystem description]
-	 * @return [type] [description]
-	 */
-	function saasto_filesystem() {
-		if( ! function_exists('require_filesystem_credentials')) {
-			require_once ABSPATH . 'wp-admin/includes/file.php';
-		}
+if (!function_exists('saasto_filesystem')) {
+    /**
+     * [fixkar_filesystem description]
+     * @return [type] [description]
+     */
+    function saasto_filesystem()
+    {
+        if (!function_exists('require_filesystem_credentials')) {
+            require_once ABSPATH . 'wp-admin/includes/file.php';
+        }
 
-		/* you can safely run request_filesystem_credentials() without any issues and don't need to worry about passing in a URL */
-		$creds = request_filesystem_credentials(esc_url(home_url('/')), '', false, false, array());
+        /* you can safely run request_filesystem_credentials() without any issues and don't need to worry about passing in a URL */
+        $creds = request_filesystem_credentials(esc_url(home_url('/')), '', false, false, array());
 
-		/* initialize the API */
-		if ( ! WP_Filesystem($creds) ) {
-			/* any problems and we exit */
-			return false;
-		}	
+        /* initialize the API */
+        if (!WP_Filesystem($creds)) {
+            /* any problems and we exit */
+            return false;
+        }
 
-		global $wp_filesystem;
-		/* do our file manipulations below */
+        global $wp_filesystem;
+        /* do our file manipulations below */
 
-		return $wp_filesystem;
-	}
+        return $wp_filesystem;
+    }
 }
 
 // saasto_comment 
-if ( !function_exists( 'saasto_comment' ) ) {
-    function saasto_comment( $comment, $args, $depth ) {
+if (!function_exists('saasto_comment')) {
+    function saasto_comment($comment, $args, $depth)
+    {
         $GLOBAL['comment'] = $comment;
-        extract( $args, EXTR_SKIP );
+        extract($args, EXTR_SKIP);
         $args['reply_text'] = 'Reply';
-        $replayClass = 'comment-depth-' . esc_attr( $depth );
-        ?>
-            <li id="comment-<?php comment_ID();?>">
-                <div class="comments-box">
-                    <div class="comments-avatar">
-                        <?php print get_avatar( $comment, 102, null, null, [ 'class' => [] ] );?>
-                    </div>
-                    <div class="comments-text">
-                        <div class="avatar-name">
-                            <h5><?php print get_comment_author_link();?></h5>
-                            <span><?php comment_time( get_option( 'date_format' ) );?></span>
-                        </div>
-                        <?php comment_text();?>
-
-                        <div class="comments-replay">
-                            <?php comment_reply_link( array_merge( $args, [ 'depth' => $depth, 'max_depth' => $args['max_depth'] ] ) );?>
-                        </div>
-
-                    </div>
+        $replayClass = 'comment-depth-' . esc_attr($depth);
+?>
+        <li id="comment-<?php comment_ID(); ?>">
+            <div class="comments-box">
+                <div class="comments-avatar">
+                    <?php print get_avatar($comment, 102, null, null, ['class' => []]); ?>
                 </div>
-        <?php
+                <div class="comments-text">
+                    <div class="avatar-name">
+                        <h5><?php print get_comment_author_link(); ?></h5>
+                        <span><?php comment_time(get_option('date_format')); ?></span>
+                    </div>
+                    <?php comment_text(); ?>
+
+                    <div class="comments-replay">
+                        <?php comment_reply_link(array_merge($args, ['depth' => $depth, 'max_depth' => $args['max_depth']])); ?>
+                    </div>
+
+                </div>
+            </div>
+    <?php
     }
 }
 
@@ -273,7 +280,7 @@ if ( !function_exists( 'saasto_comment' ) ) {
  * shortcode supports for removing extra p, spance etc
  *
  */
-add_filter( 'the_content', 'saasto_shortcode_extra_content_remove' );
+add_filter('the_content', 'saasto_shortcode_extra_content_remove');
 /**
  * Filters the content to remove any extra paragraph or break tags
  * caused by shortcodes.
@@ -283,63 +290,65 @@ add_filter( 'the_content', 'saasto_shortcode_extra_content_remove' );
  * @param string $content  String of HTML content.
  * @return string $content Amended string of HTML content.
  */
-function saasto_shortcode_extra_content_remove( $content ) {
+function saasto_shortcode_extra_content_remove($content)
+{
 
     $array = [
         '<p>['    => '[',
         ']</p>'   => ']',
         ']<br />' => ']',
     ];
-    return strtr( $content, $array );
-
+    return strtr($content, $array);
 }
 
 // saasto_search_filter_form
-if ( !function_exists( 'saasto_search_filter_form' ) ) {
-    function saasto_search_filter_form( $form ) {
+if (!function_exists('saasto_search_filter_form')) {
+    function saasto_search_filter_form($form)
+    {
 
         $form = sprintf(
             '<form class="sidebar-search position-relative overflow-hidden mt-2" action="%s">
             <input type="text value="%s" required name="s" placeholder="%s">
             <button type="submit" class="position-absolute h-100 top-0 end-0 d-flex align-items-center justify-content-center text-white wp-block-search__button"><i class="bi bi-search"></i></button></form>',
-            esc_url( home_url( '/' ) ),
-            esc_attr( get_search_query() ),
-            esc_html__( 'Search', 'saasto' )
+            esc_url(home_url('/')),
+            esc_attr(get_search_query()),
+            esc_html__('Search', 'saasto')
         );
 
         return $form;
     }
-    add_filter( 'get_search_form', 'saasto_search_filter_form' );
+    add_filter('get_search_form', 'saasto_search_filter_form');
 }
 
-add_action( 'admin_enqueue_scripts', 'saasto_admin_custom_scripts' );
+add_action('admin_enqueue_scripts', 'saasto_admin_custom_scripts');
 
-function saasto_admin_custom_scripts() {
+function saasto_admin_custom_scripts()
+{
     wp_enqueue_media();
-    wp_enqueue_style( 'customizer-style', get_template_directory_uri() . '/inc/css/customizer-style.css',array());
-    wp_register_script( 'saasto-admin-custom', get_template_directory_uri() . '/inc/js/admin_custom.js', [ 'jquery' ], '', true );
-    wp_enqueue_script( 'saasto-admin-custom' );
+    wp_enqueue_style('customizer-style', get_template_directory_uri() . '/inc/css/customizer-style.css', array());
+    wp_register_script('saasto-admin-custom', get_template_directory_uri() . '/inc/js/admin_custom.js', ['jquery'], '', true);
+    wp_enqueue_script('saasto-admin-custom');
 }
 
 
 
-function saasto_embedded_media( $type = array() ){
-    $content = do_shortcode( apply_filters( 'the_content', get_the_content() ) );
-    $embed   = get_media_embedded_in_content( $content, $type );
+function saasto_embedded_media($type = array())
+{
+    $content = do_shortcode(apply_filters('the_content', get_the_content()));
+    $embed   = get_media_embedded_in_content($content, $type);
 
 
-    if( in_array( 'audio' , $type) ){
-        if( count( $embed ) > 0 ){
-            $output = str_replace( '?visual=true', '?visual=false', $embed[0] );
-        }else{
-           $output = '';
+    if (in_array('audio', $type)) {
+        if (count($embed) > 0) {
+            $output = str_replace('?visual=true', '?visual=false', $embed[0]);
+        } else {
+            $output = '';
         }
-
-    }else{
-        if( count( $embed ) > 0 ){
+    } else {
+        if (count($embed) > 0) {
             $output = $embed[0];
-        }else{
-           $output = '';
+        } else {
+            $output = '';
         }
     }
     return $output;

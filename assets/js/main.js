@@ -1,16 +1,16 @@
-(function($) { 
+(function ($) {
   "use strict";
 
 
   /***********
    mobile menu  js
    ************/
-  $('.hamburger').on('click',function (event) {
+  $('.hamburger').on('click', function (event) {
     $(this).toggleClass('h-active');
     $('.main-nav').toggleClass('slidenav');
   });
 
-  $('.header-home .main-nav ul li  a').on('click',function (event) {
+  $('.header-home .main-nav ul li  a').on('click', function (event) {
     $('.hamburger').removeClass('h-active');
     $('.main-nav').removeClass('slidenav');
   });
@@ -27,34 +27,32 @@
     $fl.next(".sub-menu").slideToggle();
   });
 
-    /***********
-   Preloder js
-   ************/
-     jQuery(window).on('load',function(){
-      $(".preloader").delay(1600).fadeOut("slow");
-    });
+  /***********
+ Preloder js
+ ************/
+  jQuery(window).on('load', function () {
+    $(".preloader").delay(1600).fadeOut("slow");
+  });
 
 
   /***********
    Wow js Initialization
    ************/
-  function wowAnimation(){
+  function wowAnimation() {
     new WOW({
-      offset:100,
-      animateClass:"animated",
-      mobile:true,
+      offset: 100,
+      animateClass: "animated",
+      mobile: true,
     }).init();
   }
 
-  jQuery(window).on( 'load', function(){
+  jQuery(window).on('load', function () {
     wowAnimation();
   });
 
 
-  /***********
-    pricing plan JS
-   ************/
-  function priceToggle(){
+  // Pricing Plan JS
+  function priceToggle() {
     const myAnnTables = document.getElementById("myAnnualTables");
     const myMonTables = document.getElementById("myMonthlyTables");
 
@@ -62,18 +60,29 @@
     myMonTables.classList.toggle("plan-tables-hidden");
   }
   var el = document.getElementById('priceSwitch');
-  if(el){
+  if (el) {
     el.addEventListener('click', priceToggle, false);
   }
 
+  // Pricing - 6 Hover Active 
+  const cards = document.querySelectorAll('.pricing-card-style-six');
 
+  cards.forEach((card) => {
+    card.addEventListener('mouseenter', function () {
+      cards.forEach((c) => c.classList.remove('active-card'));
+      this.classList.add('active-card');
+    });
 
+    card.addEventListener('mouseout', function () {
+      this.classList.add('active-card');
+    });
+  });
 
   /***********
    All swiper slider JS
    ************/
 
-     /*Ai hero Slide*/
+  /*Ai hero Slide*/
 
   // var aiheroSlider = new Swiper('.ai-hero-slider', {
   //   effect: "coverflow",
@@ -111,9 +120,9 @@
   //       }
   //     }
   // });
-  
+
   /*Ai hero Slide End*/
-  
+
   /*blog slider one */
   var blog_Slider_One = new Swiper('.blog-slider-one', {
     slidesPerView: 1,
@@ -121,7 +130,7 @@
     spaceBetween: 24,
     loop: true,
     roundLengths: true,
-    centeredSlides : false,
+    centeredSlides: false,
     autoplay: {
       delay: 15000
     },
@@ -130,26 +139,26 @@
       prevEl: '.blog-prev',
     },
     breakpoints: {
-      480:{
+      480: {
         slidesPerView: 1
       },
-      575:{
+      575: {
         slidesPerView: 2
       },
-      992:{    
+      992: {
         slidesPerView: 3
       }
     }
   });
 
-    /* service process slider */
+  /* service process slider */
   var service_Process_Slider = new Swiper('.service-process-slider', {
     slidesPerView: 1,
     speed: 1000,
     spaceBetween: 24,
     loop: true,
     roundLengths: true,
-    centeredSlides : false,
+    centeredSlides: false,
     autoplay: {
       delay: 15000
     },
@@ -158,16 +167,16 @@
       prevEl: '.blog-prev',
     },
     breakpoints: {
-      480:{
+      480: {
         slidesPerView: 1
       },
-      575:{
+      575: {
         slidesPerView: 2
       },
-      768:{
+      768: {
         slidesPerView: 3
       },
-      992:{    
+      992: {
         slidesPerView: 4
       }
     }
@@ -181,7 +190,7 @@
     speed: 1000,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    allowTouchMove : false,
+    allowTouchMove: false,
     fadeEffect: {
       crossFade: true
     },
@@ -200,6 +209,93 @@
     }
   });
 
+  /* testimonial Two*/
+  $(document).ready(function () {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false,
+    });
+  });
+
+  var swiper = new Swiper('.testimonial-review_slider', {
+    spaceBetween: 25,
+    slidesPerView: 1,
+    speed: 800,
+    loop: true,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.testimonial-review-next',
+      prevEl: '.testimonial-review-prev',
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 48,
+      },
+    },
+  });
+
+
+  /* Brand */
+
+  var brand_slider = new Swiper('.brand-slide-wrap', {
+    spaceBetween: 100,
+    centeredSlides: true,
+    speed: 5000,
+    autoplay: {
+      delay: 1,
+    },
+    loop: true,
+    slidesPerView: 'auto',
+    allowTouchMove: false,
+    disableOnInteraction: true,
+    breakpoints: {
+      320: {
+        spaceBetween: 50,
+      },
+      992: {
+        spaceBetween: 70,
+      }
+    },
+  });
+
+  /* Brand End */
+
+  /* Partners Start */
+
+  var swiper = new Swiper('.partners__slider', {
+    loop: 'true',
+    spaceBetween: 100,
+    slidesPerView: 1,
+    speed: 3000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      575: {
+        slidesPerView: 3,
+      },
+      320: {
+        slidesPerView: 2,
+      },
+    },
+  });
+
+  /* Partners End */
 
   /* Client slider */
   var company_Client_Slider = new Swiper('.company-clients-slider', {
@@ -207,20 +303,20 @@
     slidesPerView: 1,
     speed: 1000,
     loop: true,
-    centeredSlides : true,
+    centeredSlides: true,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
     breakpoints: {
-      480:{
+      480: {
         slidesPerView: 1
       },
-      575:{
+      575: {
         slidesPerView: 2,
-        centeredSlides : false,
+        centeredSlides: false,
       },
-      992:{    
+      992: {
         slidesPerView: 3
       }
     }
@@ -232,31 +328,31 @@
     slidesPerView: 1,
     speed: 1000,
     loop: false,
-    centeredSlides : false,
+    centeredSlides: false,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
     breakpoints: {
-      480:{
+      480: {
         slidesPerView: 1
       },
-      575:{
+      575: {
         slidesPerView: 2,
       },
-      768:{
+      768: {
         slidesPerView: 3,
       },
-      992:{    
+      992: {
         slidesPerView: 2.5
       }
     }
   });
-  
+
   /* testimonial slider three and testimonial thumbs three */
   var testimonial_Slider_Three = new Swiper('.testimonil-slider-three', {
     spaceBetween: 10,
-    centeredSlides : true,
+    centeredSlides: true,
     slidesPerView: 1,
     pagination: {
       el: ".testi-pagination-three",
@@ -266,13 +362,13 @@
     loopedSlides: 4,
 
     breakpoints: {
-      480:{
+      480: {
         slidesPerView: 1
       },
-      575:{
+      575: {
         slidesPerView: 1,
       },
-      992:{    
+      992: {
         slidesPerView: 2
       }
     }
@@ -295,73 +391,73 @@
 
   /* init swipper slider */
   var swiper = new Swiper(".blog_thumb__slider", {
-      spaceBetween: 0,
-      loop: true,
-      effect: "fade",
-      fadeEffect: {
-    crossFade: true
+    spaceBetween: 0,
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
     },
     navigation: {
       nextEl: ".blog-button-next",
       prevEl: ".blog-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     }
   });
-  
+
 
 
   /* Pricing Toggle */
-var checkBox = document.querySelectorAll("#checbox")
+  var checkBox = document.querySelectorAll("#checbox")
 
-for(let i = 0; i < checkBox.length; i++){
-  checkBox[i].addEventListener("click", ()=>{
-    var text1 = document.querySelectorAll(".text1")
-    var text2 = document.querySelectorAll(".text2")
-    
-    if(checkBox[i].checked == true){
-      console.log(text2)
-      text1.forEach((e)=>{
-        e.style.display = "block";
-      })
-      text2.forEach((e)=>{
-        e.style.display = "none";
-      })
-    } else if (checkBox[i].checked == false) {
-      text1.forEach((e)=>{
-        e.style.display = "none";
-      })
-      text2.forEach((e)=>{
-        e.style.display = "block";
-      })
-    }
+  for (let i = 0; i < checkBox.length; i++) {
+    checkBox[i].addEventListener("click", () => {
+      var text1 = document.querySelectorAll(".text1")
+      var text2 = document.querySelectorAll(".text2")
 
-  })
-}
+      if (checkBox[i].checked == true) {
+        console.log(text2)
+        text1.forEach((e) => {
+          e.style.display = "block";
+        })
+        text2.forEach((e) => {
+          e.style.display = "none";
+        })
+      } else if (checkBox[i].checked == false) {
+        text1.forEach((e) => {
+          e.style.display = "none";
+        })
+        text2.forEach((e) => {
+          e.style.display = "block";
+        })
+      }
+
+    })
+  }
 
   /* Breadcrumb styles */
-$("[data-background").each(function () {
-  $(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
-});
-
-$("[data-bg-color]").each(function () {
-      $(this).css("background-color", $(this).attr("data-bg-color"));
+  $("[data-background").each(function () {
+    $(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
   });
-  
 
-// Custom CSS Animation
-$(document).on("mousemove", function(e) {
-  var cursor = $(".cursor");
-  requestAnimationFrame(function() {
-    cursor.css({
-      top: e.pageY - $(window).scrollTop() - 10,
-      left: e.pageX - 10
+  $("[data-bg-color]").each(function () {
+    $(this).css("background-color", $(this).attr("data-bg-color"));
+  });
+
+
+  // Custom CSS Animation
+  $(document).on("mousemove", function (e) {
+    var cursor = $(".cursor");
+    requestAnimationFrame(function () {
+      cursor.css({
+        top: e.pageY - $(window).scrollTop() - 10,
+        left: e.pageX - 10
+      });
+
     });
-
   });
-});
 
 
 

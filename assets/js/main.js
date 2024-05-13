@@ -406,6 +406,24 @@
       clickable: true,
     }
   });
+  var swiper = new Swiper(".sponsor-brands-slider", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    speed: 5000,
+    autoplay: {
+      delay: 1,
+    },
+    loop: true,
+    slidesPerView: 2,
+    allowTouchMove: false,
+    disableOnInteraction: true,
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 137,
+      },
+    }
+  });
 
 
 

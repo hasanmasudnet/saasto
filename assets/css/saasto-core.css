@@ -51,6 +51,7 @@ Last update : 04/19/2022
   -- Homepage 7
   40. Hero Seven
   41. Heading Style 7
+  42. Sponsor Brands
 
 */
 /*====================
@@ -8560,3 +8561,46 @@ Testimonial End - Homepage Six
 /* ==============================
   FAQ End - Homepage Five & Six
 ================================*/
+
+/* ========================================
+  Sponsor Brands start - Homepage seven
+==========================================*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ease-linear {
+  transition-timing-function: linear
+}
+
+.container.custom-container {
+  margin-left: calc((100% - 1320px) / 2);
+  width: auto;
+  min-width: auto;
+  max-width: inherit;
+}
+
+.sponsor-brands-area {
+  padding-bottom: 60px;
+}
+
+.sponsor-brands-area .sponsor-brands-title {
+  min-width: 220px;
+  padding-right: 60px;
+  margin-right: 60px;
+  border-right: 1px solid rgba(6, 30, 33, 0.50);
+}
+
+.sponsor-brands-area .sponsor-brands-title h5 {
+  color: #061E21;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* ========================================
+  Sponsor Brands end - Homepage seven
+==========================================*/

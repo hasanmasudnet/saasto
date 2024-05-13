@@ -64,7 +64,7 @@
     el.addEventListener('click', priceToggle, false);
   }
 
-  // Pricing - 6 Hover Active 
+  // Pricing - style 6 Hover Active 
   const cards = document.querySelectorAll('.pricing-card-style-six');
 
   cards.forEach((card) => {
@@ -73,7 +73,7 @@
       this.classList.add('active-card');
     });
 
-    card.addEventListener('mouseout', function () {
+    card.addEventListener('mouseleave', function () {
       this.classList.add('active-card');
     });
   });

@@ -1,5 +1,16 @@
 /* Extra extra large Layout*/
 /* Extra Large Layout */
+@media only screen and (max-width: 1800px) {
+    /* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.hero-seven-charts img {
+  max-width: 55%;
+}
+/* ========================================
+  Hero-area-seven End - Homepage seven
+==========================================*/
+}
 @media only screen and (max-width: 1400px) {
   .single-feature-two-screen .float-screen-three {
     right: -50px;
@@ -346,6 +357,35 @@
     font-size: 38px;
   }
 
+  /* ========================================
+  Home Pahe 7 Common Start
+==========================================*/
+  .section-header .sub-title {
+    font-size: 14px;
+  }
+
+  .section-header .title {
+    font-size: 38px;
+  }
+
+  .section-header>p {
+    padding-top: 16px;
+  }
+
+  /* ========================================
+Home Pahe 7 Common End
+==========================================*/
+
+/* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.hero-seven-charts img {
+  max-width: 40%;
+}
+/* ========================================
+  Hero-area-seven End - Homepage seven
+==========================================*/
+
 }
 
 
@@ -353,6 +393,7 @@
 /* Wide Mobile Layout*/
 
 @media only screen and (max-width: 991px) {
+
   /* spacing */
   .pt-120 {
     padding-top: 80px;
@@ -738,6 +779,56 @@
     font-size: 38px;
   }
 
+  /* =============================
+  Sponsor-brands - Home 7
+  ==============================*/
+  .sponsor-brands-area-seven .sponsor-brands-title {
+    max-width: 100px;
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+
+  /* ========================================
+  Home Pahe 7 Common Start
+==========================================*/
+  .section-header .sub-title {
+    padding: 4px 48px;
+    font-size: 14px;
+  }
+
+  .section-header .title {
+    font-size: 38px;
+    padding-top: 15px;
+  }
+
+  .section-header>p {
+    max-width: 80%;
+    padding-top: 16px;
+  }
+
+  /* ========================================
+Home Pahe 7 Common End
+==========================================*/
+
+  /* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.hero-area-seven .hero-content {
+  padding-top: 120px;
+}
+.hero-seven-charts img {
+  padding-top: 20px;
+}
+.hero-area-seven .hero-content .title {
+  max-width: 100%;
+  font-size: 35px;
+}
+.hero-area-seven .hero-content .description{
+padding-right: 0;
+}
+/* ========================================
+  Hero-area-seven End - Homepage seven
+==========================================*/
 }
 
 /* Large Mobile Layout*/
@@ -776,6 +867,49 @@
   .pricing-style-six .pricing-card-style-six {
     padding: 20px;
   }
+
+  /* ========================================
+  Home Pahe 7 Common Start
+==========================================*/
+  .section-header .sub-title {
+    font-size: 14px;
+  }
+
+  .section-header .title {
+    font-size: 36px;
+    padding-top: 15px;
+  }
+
+  .section-header>p {
+    max-width: 100%;
+    padding-top: 16px;
+  }
+
+  /* ========================================
+Home Pahe 7 Common End
+==========================================*/
+
+  /* =============================
+  Sponsor-brands - Home 7
+  ==============================*/
+  .sponsor-brands-area-seven {
+    padding-bottom: 30px;
+  }
+
+  .sponsor-brands-area-seven .sponsor-brands-title {
+    border: 0;
+    max-width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  /* =============================
+  Features-area - Home 7
+  ==============================*/
+  .features-area-seven {
+    padding-top: 30px;
+  }
+
 }
 
 /* Mobile Layout*/
@@ -1255,6 +1389,44 @@
   .pricing-style-six .pricing-content h2 {
     font-size: 28px;
   }
+
+  /* ========================================
+  Home Pahe 7 Common Start
+==========================================*/
+  .section-header .sub-title {
+    padding: 4px 30px;
+    font-size: 14px;
+  }
+
+  .section-header .title {
+    font-size: 32px;
+    padding-top: 15px;
+  }
+
+  .section-header>p {
+    padding-top: 16px;
+  }
+
+  /* ========================================
+  Home Pahe 7 Common End
+==========================================*/
+
+/* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.cta-form .email {
+  height:55px
+}
+.cta-form .btn-submit {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+.cta-form .btn-submit i{
+  font-size: 17px;
+} 
+/* ========================================
+  Hero-area-seven End - Homepage seven
+==========================================*/
 }
 
 @media only screen and (max-width: 396px) {
@@ -1312,6 +1484,21 @@
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* custom container start  */
+
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .container.custom-container {
     margin-left: calc((100% - 1143px) / 2);
@@ -1323,6 +1510,7 @@
     margin-left: calc((100% - 970px) / 2);
   }
 }
+
 @media (min-width: 100px) {
   .container.custom-container {
     max-width: 540px;
@@ -1365,3 +1553,5 @@
     max-width: inherit;
   }
 }
+
+/* custom container end */

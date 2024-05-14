@@ -407,18 +407,26 @@
     }
   });
   var swiper = new Swiper(".sponsor-brands-slider", {
-    spaceBetween: 20,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
     centeredSlides: true,
     speed: 5000,
     autoplay: {
       delay: 1,
     },
-    loop: true,
-    slidesPerView: 2,
     allowTouchMove: false,
     disableOnInteraction: true,
     breakpoints: {
-      992: {
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1200: {
         slidesPerView: 3,
         spaceBetween: 137,
       },

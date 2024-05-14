@@ -7409,7 +7409,7 @@ Homapage Five Start
 .brand-slide-area .brand-slide-title {
   color: #0A3238;
   text-align: center;
-  font-family: Poppins;
+  font-family: var(--secondary-font);
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -8563,6 +8563,52 @@ Testimonial End - Homepage Six
 ================================*/
 
 /* ========================================
+  Home Pahe 7 Common Start
+==========================================*/
+.section-header .sub-title {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 4px 48px;
+  background: #C7F2AB;
+  color: #354AB5;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-header .title {
+  color: var(--c-black-2);
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 138.462%;
+  padding-top: 20px;
+}
+
+.section-header>p {
+  max-width: 70%;
+  margin: 0 auto;
+  color: rgba(6, 29, 33, 0.70);
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 177.778%;
+  padding-top: 24px;
+}
+
+/* ========================================
+  Home Pahe 7 Common End
+==========================================*/
+/* ========================================
   Sponsor Brands start - Homepage seven
 ==========================================*/
 img {
@@ -8581,19 +8627,19 @@ img {
   max-width: inherit;
 }
 
-.sponsor-brands-area {
+.sponsor-brands-area-seven {
   padding-bottom: 60px;
 }
 
-.sponsor-brands-area .sponsor-brands-title {
+.sponsor-brands-area-seven .sponsor-brands-title {
   min-width: 220px;
   padding-right: 60px;
   margin-right: 60px;
   border-right: 1px solid rgba(6, 30, 33, 0.50);
 }
 
-.sponsor-brands-area .sponsor-brands-title h5 {
-  color: #061E21;
+.sponsor-brands-area-seven .sponsor-brands-title h5 {
+  color: var(--c-black);
   font-family: var(--secondary-font);
   font-size: 24px;
   font-style: normal;
@@ -8603,4 +8649,212 @@ img {
 
 /* ========================================
   Sponsor Brands end - Homepage seven
+==========================================*/
+
+/* ========================================
+  Features-area-seven start - Homepage seven
+==========================================*/
+.features-area-seven {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+/* ========================================
+  Features-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.hero-area-seven {
+  background: radial-gradient(89.15% 84.95% at 41.98% 15.43%, rgba(199, 229, 246, 0.75) 0%, #C7E5F6 100%);
+  position: relative;
+  z-index: 0;
+  margin: 12px 12px 0;
+}
+
+.hero-area-seven .hero-content {
+  padding-top: 176px;
+}
+
+.hero-area-seven .hero-content .title {
+  max-width: 85%;
+  color: var(--c-black);
+  font-family: var(--secondary-font);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128.125%;
+}
+
+.hero-area-seven .hero-content .description {
+  padding-top: 24px;
+  padding-right: 70px;
+  color: rgba(6, 29, 33, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.cta-form {
+  max-width: 535px;
+  position: relative;
+  margin-top: 48px;
+}
+.cta-form .email{
+  height: 64px;
+  padding: 16px 24px;
+  border-radius: 48px;
+  border: 1px solid rgba(32, 44, 107, 0.25);
+  background: var(--c-white);
+  color: rgba(6, 29, 33, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 177.778%;
+}
+.cta-form .btn-submit{
+  padding: 12px 24px;
+  color: var(--c-white);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.778%;
+  background: #354AB5;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  border: unset;
+  border-radius: 32px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.cta-form .btn-submit:hover {
+  right: 2px;
+}
+.cta-form .btn-submit i{
+  font-size: 20px;
+} 
+
+/* kit images  */
+.hero-seven-kits img{
+  position: absolute;
+  z-index: -1;
+}
+.hero-seven-kits img:nth-child(1){
+  right: 345px;
+  top: 349px;
+}
+.hero-seven-kits img:nth-child(2){
+  left: -170px;
+  bottom: 393px;
+}
+.hero-seven-kits img:nth-child(3){
+  right: 234px;
+  top: 190px;
+}
+.hero-seven-kits img:nth-child(4){
+  right: -154px;
+  top: 182px;
+}
+.hero-seven-kits img:nth-child(5){
+  right: -56.48px;
+  top: 363px;
+}
+.hero-seven-kits img.animated-moveUpAndDown:nth-child(2){
+  animation-delay: .2s;
+}
+.hero-seven-kits img.animated-moveUpAndDown:nth-child(3){
+  animation-delay: .4s;
+}
+.hero-seven-kits img.animated-moveUpAndDown:nth-child(4){
+  animation-delay: .6s;
+}
+.hero-seven-kits img.animated-moveUpAndDown:nth-child(4){
+  animation-delay: .8s;
+}
+/* charts images  */
+.hero-seven-charts{
+  padding-bottom: 36px;
+}
+.hero-seven-charts img{
+height: fit-content;
+} 
+.hero-seven-charts img:nth-child(1){
+margin-left: -68px;
+}
+.hero-seven-charts img:nth-child(3){
+margin-right: 34px;
+}
+
+.animated-moveUpAndDown {
+  animation: moveUpAndDown 3s linear infinite;
+  -webkit-animation: moveUpAndDown 3s linear infinite;
+}
+
+.animated-moveLeftAndRight {
+  animation:moveLeftAndRight 3s linear infinite;
+  -webkit-animation:moveLeftAndRight 3s linear infinite;
+}
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+  50% {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+
+@keyframes moveLeftAndRight {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+  50% {
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+}
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+}
+/* ========================================
+  Hero-area-seven end - Homepage seven
 ==========================================*/

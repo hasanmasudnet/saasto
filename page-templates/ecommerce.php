@@ -12,14 +12,14 @@ get_header();
 <!-- HTML Goes Here! -->
 
 <!-- Hero-area start -->
-<div class="hero-area-seven overflow-hidden">
+ <div class="hero-area-seven overflow-hidden">
     <div class="d-none d-lg-block hero-seven-kits">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-arrow.png' ?> alt="kit">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-1.png' ?> alt="kit">
         <img class='animated-moveLeftAndRight' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-2.png' ?> alt="kit">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-3.png' ?> alt="kit">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-4.png' ?> alt="kit">
-</div>
+    </div>
     <div class="container">
         <div class="row text-center text-lg-start">
             <div class="col-xl-9">
@@ -27,7 +27,7 @@ get_header();
                     <h1 class="title">Revolutionize Your Online Store with SaaSto</h1>
                     <p class="description">Our all-in-one platform combines cutting-edge technology with intuitive design, giving you everything you need to build, manage, and scale your online store with ease."</p>
                 </div>
-                <form action="#" class="cta-form">
+                <form action="" class="cta-form">
                     <input type="email" name="email" class="email" placeholder="Enter your email address">
                     <button class='btn-submit'>
                     Get Started
@@ -36,12 +36,11 @@ get_header();
                 </form>
             </div>
         </div>
-        
     </div>
     <div class="hero-seven-charts d-flex flex-row justify-content-xl-center align-items-end flex-nowrap gap-4">
-    <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-1.png' ?> alt="chart">
-    <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
-    <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
+        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-1.png' ?> alt="chart">
+        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
+        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
     </div>
 </div>
 <!-- Hero-area end -->
@@ -93,6 +92,177 @@ get_header();
     </div>
 </div>
 <!-- Features end  -->
+
+<!-- Testimonial start  -->
+<div class="testimonial-area-seven">
+    <div class="container">
+        <div class="section-header split">
+            <div class="section-header-left">
+                <span class="sub-title">Testimonials</span>
+                <h2 class="title">Our Customers are Saying about SaaSto</h2>
+            </div>
+            <div class="section-header-right">
+                <p>Discover what our customers love about SaaSto! From startups to enterprises, businesses are thriving with our e-commerce SAAS platform. Hear their success stories!</p>
+            </div>
+        </div>
+        <div class="swiper testimonial-seven-slider pt-90 g-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card-seven">
+                        <div class="card-body">
+                            <div class="card-header">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="card-info">
+                                <h6>Robust Features & Insightful Analytics!</h6>
+                                <p>
+                                I've tried several e-commerce platforms in the past, but none compare to SaaSto. The features are robust, yet intuitive to use. Plus, the built-in analytics tools have helped me.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-author">
+                            <div class="author-avatar">
+                                <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="chart">
+                            </div>
+                            <div class="author-info">
+                                <h6 class="author-title">Marcous Maninto</h6>
+                                <p class="author-designation">Founder of SweetHome Decor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card-seven">
+                        <div class="card-body">
+                            <div class="card-header">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="card-info">
+                                <h6>Affordable Solutions for Startups!</h6>
+                                <p>
+                                As a small business owner, I was struggling to manage my online store efficiently. Thanks to SaaSto, I now have a userfriendly platform that streamlines my operations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-author">
+                            <div class="author-avatar">
+                                <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-2.png' ?> alt="chart">
+                            </div>
+                            <div class="author-info">
+                                <h6 class="author-title">John Smith</h6>
+                                <p class="author-designation">CEO of TechGear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card-seven">
+                        <div class="card-body">
+                            <div class="card-header">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="card-info">
+                                <h6>Seamless Transition & Customization!</h6>
+                                <p>
+                                    I've been using SaaSto for my online store for over a year now, and I'm continually impressed by the regular updates and new features that are rolled out.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-author">
+                            <div class="author-avatar">
+                                <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-3.png' ?> alt="chart">
+                            </div>
+                            <div class="author-info">
+                                <h6 class="author-title">Jessica Brown</h6>
+                                <p class="author-designation">Owner of JB Fashion Trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial end  -->
+
+<!-- Pricing-area start  -->
+<div class="pricing-srea-seven pt-60 pb-120">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-xl-8 col-lg-10">
+                <div class="section-header text-center">
+                    <span class="sub-title">Pricing Plan</span>
+                    <h2 class="title">Pricing Plans Made Simple</h2>
+                    <p>Our goal is to provide straightforward and transparent options to suit your e-commerce management needs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gy-5 g-lg-5 pt-100 pricing-card-wrapper">
+            <div class="item col-lg-6">
+                <div class="pricing-card-seven">
+                    <di class="pricing-card-header">
+                        <div class="pricing-header-head d-flex flex-column">
+                            <span class='plan-type'>Starter Plan</span>
+                            <span class='plan-price'>$49.00</span>
+                        </div>
+                        <p>Kickstart your journey! Manage 100 products, sync with one platform, and access basic analytics. Ideal for small businesses starting out.</p>
+                    <div class="pricing-card-body">
+                        <ul class="features">
+                            <li>Up to 100 product listings</li>
+                            <li>Basic integration with one e-commerce platform</li>
+                            <li>Limited access to analytics and reporting tools</li>
+                            <li>Priority email and chat support</li>
+                            <li>Priority email and chat support</li>
+                        </ul>
+                        <a href="#" class='get-plan'>
+                            Get Started
+                            <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-6">
+                <div class="pricing-card-seven">
+                    <div class="pricing-card-header">
+                        <div class="pricing-header-head d-flex flex-column">
+                            <span class='plan-type'>Ultimate Plan</span>
+                            <span class='plan-price'>$299.00</span>
+                        </div>
+                        <p>Unleash your potential! Get unlimited products, fully customizable integrations, AI insight, and 24/7 priority support. Tailored for high-growth enterprises.</p>
+                    </div>
+                    <div class="pricing-card-body">
+                        <ul class="features">
+                            <li>Unlimited product listings</li>
+                            <li>Advanced integration with e-commerce platforms</li>
+                            <li>Comprehensive analytics and reporting tools</li>
+                            <li>24/7 priority support with SLA</li>
+                            <li>API access for custom development & integrations</li>
+                        </ul>
+                        <a href="#" class='get-plan'>
+                        Get Started
+                        <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pricing-area end  -->
 
 
 <?php

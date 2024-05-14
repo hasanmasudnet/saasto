@@ -379,6 +379,9 @@ Home Pahe 7 Common End
 /* ========================================
   Hero-area-seven start - Homepage seven
 ==========================================*/
+.section-header.split {
+  gap: 100px;
+}
 .hero-seven-charts img {
   max-width: 40%;
 }
@@ -813,6 +816,11 @@ Home Pahe 7 Common End
   /* ========================================
   Hero-area-seven start - Homepage seven
 ==========================================*/
+.section-header.split {
+  flex-direction: column;
+  gap: 20px;
+  align-items: self-start;
+}
 .hero-area-seven .hero-content {
   padding-top: 120px;
 }
@@ -828,6 +836,37 @@ padding-right: 0;
 }
 /* ========================================
   Hero-area-seven End - Homepage seven
+==========================================*/
+
+/* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven {
+  padding: 40px;
+  border-radius:24px;
+  -webkit-border-radius:24px;
+  -moz-border-radius:24px;
+  -ms-border-radius:24px;
+  -o-border-radius:24px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-type {
+  font-size:12px
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price {
+  font-size: 50px;
+}
+.pricing-card-seven .pricing-card-body {
+  padding-top: 30px;
+}
+.pricing-card-seven .features li {
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+.pricing-card-seven .get-plan {
+  margin-top: 30px;
+}
+/* ========================================
+  pricing-area-seven end - Homepage seven
 ==========================================*/
 }
 
@@ -919,7 +958,15 @@ Home Pahe 7 Common End
   .mt-100 {
     margin-top: 50px;
   }
-
+  .pt-60 { 
+    padding-top: 30px;
+  }
+  .pt-90 { 
+    padding-top: 45px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
   .pt-120 {
     padding-top: 60px;
   }
@@ -1427,6 +1474,17 @@ Home Pahe 7 Common End
 /* ========================================
   Hero-area-seven End - Homepage seven
 ==========================================*/
+
+/* ========================================
+  testimonial-area-seven start - Homepage seven
+==========================================*/
+.testimonial-area-seven {
+  padding: 30px 0;
+}
+/* ========================================
+  testimonial-area-seven end - Homepage seven
+==========================================*/
+
 }
 
 @media only screen and (max-width: 396px) {

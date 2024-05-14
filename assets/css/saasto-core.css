@@ -522,6 +522,12 @@ table tfoot tr th {
 .pt-60 {
   padding-top: 60px;
 }
+.pt-90 {
+  padding-top: 90px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
 
 .pt-120 {
   padding-top: 120px;
@@ -5893,7 +5899,7 @@ ul.pricing-features {
 /* Accourdion Style Two */
 .faq-wrap .accordion-button.accordion-button-two {
   background-color: #F9FBFA;
-  color: #061D21;
+  color: var(--c-black-2);
   padding: 36px 54px;
   font-weight: 400;
   font-size: 18px;
@@ -5905,7 +5911,7 @@ ul.pricing-features {
 }
 
 .faq-wrap .accordion-button.accordion-button-two:not(.collapsed) {
-  color: #061D21;
+  color: var(--c-black-2);
   background-color: #F9FBFA;
 }
 
@@ -8565,6 +8571,15 @@ Testimonial End - Homepage Six
 /* ========================================
   Home Pahe 7 Common Start
 ==========================================*/
+.section-header.split {
+  display: flex;
+  align-items: center;
+  gap: 188px;
+}
+.section-header.split .section-header-left,
+.section-header.split .section-header-right {
+  flex: 1;
+}
 .section-header .sub-title {
   display: inline-block;
   border-radius: 100px;
@@ -8583,7 +8598,6 @@ Testimonial End - Homepage Six
 
 .section-header .title {
   color: var(--c-black-2);
-  text-align: center;
   font-family: var(--secondary-font);
   font-size: 52px;
   font-style: normal;
@@ -8857,4 +8871,221 @@ margin-right: 34px;
 }
 /* ========================================
   Hero-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  testimonial-area-seven start - Homepage seven
+==========================================*/
+.testimonial-area-seven {
+  padding: 60px 0;
+}
+
+.testimonial-area-seven .testimonial-seven-slider .swiper-wrapper{
+  padding-bottom: 80px;
+}
+.testimonial-area-seven .testimonial-seven-slider .swiper-slide{
+  min-height: 100%;
+  height: auto;
+}
+.testimonial-area-seven .testimonial-seven-slider .swiper-pagination .swiper-pagination-bullet{
+  width: 16px;
+  height: 16px;
+  background-color: rgba(53, 74, 181, 0.12);
+  opacity: 1;
+}
+.testimonial-area-seven .testimonial-seven-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+background-color: #354AB5;
+}
+.testimonial-card-seven{
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16"><path d="M8.5.069A15 15 0 0 0 7 0q-.891.002-1.527.463c-.418.302-.717.726-.93 1.208-.386.873-.522 2.01-.54 3.206l4.497 1zM3.71 5.836 3.381 6A2.5 2.5 0 0 0 2 8.236v2.576C2 13.659 4.22 16 7 16h2c2.78 0 5-2.342 5-5.188V8.123l-9-2v.003l.008.353c.007.3.023.715.053 1.175.063.937.186 2.005.413 2.688a.5.5 0 1 1-.948.316c-.273-.817-.4-2-.462-2.937A30 30 0 0 1 4 6.003q0-.05.01-.1zM14 7.1V5.187c0-1.13-.272-2.044-.748-2.772-.474-.726-1.13-1.235-1.849-1.59A7.5 7.5 0 0 0 9.5.212v5.887l4.5 1z"/></svg>'), auto;
+  min-height: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(6, 29, 33, 0.25);
+  box-shadow: 0px 12px 48px 0px rgba(6, 29, 33, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card-seven .card-body {
+  flex-grow: 1;
+}
+.testimonial-card-seven .card-body .card-header{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  padding: 0;
+  border: unset;
+  background-color: unset;
+}
+.testimonial-card-seven .card-body .card-header i{
+  color: #00B67A;
+  font-size: 24px;
+  line-height: 24px;
+}
+.testimonial-card-seven .card-body .card-info{
+  padding-top: 20px;
+}
+.testimonial-card-seven .card-body .card-info>h6{
+  display: inline-block;
+  color: var(--c-black-2);
+  font-family: var(--secondary-font); 
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height:  177.778%;
+}
+.testimonial-card-seven .card-body .card-info>p{
+  color: rgba(6, 29, 33, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 182.353%;
+}
+.testimonial-card-seven .card-author {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.testimonial-card-seven .card-author .author-avatar{
+  min-width: 52px;
+  min-height: 52px;
+  border-radius: 52px;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+}
+.testimonial-card-seven .card-author .author-avatar img{
+  border-radius: 52px;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+}
+.testimonial-card-seven .card-author .author-info .author-title{
+  color: var(--c-black-2);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.778%;
+}
+.testimonial-card-seven .card-author .author-info .author-designation{
+  color: rgba(6, 29, 33, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* ========================================
+  testimonial-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven {
+  border-radius: 48px;
+  background: #EDF2FA;
+  padding: 70px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing-card-wrapper .item:nth-child(even) .pricing-card-seven {
+  background: #D7ECFF;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head span {
+  display: inline-block;
+  width: fit-content;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-type{
+  border-radius: 100px;
+  background: var(--c-white);
+  padding: 5px 25px;
+  color: #354AB5;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height:177.778%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price{
+  padding-top: 4px;
+  color: var(--c-black-2);
+  font-family: var(--secondary-font);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.pricing-card-seven .pricing-card-header > p{
+  padding-top: 4px;
+  padding-bottom: 24px;
+  color: rgba(6, 29, 33, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 187.5%;
+  border-bottom: 1px solid rgba(6, 29, 33, 0.20);
+}
+.pricing-card-seven .pricing-card-body{
+  padding-top: 48px;
+}
+.pricing-card-seven .features {
+  margin-left: 16px;
+}
+.pricing-card-seven .features li{
+  /* list-style: none; */
+  color: var(--c-black-2);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 177.778%;
+  margin-bottom: 12px;
+}
+.pricing-card-seven .features li:last-child{
+  margin-bottom: 0;
+}
+.pricing-card-seven .get-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 48px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: 1px solid #354AB5;
+  text-align: center;
+  color: #354AB5;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height:  177.778%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.pricing-card-seven .get-plan i{
+    font-size: 30px;
+}
+.pricing-card-seven:hover .get-plan {
+  background-color: #354AB5;
+  color: var(--c-white);
+}
+/* ========================================
+  pricing-area-seven end - Homepage seven
 ==========================================*/

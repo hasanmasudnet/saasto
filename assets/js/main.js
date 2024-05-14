@@ -433,7 +433,31 @@
     }
   });
 
-
+  var swiper = new Swiper(".testimonial-seven-slider", {
+    slidesPerView: 1,
+    spaceBetween: 36,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
 
   /* Pricing Toggle */
   var checkBox = document.querySelectorAll("#checbox")
@@ -484,7 +508,4 @@
 
     });
   });
-
-
-
 }(jQuery));

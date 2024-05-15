@@ -110,13 +110,23 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <div class="card-header">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            </div>
+                            <ul class="card-header rating">
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                            </ul>
                             <div class="card-info">
                                 <h6>Robust Features & Insightful Analytics!</h6>
                                 <p>
@@ -138,13 +148,23 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <div class="card-header">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            </div>
+                            <ul class="card-header rating">
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                            </ul>
                             <div class="card-info">
                                 <h6>Affordable Solutions for Startups!</h6>
                                 <p>
@@ -166,13 +186,23 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <div class="card-header">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            </div>
+                            <ul class="card-header rating">
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                            </ul>
                             <div class="card-info">
                                 <h6>Seamless Transition & Customization!</h6>
                                 <p>
@@ -214,12 +244,13 @@ get_header();
         <div class="row gy-5 g-lg-5 pt-100">
             <div class="col-lg-6">
                 <div class="pricing-card-seven">
-                    <di class="pricing-card-header">
+                    <div class="pricing-card-header">
                         <div class="pricing-header-head d-flex flex-column">
                             <span class='plan-type'>Starter Plan</span>
                             <span class='plan-price'>$49.00</span>
                         </div>
                         <p>Kickstart your journey! Manage 100 products, sync with one platform, and access basic analytics. Ideal for small businesses starting out.</p>
+                    </div>
                     <div class="pricing-card-body">
                         <ul class="features">
                             <li>Up to 100 product listings</li>
@@ -264,11 +295,11 @@ get_header();
 </div>
 <!-- Pricing-area end  -->
 
-<!-- Get-in-touch-area end  -->
+<!-- Get-in-touch-area start  -->
 <div class="get-in-touch-seven pt-120 pb-120">
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-md-6">
+        <div class="row gy-5 justify-content-between">
+            <div class="col-lg-6 col-xl-6">
                 <div class="section-header text-center text-md-start ">
                     <span class="sub-title wow fadeInUp" data-wow-delay="0.1s">iNTEGRATION</span>
                     <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Seamlessly Connect  E-Commerce Universe</h2>
@@ -288,7 +319,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-6 col-xl-5">
                 <div class="apps-card-wrapper">
                     <div class="apps-card">
                         <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/icons/slack.png' ?> alt="apps">

@@ -16,6 +16,15 @@
     right: -50px;
     top: 45%;
   }
+  /* ========================================
+  Get-in-touch-area start - Homepage seven
+==========================================*/
+.get-in-touch-seven .section-header {
+  max-width: 100%;
+}
+/* ========================================
+  Get-in-touch-area end - Homepage seven
+==========================================*/
 }
 
 @media only screen and (min-width:1200px) and (max-width:1400px) {
@@ -388,7 +397,6 @@ Home Pahe 7 Common End
 /* ========================================
   Hero-area-seven End - Homepage seven
 ==========================================*/
-
 }
 
 
@@ -859,6 +867,7 @@ padding-right: 0;
 /* ========================================
   pricing-area-seven end - Homepage seven
 ==========================================*/
+
 }
 
 /* Large Mobile Layout*/
@@ -1481,6 +1490,16 @@ Home Pahe 7 Common End
   testimonial-area-seven end - Homepage seven
 ==========================================*/
 
+/* ========================================
+  Get-in-touch-area start - Homepage seven
+==========================================*/
+.apps-card-wrapper .apps-card{
+  padding: 20px;
+}
+/* ========================================
+  Get-in-touch-area end - Homepage seven
+==========================================*/
+
 }
 
 @media only screen and (max-width: 396px) {
@@ -1535,7 +1554,6 @@ Home Pahe 7 Common End
     margin-right: 15px;
     padding: 15px;
   }
-
 }
 
 

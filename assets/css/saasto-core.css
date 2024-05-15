@@ -8900,7 +8900,6 @@ margin-right: 34px;
 background-color: #354AB5;
 }
 .testimonial-card-seven{
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16"><path d="M8.5.069A15 15 0 0 0 7 0q-.891.002-1.527.463c-.418.302-.717.726-.93 1.208-.386.873-.522 2.01-.54 3.206l4.497 1zM3.71 5.836 3.381 6A2.5 2.5 0 0 0 2 8.236v2.576C2 13.659 4.22 16 7 16h2c2.78 0 5-2.342 5-5.188V8.123l-9-2v.003l.008.353c.007.3.023.715.053 1.175.063.937.186 2.005.413 2.688a.5.5 0 1 1-.948.316c-.273-.817-.4-2-.462-2.937A30 30 0 0 1 4 6.003q0-.05.01-.1zM14 7.1V5.187c0-1.13-.272-2.044-.748-2.772-.474-.726-1.13-1.235-1.849-1.59A7.5 7.5 0 0 0 9.5.212v5.887l4.5 1z"/></svg>'), auto;
   min-height: 100%;
   padding: 24px;
   border-radius: 24px;
@@ -9097,4 +9096,81 @@ background-color: #354AB5;
 }
 /* ========================================
   pricing-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  get-in-touch-area-seven start - Homepage seven
+==========================================*/
+.get-in-touch-seven {
+  background: rgba(53, 74, 181, 0.03);
+}
+.get-in-touch-seven .section-header{
+  max-width: 90%;
+}
+.get-in-touch-seven .btn-group{
+  padding-top: 48px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.get-in-touch-seven .btn-group a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.get-in-touch-seven .btn-group a:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+.get-in-touch-seven .btn-group a.fill{
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  background: #354AB5;
+  color: var(--c-white);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.778%;
+}
+.get-in-touch-seven .btn-group a.fill-out{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #202C6B;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.778%;
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+}
+.get-in-touch-seven .btn-group a i,
+.get-in-touch-seven .btn-group a svg{
+  font-size: 20px;
+}
+.apps-card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.apps-card {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  text-align: center;
+  background: rgba(53, 74, 181, 0.05);
+}
+/* ========================================
+  get-in-touch-area-seven end - Homepage seven
 ==========================================*/

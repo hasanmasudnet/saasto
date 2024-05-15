@@ -1,7 +1,6 @@
 (function ($) {
   "use strict";
 
-
   /***********
    mobile menu  js
    ************/
@@ -64,8 +63,10 @@
     el.addEventListener('click', priceToggle, false);
   }
 
-  // Pricing - style 6 Hover Active 
-  const cards = document.querySelectorAll('.pricing-card-style-six');
+  // Pricing - style 6 & style 7 Hover Active 
+  // const cards = document.querySelectorAll('.pricing-card-style-six');
+  const cards = document.querySelectorAll('.pricing-card-style-six, .pricing-card-seven');
+
 
   cards.forEach((card) => {
     card.addEventListener('mouseenter', function () {
@@ -486,7 +487,7 @@
 
     })
   }
-
+  
   /* Breadcrumb styles */
   $("[data-background").each(function () {
     $(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
@@ -507,5 +508,20 @@
       });
 
     });
+  });
+
+    /***********
+   Wow js Initialization
+   ************/
+   function wowAnimation(){
+    new WOW({
+      offset:100,
+      animateClass:"animated",
+      mobile:true,
+    }).init();
+  }
+
+  jQuery(window).on( 'load', function(){
+    wowAnimation();
   });
 }(jQuery));

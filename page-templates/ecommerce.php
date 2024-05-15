@@ -24,8 +24,8 @@ get_header();
         <div class="row text-center text-lg-start">
             <div class="col-xl-9">
                 <div class="hero-content">
-                    <h1 class="title">Revolutionize Your Online Store with SaaSto</h1>
-                    <p class="description">Our all-in-one platform combines cutting-edge technology with intuitive design, giving you everything you need to build, manage, and scale your online store with ease."</p>
+                    <h1 class="title wow fadeInUp" data-wow-delay="0.3s">Revolutionize Your Online Store with SaaSto</h1>
+                    <p class="description wow fadeInUp" data-wow-delay="0.6s">Our all-in-one platform combines cutting-edge technology with intuitive design, giving you everything you need to build, manage, and scale your online store with ease."</p>
                 </div>
                 <form action="" class="cta-form">
                     <input type="email" name="email" class="email" placeholder="Enter your email address">
@@ -83,9 +83,9 @@ get_header();
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-xl-8 col-lg-10">
                 <div class="section-header text-center">
-                    <span class="sub-title">Features</span>
-                    <h2 class="title">Everything You Need To Manage Your E-Commerce Stores</h2>
-                    <p>Our platform gives you all the features you need to effectively manage your products customers and many mores.</p>
+                    <span class="sub-title wow fadeInUp" data-wow-delay="0.1s">Features</span>
+                    <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Everything You Need To Manage Your E-Commerce Stores</h2>
+                    <p class='wow fadeInUp' data-wow-delay="0.6s">Our platform gives you all the features you need to effectively manage your products customers and many mores.</p>
                 </div>
             </div>
         </div>
@@ -98,11 +98,11 @@ get_header();
     <div class="container">
         <div class="section-header split">
             <div class="section-header-left">
-                <span class="sub-title">Testimonials</span>
-                <h2 class="title">Our Customers are Saying about SaaSto</h2>
+                <span class="sub-title wow fadeInUp" data-wow-delay="0.1s">Testimonials</span>
+                <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Our Customers are Saying about SaaSto</h2>
             </div>
             <div class="section-header-right">
-                <p>Discover what our customers love about SaaSto! From startups to enterprises, businesses are thriving with our e-commerce SAAS platform. Hear their success stories!</p>
+                <p class="wow fadeInUp" data-wow-delay="0.6s">Discover what our customers love about SaaSto! From startups to enterprises, businesses are thriving with our e-commerce SAAS platform. Hear their success stories!</p>
             </div>
         </div>
         <div class="swiper testimonial-seven-slider pt-90 g-4">
@@ -204,15 +204,15 @@ get_header();
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-xl-8 col-lg-10">
                 <div class="section-header text-center">
-                    <span class="sub-title">Pricing Plan</span>
-                    <h2 class="title">Pricing Plans Made Simple</h2>
-                    <p>Our goal is to provide straightforward and transparent options to suit your e-commerce management needs.</p>
+                    <span class="sub-title wow fadeInUp" data-wow-delay="0.1s">Pricing Plan</span>
+                    <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Pricing Plans Made Simple</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.6s">Our goal is to provide straightforward and transparent options to suit your e-commerce management needs.</p>
                 </div>
             </div>
         </div>
 
-        <div class="row gy-5 g-lg-5 pt-100 pricing-card-wrapper">
-            <div class="item col-lg-6">
+        <div class="row gy-5 g-lg-5 pt-100">
+            <div class="col-lg-6">
                 <div class="pricing-card-seven">
                     <di class="pricing-card-header">
                         <div class="pricing-header-head d-flex flex-column">
@@ -235,8 +235,8 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="item col-lg-6">
-                <div class="pricing-card-seven">
+            <div class="col-lg-6">
+                <div class="pricing-card-seven active-card">
                     <div class="pricing-card-header">
                         <div class="pricing-header-head d-flex flex-column">
                             <span class='plan-type'>Ultimate Plan</span>
@@ -263,6 +263,33 @@ get_header();
     </div>
 </div>
 <!-- Pricing-area end  -->
+
+<!-- Get-in-touch-area end  -->
+<div class="get-in-touch-seven pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section-header text-center text-md-start">
+                    <span class="sub-title wow fadeInUp" data-wow-delay="0.1s">iNTEGRATION</span>
+                    <h2 class="title wow fadeInUp" data-wow-delay="0.3s">Seamlessly Connect  E-Commerce Universe</h2>
+                    <p class='mw-100 text-md-start wow fadeInUp' data-wow-delay="0.6s">Our integration hub empowers you to effortlessly synchronize your e-commerce operations across multiple platforms and channels.</p>
+                    <p class='mw-100 text-md-start wow fadeInUp' data-wow-delay="0.8s">Our comprehensive suite of integration tools, you can seamlessly connect your online store with payment gateways, and more.</p>
+                    <div class="btn-group">
+                        <a href="" class="">
+                            Get Started
+                            <i class="bi bi-arrow-right-short"></i>
+                        </a>
+                        <a href="" class="">
+                            Learn More
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Get-in-touch-area end  -->
 
 
 <?php

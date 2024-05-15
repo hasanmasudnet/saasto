@@ -782,15 +782,6 @@ Home Pahe 7 Common End
     font-size: 38px;
   }
 
-  /* =============================
-  Sponsor-brands - Home 7
-  ==============================*/
-  .sponsor-brands-area-seven .sponsor-brands-title {
-    max-width: 100px;
-    margin-right: 30px;
-    padding-right: 30px;
-  }
-
   /* ========================================
   Home Pahe 7 Common Start
 ==========================================*/
@@ -935,11 +926,8 @@ Home Pahe 7 Common End
     padding-bottom: 30px;
   }
 
-  .sponsor-brands-area-seven .sponsor-brands-title {
-    border: 0;
-    max-width: 100%;
-    margin-right: 0;
-    padding-right: 0;
+  .sponsor-brands-area-seven .sponsor-brands-title h5{
+    font-size: 20px;
   }
 
   /* =============================
@@ -949,6 +937,14 @@ Home Pahe 7 Common End
     padding-top: 30px;
   }
 
+}
+@media only screen and (max-width: 767px) {
+  .sponsor-brands-area-seven .sponsor-brands-title {
+    max-width: 100%;
+    border: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
 
 /* Mobile Layout*/

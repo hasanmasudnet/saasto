@@ -1554,6 +1554,19 @@ Home Pahe 7 Common End
     margin-right: 15px;
     padding: 15px;
   }
+  /* ========================================
+  Get-in-touch-area start - Homepage seven
+==========================================*/
+.apps-card-wrapper .apps-card img{
+ transform: scale(0.8);
+ -webkit-transform: scale(0.8);
+ -moz-transform: scale(0.8);
+ -ms-transform: scale(0.8);
+ -o-transform: scale(0.8);
+}
+/* ========================================
+  Get-in-touch-area end - Homepage seven
+==========================================*/
 }
 
 

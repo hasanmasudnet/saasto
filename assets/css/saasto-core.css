@@ -8905,7 +8905,6 @@ background-color: #354AB5;
   padding: 24px;
   border-radius: 24px;
   border: 1px solid rgba(6, 29, 33, 0.25);
-  box-shadow: 0px 12px 48px 0px rgba(6, 29, 33, 0.06);
   display: flex;
   flex-direction: column;
 }

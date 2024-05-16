@@ -30,7 +30,7 @@
 <!-- ===============  header area start =============== -->
 <header>
    <div class="header-area header-two <?php echo esc_attr($is_transparent); ?>">
-      <div class="container">
+      <div class="container-xxl container-xl-fluid container-lg-fluid px-lg-4">
             <div class="row">
                <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
                   <div class="nav-logo d-flex justify-content-between align-items-center">

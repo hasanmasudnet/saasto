@@ -9,7 +9,7 @@ Default branch: main
 GitHub Theme URI: https: //github.com/hasanmasudnet/saasto.git
 Tested up to: 6.1
 Requires PHP: 7.4
-Version: 1.0.1
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: saasto
@@ -18,3 +18,55 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.anima-trasform-task_2{
+    animation: slide_2 15s ease-in-out alternate infinite;
+}
+
+@keyframes slide_2 {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  25% {
+    transform: translate(15px, -5px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(-10px, 10px) rotate(0deg);
+  }
+  75% {
+    transform: translate(5px, -5px) rotate(15deg);
+  }
+  100% {
+    transform: translate(0) rotate(0deg);
+  }
+}
+.anima-trasform-task_1{
+    animation: slide_1 18s ease-in-out alternate infinite;
+}
+
+@keyframes slide_1 {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  15% {
+    transform: translate(10px, 10px) rotate(15deg);
+  }
+  30% {
+    transform: translate(10px, -15px) rotate(0deg);
+  }
+  45% {
+    transform: translate(-10px, -25px) rotate(-10deg);
+  }
+  60% {
+    transform: translate(0, 25px) rotate(15deg);
+  }
+  75% {
+    transform: translate(-10px, -15px) rotate(10deg);
+  }
+  90% {
+    transform: translate(-5, -5px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0) rotate(0deg);
+  }
+}

@@ -16,6 +16,15 @@
     right: -50px;
     top: 45%;
   }
+  /* ========================================
+  Get-in-touch-area start - Homepage seven
+==========================================*/
+.get-in-touch-seven .section-header {
+  max-width: 100%;
+}
+/* ========================================
+  Get-in-touch-area end - Homepage seven
+==========================================*/
 }
 
 @media only screen and (min-width:1200px) and (max-width:1400px) {
@@ -389,6 +398,18 @@ Home Pahe 7 Common End
   Hero-area-seven End - Homepage seven
 ==========================================*/
 
+/* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
+  font-size: 50px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type {
+  font-size: 15px;
+}
+/* ========================================
+  pricing-area-seven end - Homepage seven
+==========================================*/
 }
 
 
@@ -843,9 +864,7 @@ padding-right: 0;
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-type {
   font-size:12px
 }
-.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price {
-  font-size: 50px;
-}
+
 .pricing-card-seven .pricing-card-body {
   padding-top: 30px;
 }
@@ -859,6 +878,7 @@ padding-right: 0;
 /* ========================================
   pricing-area-seven end - Homepage seven
 ==========================================*/
+
 }
 
 /* Large Mobile Layout*/
@@ -936,6 +956,18 @@ Home Pahe 7 Common End
   .features-area-seven {
     padding-top: 30px;
   }
+  /* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
+  font-size: 50px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type {
+  font-size: 15px;
+}
+/* ========================================
+  pricing-area-seven end - Homepage seven
+==========================================*/
 
 }
 @media only screen and (max-width: 767px) {
@@ -944,6 +976,13 @@ Home Pahe 7 Common End
     border: 0;
     margin-right: 0;
     padding-right: 0;
+  }
+
+  /* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.hero-seven-charts img:nth-child(1){
+    margin-left:0px;
   }
 }
 
@@ -1458,14 +1497,15 @@ Home Pahe 7 Common End
   Hero-area-seven start - Homepage seven
 ==========================================*/
 .cta-form .email {
-  height:55px
+  height:50px;
+  font-size: 12px;
 }
 .cta-form .btn-submit {
-  padding: 10px 12px;
-  font-size: 14px;
+  padding: 8px 10px;
+  font-size: 12px;
 }
 .cta-form .btn-submit i{
-  font-size: 17px;
+  font-size: 14px;
 } 
 /* ========================================
   Hero-area-seven End - Homepage seven
@@ -1479,6 +1519,16 @@ Home Pahe 7 Common End
 }
 /* ========================================
   testimonial-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  Get-in-touch-area start - Homepage seven
+==========================================*/
+.apps-card-wrapper .apps-card{
+  padding: 20px;
+}
+/* ========================================
+  Get-in-touch-area end - Homepage seven
 ==========================================*/
 
 }
@@ -1535,7 +1585,19 @@ Home Pahe 7 Common End
     margin-right: 15px;
     padding: 15px;
   }
-
+  /* ========================================
+  Get-in-touch-area start - Homepage seven
+==========================================*/
+.apps-card-wrapper .apps-card img{
+ transform: scale(0.8);
+ -webkit-transform: scale(0.8);
+ -moz-transform: scale(0.8);
+ -ms-transform: scale(0.8);
+ -o-transform: scale(0.8);
+}
+/* ========================================
+  Get-in-touch-area end - Homepage seven
+==========================================*/
 }
 
 

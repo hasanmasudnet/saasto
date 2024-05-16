@@ -29,7 +29,7 @@
 
 <!-- ===============  header area start =============== -->
 <header>
-    <!-- <div class="header-area header-one <?php echo esc_attr($is_transparent); ?>">
+    <div class="header-area header-one <?php echo esc_attr($is_transparent); ?>">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
@@ -80,6 +80,6 @@
 
             </div>
         </div>
-    </div> -->
+    </div>
 </header>
 <!-- ===============  header area end =============== -->

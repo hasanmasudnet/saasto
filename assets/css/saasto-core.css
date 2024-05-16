@@ -86,12 +86,17 @@ Last update : 04/19/2022
   --c-black: #061e21;
   --c-black-2: #061d21;
   --c-black-3: #0e0d13;
+  --c-black-4: #0B111D;
   --c-blue: #573bff;
+  --c-blue-2:#122ec0;
+  --c-blue-3:#194BFB;
   --c-black-4: #242632;
   --c-black-5: #1B1B25;
   --c-orange: #febe50;
   --c-gray: #f7f8fa;
   --c-light-white: #f9fbfa;
+  --c-indigo:#354ab5;
+  --c-dark-gray:rgba(11, 17, 29, 0.70);
 
 
   --text-light-purple: #8976FD;
@@ -8585,7 +8590,7 @@ Testimonial End - Homepage Six
   border-radius: 100px;
   padding: 4px 48px;
   background: #C7F2AB;
-  color: #354AB5;
+  color: var(--c-indigo);
   text-align: center;
   font-family: var(--secondary-font);
   font-size: 20px;
@@ -8595,6 +8600,16 @@ Testimonial End - Homepage Six
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.section-header.header-eight .sub-title {
+  border-radius: unset;
+  padding: 10px 40px;
+  background: transparent;
+  color: var(--c-blue-2);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 163.636%;
+  letter-spacing: 5.28px;
+}
 
 .section-header .title {
   color: var(--c-black-2);
@@ -8603,7 +8618,15 @@ Testimonial End - Homepage Six
   font-style: normal;
   font-weight: 700;
   line-height: 138.462%;
-  padding-top: 20px;
+  padding-top: 20px; 
+}
+.section-header.header-eight .title {
+  padding-top: 10px;
+  color: var(--c-black-4);
+  font-family: var(--secondary-font);
+  font-size: 66px;
+  font-weight: 600;
+  line-height:  130.303%;
 }
 
 .section-header>p {
@@ -8617,6 +8640,12 @@ Testimonial End - Homepage Six
   font-weight: 400;
   line-height: 177.778%;
   padding-top: 24px;
+}
+.section-header.header-eight>p {
+  max-width: 800px;
+  color: var(--c-dark-gray);
+  font-size: 20px;
+  line-height: 180%;
 }
 .section-header>p:nth-of-type(2) {
   padding-top: 20px;
@@ -8741,7 +8770,7 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 177.778%;
-  background: #354AB5;
+  background: var(--c-indigo);
   position: absolute;
   top: 50%;
   right: 4px;
@@ -8883,7 +8912,7 @@ margin-right: 34px;
   padding: 60px 0;
 }
 
-.testimonial-area-seven .testimonial-seven-slider .swiper-wrapper{
+.testimonial-area-seven .testimonial-seven-slider{
   padding-bottom: 80px;
 }
 .testimonial-area-seven .testimonial-seven-slider .swiper-slide{
@@ -8897,15 +8926,14 @@ margin-right: 34px;
   opacity: 1;
 }
 .testimonial-area-seven .testimonial-seven-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
-background-color: #354AB5;
+background-color: var(--c-indigo);
 }
 .testimonial-card-seven{
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16"><path d="M8.5.069A15 15 0 0 0 7 0q-.891.002-1.527.463c-.418.302-.717.726-.93 1.208-.386.873-.522 2.01-.54 3.206l4.497 1zM3.71 5.836 3.381 6A2.5 2.5 0 0 0 2 8.236v2.576C2 13.659 4.22 16 7 16h2c2.78 0 5-2.342 5-5.188V8.123l-9-2v.003l.008.353c.007.3.023.715.053 1.175.063.937.186 2.005.413 2.688a.5.5 0 1 1-.948.316c-.273-.817-.4-2-.462-2.937A30 30 0 0 1 4 6.003q0-.05.01-.1zM14 7.1V5.187c0-1.13-.272-2.044-.748-2.772-.474-.726-1.13-1.235-1.849-1.59A7.5 7.5 0 0 0 9.5.212v5.887l4.5 1z"/></svg>'), auto;
+  user-select: none;
   min-height: 100%;
   padding: 24px;
   border-radius: 24px;
   border: 1px solid rgba(6, 29, 33, 0.25);
-  box-shadow: 0px 12px 48px 0px rgba(6, 29, 33, 0.06);
   display: flex;
   flex-direction: column;
 }
@@ -8920,7 +8948,8 @@ background-color: #354AB5;
   border: unset;
   background-color: unset;
 }
-.testimonial-card-seven .card-body .card-header i{
+.testimonial-card-seven .card-body .rating{
+  list-style: none;
   color: #00B67A;
   font-size: 24px;
   line-height: 24px;
@@ -9016,7 +9045,7 @@ background-color: #354AB5;
   border-radius: 100px;
   background: var(--c-white);
   padding: 5px 25px;
-  color: #354AB5;
+  color: var(--c-indigo);
   text-align: center;
   font-family: var(--secondary-font);
   font-size: 18px;
@@ -9026,7 +9055,7 @@ background-color: #354AB5;
   letter-spacing: 0.36px;
   text-transform: uppercase;
 }
-.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price{
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price{
   padding-top: 4px;
   color: var(--c-black-2);
   font-family: var(--secondary-font);
@@ -9035,6 +9064,13 @@ background-color: #354AB5;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 2px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 28px;
+  margin-left: 10px;
+  opacity: 0.7;
 }
 .pricing-card-seven .pricing-card-header > p{
   padding-top: 4px;
@@ -9074,9 +9110,9 @@ background-color: #354AB5;
   margin-top: 48px;
   padding: 12px 24px;
   border-radius: 32px;
-  border: 1px solid #354AB5;
+  border: 1px solid var(--c-indigo);
   text-align: center;
-  color: #354AB5;
+  color: var(--c-indigo);
   font-family: var(--secondary-font);
   font-size: 18px;
   font-style: normal;
@@ -9092,9 +9128,174 @@ background-color: #354AB5;
     font-size: 30px;
 }
 .pricing-card-seven.active-card .get-plan {
-  background-color: #354AB5;
+  background-color: var(--c-indigo);
   color: var(--c-white);
 }
 /* ========================================
   pricing-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  get-in-touch-area-seven start - Homepage seven
+==========================================*/
+.get-in-touch-seven {
+  background: rgba(53, 74, 181, 0.03);
+}
+.get-in-touch-seven .section-header{
+  max-width: 88%;
+}
+.get-in-touch-seven .btn-group{
+  padding-top: 48px;
+  gap: 32px;
+}
+.get-in-touch-seven .btn-group a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.get-in-touch-seven .btn-group a:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+.get-in-touch-seven .btn-group a.fill{
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--c-indigo);
+  color: var(--c-white);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.778%;
+}
+.get-in-touch-seven .btn-group a.fill-out{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #202C6B;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 177.778%;
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+  padding-left: 24px;
+}
+.get-in-touch-seven .btn-group a i,
+.get-in-touch-seven .btn-group a svg{
+  font-size: 20px;
+}
+.apps-card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.apps-card-wrapper .apps-card {
+  padding: 48px; 
+  text-align: center;
+  background: rgba(53, 74, 181, 0.05);
+}
+.apps-card-wrapper .apps-card:nth-child(1){
+  border-radius: 20px 85px;
+}
+.apps-card-wrapper .apps-card:nth-child(2){
+  border-radius: 85px 85px 20px 20px;
+}
+.apps-card-wrapper .apps-card:nth-child(3){
+  border-radius: 85px 20px;
+}
+.apps-card-wrapper .apps-card:nth-child(4){
+  border-radius: 32px;
+}
+.apps-card-wrapper .apps-card:nth-child(5){
+  border-radius: 85px;
+}
+.apps-card-wrapper .apps-card:nth-child(6){
+  border-radius: 32px;
+}
+.apps-card-wrapper .apps-card:nth-child(7){
+  border-radius: 85px 20px;
+}
+.apps-card-wrapper .apps-card:nth-child(8){
+  border-radius: 20px 20px 85px 85px;
+}
+.apps-card-wrapper .apps-card:nth-child(9){
+  border-radius: 0px 85px;
+}
+.apps-card-wrapper .apps-card img{
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.apps-card-wrapper .apps-card:hover img{
+  transform: scale(1.20);
+  -webkit-transform: scale(1.20);
+  -moz-transform: scale(1.20);
+  -ms-transform: scale(1.20);
+  -o-transform: scale(1.20);
+}
+/* ========================================
+  get-in-touch-area-seven end - Homepage seven
+==========================================*/
+
+
+/* ========================================
+  Home Pahe 8 Start
+==========================================*/
+
+/* common start */
+/* .btn-1 {
+  padding: 20px 40px;
+  border-radius: 41px;
+  background: var(--c-blue-3);
+  color: var(--c-white);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+.btn-2 {
+  padding: 20px 40px;
+  border-radius: 41px;
+  border: 1px solid rgba(26, 32, 44, 0.32);
+  background: var(--c-white);
+} */
+/* common end */
+
+.hero-area-eight {
+  background: url('../img/hero/hero-eight-bg.png') lightgray -812px -150px / 184.583% 113.816% no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(50px); 
+  position: relative;
+  z-index: 0;
+}
+.hero-area-eight::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 51.32%, var(--c-white) 92.99%);
+  z-index: -1;
+}
+/* ========================================
+  Home Pahe 8 End
 ==========================================*/

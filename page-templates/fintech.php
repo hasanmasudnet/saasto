@@ -54,7 +54,7 @@ get_header();
 <!-- Hero-area end -->
 
 <!-- Features-area start -->
-<div class="features-area-eight">
+<div class="features-area-eight pt-60 pb-120">
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-xl-11">
@@ -79,21 +79,197 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row pt-80">
-            <div class="col-md-4">
-                <div class="feature-Card">
+        <div class="row pt-80 g-5 g-md-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-Card-eight wow fadeInLeft" data-wow-delay="1.3s" data-wow-duration="">
                     <div class="card-thumbnail">
-
+                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/features/card-img-1.png' ?> alt="kit">
                     </div>
                     <div class="card-content">
-                        
+                        <a href="#">
+                            <h5>Speady, Easy and Fast</h5>
+                        </a>
+                        <p>Gain instant access to your financial data with our real-time updates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-Card-eight wow fadeInLeft" data-wow-delay="1.6s" data-wow-duration="">
+                    <div class="card-thumbnail">
+                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/features/card-img-2.png' ?> alt="kit">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h5>Worldwide Transaction</h5>
+                        </a>
+                        <p>Gain instant access to your financial data with our real-time updates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-Card-eight wow fadeInLeft" data-wow-delay="1.9s" data-wow-duration="">
+                    <div class="card-thumbnail">
+                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/features/card-img-3.png' ?> alt="kit">
+                    </div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h5>Real-Time Financial Data</h5>
+                        </a>
+                        <p>Gain instant access to your financial data with our real-time updates</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Features-area end -->
+<!-- Features-area end --> 
+
+<!-- Testimonial-area start --> 
+<div class="testimonial-area-eight pt-120 pb-120">
+    <div class="row gy-4">
+        <div class="col-lg-12">
+            <div class="swiper testimonial-slide-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="swiper testimonial-slide-bottom">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card-eight">
+                            <div class="testimonial-card-content">
+                                <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
+                            </div>
+                            <div class="testimonial-author d-flex flex-nowrap align-items-center">
+                                <div class="author-avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                </div>
+                                <div class="author-info">
+                                    <h6 class="author-title">Mark Holland</h6>
+                                    <span class="author-designation">Small Business Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial-area end --> 
 
 <?php
 get_footer();

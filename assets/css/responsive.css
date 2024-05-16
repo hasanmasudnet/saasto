@@ -892,13 +892,16 @@ margin-right:0px;
 .btn-1,.btn-2{
   padding: 16px 50px;
 }
-.section-header.header-eight-hero .title {
+.section-header.header-eight-hero .title,
+.section-header.header-eight .title {
   font-size: 35px;
 }
-.section-header.header-eight-hero .sub-title {
+.section-header.header-eight-hero .sub-title,
+.section-header.header-eight .sub-title {
   font-size: 14px;
 }
-.section-header.header-eight-hero>p {
+.section-header.header-eight-hero>p,
+.section-header.header-eight>p {
   font-size: 16px;
 }
 .hero-area-eight-figure{
@@ -971,6 +974,9 @@ margin-right:0px;
   /* ========================================
 Home Pahe 7 Common End
 ==========================================*/
+.hero-area-seven {
+  margin: 0;
+  }
 
   /* =============================
   Sponsor-brands - Home 7

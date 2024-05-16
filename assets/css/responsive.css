@@ -397,6 +397,19 @@ Home Pahe 7 Common End
 /* ========================================
   Hero-area-seven End - Homepage seven
 ==========================================*/
+
+/* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
+  font-size: 50px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type {
+  font-size: 15px;
+}
+/* ========================================
+  pricing-area-seven end - Homepage seven
+==========================================*/
 }
 
 
@@ -851,9 +864,7 @@ padding-right: 0;
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-type {
   font-size:12px
 }
-.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price {
-  font-size: 50px;
-}
+
 .pricing-card-seven .pricing-card-body {
   padding-top: 30px;
 }
@@ -945,6 +956,18 @@ Home Pahe 7 Common End
   .features-area-seven {
     padding-top: 30px;
   }
+  /* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
+  font-size: 50px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type {
+  font-size: 15px;
+}
+/* ========================================
+  pricing-area-seven end - Homepage seven
+==========================================*/
 
 }
 @media only screen and (max-width: 767px) {

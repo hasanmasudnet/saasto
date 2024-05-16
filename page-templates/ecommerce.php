@@ -247,7 +247,10 @@ get_header();
                     <div class="pricing-card-header">
                         <div class="pricing-header-head d-flex flex-column">
                             <span class='plan-type'>Starter Plan</span>
-                            <span class='plan-price'>$49.00</span>
+                            <span class='plan-price d-flex align-items-baseline'>
+                                <span class='price'>$49.00</span>
+                                <sapn class='type'>/month</sapn>
+                            </span>
                         </div>
                         <p>Kickstart your journey! Manage 100 products, sync with one platform, and access basic analytics. Ideal for small businesses starting out.</p>
                     </div>
@@ -271,7 +274,10 @@ get_header();
                     <div class="pricing-card-header">
                         <div class="pricing-header-head d-flex flex-column">
                             <span class='plan-type'>Ultimate Plan</span>
-                            <span class='plan-price'>$299.00</span>
+                            <span class='plan-price d-flex align-items-baseline'>
+                                <span class='price'>$299.00</span>
+                                <sapn class='type'>/month</sapn>
+                            </span>
                         </div>
                         <p>Unleash your potential! Get unlimited products, fully customizable integrations, AI insight, and 24/7 priority support. Tailored for high-growth enterprises.</p>
                     </div>

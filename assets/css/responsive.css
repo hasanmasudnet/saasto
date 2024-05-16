@@ -875,8 +875,37 @@ padding-right: 0;
 .pricing-card-seven .get-plan {
   margin-top: 30px;
 }
+
+.hero-seven-charts img:nth-child(1){
+margin-left:0px;
+}
+.hero-seven-charts img:nth-child(3){
+margin-right:0px;
+}
 /* ========================================
   pricing-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  Home Page 8 Start
+==========================================*/
+.btn-1,.btn-2{
+  padding: 16px 50px;
+}
+.section-header.header-eight-hero .title {
+  font-size: 35px;
+}
+.section-header.header-eight-hero .sub-title {
+  font-size: 14px;
+}
+.section-header.header-eight-hero>p {
+  font-size: 16px;
+}
+.hero-area-eight-figure{
+  padding-top: 80px;
+}
+/* ========================================
+  Home Page 8 end
 ==========================================*/
 
 }
@@ -921,6 +950,10 @@ padding-right: 0;
   /* ========================================
   Home Pahe 7 Common Start
 ==========================================*/
+.cta-form {
+  margin-left: auto;
+  margin-right: auto;
+}
   .section-header .sub-title {
     font-size: 14px;
   }
@@ -960,7 +993,7 @@ Home Pahe 7 Common End
   pricing-area-seven start - Homepage seven
 ==========================================*/
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
-  font-size: 50px;
+  font-size: 45px;
 }
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type {
   font-size: 15px;
@@ -968,7 +1001,16 @@ Home Pahe 7 Common End
 /* ========================================
   pricing-area-seven end - Homepage seven
 ==========================================*/
+/* ========================================
+  Home Page 8 Start
+==========================================*/
 
+.hero-area-eight-figure{
+  padding-top: 50px;
+}
+/* ========================================
+  Home Page 8 end
+==========================================*/
 }
 @media only screen and (max-width: 767px) {
   .sponsor-brands-area-seven .sponsor-brands-title {
@@ -976,13 +1018,6 @@ Home Pahe 7 Common End
     border: 0;
     margin-right: 0;
     padding-right: 0;
-  }
-
-  /* ========================================
-  Hero-area-seven start - Homepage seven
-==========================================*/
-.hero-seven-charts img:nth-child(1){
-    margin-left:0px;
   }
 }
 

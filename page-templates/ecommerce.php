@@ -39,8 +39,8 @@ get_header();
     </div>
     <div class="hero-seven-charts d-flex flex-row justify-content-center align-items-end flex-nowrap gap-4">
         <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-1.png' ?> alt="chart">
-        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
-        <img class='d-none d-md-block' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
+        <img class='d-none d-lg-block' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
+        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
     </div>
 </div>
 <!-- Hero-area end -->
@@ -110,23 +110,25 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <ul class="card-header rating">
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                            </ul>
+                            <div class="card-header">
+                                <ul class='rating'>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-info">
                                 <h6>Robust Features & Insightful Analytics!</h6>
                                 <p>
@@ -148,23 +150,25 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <ul class="card-header rating">
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                            </ul>
+                            <div class="card-header">
+                                <ul class='rating'>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-info">
                                 <h6>Affordable Solutions for Startups!</h6>
                                 <p>
@@ -186,23 +190,25 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <ul class="card-header rating">
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                            </ul>
+                            <div class="card-header">
+                                <ul class='rating'>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-info">
                                 <h6>Seamless Transition & Customization!</h6>
                                 <p>
@@ -256,11 +262,11 @@ get_header();
                     </div>
                     <div class="pricing-card-body">
                         <ul class="features">
-                            <li>Up to 100 product listings</li>
-                            <li>Basic integration with one e-commerce platform</li>
-                            <li>Limited access to analytics and reporting tools</li>
-                            <li>Priority email and chat support</li>
-                            <li>Priority email and chat support</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Up to 100 product listings</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Basic integration with one e-commerce platform</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Limited access to analytics and reporting tools</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
                         </ul>
                         <a href="#" class='get-plan'>
                             Get Started
@@ -283,11 +289,11 @@ get_header();
                     </div>
                     <div class="pricing-card-body">
                         <ul class="features">
-                            <li>Unlimited product listings</li>
-                            <li>Advanced integration with e-commerce platforms</li>
-                            <li>Comprehensive analytics and reporting tools</li>
-                            <li>24/7 priority support with SLA</li>
-                            <li>API access for custom development & integrations</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Unlimited product listings</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Advanced integration with e-commerce platforms</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Comprehensive analytics and reporting tools</li>
+                            <li><i class="bi bi-check-circle-fill"></i>24/7 priority support with SLA</li>
+                            <li><i class="bi bi-check-circle-fill"></i>API access for custom development & integrations</li>
                         </ul>
                         <a href="#" class='get-plan'>
                         Get Started

@@ -105,6 +105,11 @@ Last update : 04/19/2022
   --secondary-font: 'Poppins', sans-serif;
   --saasto-primary-font: 'Nunito Sans', sans-serif;
   --ff-inter: 'Inter', sans-serif;
+
+  --transition-2: all 0.2s ease-in-out;
+  --transition-3: all 0.3s ease-in-out;
+  --transition-4: all 0.4s ease-in-out;
+  --transition-5: all 0.5s ease-in-out;
 }
 
 
@@ -8600,7 +8605,7 @@ Testimonial End - Homepage Six
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.section-header.header-eight .sub-title {
+.section-header.header-eight-hero .sub-title {
   border-radius: unset;
   padding: 10px 40px;
   background: transparent;
@@ -8620,7 +8625,7 @@ Testimonial End - Homepage Six
   line-height: 138.462%;
   padding-top: 20px; 
 }
-.section-header.header-eight .title {
+.section-header.header-eight-hero .title {
   padding-top: 10px;
   color: var(--c-black-4);
   font-family: var(--secondary-font);
@@ -8641,7 +8646,7 @@ Testimonial End - Homepage Six
   line-height: 177.778%;
   padding-top: 24px;
 }
-.section-header.header-eight>p {
+.section-header.header-eight-hero>p {
   max-width: 800px;
   color: var(--c-dark-gray);
   font-size: 20px;
@@ -8941,14 +8946,14 @@ background-color: var(--c-indigo);
   flex-grow: 1;
 }
 .testimonial-card-seven .card-body .card-header{
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
   padding: 0;
   border: unset;
   background-color: unset;
 }
 .testimonial-card-seven .card-body .rating{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
   list-style: none;
   color: #00B67A;
   font-size: 24px;
@@ -9087,10 +9092,10 @@ background-color: var(--c-indigo);
   padding-top: 48px;
 }
 .pricing-card-seven .features {
-  margin-left: 16px;
+  list-style: none;
+ 
 }
 .pricing-card-seven .features li{
-  /* list-style: none; */
   color: var(--c-black-2);
   font-family: var(--secondary-font);
   font-size: 18px;
@@ -9098,9 +9103,14 @@ background-color: var(--c-indigo);
   font-weight: 400;
   line-height: 177.778%;
   margin-bottom: 12px;
+  display : flex;
+  align-items : center;
 }
 .pricing-card-seven .features li:last-child{
   margin-bottom: 0;
+}
+.pricing-card-seven .features li i{
+  margin-right: 16px;
 }
 .pricing-card-seven .get-plan {
   display: flex;
@@ -9257,12 +9267,14 @@ background-color: var(--c-indigo);
 
 
 /* ========================================
-  Home Pahe 8 Start
+  Home Page 8 Start
 ==========================================*/
 
 /* common start */
-/* .btn-1 {
+ .btn-1 {
+  display: inline-block;
   padding: 20px 40px;
+  border: 1px solid var(--c-blue-3);
   border-radius: 41px;
   background: var(--c-blue-3);
   color: var(--c-white);
@@ -9271,31 +9283,64 @@ background-color: var(--c-indigo);
   font-style: normal;
   font-weight: 500;
   line-height: 133.333%;
+  transition: var(--transition-2);
+}
+.btn-1:hover {
+  background: #194BFB20;
 }
 .btn-2 {
+  display: inline-block;
   padding: 20px 40px;
   border-radius: 41px;
   border: 1px solid rgba(26, 32, 44, 0.32);
   background: var(--c-white);
-} */
+  color: var(--c-black-4);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  transition: var(--transition-2);
+} 
+.btn-2:hover {
+  background: #194BFB20;
+  border-color: var(--c-blue-3);
+}
 /* common end */
 
 .hero-area-eight {
+  padding-top: 205px;
   background: url('../img/hero/hero-eight-bg.png') lightgray -812px -150px / 184.583% 113.816% no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(50px); 
-  position: relative;
-  z-index: 0;
 }
-.hero-area-eight::before {
+.btn-group-eight {
+  margin-top: 48px;
+}
+.hero-area-eight-figure {
+  padding-top: 150px;
+  position: relative;
+}
+.hero-area-eight-figure::before {
   position: absolute;
   content: '';
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 51.32%, var(--c-white) 92.99%);
-  z-index: -1;
+  z-index: 1;
+}
+.hero-area-eight-figure .phone {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 /* ========================================
-  Home Pahe 8 End
+  Home Page 8 End
 ==========================================*/

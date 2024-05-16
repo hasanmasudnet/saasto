@@ -9261,8 +9261,7 @@ background-color: var(--c-indigo);
 ==========================================*/
 
 /* common start */
-.btn-1 {
-  width: fit-content;
+/* .btn-1 {
   padding: 20px 40px;
   border-radius: 41px;
   background: var(--c-blue-3);
@@ -9274,9 +9273,11 @@ background-color: var(--c-indigo);
   line-height: 133.333%;
 }
 .btn-2 {
-  padding: 20px;
-  display: inline-block;
-}
+  padding: 20px 40px;
+  border-radius: 41px;
+  border: 1px solid rgba(26, 32, 44, 0.32);
+  background: var(--c-white);
+} */
 /* common end */
 
 .hero-area-eight {

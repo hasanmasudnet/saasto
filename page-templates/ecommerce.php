@@ -16,7 +16,7 @@ get_header();
     <div class="d-none d-lg-block hero-seven-kits">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-arrow.png' ?> alt="kit">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-1.png' ?> alt="kit">
-        <img class='animated-moveLeftAndRight' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-2.png' ?> alt="kit">
+        <img class='animated-moveLeftAndRight d-md-none d-xl-block ' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-2.png' ?> alt="kit">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-3.png' ?> alt="kit">
         <img class='animated-moveUpAndDown' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-kit-4.png' ?> alt="kit">
     </div>

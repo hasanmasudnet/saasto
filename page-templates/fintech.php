@@ -79,7 +79,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row pt-80 g-5 g-md-4">
+        <div class="row pt-80 gy-5 g-md-4">
             <div class="col-md-6 col-lg-4">
                 <div class="feature-Card-eight wow fadeInLeft" data-wow-delay="1.3s" data-wow-duration="">
                     <div class="card-thumbnail">
@@ -125,19 +125,19 @@ get_header();
 <!-- Features-area end --> 
 
 <!-- Testimonial-area start --> 
-<div class="testimonial-area-eight pt-120 pb-120">
-    <div class="row gy-4">
+<div class="testimonial-area-eight overflow-hidden">
+    <div class="row gy-4 testimonial-eight-slider-area">
         <div class="col-lg-12">
-            <div class="swiper testimonial-slide-top">
+            <div class="swiper testimonial-slide-top h-100">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -147,13 +147,13 @@ get_header();
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -163,13 +163,13 @@ get_header();
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -179,13 +179,13 @@ get_header();
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -198,16 +198,16 @@ get_header();
             </div>
         </div>
         <div class="col-lg-12">
-            <div class="swiper testimonial-slide-bottom">
+            <div class="swiper testimonial-slide-bottom h-100">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                <div class="swiper-slide">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -217,13 +217,13 @@ get_header();
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -233,13 +233,13 @@ get_header();
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>
@@ -249,13 +249,13 @@ get_header();
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card-eight">
+                        <div class="testimonial-card-eight d-flex flex-column justify-content-between">
                             <div class="testimonial-card-content">
                                 <p>“I've tried several finance managemnt platforms, It's like having a dedicated financial advisor at my fingertips. Thank you, SaaSto!”</p>
                             </div>
                             <div class="testimonial-author d-flex flex-nowrap align-items-center">
                                 <div class="author-avatar">
-                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="avatar">
+                                    <img class="" src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-1.png' ?> alt="avatar">
                                 </div>
                                 <div class="author-info">
                                     <h6 class="author-title">Mark Holland</h6>

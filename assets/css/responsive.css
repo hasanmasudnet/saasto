@@ -922,6 +922,17 @@ margin-right:0px;
   bottom: -80px;
 }
 /* Features-area end  */
+
+/* Testimonial-area start */
+.testimonial-card-eight {
+  max-width: 320px;
+}
+
+.testimonial-eight-slider-area:before,
+.testimonial-eight-slider-area:after{
+  max-width: 100px;
+}
+/* Testimonial-area end */
 /* ========================================
   Home Page 8 end
 ==========================================*/

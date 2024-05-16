@@ -1706,12 +1706,95 @@ Last update : 04/19/2022
   }
 }
 
-.btn-submit-task{
-  background: #8A2FFF;
+/* Price */
+.task-price-box{
+  border-radius: 36px;
+  background: #FFF;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.05);
+  padding: 23px;
+  .task-price-category{
+    span{
+      color: #8A2FFF;
+      font-family: var(--secondary-font);
+      font-size: 18px;
+      line-height:1;
+      border-radius: 8px;
+      background: rgba(138, 47, 255, 0.08);
+      padding: 7px 12px;
+    }
+  }
+  .task-price-info{
+    margin-top: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(11, 17, 29, 0.20);
+    margin-bottom: 20px;
+    p{
+      color: rgba(11, 17, 29, 0.70);
+      font-family:var(--secondary-font);
+      font-size: 16px;
+    }
+    .task-price-tag{
+      margin-top: 20px;
+      color: #0B111D;
+      font-family:var(--secondary-font);
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 1;
+      span{
+        color: rgba(11, 17, 29, 0.70);
+        font-size: 22px;
+      }
+    }
+  }
+  
+  .task-price-list{
+    list-style: none;
+    margin-bottom: 25px;
+    li{
+      color: rgba(11, 17, 29, 0.70);
+      font-family:var(--secondary-font);
+      font-size: 18px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      i{
+        color: #8A2FFF;
+      }
+      &:not(:last-child){
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .task-price-btn{
+    border-radius: 32px;
+    border: 1px solid #8A2FFF;
+    color: #8A2FFF;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 12px 12px;
+    line-height: 1;
+    white-space: nowrap;
+    transition: all .4s linear;
+    i{
+      font-size: 25px;
+      margin-left: 2px;
+      line-height: 0;
+    }
+  }
+  &:hover{
+    .task-price-btn{
+      color: #fff;
+      background-color: #8A2FFF;
+    }
+  }
 }
 
 
-
+.btn-submit-task{
+  background: #8A2FFF;
+}
 
 .anima-trasform-task_2{
   animation: slide_2 15s ease-in-out alternate infinite;

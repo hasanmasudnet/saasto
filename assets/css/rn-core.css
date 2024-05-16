@@ -1530,6 +1530,86 @@ header .header-transparent {
   margin-top: 4px;
 }
 
+/* Price */
+.task-price-box {
+  border-radius: 36px;
+  background: #FFF;
+  box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.05);
+  padding: 23px;
+}
+.task-price-box .task-price-category span {
+  color: #8A2FFF;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 8px;
+  background: rgba(138, 47, 255, 0.08);
+  padding: 7px 12px;
+}
+.task-price-box .task-price-info {
+  margin-top: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(11, 17, 29, 0.2);
+  margin-bottom: 20px;
+}
+.task-price-box .task-price-info p {
+  color: rgba(11, 17, 29, 0.7);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+}
+.task-price-box .task-price-info .task-price-tag {
+  margin-top: 20px;
+  color: #0B111D;
+  font-family: var(--secondary-font);
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1;
+}
+.task-price-box .task-price-info .task-price-tag span {
+  color: rgba(11, 17, 29, 0.7);
+  font-size: 22px;
+}
+.task-price-box .task-price-list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.task-price-box .task-price-list li {
+  color: rgba(11, 17, 29, 0.7);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.task-price-box .task-price-list li i {
+  color: #8A2FFF;
+}
+.task-price-box .task-price-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.task-price-box .task-price-btn {
+  border-radius: 32px;
+  border: 1px solid #8A2FFF;
+  color: #8A2FFF;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 12px 12px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: all 0.4s linear;
+}
+.task-price-box .task-price-btn i {
+  font-size: 25px;
+  margin-left: 2px;
+  line-height: 0;
+}
+.task-price-box:hover .task-price-btn {
+  color: #fff;
+  background-color: #8A2FFF;
+}
+
 .btn-submit-task {
   background: #8A2FFF;
 }

@@ -39,8 +39,8 @@ get_header();
     </div>
     <div class="hero-seven-charts d-flex flex-row justify-content-center align-items-end flex-nowrap gap-4">
         <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-1.png' ?> alt="chart">
-        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
-        <img class='d-none d-md-block' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
+        <img class='d-none d-lg-block' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
+        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
     </div>
 </div>
 <!-- Hero-area end -->
@@ -110,23 +110,25 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <ul class="card-header rating">
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                            </ul>
+                            <div class="card-header">
+                                <ul class='rating'>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-info">
                                 <h6>Robust Features & Insightful Analytics!</h6>
                                 <p>
@@ -148,23 +150,25 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <ul class="card-header rating">
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                            </ul>
+                            <div class="card-header">
+                                <ul class='rating'>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-info">
                                 <h6>Affordable Solutions for Startups!</h6>
                                 <p>
@@ -186,23 +190,25 @@ get_header();
                 <div class="swiper-slide">
                     <div class="testimonial-card-seven">
                         <div class="card-body">
-                            <ul class="card-header rating">
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill"></i>
-                                </li>
-                            </ul>
+                            <div class="card-header">
+                                <ul class='rating'>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-star-fill"></i>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="card-info">
                                 <h6>Seamless Transition & Customization!</h6>
                                 <p>
@@ -256,11 +262,11 @@ get_header();
                     </div>
                     <div class="pricing-card-body">
                         <ul class="features">
-                            <li>Up to 100 product listings</li>
-                            <li>Basic integration with one e-commerce platform</li>
-                            <li>Limited access to analytics and reporting tools</li>
-                            <li>Priority email and chat support</li>
-                            <li>Priority email and chat support</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Up to 100 product listings</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Basic integration with one e-commerce platform</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Limited access to analytics and reporting tools</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
                         </ul>
                         <a href="#" class='get-plan'>
                             Get Started
@@ -283,11 +289,11 @@ get_header();
                     </div>
                     <div class="pricing-card-body">
                         <ul class="features">
-                            <li>Unlimited product listings</li>
-                            <li>Advanced integration with e-commerce platforms</li>
-                            <li>Comprehensive analytics and reporting tools</li>
-                            <li>24/7 priority support with SLA</li>
-                            <li>API access for custom development & integrations</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Unlimited product listings</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Advanced integration with e-commerce platforms</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Comprehensive analytics and reporting tools</li>
+                            <li><i class="bi bi-check-circle-fill"></i>24/7 priority support with SLA</li>
+                            <li><i class="bi bi-check-circle-fill"></i>API access for custom development & integrations</li>
                         </ul>
                         <a href="#" class='get-plan'>
                         Get Started
@@ -318,9 +324,14 @@ get_header();
                         </a>
                         <a href="#" class="fill-out ps-sm-0">
                             Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M16.6682 3.66927V12.0026C16.6682 12.4626 16.2957 12.8359 15.8349 12.8359C15.374 12.8359 15.0015 12.4626 15.0015 12.0026V5.68099L5.59073 15.0918C5.42823 15.2543 5.21487 15.3359 5.00154 15.3359C4.7882 15.3359 4.57484 15.2543 4.41234 15.0918C4.08651 14.766 4.08651 14.2392 4.41234 13.9134L13.8232 4.5026H7.50154C7.0407 4.5026 6.6682 4.12927 6.6682 3.66927C6.6682 3.20927 7.0407 2.83594 7.50154 2.83594H15.8349C15.9432 2.83594 16.0516 2.85836 16.1533 2.90002C16.3574 2.98419 16.5199 3.1467 16.6041 3.35087C16.6466 3.45254 16.6682 3.56094 16.6682 3.66927Z" fill="#202C6B"/>
-                            </svg>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6682 3.66927V12.0026C16.6682 12.4626 16.2957 12.8359 15.8349 12.8359C15.374 12.8359 15.0015 12.4626 15.0015 12.0026V5.68099L5.59073 15.0918C5.42823 15.2543 5.21487 15.3359 5.00154 15.3359C4.7882 15.3359 4.57484 15.2543 4.41234 15.0918C4.08651 14.766 4.08651 14.2392 4.41234 13.9134L13.8232 4.5026H7.50154C7.0407 4.5026 6.6682 4.12927 6.6682 3.66927C6.6682 3.20927 7.0407 2.83594 7.50154 2.83594H15.8349C15.9432 2.83594 16.0516 2.85836 16.1533 2.90002C16.3574 2.98419 16.5199 3.1467 16.6041 3.35087C16.6466 3.45254 16.6682 3.56094 16.6682 3.66927Z" fill="#202C6B"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6682 3.66927V12.0026C16.6682 12.4626 16.2957 12.8359 15.8349 12.8359C15.374 12.8359 15.0015 12.4626 15.0015 12.0026V5.68099L5.59073 15.0918C5.42823 15.2543 5.21487 15.3359 5.00154 15.3359C4.7882 15.3359 4.57484 15.2543 4.41234 15.0918C4.08651 14.766 4.08651 14.2392 4.41234 13.9134L13.8232 4.5026H7.50154C7.0407 4.5026 6.6682 4.12927 6.6682 3.66927C6.6682 3.20927 7.0407 2.83594 7.50154 2.83594H15.8349C15.9432 2.83594 16.0516 2.85836 16.1533 2.90002C16.3574 2.98419 16.5199 3.1467 16.6041 3.35087C16.6466 3.45254 16.6682 3.56094 16.6682 3.66927Z" fill="#202C6B"/>
+                                </svg>
+                            </span>
                         </a>
                     </div>
                 </div>

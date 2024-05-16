@@ -410,6 +410,15 @@ Home Pahe 7 Common End
 /* ========================================
   pricing-area-seven end - Homepage seven
 ==========================================*/
+
+/* Features-area start  */
+.feature-Card-eight .card-content {
+  padding: 40px 15px 0;
+}
+.feature-Card-eight .card-content h5{
+  font-size: 22px;
+}
+/* Features-area end  */
 }
 
 
@@ -875,8 +884,57 @@ padding-right: 0;
 .pricing-card-seven .get-plan {
   margin-top: 30px;
 }
+
+.hero-seven-charts img:nth-child(1){
+margin-left:0px;
+}
+.hero-seven-charts img:nth-child(3){
+margin-right:0px;
+}
 /* ========================================
   pricing-area-seven end - Homepage seven
+==========================================*/
+
+/* ========================================
+  Home Page 8 Start
+==========================================*/
+.btn-1,.btn-2{
+  padding: 16px 50px;
+}
+.section-header.header-eight-hero .title,
+.section-header.header-eight .title {
+  font-size: 35px;
+}
+.section-header.header-eight-hero .sub-title,
+.section-header.header-eight .sub-title {
+  font-size: 14px;
+}
+.section-header.header-eight-hero>p,
+.section-header.header-eight>p {
+  font-size: 16px;
+}
+.hero-area-eight-figure{
+  padding-top: 80px;
+}
+
+/* Features-area start  */
+.feature-Card-eight-wrapper::after {
+  bottom: -80px;
+}
+/* Features-area end  */
+
+/* Testimonial-area start */
+.testimonial-card-eight {
+  max-width: 320px;
+}
+
+.testimonial-eight-slider-area:before,
+.testimonial-eight-slider-area:after{
+  max-width: 100px;
+}
+/* Testimonial-area end */
+/* ========================================
+  Home Page 8 end
 ==========================================*/
 
 }
@@ -921,6 +979,10 @@ padding-right: 0;
   /* ========================================
   Home Pahe 7 Common Start
 ==========================================*/
+.cta-form {
+  margin-left: auto;
+  margin-right: auto;
+}
   .section-header .sub-title {
     font-size: 14px;
   }
@@ -938,6 +1000,9 @@ padding-right: 0;
   /* ========================================
 Home Pahe 7 Common End
 ==========================================*/
+.hero-area-seven {
+  margin: 0;
+  }
 
   /* =============================
   Sponsor-brands - Home 7
@@ -960,7 +1025,7 @@ Home Pahe 7 Common End
   pricing-area-seven start - Homepage seven
 ==========================================*/
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
-  font-size: 50px;
+  font-size: 45px;
 }
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .type {
   font-size: 15px;
@@ -968,7 +1033,17 @@ Home Pahe 7 Common End
 /* ========================================
   pricing-area-seven end - Homepage seven
 ==========================================*/
+/* ========================================
+  Home Page 8 Start
+==========================================*/
 
+.hero-area-eight-figure{
+  padding-top: 50px;
+}
+
+/* ========================================
+  Home Page 8 end
+==========================================*/
 }
 @media only screen and (max-width: 767px) {
   .sponsor-brands-area-seven .sponsor-brands-title {
@@ -976,13 +1051,6 @@ Home Pahe 7 Common End
     border: 0;
     margin-right: 0;
     padding-right: 0;
-  }
-
-  /* ========================================
-  Hero-area-seven start - Homepage seven
-==========================================*/
-.hero-seven-charts img:nth-child(1){
-    margin-left:0px;
   }
 }
 
@@ -1515,7 +1583,7 @@ Home Pahe 7 Common End
   testimonial-area-seven start - Homepage seven
 ==========================================*/
 .testimonial-area-seven {
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
 /* ========================================
   testimonial-area-seven end - Homepage seven
@@ -1531,6 +1599,11 @@ Home Pahe 7 Common End
   Get-in-touch-area end - Homepage seven
 ==========================================*/
 
+/* Features-area start  */
+.feature-Card-eight-wrapper::after {
+  bottom: -60px;
+}
+/* Features-area end  */
 }
 
 @media only screen and (max-width: 396px) {

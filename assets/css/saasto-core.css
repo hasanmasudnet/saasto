@@ -105,6 +105,11 @@ Last update : 04/19/2022
   --secondary-font: 'Poppins', sans-serif;
   --saasto-primary-font: 'Nunito Sans', sans-serif;
   --ff-inter: 'Inter', sans-serif;
+
+  --transition-2: all 0.2s ease-in-out;
+  --transition-3: all 0.3s ease-in-out;
+  --transition-4: all 0.4s ease-in-out;
+  --transition-5: all 0.5s ease-in-out;
 }
 
 
@@ -540,6 +545,9 @@ table tfoot tr th {
 
 .pb-120 {
   padding-bottom: 120px;
+}
+.mb-120 {
+  margin-bottom: 120px;
 }
 
 .pb-100 {
@@ -8600,9 +8608,19 @@ Testimonial End - Homepage Six
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.section-header.header-eight .sub-title {
+.section-header.header-eight-hero .sub-title {
   border-radius: unset;
   padding: 10px 40px;
+  background: transparent;
+  color: var(--c-blue-2);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 163.636%;
+  letter-spacing: 5.28px;
+}
+.section-header.header-eight .sub-title {
+  border-radius: unset;
+  padding: 6px 40px;
   background: transparent;
   color: var(--c-blue-2);
   font-size: 22px;
@@ -8620,13 +8638,21 @@ Testimonial End - Homepage Six
   line-height: 138.462%;
   padding-top: 20px; 
 }
-.section-header.header-eight .title {
+.section-header.header-eight-hero .title {
   padding-top: 10px;
   color: var(--c-black-4);
   font-family: var(--secondary-font);
   font-size: 66px;
   font-weight: 600;
   line-height:  130.303%;
+}
+.section-header.header-eight .title {
+  padding-top: 10px;
+  color: var(--c-black-4);
+  font-family: var(--secondary-font);
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 138.462%;
 }
 
 .section-header>p {
@@ -8641,11 +8667,17 @@ Testimonial End - Homepage Six
   line-height: 177.778%;
   padding-top: 24px;
 }
-.section-header.header-eight>p {
+.section-header.header-eight-hero>p {
   max-width: 800px;
   color: var(--c-dark-gray);
   font-size: 20px;
   line-height: 180%;
+}
+.section-header.header-eight>p {
+  max-width:800px;
+  color: var(--c-dark-gray);
+  font-size: 18px;
+  line-height: 177.778%;
 }
 .section-header>p:nth-of-type(2) {
   padding-top: 20px;
@@ -8909,7 +8941,7 @@ margin-right: 34px;
   testimonial-area-seven start - Homepage seven
 ==========================================*/
 .testimonial-area-seven {
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 .testimonial-area-seven .testimonial-seven-slider{
@@ -8941,14 +8973,14 @@ background-color: var(--c-indigo);
   flex-grow: 1;
 }
 .testimonial-card-seven .card-body .card-header{
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
   padding: 0;
   border: unset;
   background-color: unset;
 }
 .testimonial-card-seven .card-body .rating{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
   list-style: none;
   color: #00B67A;
   font-size: 24px;
@@ -9087,10 +9119,10 @@ background-color: var(--c-indigo);
   padding-top: 48px;
 }
 .pricing-card-seven .features {
-  margin-left: 16px;
+  list-style: none;
+ 
 }
 .pricing-card-seven .features li{
-  /* list-style: none; */
   color: var(--c-black-2);
   font-family: var(--secondary-font);
   font-size: 18px;
@@ -9098,9 +9130,14 @@ background-color: var(--c-indigo);
   font-weight: 400;
   line-height: 177.778%;
   margin-bottom: 12px;
+  display : flex;
+  align-items : center;
 }
 .pricing-card-seven .features li:last-child{
   margin-bottom: 0;
+}
+.pricing-card-seven .features li i{
+  margin-right: 16px;
 }
 .pricing-card-seven .get-plan {
   display: flex;
@@ -9191,6 +9228,42 @@ background-color: var(--c-indigo);
   text-underline-offset: 8px;
   padding-left: 24px;
 }
+.get-in-touch-seven .btn-group a.fill-out>span{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+}
+.get-in-touch-seven .btn-group a.fill-out>span svg:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -webkit-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -moz-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -ms-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -o-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+}
+.get-in-touch-seven .btn-group a.fill-out>span svg:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -webkit-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -moz-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -ms-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+  -o-transition: 0.3s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+}
+.get-in-touch-seven .btn-group a.fill-out:hover>span svg:nth-child(2) {
+  bottom: 0px;
+  left: 0;
+}
+.get-in-touch-seven .btn-group a.fill-out:hover>span svg:nth-child(1) {
+  top: -20px;
+  left: 20px;
+}
 .get-in-touch-seven .btn-group a i,
 .get-in-touch-seven .btn-group a svg{
   font-size: 20px;
@@ -9257,12 +9330,14 @@ background-color: var(--c-indigo);
 
 
 /* ========================================
-  Home Pahe 8 Start
+  Home Page 8 Start
 ==========================================*/
 
 /* common start */
-/* .btn-1 {
+ .btn-1 {
+  display: inline-block;
   padding: 20px 40px;
+  border: 1px solid var(--c-blue-3);
   border-radius: 41px;
   background: var(--c-blue-3);
   color: var(--c-white);
@@ -9271,31 +9346,202 @@ background-color: var(--c-indigo);
   font-style: normal;
   font-weight: 500;
   line-height: 133.333%;
+  transition: var(--transition-2);
+}
+.btn-1:hover {
+  background: #194BFB20;
 }
 .btn-2 {
+  display: inline-block;
   padding: 20px 40px;
   border-radius: 41px;
   border: 1px solid rgba(26, 32, 44, 0.32);
   background: var(--c-white);
-} */
+  color: var(--c-black-4);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  transition: var(--transition-2);
+} 
+.btn-2:hover {
+  background: #194BFB20;
+  border-color: var(--c-blue-3);
+}
 /* common end */
 
+/* hero-area start  */
 .hero-area-eight {
+  padding-top: 205px;
   background: url('../img/hero/hero-eight-bg.png') lightgray -812px -150px / 184.583% 113.816% no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(50px); 
-  position: relative;
-  z-index: 0;
 }
-.hero-area-eight::before {
+.btn-group-eight {
+  margin-top: 48px;
+}
+.hero-area-eight-figure {
+  padding-top: 150px;
+  position: relative;
+}
+.hero-area-eight-figure::before {
   position: absolute;
   content: '';
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 51.32%, var(--c-white) 92.99%);
-  z-index: -1;
+  z-index: 1;
 }
+.hero-area-eight-figure .phone {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* hero-area end  */
+
+/* Features-area start  */
+
+.feature-Card-eight {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feature-Card-eight .card-thumbnail {
+  flex-grow: 1;
+  padding: 28px 0;
+  text-align: center;
+  border-radius: 16px;
+  background: url('../img/features/card-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.feature-Card-eight .card-thumbnail img{
+  filter: drop-shadow(-5px 9.045px 18.089px rgba(26, 32, 44, 0.12));
+  -webkit-filter: drop-shadow(-5px 9.045px 18.089px rgba(26, 32, 44, 0.12));
+}
+.feature-Card-eight .card-content {
+  text-align: center;
+  padding: 40px 32px 0;
+}
+.feature-Card-eight .card-content h5{
+  color: var(--c-black-4);
+  font-family: var(--secondary-font);
+  line-height:  166.667%;
+}
+.feature-Card-eight .card-content p{
+  padding-top: 16px;
+  color: var(--c-dark-gray);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+}
+/* Features-area end  */
+
+/* testimonial-area start  */
+.testimonial-card-eight {
+  min-height: 100%;
+  max-width: 483px;
+  padding: 32px 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(11, 17, 29, 0.25);
+  background: var(--c-white);
+  user-select: none;
+}
+.testimonial-card-eight .testimonial-card-content p{
+  color: rgba(11, 17, 29, 0.80);
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height:163.636%;
+}
+.testimonial-card-eight .testimonial-author {
+  padding-top: 48px;
+}
+.testimonial-card-eight .testimonial-author .author-avatar{
+  min-width: 56px;
+  min-height: 56px;
+  max-width: 56px;
+  max-height: 56px;
+  margin-right: 20px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.testimonial-card-eight .testimonial-author .author-avatar img{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.testimonial-card-eight .testimonial-author .author-title{
+  color: var(--c-black-4);
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.455%;
+}
+.testimonial-card-eight .testimonial-author .author-designation{
+  display: inline-block;
+  color: var(--c-dark-gray);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 225%;
+}
+.testimonial-slide-bottom .swiper-wrapper,
+.testimonial-slide-top .swiper-wrapper{
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.testimonial-slide-top .swiper-slide,
+.testimonial-slide-bottom .swiper-slide
+{
+  width: auto;
+}
+.testimonial-eight-slider-area {
+  position: relative;
+}
+.testimonial-eight-slider-area:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 24px;
+  width: 396px;
+  height: calc(100% - 24px);
+  background: linear-gradient(90deg, var(--c-white) 0%, rgba(255, 255, 255, 0.10) 100%);
+  z-index: 1;
+}
+.testimonial-eight-slider-area:before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 24px;
+  width: 396px;
+  height: calc(100% - 24px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.10) 0%, var(--c-white) 100%);
+  z-index: 2;
+}
+/* testimonial-area end  */
+
 /* ========================================
-  Home Pahe 8 End
+  Home Page 8 End
 ==========================================*/

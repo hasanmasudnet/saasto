@@ -37,10 +37,10 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="hero-seven-charts d-flex flex-row justify-content-xl-center align-items-end flex-nowrap gap-4">
+    <div class="hero-seven-charts d-flex flex-row justify-content-center align-items-end flex-nowrap gap-4">
         <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-1.png' ?> alt="chart">
         <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-2.png' ?> alt="chart">
-        <img class='' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
+        <img class='d-none d-md-block' src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-seven-chart-3.png' ?> alt="chart">
     </div>
 </div>
 <!-- Hero-area end -->

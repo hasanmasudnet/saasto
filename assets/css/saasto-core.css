@@ -9262,16 +9262,20 @@ background-color: var(--c-indigo);
 
 /* common start */
 .btn-1 {
+  width: fit-content;
   padding: 20px 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 41px;
-background: var(--c-blue-3);
+  border-radius: 41px;
+  background: var(--c-blue-3);
+  color: var(--c-white);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
 }
 .btn-2 {
-padding: 20px;
+  padding: 20px;
+  display: inline-block;
 }
 /* common end */
 

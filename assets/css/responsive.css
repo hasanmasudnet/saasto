@@ -977,6 +977,13 @@ Home Pahe 7 Common End
     margin-right: 0;
     padding-right: 0;
   }
+
+  /* ========================================
+  Hero-area-seven start - Homepage seven
+==========================================*/
+.hero-seven-charts img:nth-child(1){
+    margin-left:0px;
+  }
 }
 
 /* Mobile Layout*/

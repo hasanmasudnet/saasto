@@ -9205,13 +9205,13 @@ background-color: var(--c-indigo);
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-.get-in-touch-seven .btn-group a:hover {
+/* .get-in-touch-seven .btn-group a:hover {
   transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
-}
+} */
 .get-in-touch-seven .btn-group a.fill{
   display: flex;
   padding: 12px 24px;
@@ -9664,7 +9664,118 @@ background-color: var(--c-indigo);
   line-height: 177.778%;
   text-transform: capitalize;
 }
-/* about-eight-countdown--area end  */
+/* about-eight-countdown-area end  */
+
+/* work-nine-area start  */
+.work-img-box{
+  position: relative;
+  height: 100%;
+}
+.work-img-box::after{
+  position: absolute;
+  content: '';
+  inset: 8px;
+  left: 8px;
+  bottom: 8px;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 3px solid #FFF;
+}
+.work-img-box .work-img{
+  height: 100%;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.work-img-box .spiral{
+  position: absolute;
+  left: -71px;
+  top: -45px;
+  z-index: 1;
+  animation: anima-trasform-rotate 10s ease infinite alternate;
+  -webkit-animation: anima-trasform-rotate 10s ease infinite alternate;
+}
+.work-img-box .kit-1,
+.work-img-box .kit-2{
+  position: absolute;
+  z-index: 1;
+}
+.work-img-box .kit-1{
+  position: absolute;
+  left: 50%;
+  bottom: -41px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  filter: drop-shadow(0px 2px 140px rgba(0, 0, 0, 0.12));
+  animation: anima-trasform-x-extend 2.5s ease infinite alternate;
+  -webkit-animation: anima-trasform-x-extend 5s ease-in-out infinite alternate;
+}
+.work-img-box .kit-2{
+  position: absolute;
+  right: -120px;
+  bottom: 77.45px;
+  box-shadow: 0px 3.382px 169.099px 0px rgba(0, 0, 0, 0.10);
+  animation: anima-trasform-y-one 3s ease infinite alternate;
+}
+
+@-webkit-keyframes anima-trasform-x-extend {
+  0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+  100% {
+    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+}
+}
+
+@keyframes anima-trasform-x-extend {
+  0% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+  100% {
+    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+}
+}
+@keyframes anima-trasform-rotate {
+  0%,100% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+}
+
+  50% {
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}
+}
+/* work-nine-area end  */
 
 /* ========================================
   Home Page 8 End

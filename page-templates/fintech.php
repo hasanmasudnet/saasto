@@ -385,5 +385,27 @@ get_header();
 </div>
 <!-- about-area end --> 
 
+<!-- about-area end --> 
+<div class="pt-120 pb-120 overflow-hidden">
+   <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="work-img-box wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="spiral" src=<?php echo get_template_directory_uri() . '../assets/img/shapes/spiral-shape.png' ?> alt="work-img">
+                    <img class='work-img' src=<?php echo get_template_directory_uri() . '../assets/img/work/image-1.png' ?> alt="work-img">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="work-img-box wow fadeInUp" data-wow-delay="0.6s">
+                    <img class="kit-1" src=<?php echo get_template_directory_uri() . '../assets/img/work/kit-1.png' ?> alt="kit-img">
+                    <img class="kit-2" src=<?php echo get_template_directory_uri() . '../assets/img/work/kit-2.png' ?> alt="kit-img">
+                    <img class='work-img' src=<?php echo get_template_directory_uri() . '../assets/img/work/image-2.png' ?> alt="work-img">
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+<!-- about-area end --> 
+
 <?php
 get_footer();

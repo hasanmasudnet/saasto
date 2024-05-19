@@ -1075,6 +1075,13 @@ Home Pahe 7 Common End
 /* ========================================
   Home Page 8 end
 ==========================================*/
+/* work-nine-area start  */
+ .work-img-box .spiral {
+  max-width: 30%;
+  left: -40px;
+  top: -40px;
+ }
+/* work-nine-area end  */
 }
 @media only screen and (max-width: 767px) {
   .sponsor-brands-area-seven .sponsor-brands-title {
@@ -1635,6 +1642,15 @@ Home Pahe 7 Common End
   bottom: -60px;
 }
 /* Features-area end  */
+
+/* work-nine-area start  */
+.work-img-box .spiral {
+  max-width: 30%;
+  left: -20px;
+  top: -30px;
+ }
+ .work-img-box .kit-1 {}
+/* work-nine-area end  */
 }
 
 @media only screen and (max-width: 396px) {

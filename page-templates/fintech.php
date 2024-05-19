@@ -405,6 +405,30 @@ get_header();
         </div>
    </div>
 </div>
+
+<div class="pt-120 pb-120">
+    <div class="container">
+        <div class="device-frem">
+            <div class="swiper product-sider-eight">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+            </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- about-area end --> 
 
 <?php

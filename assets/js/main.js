@@ -491,6 +491,21 @@ var swiper = new Swiper('.testimonial-slide-bottom', {
     },
   });
 
+  var swiper = new Swiper('.product-sider-eight', {
+    spaceBetween: 12,
+    slidesPerView: 1,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
   /* Pricing Toggle */
   var checkBox = document.querySelectorAll("#checbox")
 

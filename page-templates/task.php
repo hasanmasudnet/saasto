@@ -30,7 +30,7 @@ get_header();
          </div>
          <div class="col-lg-8">
             <div class="task-countdown-wrap">
-               <div class="task- ">
+               <div class="task-countdown-box">
                   <h2 class="countdown-info">25K+</h2>
                   <p>Our Customers</p>
                </div>

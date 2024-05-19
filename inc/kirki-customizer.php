@@ -296,6 +296,7 @@ function _header_header_fields( $fields ) {
             'header-style-1'   => get_template_directory_uri() . '/inc/img/header/header-1.png',
             'header-style-2' => get_template_directory_uri() . '/inc/img/header/header-2.png',
             'header-style-3'  => get_template_directory_uri() . '/inc/img/header/header-3.png',
+            'header-style-4'  => get_template_directory_uri() . '/inc/img/header/header-4.png',
             'saasto-template-builder'  => get_template_directory_uri() . '/inc/img/header/custom-header.png'
         ],
         'default'     => 'header-style-1',

@@ -1614,6 +1614,14 @@ header .header-transparent {
   background: #8A2FFF;
 }
 
+header .header-four .main-nav ul li a {
+  color: #fff;
+}
+
+header .header-four .main-nav ul li.has-child-menu:after {
+  color: #fff;
+}
+
 .anima-trasform-task_2 {
   animation: slide_2 15s ease-in-out alternate infinite;
 }
@@ -1664,4 +1672,4 @@ header .header-transparent {
   100% {
     transform: translate(0) rotate(0deg);
   }
-}/*# sourceMappingURL=rn-core.css.map */
+}

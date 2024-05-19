@@ -274,8 +274,8 @@ get_header();
 <!-- FAQ-area start -->
 <div class="faq-area-eight">
     <div class="container">
-        <div class="row d-lg-flex justify-content-lg-between">
-            <div class="col-lg-5">
+        <div class="row d-lg-flex justify-content-lg-between gy-5 g-lg-4">
+            <div class="col-lg-6 col-xl-5">
                 <div class="section-header header-eight faq">
                     <span class="sub-title text-start p-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -293,14 +293,17 @@ get_header();
                     </svg>
                         <span>FAQ</span>
                     </span>
-                    <h1 class="title text-start wow fadeInUp" data-wow-delay="0.3s">Have Questions? We Have <span>Answers</span></h1>
+                    <h1 class="title text-start wow fadeInUp" data-wow-delay="0.3s">Have Questions? We Have <span class='theme'>Answers</span></h1>
                     <p class="description text-start wow fadeInUp" data-wow-delay="0.6s">we've compiled all the essential information to help you make the most of our fintech SaaS platform.</p>
                     <p class="description text-start wow fadeInUp" data-wow-delay="0.9s">Want to know more? You can email us anytime at</p>
+                    <a href="mailto:support@saasto.com" class="support wow fadeInUp" data-wow-delay="0.9s">
+                        support@saasto.com
+                    </a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="faq-eight accordion" id="accordionExample">
-                    <div class="accordion-item">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         What is SaaSto? And how work SaaSto?
@@ -312,7 +315,7 @@ get_header();
                         </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                         <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                         Is SaaSto suitable for my small business?
@@ -324,7 +327,7 @@ get_header();
                         </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Can I integrate SaaSto with other business?
@@ -336,7 +339,7 @@ get_header();
                         </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item wow fadeInUp" data-wow-delay="1.2s">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         How does billing work with SaaSto?
@@ -354,6 +357,33 @@ get_header();
     </div>
 </div>
 <!-- FAQ-area end --> 
+
+<!-- about-area end --> 
+<div class="countdown-area-eight pt-120 pb-120">
+    <div class="container">
+        <div class="row g-4 g-2xl-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="product-counter-box">
+                    <h2 class="countdown-info">800K</h2>
+                    <p>Play store downloads reach significant milestone for the application.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="product-counter-box">
+                    <h2 class="countdown-info">600K+</h2>
+                    <p>Daily transaction achieve important milestone for the application</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="product-counter-box">
+                    <h2 class="countdown-info">400K+</h2>
+                    <p>Global active users reaches milestone on the platform</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about-area end --> 
 
 <?php
 get_footer();

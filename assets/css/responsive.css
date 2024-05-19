@@ -419,6 +419,17 @@ Home Pahe 7 Common End
   font-size: 22px;
 }
 /* Features-area end  */
+
+/* faq-eight-area start  */
+.faq-area-eight .row::after{
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* faq-eight-area end  */
 }
 
 
@@ -845,7 +856,7 @@ Home Pahe 7 Common End
 .hero-area-seven .hero-content {
   padding-top: 120px;
 }
-.hero-seven-charts img {
+.hero-seven-charts img:nth-child(3) {
   padding-top: 20px;
 }
 .hero-area-seven .hero-content .title {
@@ -936,6 +947,23 @@ margin-right:0px;
   max-width: 100px;
 }
 /* Testimonial-area end */
+
+/* faq-eight-area start  */
+.faq-area-eight .row::after{
+    content: unset;
+}
+.faq-eight .accordion-item {
+  margin-bottom: 20px;
+}
+.faq-eight .accordion-item .accordion-button{
+  padding-bottom: 20px;
+}
+.faq-eight .accordion-item .accordion-body {
+  padding-bottom: 20px;
+}
+
+/* faq-eight-area end  */
+
 /* ========================================
   Home Page 8 end
 ==========================================*/

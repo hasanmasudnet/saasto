@@ -8654,6 +8654,9 @@ Testimonial End - Homepage Six
   font-weight: 600;
   line-height: 138.462%;
 }
+.section-header.header-eight.faq {
+  max-width: 503px;
+}
 
 .section-header>p {
   max-width: 70%;
@@ -8678,6 +8681,9 @@ Testimonial End - Homepage Six
   color: var(--c-dark-gray);
   font-size: 18px;
   line-height: 177.778%;
+}
+.section-header.header-eight.faq>p {
+  padding-top: 20px;
 }
 .section-header>p:nth-of-type(2) {
   padding-top: 20px;
@@ -8866,6 +8872,9 @@ img {
 /* charts images  */
 .hero-seven-charts{
   padding-bottom: 36px;
+}
+.hero-seven-img-pt {
+ padding-top: 90px;
 }
 .hero-seven-charts img{
 height: fit-content;
@@ -9541,6 +9550,55 @@ background-color: var(--c-indigo);
   z-index: 2;
 }
 /* testimonial-area end  */
+
+/* faq-eight-area start  */
+.faq-eight .accordion-item{
+  border: unset;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+.faq-eight .accordion-item{
+  margin-bottom: 40px;
+}
+.faq-eight .accordion-item .accordion-button{
+  padding: 0;
+  padding-bottom: 32px;
+
+  color: #0B111D;
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.455%;
+}
+.faq-eight .accordion-item .accordion-button:focus{
+  box-shadow: unset;
+}
+.faq-eight .accordion-item .accordion-button.collapsed::after{
+  /* background-image:unset; */
+  /* position: absolute;
+  content: '\F4FA'; */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-plus-circle%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M8%2015A7%207%200%201%201%208%201a7%207%200%200%201%200%2014m0%201A8%208%200%201%200%208%200a8%208%200%200%200%200%2016%22/%3E%3Cpath%20d%3D%22M8%204a.5.5%200%200%201%20.5.5v3h3a.5.5%200%200%201%200%201h-3v3a.5.5%200%200%201-1%200v-3h-3a.5.5%200%200%201%200-1h3v-3A.5.5%200%200%201%208%204%22/%3E%3C/svg%3E");
+  
+}
+.faq-eight .accordion-item .accordion-button::after{
+  /* background-image:unset; */
+  /* position: absolute;
+  content: '\F4FA'; */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2228%22%20height%3D%2228%22%20viewBox%3D%220%200%2028%2028%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M14%200C6.27981%200%200%206.28112%200%2014C0%2021.7189%206.27981%2028%2014%2028C21.7202%2028%2028%2021.7189%2028%2014C28%206.28112%2021.7202%200%2014%200ZM14%2026.0465C7.35684%2026.0465%201.95349%2020.6432%201.95349%2014C1.95349%207.35684%207.35684%201.95349%2014%201.95349C20.6432%201.95349%2026.0465%207.35684%2026.0465%2014C26.0465%2020.6432%2020.6432%2026.0465%2014%2026.0465ZM19.5349%2014C19.5349%2014.5392%2019.0973%2014.9767%2018.5581%2014.9767H9.44186C8.9027%2014.9767%208.46512%2014.5392%208.46512%2014C8.46512%2013.4608%208.9027%2013.0233%209.44186%2013.0233H18.5581C19.0973%2013.0233%2019.5349%2013.4608%2019.5349%2014Z%22%20fill%3D%22%23194BFB%22/%3E%3C/svg%3E");
+  
+}
+.faq-eight .accordion-item .accordion-button:not(.collapsed){
+
+}
+.faq-eight .accordion-item .accordion-body{
+  color: rgba(11, 17, 29, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 187.5%;
+}
+/* faq-eight-area end  */
 
 /* ========================================
   Home Page 8 End

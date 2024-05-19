@@ -271,5 +271,89 @@ get_header();
 </div>
 <!-- Testimonial-area end --> 
 
+<!-- FAQ-area start -->
+<div class="faq-area-eight">
+    <div class="container">
+        <div class="row d-lg-flex justify-content-lg-between">
+            <div class="col-lg-5">
+                <div class="section-header header-eight faq">
+                    <span class="sub-title text-start p-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_5387_3240)">
+                            <path d="M20.3168 13.3562V1.98398C20.3162 1.45798 20.107 0.953689 19.735 0.58175C19.3631 0.209812 18.8588 0.000595494 18.3328 0L1.98794 0C1.46193 0.000583113 0.957626 0.209795 0.585676 0.581737C0.213726 0.953678 0.00450179 1.45797 0.00390625 1.98398V13.3562C0.00448939 13.8822 0.213708 14.3865 0.58566 14.7585C0.957611 15.1304 1.46192 15.3396 1.98794 15.3402H2.209V18.2382C2.20804 18.4287 2.26549 18.615 2.3736 18.7719C2.48172 18.9287 2.63531 19.0487 2.81369 19.1156C2.92144 19.1569 3.03582 19.1781 3.15119 19.1782C3.28319 19.178 3.41366 19.1498 3.53396 19.0955C3.65426 19.0411 3.76165 18.9618 3.84902 18.8629L6.98791 15.3402H18.3328C18.8588 15.3396 19.3631 15.1304 19.735 14.7585C20.107 14.3865 20.3162 13.8822 20.3168 13.3562ZM6.78902 14.1675C6.68609 14.1675 6.58433 14.1893 6.4904 14.2314C6.39648 14.2735 6.31251 14.335 6.244 14.4118L3.38158 17.6241V14.8974C3.38135 14.7039 3.30437 14.5183 3.16751 14.3815C3.03065 14.2446 2.84509 14.1677 2.65155 14.1675H1.98794C1.77286 14.1672 1.56666 14.0817 1.41458 13.9296C1.2625 13.7775 1.17695 13.5713 1.17672 13.3562V1.98398C1.17697 1.76892 1.26252 1.56273 1.4146 1.41066C1.56668 1.25858 1.77287 1.17305 1.98794 1.17281H18.3328C18.5479 1.17305 18.754 1.25858 18.9061 1.41065C19.0582 1.56272 19.1438 1.76891 19.144 1.98398V13.3562C19.1438 13.5713 19.0582 13.7775 18.9062 13.9296C18.7541 14.0817 18.5479 14.1672 18.3328 14.1675H6.78902Z" fill="#122EC0"/>
+                            <path d="M22.0126 6.83911H21.7611C21.6056 6.83911 21.4565 6.90089 21.3465 7.01087C21.2365 7.12084 21.1747 7.26999 21.1747 7.42552C21.1747 7.58104 21.2365 7.7302 21.3465 7.84017C21.4565 7.95014 21.6056 8.01192 21.7611 8.01192H22.0126C22.2277 8.01217 22.4339 8.09772 22.586 8.2498C22.738 8.40188 22.8236 8.60807 22.8238 8.82314V18.1782C22.8235 18.3932 22.7379 18.5993 22.5859 18.7513C22.4338 18.9033 22.2276 18.9889 22.0126 18.9891H21.349C21.1554 18.9893 20.9699 19.0663 20.833 19.2032C20.6962 19.34 20.6192 19.5256 20.619 19.7191V22.4458L17.7566 19.2335C17.6881 19.1567 17.6041 19.0952 17.5102 19.0531C17.4163 19.011 17.3145 18.9892 17.2115 18.9891H10.5466C10.3316 18.9889 10.1254 18.9034 9.97332 18.7514C9.82123 18.5993 9.73564 18.3932 9.73531 18.1782V16.9101C9.73531 16.7546 9.67353 16.6054 9.56356 16.4955C9.45359 16.3855 9.30443 16.3237 9.14891 16.3237C8.99338 16.3237 8.84423 16.3855 8.73426 16.4955C8.62428 16.6054 8.5625 16.7546 8.5625 16.9101V18.1782C8.56308 18.7042 8.7723 19.2085 9.14425 19.5805C9.5162 19.9524 10.0205 20.1617 10.5465 20.1623H17.0129L20.1519 23.6849C20.2393 23.7838 20.3466 23.8631 20.467 23.9174C20.5873 23.9718 20.7177 23.9999 20.8498 24C20.9651 23.9999 21.0795 23.9787 21.1873 23.9374C21.3656 23.8705 21.5192 23.7505 21.6273 23.5937C21.7354 23.4368 21.7929 23.2506 21.7919 23.0601V20.1621H22.0128C22.5387 20.1615 23.043 19.9522 23.4149 19.5803C23.7868 19.2084 23.996 18.7041 23.9967 18.1782V8.8231C23.996 8.29709 23.7868 7.7928 23.4149 7.42086C23.0429 7.04892 22.5386 6.83971 22.0126 6.83911Z" fill="#122EC0"/>
+                            <path d="M10.4527 2.95361H9.8637C9.27638 2.95428 8.7133 3.1879 8.298 3.60321C7.8827 4.01851 7.6491 4.5816 7.64844 5.16893V5.46339C7.64844 5.61892 7.71022 5.76807 7.82019 5.87805C7.93016 5.98802 8.07932 6.0498 8.23484 6.0498C8.39037 6.0498 8.53952 5.98802 8.6495 5.87805C8.75947 5.76807 8.82125 5.61892 8.82125 5.46339V5.16893C8.82155 4.89253 8.93147 4.62754 9.1269 4.4321C9.32233 4.23665 9.58731 4.1267 9.8637 4.12638H10.4527C10.7291 4.1267 10.9941 4.23665 11.1896 4.43209C11.385 4.62754 11.4949 4.89253 11.4952 5.16893V5.9455C11.4949 6.2219 11.385 6.48689 11.1896 6.68234C10.9941 6.87778 10.7291 6.98773 10.4527 6.98805H10.1582C10.0027 6.98806 9.85357 7.04984 9.74361 7.1598C9.63365 7.26977 9.57187 7.4189 9.57186 7.57441V9.78058C9.57117 9.85803 9.58582 9.93484 9.61498 10.0066C9.64414 10.0783 9.68722 10.1436 9.74174 10.1986C9.79626 10.2536 9.86114 10.2973 9.93262 10.3271C10.0041 10.3569 10.0808 10.3722 10.1582 10.3722C10.2357 10.3722 10.3124 10.3569 10.3839 10.3271C10.4553 10.2973 10.5202 10.2536 10.5747 10.1986C10.6293 10.1436 10.6723 10.0783 10.7015 10.0066C10.7307 9.93484 10.7453 9.85803 10.7446 9.78058V8.14099C11.2766 8.06967 11.7646 7.80789 12.1183 7.40418C12.472 7.00048 12.6673 6.48222 12.668 5.9455V5.16893C12.6674 4.58159 12.4338 4.0185 12.0185 3.60319C11.6032 3.18788 11.0401 2.95427 10.4527 2.95361Z" fill="#122EC0"/>
+                            <path d="M10.1606 11.074C10.0051 11.074 9.85594 11.1358 9.74598 11.2457C9.63602 11.3557 9.57424 11.5049 9.57424 11.6604V11.6681C9.57355 11.7455 9.58821 11.8223 9.61736 11.8941C9.64652 11.9658 9.6896 12.0311 9.74412 12.0861C9.79864 12.1411 9.86352 12.1848 9.93501 12.2146C10.0065 12.2444 10.0832 12.2597 10.1606 12.2597C10.2381 12.2597 10.3148 12.2444 10.3862 12.2146C10.4577 12.1848 10.5226 12.1411 10.5771 12.0861C10.6316 12.0311 10.6747 11.9658 10.7039 11.8941C10.733 11.8223 10.7477 11.7455 10.747 11.6681V11.6604C10.747 11.5049 10.6852 11.3557 10.5753 11.2457C10.4653 11.1358 10.3161 11.074 10.1606 11.074Z" fill="#122EC0"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5387_3240">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                        <span>FAQ</span>
+                    </span>
+                    <h1 class="title text-start wow fadeInUp" data-wow-delay="0.3s">Have Questions? We Have <span>Answers</span></h1>
+                    <p class="description text-start wow fadeInUp" data-wow-delay="0.6s">we've compiled all the essential information to help you make the most of our fintech SaaS platform.</p>
+                    <p class="description text-start wow fadeInUp" data-wow-delay="0.9s">Want to know more? You can email us anytime at</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-eight accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What is SaaSto? And how work SaaSto?
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        Absolutely! SaaSto is designed to meet the needs of businesses of all sizes, from startups to enterprise-level organizations. Our flexible pricing plans and scalable features make it easy for small businesses to get started and grow with our platform as their needs evolve.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Is SaaSto suitable for my small business?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        Absolutely! SaaSto is designed to meet the needs of businesses of all sizes, from startups to enterprise-level organizations. Our flexible pricing plans and scalable features make it easy for small businesses to get started and grow with our platform as their needs evolve.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I integrate SaaSto with other business?
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        Absolutely! SaaSto is designed to meet the needs of businesses of all sizes, from startups to enterprise-level organizations. Our flexible pricing plans and scalable features make it easy for small businesses to get started and grow with our platform as their needs evolve.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How does billing work with SaaSto?
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        Absolutely! SaaSto is designed to meet the needs of businesses of all sizes, from startups to enterprise-level organizations. Our flexible pricing plans and scalable features make it easy for small businesses to get started and grow with our platform as their needs evolve.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<!-- FAQ-area end --> 
+
 <?php
 get_footer();

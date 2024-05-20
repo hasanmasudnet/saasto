@@ -7704,16 +7704,18 @@ Homepage Six Start
 }
 
 .section-content .hero-title {
-  color: var(--c-white);
   font-family: var(--secondary-font);
   font-size: 64px;
   font-style: normal;
   font-weight: 600;
   line-height: 134.375%;
 }
+.section-content .hero-title span{
+  font-style: italic;
+  background-image: linear-gradient(180deg, #FFFFFF 90%, #4353ff 0%);
+}
 
 .section-content p {
-  color: rgba(255, 255, 255, 0.70);
   font-family: var(--secondary-font);
   font-size: 18px;
   font-style: normal;

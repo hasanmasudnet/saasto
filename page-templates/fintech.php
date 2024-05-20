@@ -385,7 +385,7 @@ get_header();
 </div>
 <!-- countdown-area end --> 
 
-<!-- about-area end --> 
+<!-- about-area start --> 
 <div class="overflow-hidden">
    <div class="container">
         <div class="row g-4">
@@ -499,7 +499,7 @@ get_header();
 <!-- testimonial-nine-area end --> 
 
 <!-- product-sider-eight-area start --> 
-<div class="">
+<div class="pt-120 pb-120">
     <div class="container">
         <div class="device-frem">
             <div class="action-button-container">
@@ -526,7 +526,7 @@ get_header();
                     <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
                 </div>
             </div>
-                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>

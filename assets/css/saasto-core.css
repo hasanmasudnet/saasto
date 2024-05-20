@@ -9788,6 +9788,7 @@ a.fill-out>span svg:nth-child(1) {
   border-radius: 32px;
   z-index: 0;
   overflow: hidden;
+  margin-bottom: 64px;
 }
 .device-frem .action-button-container {
   position: absolute;
@@ -9890,9 +9891,6 @@ a.fill-out>span svg:nth-child(1) {
   -o-border-radius: 22px;
   box-shadow: 5px 5px 0 5px #002445;
   
-}
-.product-sider-eight .swiper-wrapper{
-  /* padding-bottom: 64px; */
 }
 .product-sider-eight .swiper-slide img{
   border-radius: 22px;

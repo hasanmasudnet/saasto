@@ -508,6 +508,9 @@ get_header();
                 <span class='action-button'></span>
             </div>
             <div class="device-top-left-corner"></div>
+            <div class="device-top-right-corner"></div>
+            <div class="device-bottom-left-corner"></div>
+            <div class="device-bottom-right-corner"></div>
             <div class="swiper product-sider-eight">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">

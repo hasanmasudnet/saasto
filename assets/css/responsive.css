@@ -1199,6 +1199,7 @@ Home Pahe 7 Common End
   max-width: 70%;
 }
 /* integration-five-area end  */
+
 }
 @media only screen and (max-width: 767px) {
   .sponsor-brands-area-seven .sponsor-brands-title {
@@ -1791,10 +1792,16 @@ Home Pahe 7 Common End
 /* integration-five-area end  */
 /* product-sider-eight-area start  */
 .device-frem {
-  padding: 18px 5px 5px;
+  padding: 15px 6px 6px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .device-frem .action-button-container {
-  top: 8px;
+  top: 5px;
+  left: 20px;
   z-index: 10;
 }
 .device-frem .action-button-container .action-button {
@@ -1802,44 +1809,47 @@ Home Pahe 7 Common End
   height: 5px;
 }
 .device-top-left-corner {
-  top: 18px;
-  left: 5px;
+  top: 15px;
+  left: 6px;
   box-shadow: 6px -6px 0 6px #002445;
-  border-radius:0 30px 0 0;
-  -webkit-border-radius:0 30px 0 0;
-  -moz-border-radius:0 30px 0 0;
-  -ms-border-radius:0 30px 0 0;
-  -o-border-radius:0 30px 0 0;
+  border-radius: 0 10px 0 0;
 }
 .device-bottom-left-corner {
-  bottom: 5px;
-  left: 5px;
+  bottom: 6px;
+  left: 6px;
   box-shadow: 6px 6px 0 6px #002445;
-  border-radius:0 0 30px 0;
-  -webkit-border-radius:0 0 30px 0;
-  -moz-border-radius:0 0 30px 0;
-  -ms-border-radius:0 0 30px 0;
-  -o-border-radius:0 0 30px 0;
+  border-radius:0 0 10px 0;
+  -webkit-border-radius:0 0 10px 0;
+  -moz-border-radius:0 0 10px 0;
+  -ms-border-radius:0 0 10px 0;
+  -o-border-radius:0 0 10px 0;
 }
 .device-top-right-corner{
-  top: 18px;
-  right: 5px;
+  top: 15px;
+  right: 6px;
   box-shadow: 6px -6px 0 6px #002445;
-  border-radius:0 30px 0 0;
-  -webkit-border-radius:0 30px 0 0;
-  -moz-border-radius:0 30px 0 0;
-  -ms-border-radius:0 30px 0 0;
-  -o-border-radius:0 30px 0 0;
+  border-radius:0 10px 0 0;
+  -webkit-border-radius:0 10px 0 0;
+  -moz-border-radius:0 10px 0 0;
+  -ms-border-radius:0 10px 0 0;
+  -o-border-radius:0 10px 0 0;
 }
 .device-bottom-right-corner {
   bottom: 4px;
-  right: 5px;
+  right: 6px;
   box-shadow: 6px 6px 0 6px #002445;
-  border-radius:0 0 30px 0;
-  -webkit-border-radius:0 0 30px 0;
-  -moz-border-radius:0 0 30px 0;
-  -ms-border-radius:0 0 30px 0;
-  -o-border-radius:0 0 30px 0;
+  border-radius:0 0 10px 0;
+  -webkit-border-radius:0 0 10px 0;
+  -moz-border-radius:0 0 10px 0;
+  -ms-border-radius:0 0 10px 0;
+  -o-border-radius:0 0 10px 0;
+}
+.product-sider-eight .swiper-slide img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 /* product-sider-eight-area end  */
 }

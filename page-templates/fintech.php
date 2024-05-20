@@ -407,31 +407,7 @@ get_header();
 </div>
 <!-- about-area end --> 
 
-<!-- product-sider-eight-area start --> 
-<div class="">
-    <div class="container">
-        <div class="device-frem">
-            <div class="swiper product-sider-eight">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-            </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- product-sider-eight-area end --> 
+
 
 <!-- testimonial-nine-area start --> 
 <div class="testimonial-nine pt-120 pb-120">
@@ -521,5 +497,37 @@ get_header();
     </div>
 </div>
 <!-- testimonial-nine-area end --> 
+
+<!-- product-sider-eight-area start --> 
+<div class="">
+    <div class="container">
+        <div class="device-frem">
+            <div class="action-button-container">
+                <span class='action-button'></span>
+                <span class='action-button'></span>
+                <span class='action-button'></span>
+            </div>
+            <div class="device-top-left-corner"></div>
+            <div class="swiper product-sider-eight">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+                <div class="swiper-slide">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                </div>
+            </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- product-sider-eight-area end --> 
 <?php
 get_footer();

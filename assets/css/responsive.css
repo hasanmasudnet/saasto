@@ -448,16 +448,6 @@ Home Pahe 7 Common End
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight {
-  padding: 22px 12px 12px;
-}
-.product-sider-eight .swiper-slide img{ 
-  border-radius: 12px; 
-  -webkit-border-radius: 12px; 
-  -moz-border-radius: 12px; 
-  -ms-border-radius: 12px; 
-  -o-border-radius: 12px;
-}
 /* product-sider-eight-area end  */
 /* testimonial-nine-area start  */
 .testimonial-nine-card {
@@ -1160,18 +1150,8 @@ Home Pahe 7 Common End
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight {
-  padding: 15px 12px 12px;
-}
 .product-sider-eight .swiper-wrapper{
-  padding-bottom: 46px;
-}
-.product-sider-eight .swiper-slide img {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  /* padding-bottom: 46px; */
 }
 .product-sider-eight .swiper-pagination-bullet{
   width: 10px;
@@ -1760,11 +1740,6 @@ Home Pahe 7 Common End
   right: -20px;
  }
 /* work-nine-area end  */
-/* product-sider-eight-area start  */
-.product-sider-eight {
-  padding: 15px 12px 12px;
-}
-  /* product-sider-eight-area end  */
 }
 
 @media only screen and (max-width: 396px) {

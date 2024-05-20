@@ -454,6 +454,20 @@ Home Pahe 7 Common End
   padding: 22px;
 }
 /* testimonial-nine-area end */
+
+/* integration-five-area start */
+.integration-card-wrapper {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 50px;
+}
+.integration-card-wrapper .integration-card {
+  width: 120px;
+  height: 120px;
+}
+.integration-card-wrapper .integration-card img {
+  max-width: 70%;
+}
+/* integration-five-area end  */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1150,10 +1164,10 @@ Home Pahe 7 Common End
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight .swiper-wrapper{
-  /* padding-bottom: 46px; */
+.swiper-custom-pagination{
+  padding-top: 20px;
 }
-.product-sider-eight .swiper-pagination-bullet{
+.swiper-custom-pagination .swiper-pagination-bullet{
   width: 10px;
   height: 10px;
 }
@@ -1164,6 +1178,19 @@ Home Pahe 7 Common End
   font-size: 40px;
 }
 /* about-eight-countdown-area end  */
+/* integration-five-area start */
+.integration-card-wrapper {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+.integration-card-wrapper .integration-card {
+  width: 100px;
+  height: 100px;
+}
+.integration-card-wrapper .integration-card img {
+  max-width: 70%;
+}
+/* integration-five-area end  */
 }
 @media only screen and (max-width: 767px) {
   .sponsor-brands-area-seven .sponsor-brands-title {
@@ -1740,6 +1767,20 @@ Home Pahe 7 Common End
   right: -20px;
  }
 /* work-nine-area end  */
+
+/* integration-five-area start */
+.integration-card-wrapper {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+.integration-card-wrapper .integration-card {
+  width: 80px;
+  height: 80px;
+}
+.integration-card-wrapper .integration-card img {
+  max-width: 50%;
+}
+/* integration-five-area end  */
 }
 
 @media only screen and (max-width: 396px) {

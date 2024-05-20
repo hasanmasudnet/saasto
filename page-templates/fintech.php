@@ -386,7 +386,7 @@ get_header();
 <!-- countdown-area end --> 
 
 <!-- about-area start --> 
-<div class="overflow-hidden">
+<div class="pt-120 pb-120 overflow-hidden">
    <div class="container">
         <div class="row g-4">
             <div class="col-md-6">

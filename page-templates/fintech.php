@@ -579,5 +579,19 @@ get_header();
     </div>
 </div>
 <!-- integration-five-area end --> 
+
+<!-- integration-nine-area end --> 
+<div class="integration-nine pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="integration-circle-outer d-grid justify-content-center  align-items-center">
+                    <div class="integration-circle-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- integration-nine-area end --> 
 <?php
 get_footer();

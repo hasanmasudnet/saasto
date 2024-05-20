@@ -7393,6 +7393,15 @@ Homapage Five Start
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  .hero-style-four {
+    padding: 150px 0 60px;
+  }
+  .hero-style-four .section-content h1 {
+    font-size: 48px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero-style-four .section-content h1 {
     font-size: 48px;
@@ -8715,10 +8724,6 @@ img {
   max-width: inherit;
 }
 
-.sponsor-brands-area-seven {
-  padding-bottom: 60px;
-}
-
 .sponsor-brands-area-seven .sponsor-brands-title {
   max-width: 280px;
   padding-right: 60px;
@@ -9211,8 +9216,9 @@ a.fill{
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
+  background-color:#1D6C77;padding-left: 100px;padding-top: 150px;
 } */
-.get-in-touch-seven .btn-group a.fill{
+a.fill{
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -10020,6 +10026,38 @@ a.fill-out>span svg:nth-child(1) {
   margin: 0 auto;
 }
 /* integration-five-area end  */
+
+/* integration-nine-area start  */ 
+.integration-circle-outer {
+  width: 535px;
+  height: 535px;
+  background: #8A2FFF1F;
+  position: relative;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.integration-circle-outer::before {
+  position: absolute;
+  content: '';
+  inset: 68px;
+  border-radius: 100%;
+  background: #8A2FFF29;
+}
+.integration-circle-inner {
+  width: 260px;
+  height: 260px;
+  background: rgba(138, 47, 255, 0.20);
+  position: relative;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+/* integration-nine-area end  */ 
 /* ========================================
   Home Page 8 End
 ==========================================*/

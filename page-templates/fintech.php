@@ -358,8 +358,8 @@ get_header();
 </div>
 <!-- FAQ-area end --> 
 
-<!-- about-area end --> 
-<div class="countdown-area-eight pt-120 pb-120">
+<!-- countdown-area start --> 
+<div class="countdown-area-eight">
     <div class="container">
         <div class="row g-4 g-2xl-5">
             <div class="col-md-6 col-lg-4">
@@ -383,10 +383,10 @@ get_header();
         </div>
     </div>
 </div>
-<!-- about-area end --> 
+<!-- countdown-area end --> 
 
 <!-- about-area end --> 
-<div class="pt-120 pb-120 overflow-hidden">
+<div class="overflow-hidden">
    <div class="container">
         <div class="row g-4">
             <div class="col-md-6">
@@ -405,8 +405,10 @@ get_header();
         </div>
    </div>
 </div>
+<!-- about-area end --> 
 
-<div class="pt-120 pb-120">
+<!-- product-sider-eight-area start --> 
+<div class="">
     <div class="container">
         <div class="device-frem">
             <div class="swiper product-sider-eight">
@@ -429,7 +431,95 @@ get_header();
         </div>
     </div>
 </div>
-<!-- about-area end --> 
+<!-- product-sider-eight-area end --> 
 
+<!-- testimonial-nine-area start --> 
+<div class="testimonial-nine pt-120 pb-120">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="testimonial-nine-card testimonial-nine-card-one">
+                    <div class="testimonial-content">
+                        <div class="content-header">
+                            <ul class='rating'>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>"I love how customizable SaaStois. It adapts to our unique workflow and allows us to tailor it to our specific needs."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="testimonial-avatar">
+                            </div>
+                            <div class="author-info">
+                                <h6 class="author-title">Michael Rodriguez</h6>
+                                <span class="author-designation">Project Manager</span>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/company-logo.png' ?> alt="company-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial-nine-card testimonial-nine-card-two">
+                    <div class="testimonial-content">
+                        <div class="content-header">
+                            <ul class='rating'>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                                <li>
+                                    <i class="bi bi-star-fill"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>"I love how customizable SaaStois. It adapts to our unique workflow and allows us to tailor it to our specific needs."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/testimonial-avatar-4.png' ?> alt="testimonial-avatar">
+                            </div>
+                            <div class="author-info">
+                                <h6 class="author-title">Michael Rodriguez</h6>
+                                <span class="author-designation">Project Manager</span>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/testimonial/company-logo.png' ?> alt="company-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- testimonial-nine-area end --> 
 <?php
 get_footer();

@@ -9,11 +9,46 @@ get_header();
 ?>
 
 
-      <!-- Hero Start -->
-      <section class="hero-style-four position-relative">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-7">
+   <!-- Hero Start -->
+   <!-- <section class="hero-style-four position-relative">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-7">
+               <div class="section-content">
+                  <h1 class="hero-title"><span>Maximizing</span> Your Workforce Potential</h1>
+                  <p class='pt-24'>Saasto is a people management solution that helps in employee onboarding, performance tracking, payroll and attendance management.</p>
+                  <div class="hero-buttons d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                     <a href="#" class="btn-fill-rounded">
+                        <span class="">Start for Free</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M21.7061 12.708L14.707 19.7071C14.512 19.9021 14.256 20 14 20C13.744 20 13.488 19.9021 13.293 19.7071C12.902 19.3161 12.902 18.684 13.293 18.293L18.5859 13H3C2.447 13 2 12.552 2 12C2 11.448 2.447 11 3 11H18.5859L13.293 5.70707C12.902 5.31607 12.902 4.68401 13.293 4.29301C13.684 3.90201 14.316 3.90201 14.707 4.29301L21.7061 11.292C21.7991 11.385 21.8721 11.495 21.9231 11.618C22.0241 11.862 22.0241 12.1381 21.9231 12.3821C21.8721 12.5051 21.7991 12.615 21.7061 12.708Z" fill="currentColor"/>
+                        </svg>
+                     </a>
+                     <a href="https://www.youtube.com/watch?v=3nXwUeEJQUY" class="btn-outlined-round popup-youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM15.46 13.061L10.9821 15.801C10.0911 16.346 8.94495 15.7071 8.94495 14.6641V9.33594C8.94495 8.29294 10.0911 7.65397 10.9821 8.19897L15.46 10.939C16.254 11.425 16.254 12.575 15.46 13.061Z"/>
+                        </svg>
+                        <span class="">Watch Tutorial</span>
+                     </a>
+                  </div>
+                  <p class="short-info">Everything Setup in 5 minutes. No credit card required.</p>
+                  <div class="reviews d-flex flex-column flex-md-row justify-content-start align-items-md-center">
+                     <img src=<?php echo get_template_directory_uri().'../assets/img/hero/reviews.svg'?> alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="hero-style-four-background d-none d-lg-flex justify-content-lg-start align-items-lg-end overflow-hidden">
+         <img src=<?php echo get_template_directory_uri().'../assets/img/hero/hero-dashboard.png'?> alt="dashboard">
+      </div>
+   </section> -->
+
+   <section class="hr-hero-area hero-style-four position-relative mb-5">
+      <div class="container">
+      <div class="w-100">
+				<div class="row justify-content-between align-items-end">
+					<div class="col-xl-7 col-lg-6 col-md-10">
                   <div class="section-content">
                      <h1 class="hero-title"><span>Maximizing</span> Your Workforce Potential</h1>
                      <p class='pt-24'>Saasto is a people management solution that helps in employee onboarding, performance tracking, payroll and attendance management.</p>
@@ -36,14 +71,18 @@ get_header();
                         <img src=<?php echo get_template_directory_uri().'../assets/img/hero/reviews.svg'?> alt="">
                      </div>
                   </div>
-               </div>
-            </div>
-         </div>
-         <div class="hero-style-four-background d-none d-lg-flex justify-content-lg-start align-items-lg-end overflow-hidden">
-            <img src=<?php echo get_template_directory_uri().'../assets/img/hero/hero-dashboard.png'?> alt="dashboard">
-         </div>
-      </section>
-      <!-- Hero End -->
+					</div>
+					<div class="col-xl-5 col-lg-6 position-absolute top-0 end-0 pe-0 h-100 d-none d-lg-block">
+						<div class="hr-hero-img text-end h-100 d-flex align-items-end justify-content-end" style="background-color:#1D6C77; padding-left: 100px">
+                     <img src=<?php echo get_template_directory_uri().'../assets/img/hero/hr-img.png'?> alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+      </div>
+   </section>
+
+   <!-- Hero End -->
 
       <!-- Testimonial Start -->
       <section class="d-none testimonial-style-four section-gap-bottom-y-1 section-gap-top-y-1">

@@ -1781,6 +1781,59 @@ Home Pahe 7 Common End
   max-width: 50%;
 }
 /* integration-five-area end  */
+/* product-sider-eight-area start  */
+.device-frem {
+  padding: 18px 5px 5px;
+}
+.device-frem .action-button-container {
+  top: 8px;
+  z-index: 10;
+}
+.device-frem .action-button-container .action-button {
+  width: 5px;
+  height: 5px;
+}
+.device-top-left-corner {
+  top: 18px;
+  left: 5px;
+  box-shadow: 6px -6px 0 6px #002445;
+  border-radius:0 30px 0 0;
+  -webkit-border-radius:0 30px 0 0;
+  -moz-border-radius:0 30px 0 0;
+  -ms-border-radius:0 30px 0 0;
+  -o-border-radius:0 30px 0 0;
+}
+.device-bottom-left-corner {
+  bottom: 5px;
+  left: 5px;
+  box-shadow: 6px 6px 0 6px #002445;
+  border-radius:0 0 30px 0;
+  -webkit-border-radius:0 0 30px 0;
+  -moz-border-radius:0 0 30px 0;
+  -ms-border-radius:0 0 30px 0;
+  -o-border-radius:0 0 30px 0;
+}
+.device-top-right-corner{
+  top: 18px;
+  right: 5px;
+  box-shadow: 6px -6px 0 6px #002445;
+  border-radius:0 30px 0 0;
+  -webkit-border-radius:0 30px 0 0;
+  -moz-border-radius:0 30px 0 0;
+  -ms-border-radius:0 30px 0 0;
+  -o-border-radius:0 30px 0 0;
+}
+.device-bottom-right-corner {
+  bottom: 4px;
+  right: 5px;
+  box-shadow: 6px 6px 0 6px #002445;
+  border-radius:0 0 30px 0;
+  -webkit-border-radius:0 0 30px 0;
+  -moz-border-radius:0 0 30px 0;
+  -ms-border-radius:0 0 30px 0;
+  -o-border-radius:0 0 30px 0;
+}
+/* product-sider-eight-area end  */
 }
 
 @media only screen and (max-width: 396px) {

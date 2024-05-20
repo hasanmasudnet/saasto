@@ -9686,6 +9686,7 @@ a.fill-out>span svg:nth-child(1) {
   border: 3px solid #FFF;
 }
 .work-img-box .work-img{
+  width: 100%;
   height: 100%;
   border-radius: 16px;
   -webkit-border-radius: 16px;

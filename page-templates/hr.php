@@ -68,7 +68,7 @@ get_header();
                      </div>
                      <p class="short-info">Everything Setup in 5 minutes. No credit card required.</p>
                      <div class="reviews d-flex flex-column flex-md-row justify-content-start align-items-md-center">
-                        <img src=<?php echo get_template_directory_uri().'../assets/img/hero/reviews.svg'?> alt="">
+                        <img src=<?php echo get_template_directory_uri().'../assets/img/hero/reviews.png'?> alt="">
                      </div>
                   </div>
 					</div>

@@ -7393,6 +7393,15 @@ Homapage Five Start
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  .hero-style-four {
+    padding: 150px 0 60px;
+  }
+  .hero-style-four .section-content h1 {
+    font-size: 48px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero-style-four .section-content h1 {
     font-size: 48px;

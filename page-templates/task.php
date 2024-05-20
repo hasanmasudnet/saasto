@@ -157,6 +157,20 @@ get_header();
 
 <!-- Price End -->
 
+<div class="container pb-5 pt-5" style="background-color:#100032;">
+   <div class="row">
+      <div class="col-lg-4">
+         <div class="task-footer-subscribe-wrap position-relative">
+            <input class="w-100" type="text" placeholder="Enter your email address">
+            <button class="border-0"><i class="bi bi-arrow-right-short"></i></button>
+         </div>
+         <div class="form-group mt-3">
+            <input type="checkbox" id="footer-sb">
+            <label for="footer-sb">by signing up, you agree to receive mail</label>
+         </div>
+      </div>
+   </div>
+</div>
 
 
 <?php

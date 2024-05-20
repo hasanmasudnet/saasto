@@ -448,20 +448,21 @@ Home Pahe 7 Common End
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight {
-  padding: 22px 12px 12px;
-}
-.product-sider-eight .swiper-slide img{ 
-  border-radius: 12px; 
-  -webkit-border-radius: 12px; 
-  -moz-border-radius: 12px; 
-  -ms-border-radius: 12px; 
-  -o-border-radius: 12px;
-}
 /* product-sider-eight-area end  */
-
+/* testimonial-nine-area start  */
+.testimonial-nine-card {
+  padding: 22px;
+}
+/* testimonial-nine-area end */
 }
 
+@media only screen and (max-width: 1024px) {
+  /* testimonial-nine-area start  */
+  .testimonial-nine-card .testimonial-author {
+  flex-direction: column;
+  }
+    /* testimonial-nine-area end */
+}
 
 /* Tablet Layout*/
 /* Wide Mobile Layout*/
@@ -994,6 +995,33 @@ margin-right:0px;
 
 /* faq-eight-area end  */
 
+  /* testimonial-nine-area start  */
+  .testimonial-nine-card {
+    padding: 22px;
+  }
+  .testimonial-nine-card .testimonial-author {
+  flex-direction: column;
+  }
+  .testimonial-nine-card .testimonial-content {
+    padding-bottom: 25px;
+  }
+  .testimonial-nine-card .testimonial-content>p {
+    font-size: 19px;
+  }
+  .testimonial-nine-card .testimonial-author {
+    padding-top: 25px;
+    gap: 12px;
+  }
+  .testimonial-nine-card .testimonial-author .author .avatar {
+    min-width: 60px;
+    min-height: 60px;
+    width: 50px;
+  }
+  .testimonial-nine-card .testimonial-author .author-info .author-title {
+    font-size: 18px;
+  }
+    /* testimonial-nine-area end */
+
 /* ========================================
   Home Page 8 end
 ==========================================*/
@@ -1122,24 +1150,20 @@ Home Pahe 7 Common End
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight {
-  padding: 15px 12px 12px;
-}
 .product-sider-eight .swiper-wrapper{
-  padding-bottom: 46px;
-}
-.product-sider-eight .swiper-slide img {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  /* padding-bottom: 46px; */
 }
 .product-sider-eight .swiper-pagination-bullet{
   width: 10px;
   height: 10px;
 }
 /* product-sider-eight-area end  */
+
+/* about-eight-countdown-area start  */
+.product-counter-box .countdown-info {
+  font-size: 40px;
+}
+/* about-eight-countdown-area end  */
 }
 @media only screen and (max-width: 767px) {
   .sponsor-brands-area-seven .sponsor-brands-title {
@@ -1716,11 +1740,6 @@ Home Pahe 7 Common End
   right: -20px;
  }
 /* work-nine-area end  */
-/* product-sider-eight-area start  */
-.product-sider-eight {
-  padding: 15px 12px 12px;
-}
-  /* product-sider-eight-area end  */
 }
 
 @media only screen and (max-width: 396px) {

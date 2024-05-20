@@ -9643,6 +9643,7 @@ background-color: var(--c-indigo);
   background: rgba(11, 17, 29, 0.02);
   padding: 24px;
   text-align: center;
+  height: 100%;
 }
 .product-counter-box .countdown-info {
   color: #0B111D;
@@ -9778,19 +9779,52 @@ background-color: var(--c-indigo);
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight {
+.device-frem {
   padding-bottom: 70px;
   position: relative;
   width: 100%;
-  height: 100%;
-  background: url('../img/product/device-frem.png');
+  background-color: #002445;
+  padding: 34px 12px 12px;
+  border-radius: 32px;
+  z-index: 0;
   overflow: hidden;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 33px 12px 12px;
+}
+.device-frem .action-button-container {
+  position: absolute;
+  left:  32px;
+  top: 12px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap:6px
+}
+.device-frem .action-button-container .action-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.device-frem .action-button-container .action-button:nth-child(1) {
+  background-color: #FF5F57;
+}
+.device-frem .action-button-container .action-button:nth-child(2) {
+  background-color: #FFBC2F;
+}
+.device-frem .action-button-container .action-button:nth-child(3) {
+  background-color: #28C840;
+}
+
+.device-top-left-corner {
+  position: absolute;
 }
 .product-sider-eight .swiper-wrapper{
-  padding-bottom: 64px;
+  /* padding-bottom: 64px; */
 }
 .product-sider-eight .swiper-slide img{
   border-radius: 22px;
@@ -9808,10 +9842,94 @@ background-color: var(--c-indigo);
 .product-sider-eight .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background: #354AB5;
 }
-.product-sider-eight .swiper-slide img {
-  /* opacity: 0.3; */
-}
+
 /* product-sider-eight-area end  */
+
+/* testimonial-nine-area start  */
+.testimonial-nine-card {
+  height: 100%;
+  background: url('../img/testimonial/testimonial-nine-shape-1.png')  lightgray 50% / cover no-repeat;;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-blend-mode: lighten;
+  padding: 48px 64px;
+}
+.testimonial-nine-card.testimonial-nine-card-one {
+  background-color: #CDE8FEe8;
+}
+.testimonial-nine-card.testimonial-nine-card-two {
+  background-color: #FFF2CFe8;
+}
+.testimonial-nine-card .testimonial-content {
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(11, 17, 29, 0.20);
+}
+.testimonial-nine-card .testimonial-content .rating {
+  color: #25314C;
+  list-style: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: start;
+  gap: 4px;
+}
+.testimonial-nine-card .testimonial-content>p {
+  padding-top: 20px;
+  color: #0B111D;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height:180%;
+}
+
+.testimonial-nine-card .testimonial-author {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 12px;
+}
+.testimonial-nine-card .testimonial-author .author .avatar{
+  min-width: 68px;
+  min-height: 68px;
+  line-height: 68px;
+  text-align: center;
+}
+.testimonial-nine-card .testimonial-author .author .avatar img{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.testimonial-nine-card .testimonial-author .author{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.testimonial-nine-card .testimonial-author .author-info .author-title{
+  color: #0B111D;
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 154.545%;
+ }
+.testimonial-nine-card .testimonial-author .author-info .author-designation{ 
+  color: rgba(11, 17, 29, 0.70);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 177.778%;
+}
+/* testimonial-nine-area end  */
 
 /* ========================================
   Home Page 8 End

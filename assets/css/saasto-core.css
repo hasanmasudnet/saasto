@@ -10000,6 +10000,26 @@ a.fill-out>span svg:nth-child(1) {
 }
 /* testimonial-nine-area end  */
 
+/* integration-five-area start */
+.integration-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  /* place-items: center; */
+  row-gap: 60px;
+  column-gap: 84px;
+}
+.integration-card-wrapper .integration-card {
+  width: 150px;
+  height: 150px;
+  background: #F7F8FB;
+  display: grid;
+  place-content: center;
+  border-radius: 24px;
+}
+.integration-card-wrapper .integration-card img {
+  margin: 0 auto;
+}
+/* integration-five-area end  */
 /* ========================================
   Home Page 8 End
 ==========================================*/

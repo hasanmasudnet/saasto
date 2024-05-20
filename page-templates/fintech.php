@@ -534,5 +534,50 @@ get_header();
     </div>
 </div>
 <!-- product-sider-eight-area end --> 
+
+<!-- integration-five-area start --> 
+<div class="integration-five pt-120 pb-120">
+    <div class="container">
+        <div class="integration-card-wrapper">
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+            <div class="integration-card">
+                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- integration-five-area end --> 
 <?php
 get_footer();

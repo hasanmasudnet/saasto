@@ -8724,10 +8724,6 @@ img {
   max-width: inherit;
 }
 
-.sponsor-brands-area-seven {
-  padding-bottom: 60px;
-}
-
 .sponsor-brands-area-seven .sponsor-brands-title {
   max-width: 280px;
   padding-right: 60px;
@@ -9220,8 +9216,9 @@ a.fill{
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
+  background-color:#1D6C77;padding-left: 100px;padding-top: 150px;
 } */
-.get-in-touch-seven .btn-group a.fill{
+a.fill{
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -10034,7 +10031,7 @@ a.fill-out>span svg:nth-child(1) {
 .integration-circle-outer {
   width: 535px;
   height: 535px;
-  background: rgba(138, 47, 255, 0.12);
+  background: #8A2FFF1F;
   position: relative;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -10047,7 +10044,7 @@ a.fill-out>span svg:nth-child(1) {
   content: '';
   inset: 68px;
   border-radius: 100%;
-  background: rgba(138, 47, 255, 0.16);
+  background: #8A2FFF29;
 }
 .integration-circle-inner {
   width: 260px;

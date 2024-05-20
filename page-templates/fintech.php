@@ -501,33 +501,35 @@ get_header();
 <!-- product-sider-eight-area start --> 
 <div class="pt-120 pb-120">
     <div class="container">
-        <div class="device-frem">
-            <div class="action-button-container">
-                <span class='action-button'></span>
-                <span class='action-button'></span>
-                <span class='action-button'></span>
+        <div class="device-wrapper">
+            <div class="device-frem">
+                <div class="action-button-container">
+                    <span class='action-button'></span>
+                    <span class='action-button'></span>
+                    <span class='action-button'></span>
+                </div>
+                <div class="device-top-left-corner"></div>
+                <div class="device-top-right-corner"></div>
+                <div class="device-bottom-left-corner"></div>
+                <div class="device-bottom-right-corner"></div>
+                <div class="swiper product-sider-eight">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="device-top-left-corner"></div>
-            <div class="device-top-right-corner"></div>
-            <div class="device-bottom-left-corner"></div>
-            <div class="device-bottom-right-corner"></div>
-            <div class="swiper product-sider-eight">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-                <div class="swiper-slide">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/product/dashboard.png' ?> alt="product">
-                </div>
-            </div>
-                <div class="swiper-pagination"></div>
-            </div>
+            <div class="swiper-custom-pagination"></div>
         </div>
     </div>
 </div>

@@ -501,7 +501,7 @@ var swiper = new Swiper('.testimonial-slide-bottom', {
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-custom-pagination",
       clickable: true,
     },
   });

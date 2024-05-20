@@ -1150,10 +1150,10 @@ Home Pahe 7 Common End
 /* work-nine-area end  */
 
 /* product-sider-eight-area start  */
-.product-sider-eight .swiper-wrapper{
-  /* padding-bottom: 46px; */
+.swiper-custom-pagination{
+  padding-top: 20px;
 }
-.product-sider-eight .swiper-pagination-bullet{
+.swiper-custom-pagination .swiper-pagination-bullet{
   width: 10px;
   height: 10px;
 }

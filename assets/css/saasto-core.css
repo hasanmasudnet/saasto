@@ -9788,7 +9788,6 @@ a.fill-out>span svg:nth-child(1) {
   border-radius: 32px;
   z-index: 0;
   overflow: hidden;
-  margin-bottom: 64px;
 }
 .device-frem .action-button-container {
   position: absolute;
@@ -9899,14 +9898,18 @@ a.fill-out>span svg:nth-child(1) {
   -ms-border-radius: 22px;
   -o-border-radius: 22px;
 }
-.product-sider-eight .swiper-pagination-bullet{
+.swiper-custom-pagination .swiper-pagination-bullet{
   width: 16px;
   height: 16px;
   background: #354AB51F;
   opacity: 1;
 }
-.product-sider-eight .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background: #354AB5;
+}
+.swiper-custom-pagination {
+  padding-top: 48px;
+  text-align: center;
 }
 
 /* product-sider-eight-area end  */

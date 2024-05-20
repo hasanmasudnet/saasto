@@ -499,7 +499,7 @@ get_header();
 <!-- testimonial-nine-area end --> 
 
 <!-- product-sider-eight-area start --> 
-<div class="pt-120 pb-120">
+<div class="">
     <div class="container">
         <div class="device-wrapper">
             <div class="device-frem">

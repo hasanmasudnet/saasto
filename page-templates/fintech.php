@@ -581,7 +581,7 @@ get_header();
 <!-- integration-five-area end --> 
 
 <!-- integration-nine-area end --> 
-<div class="integration-nine pt-120 pb-120">
+<div class="d-none integration-nine pt-120 pb-120">
     <div class="container">
         <div class="row">
             <div class="col-md-6">

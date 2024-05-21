@@ -1933,4 +1933,27 @@ header .header-four .main-nav ul li.has-child-menu:after{
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
+
+.header-wd{
+  border-radius: 53.5px;
+  background: #0B111D;
+  padding: 0 22px;
+  .nav-logo.nav-logo-border{
+    position: relative;
+    &::before{
+      position: absolute;
+      left: 113%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.20);
+      width: 2px;
+      height: 41px;
+      content: "";
+    }
+  }
+  .main-nav{
+    width: 100%;
+  }
+}
  

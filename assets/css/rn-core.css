@@ -1749,4 +1749,26 @@ header .header-four .main-nav ul li.has-child-menu:after {
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+.header-wd {
+  border-radius: 53.5px;
+  background: #0B111D;
+  padding: 0 22px;
+}
+.header-wd .nav-logo.nav-logo-border {
+  position: relative;
+}
+.header-wd .nav-logo.nav-logo-border::before {
+  position: absolute;
+  left: 113%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  width: 2px;
+  height: 41px;
+  content: "";
+}
+.header-wd .main-nav {
+  width: 100%;
 }/*# sourceMappingURL=rn-core.css.map */

@@ -7455,18 +7455,6 @@ Homapage Five Start
 Brand Slider End - Homapage Five
 =================================*/
 
-/*===============================
-33. Apps Gallery Start - Homapage Five
-=================================*/
-.app-gallery-gap {
-  row-gap: 60px;
-}
-
-@media only screen and (max-width: 768px) {
-  .app-gallery-gap {
-    row-gap: 40px;
-  }
-}
 
 /*===============================
 34. Testimonials Start - Homapage Five

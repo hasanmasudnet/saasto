@@ -7712,7 +7712,7 @@ Homepage Six Start
 }
 .section-content .hero-title span{
   font-style: italic;
-  background-image: linear-gradient(180deg, #FFFFFF 90%, #4353ff 0%);
+  background-image: linear-gradient(180deg, #ffffff00 90%, #4353ff 0%);
 }
 
 .section-content p {
@@ -8739,6 +8739,10 @@ img {
   line-height: 150%;
 }
 
+.sponsor-brands-slider .swiper-slide {
+  text-align: center;
+}
+
 /* ========================================
   Sponsor Brands end - Homepage seven
 ==========================================*/
@@ -9353,22 +9357,27 @@ a.fill-out>span svg:nth-child(1) {
 
 /* common start */
  .btn-1 {
-  display: inline-block;
-  padding: 20px 40px;
-  border: 1px solid var(--c-blue-3);
-  border-radius: 41px;
-  background: var(--c-blue-3);
-  color: var(--c-white);
-  font-family: var(--secondary-font);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 133.333%;
-  transition: var(--transition-2);
+    display: inline-block;
+    padding: 20px 40px;
+    border: 1px solid var(--c-blue-3);
+    border-radius: 41px;
+    background: var(--c-blue-3);
+    color: var(--c-white);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    line-height: 133.333%;
 }
+
 .btn-1:hover {
-  background: #194BFB20;
+  box-shadow:  0 4px 20px -2px rgba(39, 94, 254, .5);
+  transform: translateY(-4px);
+  color: var(--c-white);
 }
+
 .btn-2 {
   display: inline-block;
   padding: 20px 40px;
@@ -9381,10 +9390,9 @@ a.fill-out>span svg:nth-child(1) {
   font-style: normal;
   font-weight: 500;
   line-height: 133.333%;
-  transition: var(--transition-2);
 } 
 .btn-2:hover {
-  background: #194BFB20;
+  transform: translateY(-4px);
   border-color: var(--c-blue-3);
 }
 /* common end */

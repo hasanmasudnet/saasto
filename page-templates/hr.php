@@ -10,7 +10,7 @@ get_header();
 
 
    <!-- Hero Start -->
-   <!-- <section class="hero-style-four position-relative">
+   <section class="hero-style-four position-relative">
       <div class="container">
          <div class="row">
             <div class="col-lg-7">
@@ -42,11 +42,11 @@ get_header();
       <div class="hero-style-four-background d-none d-lg-flex justify-content-lg-start align-items-lg-end overflow-hidden">
          <img src=<?php echo get_template_directory_uri().'../assets/img/hero/hero-dashboard.png'?> alt="dashboard">
       </div>
-   </section> -->
+   </section>
 
    
 
-   <section class="hr-hero-area hero-style-four position-relative mb-5">
+   <section class="d-none hr-hero-area hero-style-four position-relative mb-5">
       <div class="container">
       <div class="w-100">
 				<div class="row justify-content-between align-items-end">
@@ -197,7 +197,7 @@ get_header();
       <!-- Testimonial End -->
 
       <!-- Pricing End -->
-      <div class="d-none pricing-style-six overflow-hidden">
+      <div class="d-non pricing-style-six overflow-hidden">
          <div class="container">
             <div class="row g-5">
                <div class="col-xl-5 position-relative">
@@ -328,7 +328,7 @@ get_header();
       <!-- Pricing End -->
 
       <!-- Services End -->
-      <div class="d-none  service-style-five section-gap-top-y-1 section-gap-bottom-y-1">
+      <div class="d-non  service-style-five section-gap-top-y-1 section-gap-bottom-y-1">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -522,7 +522,7 @@ get_header();
 
 
       <!-- Hero Start -->
-      <section class="d-none hero-style-six position-relative overflow-hidden">
+      <section class="d-non hero-style-six position-relative overflow-hidden">
          <div class="container">
             <div class="row g-5 g-xl-0">
                <div class="col-lg-6 ">
@@ -657,7 +657,7 @@ get_header();
       <!-- Hero End -->
 
       <!-- Testimonial - 6 Start -->
-      <div class="d-none testimonial-style-six position-relative">
+      <div class="d-non testimonial-style-six position-relative">
          <div class="d-none d-md-block shape-1 position-absolute">
             <img src=<?php echo get_template_directory_uri().'../assets/img/shapes/testimonial-cloud-1.svg'?> alt="shape">
          </div>
@@ -844,7 +844,7 @@ get_header();
       <!-- Testimonial - 6 End -->
 
       <!-- FAQ - 6 Start -->
-      <div class="d-none faq-style-common">
+      <div class="d-non faq-style-common">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-8 text-center">
@@ -971,7 +971,7 @@ get_header();
         </div>
       </div>
 
-      <div class="d-none faq-style-common">
+      <div class="d-non faq-style-common">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-10">
@@ -1033,7 +1033,7 @@ get_header();
 
 
       <!-- footer - 6 start  -->
-      <footer class="d-none footer-style-six">
+      <footer class="d-non footer-style-six">
          <div class="container">
             <div class="footer-top">
                <div class="row flex justify-content-center align-items-center text-center">
@@ -1177,7 +1177,7 @@ get_header();
       <!-- footer - 6 End  -->
 
       <!-- capabilities - 6 Start -->
-      <div class="d-none capabilities-style-six">
+      <div class="d-non capabilities-style-six">
          <div class="container">
            <div class="row justify-content-center">
                <div class="col-md-9 text-center">
@@ -1337,7 +1337,7 @@ get_header();
       <!-- capabilities - 6 End -->
 
       <!-- choose-us - 6 Start -->
-      <div class="d-none choose_us-style-five">
+      <div class="d-non choose_us-style-five">
          <div class="outer-layer">
             <div class="container">
                <div class="row justify-content-center">

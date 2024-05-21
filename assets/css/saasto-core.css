@@ -9491,6 +9491,7 @@ a.fill-out>span svg:nth-child(1) {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #DFE8F9;
 }
 .feature-Card-eight .card-thumbnail img{
   filter: drop-shadow(-5px 9.045px 18.089px rgba(26, 32, 44, 0.12));

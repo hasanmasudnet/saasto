@@ -5276,7 +5276,6 @@ p.logged-in-as {
 /* -------------- Style 3 ----------------- */
 .service-card-style-three {
   height: 100%;
-  padding: 40px;
 }
 
 .service-card-style-three .service-icon {
@@ -9446,9 +9445,7 @@ a.fill-out>span svg:nth-child(1) {
   background-position: center;
   backdrop-filter: blur(50px); 
 }
-.btn-group-eight {
-  margin-top: 48px;
-}
+
 .hero-area-eight-figure {
   padding-top: 150px;
   position: relative;

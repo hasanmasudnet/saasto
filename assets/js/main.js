@@ -459,7 +459,7 @@ var swiper = new Swiper('.testimonial-slide-bottom', {
         spaceBetween: 50,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 137,
       },
     }
@@ -570,4 +570,5 @@ var swiper = new Swiper('.testimonial-slide-bottom', {
   jQuery(window).on( 'load', function(){
     wowAnimation();
   });
+
 }(jQuery));

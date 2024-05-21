@@ -31,8 +31,12 @@ get_header();
                     <h1 class="title wow fadeInUp" data-wow-delay="0.3s">Smart Solutions for Modern Life</h1>
                     <p class="description wow fadeInUp" data-wow-delay="0.6s">Embark on your financial revolution with us! At SaaSto, we offer efficiency, security, and growth opportunities like never before.</p>
                     <div class="btn-group-eight d-flex justify-content-center flex-wrap gap-4">
-                        <a href="#" class="btn-1">Get Started</a>
-                        <a href="#" class="btn-2">Learn More</a>
+                    <a href="#" class="btn-1">
+                        <span class="button-wrapper">Get Start</span>
+                    </a>
+                    <a href="#" class="btn-2">
+                        <span class="button-wrapper">Lern More</span>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -581,12 +585,42 @@ get_header();
 <!-- integration-five-area end --> 
 
 <!-- integration-nine-area end --> 
-<div class="integration-nine pt-120 pb-120">
+<div class="d-none integration-nine pt-120 pb-120">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="integration-circle-outer d-grid justify-content-center  align-items-center">
-                    <div class="integration-circle-inner"></div>
+                <div class="integration-circle d-flex justify-content-center align-items-center">
+                    <div class="integration-circle-outer"></div>
+                    <div class="integration-circle-inner">
+                        <div class="icon icon-7">
+                            <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                        </div>
+                    </div>
+                    <div class="network-figure">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="370" height="268" viewBox="0 0 370 268" fill="none">
+                            <path class='line-1' fill-rule="evenodd" clip-rule="evenodd" d="M185 113.5V0.5H186V113.5H310H353.5C362.061 113.5 369 106.561 369 98V61.5H370V98C370 107.113 362.613 114.5 353.5 114.5H315.67C321.99 116.812 326.5 122.879 326.5 130V177.5H325.5V130C325.5 121.439 318.561 114.5 310 114.5H201V251.5C201 260.613 193.613 268 184.5 268H164.5V267H184.5C193.061 267 200 260.061 200 251.5V114.5H185.5H180H80.5C71.9391 114.5 65 121.439 65 130V159C65 168.113 57.6131 175.5 48.5 175.5H4.5V174.5H48.5C57.0609 174.5 64 167.561 64 159V130C64 122.879 68.5101 116.812 74.8298 114.5H17C7.88686 114.5 0.5 107.113 0.5 98V42.5H1.5V98C1.5 106.561 8.43914 113.5 17 113.5H80.5H180H185Z" fill="#8A2FFF"/>
+                        </svg>
+                        <div class="icons">
+                            <div class="icon icon-1">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                            </div>
+                            <div class="icon icon-2">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                            </div>
+                            <div class="icon icon-3">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                            </div>
+                            <div class="icon icon-4">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                            </div>
+                            <div class="icon icon-5">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                            </div>
+                            <div class="icon icon-6">
+                                <img src=<?php echo get_template_directory_uri() . '../assets/img/integration/integration-1.png' ?> alt="integration">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

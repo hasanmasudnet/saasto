@@ -5311,11 +5311,11 @@ p.logged-in-as {
   margin: 0 auto;
 }
 
-.service-box-three {
+/* .service-box-three {
   border-right: 1px solid #dddddd63;
-}
+} */
 
-.row-service-border {
+/* .row-service-border {
   position: relative;
 }
 
@@ -5346,7 +5346,7 @@ p.logged-in-as {
   .row-service-border::before {
     display: none;
   }
-}
+} */
 
 /* =============================
  service area end
@@ -7713,6 +7713,7 @@ Homepage Six Start
 .section-content .hero-title span{
   font-style: italic;
   background-image: linear-gradient(180deg, #ffffff00 90%, #4353ff 0%);
+  font-weight: 600;
 }
 
 .section-content p {
@@ -10071,7 +10072,7 @@ a.fill-out>span svg:nth-child(1) {
 .integration-card-wrapper {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  /* place-items: center; */
+  place-items: center;
   row-gap: 60px;
   column-gap: 84px;
 }
@@ -10206,25 +10207,51 @@ box-shadow: 0px 0px 24px 0px #FFF, 0px 0px 32px 0px #FFF;
   right: 0px;
 }
 
-@keyframes pluse_animate {
-  /* 0%{
-  opacity: 1;
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -o-transform: scale(0.5);
-}
-100% {
-  opacity: 0;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-} */
-}
 /* integration-nine-area end  */ 
+
+/* notification-area start */
+.notification-thumbnail {
+  border-radius: 32px;
+  background: url('../img/notification/popup-bg.png') lightgray -169px -179px / 156.651% 176.543% no-repeat;
+  text-align: center;
+  padding: 48px 48px 0;
+  position: relative;
+}
+.notification-thumbnail .notification-icon {
+  position: absolute;
+  left: -35px;
+  top: -39px;
+  animation: angleRotate 10s ease infinite;
+  -webkit-animation: angleRotate 10s ease infinite;
+  transform-origin: bottom right;
+}
+.notification-thumbnail img{
+  width: 100%;
+  height: auto;
+  border-radius:23.08px 23.08px 0 0;
+  -o-border-radius:23.08px 23.08px 0 0;
+  -webkit-border-radius:23.08px 23.08px 0 0;
+  -moz-border-radius:23.08px 23.08px 0 0;
+  -ms-border-radius:23.08px 23.08px 0 0;
+}
+
+@keyframes angleRotate {
+  0%,100% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+  50% {
+      transform: rotate(-30deg);
+      -webkit-transform: rotate(-30deg);
+      -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      -o-transform: rotate(-30deg);
+}
+}
+/* notification-area end */
 /* ========================================
   Home Page 8 End
 ==========================================*/

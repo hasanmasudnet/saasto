@@ -476,6 +476,12 @@ Home Pahe 7 Common End
   max-width: 70%;
 }
 /* integration-five-area end  */
+
+  /* notification-area start */
+  .notification-thumbnail {
+    padding: 30px 30px 0;
+  }
+  /* notification-area end */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -484,6 +490,11 @@ Home Pahe 7 Common End
   flex-direction: column;
   }
     /* testimonial-nine-area end */
+  /* notification-area start */
+  .notification-thumbnail {
+  padding: 20px 20px 0;
+}
+/* notification-area end */
 }
 
 /* Tablet Layout*/

@@ -5168,12 +5168,13 @@ p.logged-in-as {
   box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.03);
   border-radius: 32px;
   padding: 48px 40px;
+  transition: all 0.4s linear;
 }
 
 .service-card-style-two::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 0;
   height: 100%;
   opacity: 0;
   background: url(../img/shapes/why-choose-shape.svg);
@@ -5182,7 +5183,7 @@ p.logged-in-as {
   top: 0;
   left: 0;
   z-index: -99;
-  transition: all 0.3s;
+  transition: all 0.7s;
 }
 
 .service-card-style-two:hover::before {

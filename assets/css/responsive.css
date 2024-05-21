@@ -1887,6 +1887,9 @@ Home Pahe 7 Common End
 .pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
   font-size: 40px;
 }
+.pricing-card-seven .get-plan {
+  padding: 8px 20px;
+}
   /* ========================================
   pricing-area-seven end - Homepage seven
 ==========================================*/

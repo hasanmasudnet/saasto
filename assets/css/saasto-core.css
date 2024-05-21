@@ -9356,28 +9356,80 @@ a.fill-out>span svg:nth-child(1) {
 ==========================================*/
 
 /* common start */
- .btn-1 {
-    display: inline-block;
-    padding: 20px 40px;
-    border: 1px solid var(--c-blue-3);
-    border-radius: 41px;
-    background: var(--c-blue-3);
-    color: var(--c-white);
-    font-family: var(--secondary-font);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    outline: none;
-    border: none;
-    line-height: 133.333%;
+.common-btn {
+  display: inline-block;
+  color: var(--c-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20px 40px;
+  background-color: var(--c-blue-3);
+  border-radius: 41px;
+}
+.common-btn.btn-transparent {
+  border: 1px solid rgba(26, 32, 44, 0.32);
+  background: var(--c-white);
 }
 
-.btn-1:hover {
-  box-shadow:  0 4px 20px -2px rgba(39, 94, 254, .5);
-  transform: translateY(-4px);
+.btn-flip {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.btn-flip span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+.btn-flip span:after,
+.btn-flip span:before {
+  content: attr(data-text);
+  display: block;
+  position: absolute;
   color: var(--c-white);
 }
+.btn-transparent .btn-flip span:before,
+.btn-transparent .btn-flip span:after {
+  color: var(--c-black-4);
+}
+.btn-flip span:before {
+  top: 0;
+  transform: skewY(0);
+  transform-origin: right bottom;
+  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-flip span:after {
+  top: 105%;
+  transform: skewY(7deg);
+  transform-origin: left top;
+  transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
 
+.common-btn:hover {
+  opacity: 1;
+}
+
+.common-btn:hover .btn-flip span {
+  transform: translateY(-105%);
+}
+
+.common-btn:hover .btn-flip span:before {
+  transform: skewY(7deg);
+}
+
+.common-btn:hover .btn-flip span:after {
+  transform: skewY(0);
+}
+
+/* -------------------------------- */
 .btn-2 {
   display: inline-block;
   padding: 20px 40px;

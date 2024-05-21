@@ -31,12 +31,16 @@ get_header();
                     <h1 class="title wow fadeInUp" data-wow-delay="0.3s">Smart Solutions for Modern Life</h1>
                     <p class="description wow fadeInUp" data-wow-delay="0.6s">Embark on your financial revolution with us! At SaaSto, we offer efficiency, security, and growth opportunities like never before.</p>
                     <div class="btn-group-eight d-flex justify-content-center flex-wrap gap-4">
-                    <a href="#" class="btn-1">
-                        <span class="button-wrapper">Get Start</span>
-                    </a>
-                    <a href="#" class="btn-2">
-                        <span class="button-wrapper">Lern More</span>
-                    </a>
+                        <a class="common-btn" href="#">
+                            <span class="btn-flip">
+                                <span data-text="Get Started">Get Started</span>
+                            </span>
+                        </a>
+                        <a class="common-btn btn-transparent" href="#">
+                            <span class="btn-flip">
+                                <span data-text="Learn More">Learn More</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>

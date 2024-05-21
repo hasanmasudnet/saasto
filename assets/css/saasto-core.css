@@ -9215,6 +9215,9 @@ a.fill{
   font-weight: 500;
   line-height: 177.778%;
 }
+a.fill:hover{
+  color: var(--c-white);
+}
 a.fill-out{
   display: flex;
   align-items: center;
@@ -9228,6 +9231,11 @@ a.fill-out{
   text-decoration: underline !important;
   text-underline-offset: 8px;
   padding-left: 24px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 a.fill-out>span{
   position: relative;

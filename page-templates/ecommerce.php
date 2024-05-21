@@ -390,7 +390,7 @@ get_header();
             </div>
             <div class="col-md-6">
                 <div class="feature-thumbnail wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".9s">
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/features/feature-thumbnail-2.png' ?> alt="feature-thumbnail">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/features/feature-thumbnail.png' ?> alt="feature-thumbnail">
                 </div>
             </div>
         </div>

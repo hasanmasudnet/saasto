@@ -250,56 +250,60 @@ get_header();
         <div class="row gy-5 g-lg-5 pt-100">
             <div class="col-lg-6">
                 <div class="pricing-card-seven">
-                    <div class="pricing-card-header">
-                        <div class="pricing-header-head d-flex flex-column">
-                            <span class='plan-type'>Starter Plan</span>
-                            <span class='plan-price d-flex align-items-baseline'>
-                                <span class='price'>$49.00</span>
-                                <sapn class='type'>/month</sapn>
-                            </span>
+                    <div>
+                        <div class="pricing-card-header">
+                            <div class="pricing-header-head d-flex flex-column">
+                                <span class='plan-type'>Starter Plan</span>
+                                <span class='plan-price d-flex align-items-baseline'>
+                                    <span class='price'>$49.00</span>
+                                    <sapn class='type'>/month</sapn>
+                                </span>
+                            </div>
+                            <p>Kickstart your journey! Manage 100 products, sync with one platform, and access basic analytics. Ideal for small businesses starting out.</p>
                         </div>
-                        <p>Kickstart your journey! Manage 100 products, sync with one platform, and access basic analytics. Ideal for small businesses starting out.</p>
+                        <div class="pricing-card-body">
+                            <ul class="features">
+                                <li><i class="bi bi-check-circle-fill"></i>Up to 100 product listings</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Basic integration with one e-commerce platform</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Limited access to analytics and reporting tools</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing-card-body">
-                        <ul class="features">
-                            <li><i class="bi bi-check-circle-fill"></i>Up to 100 product listings</li>
-                            <li><i class="bi bi-check-circle-fill"></i>Basic integration with one e-commerce platform</li>
-                            <li><i class="bi bi-check-circle-fill"></i>Limited access to analytics and reporting tools</li>
-                            <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
-                            <li><i class="bi bi-check-circle-fill"></i>Priority email and chat support</li>
-                        </ul>
-                        <a href="#" class='get-plan'>
-                            Get Started
-                            <i class="bi bi-arrow-right-short"></i>
-                        </a>
-                    </div>
+                    <a href="#" class='get-plan'>
+                        Get Started
+                        <i class="bi bi-arrow-right-short"></i>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="pricing-card-seven active-card">
-                    <div class="pricing-card-header">
-                        <div class="pricing-header-head d-flex flex-column">
-                            <span class='plan-type'>Ultimate Plan</span>
-                            <span class='plan-price d-flex align-items-baseline'>
-                                <span class='price'>$299.00</span>
-                                <sapn class='type'>/month</sapn>
-                            </span>
+                    <div>
+                        <div class="pricing-card-header">
+                            <div class="pricing-header-head d-flex flex-column">
+                                <span class='plan-type'>Ultimate Plan</span>
+                                <span class='plan-price d-flex align-items-baseline'>
+                                    <span class='price'>$299.00</span>
+                                    <sapn class='type'>/month</sapn>
+                                </span>
+                            </div>
+                            <p>Unleash your potential! Get unlimited products, fully customizable integrations, AI insight, and 24/7 priority support. Tailored for high-growth enterprises.</p>
                         </div>
-                        <p>Unleash your potential! Get unlimited products, fully customizable integrations, AI insight, and 24/7 priority support. Tailored for high-growth enterprises.</p>
+                        <div class="pricing-card-body">
+                            <ul class="features">
+                                <li><i class="bi bi-check-circle-fill"></i>Unlimited product listings</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Advanced integration with e-commerce platforms</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Comprehensive analytics and reporting tools</li>
+                                <li><i class="bi bi-check-circle-fill"></i>24/7 priority support with SLA</li>
+                                <li><i class="bi bi-check-circle-fill"></i>API access for custom development & integrations</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing-card-body">
-                        <ul class="features">
-                            <li><i class="bi bi-check-circle-fill"></i>Unlimited product listings</li>
-                            <li><i class="bi bi-check-circle-fill"></i>Advanced integration with e-commerce platforms</li>
-                            <li><i class="bi bi-check-circle-fill"></i>Comprehensive analytics and reporting tools</li>
-                            <li><i class="bi bi-check-circle-fill"></i>24/7 priority support with SLA</li>
-                            <li><i class="bi bi-check-circle-fill"></i>API access for custom development & integrations</li>
-                        </ul>
-                        <a href="#" class='get-plan'>
-                        Get Started
-                        <i class="bi bi-arrow-right-short"></i>
-                        </a>
-                    </div>
+                    <a href="#" class='get-plan'>
+                    Get Started
+                    <i class="bi bi-arrow-right-short"></i>
+                    </a>
                 </div>
             </div>
         </div>

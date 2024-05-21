@@ -7837,7 +7837,7 @@ Homepage Six Start
   background-color: var(--c-white);
 }
 
-.partners .title>p {
+.partners .title p {
   margin-left: 92px;
   color: var(--c-white);
   font-family: var(--secondary-font);
@@ -7846,6 +7846,7 @@ Homepage Six Start
   font-weight: 400;
   line-height: 177.778%;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 /* =============================

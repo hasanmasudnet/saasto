@@ -1875,6 +1875,21 @@ Home Pahe 7 Common End
   -o-border-radius: 10px;
 }
 /* product-sider-eight-area end  */
+  /* ========================================
+  pricing-area-seven start - Homepage seven
+==========================================*/
+.pricing-card-seven {
+  padding: 30px;
+}
+.pricing-card-seven .features li {
+  font-size: 15px;
+}
+.pricing-card-seven .pricing-card-header .pricing-header-head .plan-price .price {
+  font-size: 40px;
+}
+  /* ========================================
+  pricing-area-seven end - Homepage seven
+==========================================*/
 }
 
 @media only screen and (max-width: 396px) {

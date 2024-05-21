@@ -495,6 +495,12 @@ Home Pahe 7 Common End
   padding: 20px 20px 0;
 }
 /* notification-area end */
+
+/* feature-thumbnail-area start */
+.feature-thumbnail {
+  padding: 15px;
+}
+/* feature-thumbnail-area end */
 }
 
 /* Tablet Layout*/

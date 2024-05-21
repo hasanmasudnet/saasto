@@ -379,16 +379,20 @@ get_header();
 <!--  notification-area start  -->
 <div class="pt-120 pb-120 overflow-hidden ">
     <div class="container">
-        <div class="col-md-6">
-            <div class="notification-thumbnail">
-                <span class='notification-icon d-none d-md-block'>
-                    <img src=<?php echo get_template_directory_uri() . '../assets/img/Icons/notification-icon.png' ?> alt="popub-img">
-                </span>
-                <img class='wow fadeInUp' data-wow-delay=".5s" data-wow-duration=".9s" src=<?php echo get_template_directory_uri() . '../assets/img/notification/popup.png' ?> alt="popub-img">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="notification-thumbnail">
+                    <span class='notification-icon d-none d-md-block'>
+                        <img src=<?php echo get_template_directory_uri() . '../assets/img/Icons/notification-icon.png' ?> alt="popub-img">
+                    </span>
+                    <img class='wow fadeInUp' data-wow-delay=".5s" data-wow-duration=".9s" src=<?php echo get_template_directory_uri() . '../assets/img/notification/popup.png' ?> alt="popub-img">
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            .feature
+            <div class="col-md-6">
+                <div class="feature-thumbnail wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".9s">
+                    <img src=<?php echo get_template_directory_uri() . '../assets/img/features/feature-thumbnail-2.png' ?> alt="feature-thumbnail">
+                </div>
+            </div>
         </div>
     </div>
 </div>

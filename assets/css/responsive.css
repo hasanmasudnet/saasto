@@ -322,6 +322,8 @@
       Capabilities - 6 Start
     ==============================*/
 
+
+
   .capabilities-style-six .capabilities-card .capabilities-card-inner .card-content .title {
     font-size: 20px;
   }
@@ -1302,6 +1304,12 @@ Home Pahe 7 Common End
     font-size: 18px;
     line-height: 170%;
   }
+  .partners .title::before {
+  content: unset;
+ }
+ .partners .title p{
+  margin-left: 0;
+ }
 
   .work-feature-card .feature-info p {
     font-size: 16px;
@@ -1677,6 +1685,9 @@ Home Pahe 7 Common End
   /* =============================
            Testimonial - 6 Start
   ==============================*/
+  .testimonial-row * {
+    padding: 0;
+  }
   .testimonial-style-six {
     padding: 80px 0;
   }
@@ -1689,7 +1700,9 @@ Home Pahe 7 Common End
     padding-top: 40px;
     gap: 16px;
   }
-
+  .testimonial-style-six .testimonial-card .testimonial-card-content .review {
+    font-size: 16px;
+  }
 
   /* =============================
            Testimonial - 6 End

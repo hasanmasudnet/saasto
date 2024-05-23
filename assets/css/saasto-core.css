@@ -8581,7 +8581,7 @@ Testimonial End - Homepage Six
 .section-header .sub-title {
   display: inline-block;
   border-radius: 100px;
-  padding: 4px 48px;
+  /* padding: 4px 48px; */
   background: #C7F2AB;
   color: var(--c-indigo);
   text-align: center;

@@ -61,9 +61,25 @@ get_header();
             </div>
         </div>
     </div>
-    
+
 </div>
 <!-- Hero-area end -->
+
+
+<div class="hero-area-eight-figure text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-wrapper">
+                        <img class="wow fadeInUp" data-wow-delay="0.8s" src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-eight-figure.png' ?> alt="kit">
+                        <div class="phone">
+                            <img class="wow fadeInUp" data-wow-delay="1.3s" src=<?php echo get_template_directory_uri() . '../assets/img/hero/hero-eight-phone.png' ?> alt="kit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- Features-area start -->
 <div class="features-area-eight pt-60 pb-120">

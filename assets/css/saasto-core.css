@@ -9468,6 +9468,10 @@ a.fill-out>span svg:nth-child(1) {
   -o-transform: translateX(-50%);
 }
 
+.hero-area-eight-figure .phone img {
+  max-height: 100%;
+}
+
 /* hero-area end  */
 
 /* Features-area start  */

@@ -8613,6 +8613,9 @@ Testimonial End - Homepage Six
   line-height: 163.636%;
   letter-spacing: 5.28px;
 }
+.section-header.header-eight-hero .sub-title svg{
+  width: 36px;
+}
 
 .section-header .title {
   color: var(--c-black-2);
@@ -8659,8 +8662,7 @@ Testimonial End - Homepage Six
   line-height: 177.778%;
   padding-top: 24px;
 }
-.section-header.header-eight-hero>p {
-  max-width: 800px;
+.section-header.header-eight-hero p {
   color: var(--c-dark-gray);
   font-size: 20px;
   line-height: 180%;
@@ -9484,7 +9486,7 @@ a.fill-out>span svg:nth-child(1) {
 }
 .feature-Card-eight .card-thumbnail {
   flex-grow: 1;
-  padding: 28px 0;
+  padding: 28px;
   text-align: center;
   border-radius: 16px;
   background: url('../img/features/card-bg.png');
@@ -10258,6 +10260,7 @@ box-shadow: 0px 0px 24px 0px #FFF, 0px 0px 32px 0px #FFF;
   box-shadow: 0px 4.131px 51.641px 0px rgba(0, 0, 0, 0.06);
   border-radius: 16.949px;
 }
+
 /* feature-thumbnail-area end */
 /* ========================================
   Home Page 8 End

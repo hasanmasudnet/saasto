@@ -29,7 +29,7 @@
 <!-- ===============  header area start =============== -->
 
 <header>
-   <div class="header-area header-three <?php echo esc_attr($is_transparent); ?>">
+   <div class="header-area header-five <?php echo esc_attr($is_transparent); ?>">
       <div class="container-xxl container-xl-fluid container-lg-fluid px-lg-4">
          <div class="col-lg-12">
             <div class="header-wd">
@@ -75,8 +75,8 @@
                   <?php if ( !empty( $saasto_header_right ) ): ?>
                         <div class="col-xl-3">
                            <div class="nav-right float-end d-xl-flex d-none">
-                                 <a href="<?php echo esc_html( $saasto_head_btn_one_link ); ?>" class="btn-transparent-xl btn-transparent-v3"><?php echo esc_html( $saasto_head_btn_one ); ?></a>
-                                 <a href="<?php echo esc_html( $saasto_head_btn_two_link ); ?>" class="btn-outlined-round"><?php echo esc_html( $saasto_head_btn_two ); ?></a>
+                                 <a href="<?php echo esc_html( $saasto_head_btn_one_link ); ?>" class="btn-outlined-round rounded_v5"><?php echo esc_html( $saasto_head_btn_one ); ?></a>
+                                 <a href="<?php echo esc_html( $saasto_head_btn_two_link ); ?>" class="btn-outlined-round btn_fill_v5"><?php echo esc_html( $saasto_head_btn_two ); ?></a>
                            </div>
                         </div>
                      <?php endif; ?>

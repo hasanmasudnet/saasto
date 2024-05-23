@@ -1803,6 +1803,13 @@ header .header-four .main-nav ul li.has-child-menu:after{
   color: #fff;
 }
 
+header .header-area.header-five .main-nav ul li a{
+  color: #fff;
+}
+header .header-area.header-five .main-nav ul li.has-child-menu:after{
+  color: #fff;
+}
+
 .anima-trasform-task_2{
   animation: slide_2 15s ease-in-out alternate infinite;
 }
@@ -1956,4 +1963,18 @@ header .header-four .main-nav ul li.has-child-menu:after{
     width: 100%;
   }
 }
- 
+
+.rounded_v5{
+  border-radius: 30px;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  padding: 12px 30px !important;
+}
+
+.btn_fill_v5{
+  background-color: #fff;
+  color: #000000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border-color: rgba(255, 255, 255);
+}

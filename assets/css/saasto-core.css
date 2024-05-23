@@ -8595,7 +8595,7 @@ Testimonial End - Homepage Six
 }
 .section-header.header-eight-hero .sub-title {
   border-radius: unset;
-  padding: 10px 40px;
+  /* padding: 10px 40px; */
   background: transparent;
   color: var(--c-blue-2);
   font-size: 22px;

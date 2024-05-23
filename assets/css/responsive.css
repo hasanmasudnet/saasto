@@ -1005,6 +1005,9 @@ Home Pahe 7 Common End
 	.testimonial-card-eight {
 		max-width: 320px;
 	}
+	.testimonial-card-eight .testimonial-author {
+		padding-top: 35px;
+	}
 	.testimonial-card-eight .testimonial-card-content p {
 		font-size: 18px;
 	}

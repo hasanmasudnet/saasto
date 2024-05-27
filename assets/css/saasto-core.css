@@ -8599,7 +8599,6 @@ Testimonial End - Homepage Six
   line-height: 170%;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .section-header.header-eight-hero .sub-title {
@@ -8635,11 +8634,9 @@ Testimonial End - Homepage Six
   font-style: normal;
   font-weight: 700;
   line-height: 138.462%;
-  /* padding-top: 20px; */
 }
 
 .section-header.header-eight-hero .title {
-  padding-top: 10px;
   color: var(--c-black-4);
   font-family: var(--secondary-font);
   font-size: 66px;
@@ -8665,17 +8662,13 @@ Testimonial End - Homepage Six
   max-width: 503px;
 }
 
-.section-header>p {
-  /* max-width: 70%;
-  margin: 0 auto; */
+.section-header p {
   color: rgba(6, 29, 33, 0.70);
-  /* text-align: center; */
   font-family: var(--secondary-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 177.778%;
-  padding-top: 24px;
 }
 
 .section-header.header-eight-hero p {
@@ -9772,6 +9765,7 @@ a.fill-out>span svg:nth-child(1) {
 .faq-eight .accordion-item {
   border: unset;
   border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  background: transparent;
 }
 
 .faq-eight .accordion-item:last-child {
@@ -9786,6 +9780,7 @@ a.fill-out>span svg:nth-child(1) {
   padding: 0;
   padding-bottom: 32px;
   color: #0B111D;
+  background-color: transparent;
   font-family: var(--secondary-font);
   font-size: 22px;
   font-style: normal;
@@ -10827,4 +10822,8 @@ header .header-area.header-five .main-nav ul li.has-child-menu:after {
   padding: 12px 30px;
   border-radius: 30px;
   border-color: rgb(255, 255, 255);
+}
+
+.st-section-title .st-section-title_title{
+  margin: 12px 0 24px 0;
 }

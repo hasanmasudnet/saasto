@@ -246,33 +246,7 @@
   /* Testimonial */
 
 //top
-var swiper = new Swiper('.testimonial-slide-top', {
-  spaceBetween: 24,
-  centeredSlides: true,
-  speed: 8000,
-  autoplay: {
-    delay: 1,
-  },
-  loop: true,
-  slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
-});
 
-// Bottom
-var swiper = new Swiper('.testimonial-slide-bottom', {
-  spaceBetween: 24,
-  centeredSlides: true,
-  speed: 8000,
-  autoplay: {
-    delay: 1,
-    reverseDirection: true
-  },
-  loop: true,
-  slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
-});
 
 
   /* Brand */

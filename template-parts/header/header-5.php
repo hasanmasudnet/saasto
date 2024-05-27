@@ -76,7 +76,7 @@ $saasto_menu_col = ($saasto_header_right) ? 'col-xl-7 col-lg-8 col-md-8 col-sm-6
                      <div class="col-xl-3">
                         <div class="nav-right float-end d-xl-flex d-none">
                            <a href="<?php echo esc_html($saasto_head_btn_one_link); ?>" class="btn-outlined-round rounded_v5"><?php echo esc_html($saasto_head_btn_one); ?></a>
-                           <a href="<?php echo esc_html($saasto_head_btn_two_link); ?>" class="btn-outlined-round btn_fill_v5"><?php echo esc_html($saasto_head_btn_two); ?></a>
+                           <a href="<?php echo esc_html($saasto_head_btn_two_link); ?>" class="btn-outlined-round btn_fill_v5 flex-shrink-0"><?php echo esc_html($saasto_head_btn_two); ?></a>
                         </div>
                      </div>
                   <?php endif; ?>

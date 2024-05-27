@@ -499,6 +499,11 @@ Home Pahe 7 Common End
 	}
 
 	/* notification-area end */
+
+	/* Header Five */
+	header .header-five-sp {
+		overflow: hidden;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1147,8 +1152,8 @@ Home Pahe 7 Common End
 	/* testimonial-nine-area end */
 
 	/* ========================================
-  Home Page 8 end
-==========================================*/
+  	Home Page 8 end
+	==========================================*/
 	.cta-form {
 		margin-left: auto;
 		margin-right: auto;

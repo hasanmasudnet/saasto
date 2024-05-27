@@ -29,7 +29,7 @@ $saasto_menu_col = ($saasto_header_right) ? 'col-xl-7 col-lg-8 col-md-8 col-sm-6
 <!-- ===============  header area start =============== -->
 
 <header>
-   <div class="header-area header-five overflow-hidden <?php echo esc_attr($is_transparent); ?>">
+   <div class="header-area header-five header-five-sp <?php echo esc_attr($is_transparent); ?>">
       <div class="container-xxl container-xl-fluid container-lg-fluid px-lg-4">
          <div class="col-lg-12">
             <div class="header-wd">

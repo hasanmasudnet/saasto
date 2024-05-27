@@ -9477,7 +9477,7 @@ a.fill-out>span svg:nth-child(1) {
   content: attr(data-text);
   display: block;
   position: absolute;
-  color: var(--c-white);
+  color: var(--c-black);
 }
 
 .btn-transparent .btn-flip span:before,
@@ -10826,4 +10826,16 @@ header .header-area.header-five .main-nav ul li.has-child-menu:after {
 
 .st-section-title .st-section-title_title{
   margin: 12px 0 24px 0;
+}
+header .header-area.header-elementor .main-nav ul li a{
+  padding: 0;
+}
+header .header-area.header-elementor .main-nav ul li.has-child-menu:after{
+  top: 4px;
+}
+header .header-area.header-elementor{
+  display: flex;
+}
+header .header-area.header-elementor #menu-main-menu{
+  padding-top: 0;
 }

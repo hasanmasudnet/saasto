@@ -387,10 +387,6 @@
 		font-size: 38px;
 	}
 
-	.section-header>p {
-		padding-top: 16px;
-	}
-
 	/* ========================================
 Home Pahe 7 Common End
 ==========================================*/
@@ -964,7 +960,6 @@ Home Pahe 7 Common End
 
 	.section-header>p {
 		max-width: 80%;
-		padding-top: 16px;
 	}
 
 	/* ========================================
@@ -1885,10 +1880,6 @@ Home Pahe 7 Common End
 
 	.section-header .title {
 		font-size: 32px;
-	}
-
-	.section-header>p {
-		padding-top: 16px;
 	}
 
 	/* ========================================

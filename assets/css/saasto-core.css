@@ -7479,10 +7479,6 @@ Brand Slider End - Homapage Five
 /*===============================
 34. Testimonials Start - Homapage Five
 =================================*/
-.testimonial-style-four {
-  background-color: #F7F8FB;
-  padding: 120px 0px;
-}
 
 .testimonial-style-four .section-content>h4 {
   font-family: var(--secondary-font);
@@ -10917,4 +10913,15 @@ header .header-area.header-elementor #menu-main-menu {
 
 .anim-img-box .anim-img-kit {
   animation: anima-trasform-y-one 3s ease infinite alternate;
+}
+.cta-form + .wpcf7-response-output{
+  color: #fff;
+}
+.cta-form .wpcf7-not-valid-tip{
+  position: absolute;
+}
+
+.download-btn-outlined svg{
+    width: 20px;
+    margin-right: 10px;
 }

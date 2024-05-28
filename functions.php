@@ -28,6 +28,7 @@ if (!function_exists('saasto_setup')) :
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
+        add_post_type_support( 'saasto-blocks', 'elementor' );
 
         /*
          * Let WordPress manage the document title.

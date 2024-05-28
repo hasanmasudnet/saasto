@@ -10457,6 +10457,9 @@ a.fill-out>span svg:nth-child(1) {
   Home Page 8 End
 ==========================================*/
 
+.section_header_v3 .sub-title{
+  padding: 4px 48px;
+}
 
 /* Home Task Management */
 .task-section-title .task-sub {
@@ -10467,7 +10470,6 @@ a.fill-out>span svg:nth-child(1) {
   line-height: 154.545%;
   letter-spacing: 1.76px;
   padding-left: 36px;
-  margin-bottom: 10px;
   white-space: nowrap;
 }
 .task-section-title .task-sub::before, .task-section-title .task-sub::after {

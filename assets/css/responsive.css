@@ -533,6 +533,12 @@ Home Pahe 7 Common End
 /* Wide Mobile Layout*/
 
 @media only screen and (max-width: 991px) {
+	.testimonial-style-four .section-header{
+		padding-bottom: 40px;
+	}
+	.pb-100 {
+		padding-bottom: 60px;
+		}
 
 	/* spacing */
 	.pt-120 {
@@ -860,6 +866,11 @@ Home Pahe 7 Common End
 		font-size: 17px;
 	}
 
+	.testimonial-style-four .section-header .testimonial-review_slider-control .testimonial-review-next, .testimonial-style-four .section-header .testimonial-review_slider-control .testimonial-review-prev {
+		width: 50px;
+		height: 50px;
+	}
+
 	/* =============================
         Capabilities - 6 Start
   ==============================*/
@@ -949,7 +960,6 @@ Home Pahe 7 Common End
 
 	.section-header .title {
 		font-size: 38px;
-		padding-top: 15px;
 	}
 
 	.section-header>p {
@@ -1206,17 +1216,15 @@ Home Pahe 7 Common End
 
 	.section-header .title {
 		font-size: 36px;
-		padding-top: 15px;
 	}
 
 	.section-header>p {
 		max-width: 100%;
-		padding-top: 16px;
 	}
 
 	/* ========================================
-Home Pahe 7 Common End
-==========================================*/
+	Home Pahe 7 Common End
+	==========================================*/
 	.hero-area-seven {
 		margin: 0;
 	}
@@ -1877,7 +1885,6 @@ Home Pahe 7 Common End
 
 	.section-header .title {
 		font-size: 32px;
-		padding-top: 15px;
 	}
 
 	.section-header>p {

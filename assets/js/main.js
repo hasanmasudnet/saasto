@@ -49,6 +49,55 @@
     wowAnimation();
   });
 
+  // svg amination
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const svg = document.querySelector("#progress-svg-code");
+    const maskRect = document.querySelector(
+      "#progress-mask-tv8p3gbrf rect",
+    );
+
+    if (svg && maskRect) {
+      const svgWidth = svg.viewBox.baseVal.width || 300;
+
+      gsap.to(maskRect, {
+        attr: { width: svgWidth },
+        duration: 3,
+        ease: "none",
+        repeat: -1,
+        repeatDelay: 1,
+        yoyo: false,
+      });
+    }
+  });
+
+
+  // item rotate and zoom effect
+  gsap.set(".hero-feature-wrapper", { rotateX: 30, scale: 0.9 });
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      markers: false,
+      trigger: ".hero-feature-wrapper",
+      start: "top 70%",
+      end: "bottom top",
+      toggleActions: "play none none reverse",
+    },
+  });
+  tl.to(".hero-feature-wrapper", {
+    scale: 1,
+    duration: 1.2,
+    ease: "power2.inOut",
+  }).to(
+    ".hero-feature-wrapper",
+    {
+      rotateX: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    },
+    "-=0.5",
+  );
 
   // Pricing Plan JS
   function priceToggle() {
@@ -479,6 +528,40 @@
       clickable: true,
     },
   });
+
+
+  // price tab switcher
+  const toggle_switcher = function () {
+
+     let $scope = $('.ui-toggle_switcher');
+
+     const checked = $("input", $scope);
+     const toggle_pane = $(".toggle-pane", $scope);
+     const toggle_label = $(".before_label, .after_label", $scope);
+
+     checked.change(function () {
+        toggle_pane.toggleClass('show');
+        toggle_label.toggleClass('active');
+     })
+  }
+
+  toggle_switcher();
+
+  // app-slider activation
+  if ('.app-slider-active') {
+     var app_slider_active = new Swiper(".app-slider-active", {
+        slidesPerView: 'auto',
+        loop: true,
+        autoplay: false,
+        spaceBetween: -14,
+        speed: 300,
+        allowTouchMove: true,
+        navigation: {
+           nextEl: '.app-button-next',
+           prevEl: '.app-button-prev',
+        },
+     });
+  }
 
   /* Pricing Toggle */
   var checkBox = document.querySelectorAll("#checbox")

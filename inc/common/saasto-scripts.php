@@ -49,6 +49,9 @@ function saasto_scripts()
     wp_enqueue_script('magnific-popup', SAASTO_THEME_JS_DIR . 'magnific-popup.js', ['jquery'], false, true);
     wp_enqueue_script('wow', SAASTO_THEME_JS_DIR . 'wow.js', ['jquery'], false, true);
     wp_enqueue_script('plyr', SAASTO_THEME_JS_DIR . 'plyr.polyfilled.js', ['jquery'], false, true);
+
+    wp_enqueue_script('gsap', SAASTO_THEME_JS_DIR . 'gsap.min.js', ['jquery'], false, true);
+    wp_enqueue_script('ScrollTrigger', SAASTO_THEME_JS_DIR . 'ScrollTrigger.min.js', ['jquery'], false, true);
     wp_enqueue_script('viewport-jquery', SAASTO_THEME_JS_DIR . 'viewport.jquery.js', ['jquery'], false, true);
     wp_enqueue_script('saasto-main', SAASTO_THEME_JS_DIR . 'main.js', ['jquery'], false, true);
 
